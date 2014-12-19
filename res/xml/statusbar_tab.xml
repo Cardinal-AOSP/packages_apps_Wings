@@ -29,4 +29,11 @@
         android:title="@string/status_bar_toggle_brightness"
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
+
+   <Preference
+        android:key="traffic"
+        android:fragment="com.cardinal.wings.fragments.Traffic"
+        android:layout="@layout/preference_traffic"
+        android:title="@string/traffic_category" />
+
 </PreferenceScreen>
