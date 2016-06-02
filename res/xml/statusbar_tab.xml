@@ -23,6 +23,11 @@
         android:fragment="com.cardinal.wings.fragments.QuickSettings"
         android:title="@string/quicksettings_category" />
 
+  <PreferenceScreen
+        android:fragment="com.cardinal.wings.fragments.ClockSettings"
+        android:title="@string/clock_settings_title"
+        android:summary="@string/clock_settings_summary" />
+
   <com.cardinal.wings.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_to_sleep_title"
