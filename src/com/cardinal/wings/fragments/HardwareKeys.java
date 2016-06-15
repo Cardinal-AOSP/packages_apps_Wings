@@ -118,6 +118,11 @@ public class HardwareKeys extends ActionFragment implements OnPreferenceChangeLi
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
     }
 
+     @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
+
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.CUSTOM_SQUASH;
