@@ -21,4 +21,18 @@
 
     <!-- TABS -->
     <string name="about_title">About</string>
+
+    <!-- Dev Info -->
+    <string name="cardinal_about_info">About Project</string>
+    <string name="cardinal_about_info_summary">Cardinal-AOSP is a Custom ROM Initially was based on AOSPB, later we moved on and rebased it with AOSP-RRO for better AOSP experience with Full RRO Layers Support, Built with UBER toolchain to optimize battery life and with some of the most required bare minimal features/customizations, the main aim of this ROM is to deliver light speed performance, smoothness and good battery backup. We hope that you\'ll love this project, and help us in shaping it even better in the future.</string>
+    <string name="dev_info">#TeamCardinal</string>
+    <string name="mention">Honorable Mentions</string>
+    <string name="maintainers_header">Maintainers</string>
+    <string name="devs_header">Developers</string>
+    <string name="honor_1">Sri Harsha</string>
+    <string name="honor_2">Akhil Narang</string>
+    <string name="dev_1">Adarsh M.R &#40;Adarsh1998&#41;</string>
+    <string name="dev1_description">Lead developer</string>
+    <string name="dev_2">Rohit Poroli &#40;rohitporoli&#41;</string>
+    <string name="dev2_description">Developer/helper, Onyx/Lettuce Maintainer</string>
     </resources>

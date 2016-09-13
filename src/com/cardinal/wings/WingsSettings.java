@@ -24,7 +24,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.cardinal.wings.tabs.About;
 import com.cardinal.wings.PagerSlidingTabStrip;
 
-import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class WingsSettings extends SettingsPreferenceFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
 	final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setIcon(R.drawable.ic_settings_buttons);
+        actionBar.setIcon(R.drawable.ic_cardinal_logo);
 
         View view = inflater.inflate(R.layout.wings_settings, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
@@ -69,9 +69,7 @@ public class WingsSettings extends SettingsPreferenceFragment {
     @Override
     public void onResume() {
         super.onResume();
- 	if (!Utils.isPhone(getActivity())) {
-            mContainer.setPadding(0, 0, 0, 0);
-        }
+        mContainer.setPadding(30, 30, 30, 30);
     }
 
     class StatusBarAdapter extends FragmentPagerAdapter {
@@ -109,6 +107,6 @@ public class WingsSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.THE_WINGS;
+        return MetricsEvent.THE_WINGS;
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Citrus-AOSP Project
+ * Copyright (C) 2016 Cardinal-AOSP Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,25 +31,26 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
 public class About extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String KEY_DEV_INFO = "dev_info"; 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.about_tab);
-        PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.THE_WINGS;
+        return MetricsEvent.THE_WINGS;
     }
 
     @Override
@@ -60,11 +61,6 @@ public class About extends SettingsPreferenceFragment implements
     @Override
     public void onPause() {
         super.onPause();
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
