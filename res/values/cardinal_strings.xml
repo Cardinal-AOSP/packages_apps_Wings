@@ -17,5 +17,8 @@
 
     <!-- Cardinal Wings menus -->
     <string name="cardinal_wings_title">The Wings!</string>
-    <string name="keywords_citrus">Cardinal-AOSP</string>
+    <string name="keywords_cardinal">Cardinal-AOSP</string>
+
+    <!-- TABS -->
+    <string name="about_title">About</string>
     </resources>
