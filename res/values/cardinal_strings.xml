@@ -35,4 +35,9 @@
     <string name="dev1_description">Lead developer</string>
     <string name="dev_2">Rohit Poroli &#40;rohitporoli&#41;</string>
     <string name="dev2_description">Developer/helper, Onyx/Lettuce Maintainer</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
     </resources>

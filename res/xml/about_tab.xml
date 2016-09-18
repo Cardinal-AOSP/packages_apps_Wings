@@ -23,6 +23,12 @@
              android:enabled="false"
              android:layout="@layout/about_cardinal" />
 
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+             android:title="@string/changelog_title"
+             android:summary="@string/changelog_summary"
+             android:fragment="com.cardinal.wings.fragments.Changelog" />
+
         <!-- About Devs -->
         <PreferenceScreen
              android:key="dev_info"
