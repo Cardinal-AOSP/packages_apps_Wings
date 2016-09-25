@@ -21,6 +21,7 @@
 
     <!-- TABS -->
     <string name="about_title">About</string>
+    <string name="statusbar_title">StatusBar</string>
 
     <!-- Dev Info -->
     <string name="cardinal_about_info">About Project</string>

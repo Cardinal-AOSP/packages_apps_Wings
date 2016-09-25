@@ -22,6 +22,7 @@ import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.cardinal.wings.tabs.About;
+import com.cardinal.wings.tabs.StatusBar;
 import com.cardinal.wings.PagerSlidingTabStrip;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -40,7 +41,7 @@ public class WingsSettings extends SettingsPreferenceFragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
-        
+
         View view = inflater.inflate(R.layout.wings_settings, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
 	      mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
@@ -77,6 +78,7 @@ public class WingsSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
 	    frags[0] = new About();
+      frags[1] = new StatusBar();
         }
 
         @Override
@@ -98,8 +100,8 @@ public class WingsSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-            getString(R.string.about_title)};
-
+            getString(R.string.about_title),
+            getString(R.string.statusbar_title)};
         return titleString;
     }
 
