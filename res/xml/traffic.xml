@@ -42,21 +42,21 @@
         android:dependency="network_traffic_state"
         android:persistent="false" />
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <com.cardinal.wings.preference.SystemSettingSwitchPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
         android:dependency="network_traffic_state"
         android:defaultValue="false" />
 
-    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+    <com.cardinal.wings.preference.SystemSettingSwitchPreference
         android:key="network_traffic_hidearrow"
         android:title="@string/network_traffic_hidearrow"
         android:summary="@string/network_traffic_hidearrow_summary"
         android:dependency="network_traffic_state"
         android:defaultValue="false" />
 
-    <com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference
+    <com.cardinal.wings.preference.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold"
         android:max="100"
