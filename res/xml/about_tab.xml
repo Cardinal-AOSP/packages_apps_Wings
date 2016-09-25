@@ -20,8 +20,8 @@
 
         <!-- Cardinal-AOSP logo -->
         <PreferenceScreen android:key="cardinal_logo"
-             android:enabled="false"
-             android:layout="@layout/about_cardinal" />
+             android:layout="@layout/about_cardinal"
+             android:fragment="com.cardinal.wings.fragments.Devs"  />
 
         <!-- Changelog -->
         <PreferenceScreen android:key="changelog"
@@ -29,9 +29,48 @@
              android:summary="@string/changelog_summary"
              android:fragment="com.cardinal.wings.fragments.Changelog" />
 
-        <!-- About Devs -->
+        <PreferenceCategory
+               android:key="cardinal_dev"
+               android:title="@string/devs_header" >
+
         <PreferenceScreen
-             android:key="dev_info"
-             android:title="@string/dev_info"
-             android:fragment="com.cardinal.wings.fragments.Devs" />
+               android:title="@string/dev_1"
+               android:summary="@string/dev1_description"
+               android:icon="@drawable/ic_devs_pc" >
+            <intent
+               android:action="android.intent.action.VIEW"
+               android:data="https://plus.google.com/+AdarshMR1" />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+               android:title="@string/dev_2"
+               android:summary="@string/dev2_description"
+               android:icon="@drawable/ic_devs_pc" >
+            <intent
+               android:action="android.intent.action.VIEW"
+               android:data="https://plus.google.com/+RohitPoroli" />
+        </PreferenceScreen>
+      </PreferenceCategory>
+
+      <PreferenceCategory
+               android:key="honor"
+               android:title="@string/mention" >
+
+          <PreferenceScreen
+               android:title="@string/honor_1"
+               android:icon="@drawable/ic_devs_mention" >
+            <intent
+               android:action="android.intent.action.VIEW"
+               android:data="https://plus.google.com/+SriHarsha-srisurya95" />
+      </PreferenceScreen>
+
+      <PreferenceScreen
+               android:title="@string/honor_2"
+               android:icon="@drawable/ic_devs_mention" >
+            <intent
+               android:action="android.intent.action.VIEW"
+               android:data="https://plus.google.com/+AkhilNarang" />
+      </PreferenceScreen>
+
+    </PreferenceCategory>
 </PreferenceScreen>

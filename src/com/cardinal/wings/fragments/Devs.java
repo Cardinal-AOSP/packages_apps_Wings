@@ -25,8 +25,8 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 public class Devs extends SettingsPreferenceFragment {
 
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.dev_info);
     }
 
