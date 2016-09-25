@@ -16,5 +16,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/statusbar_title"
     android:layout="@layout/tab"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+
+  <com.cardinal.wings.preference.SystemSettingSwitchPreference
+    android:key="double_tap_sleep_gesture"
+    android:title="@string/double_tap_to_sleep_title"
+    android:summary="@string/double_tap_to_sleep_summary"
+    android:defaultValue="false" />
 </PreferenceScreen>

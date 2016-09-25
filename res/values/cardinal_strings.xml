@@ -21,4 +21,8 @@
 
     <!-- TABS -->
     <string name="statusbar_title">StatusBar</string>
+
+    <!-- double tap to sleep - statusbar -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
     </resources>
