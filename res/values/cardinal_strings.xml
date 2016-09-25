@@ -22,6 +22,7 @@
     <!-- TABS -->
     <string name="about_title">About</string>
     <string name="statusbar_title">StatusBar</string>
+    <string name="ui_title">Ui</string>
 
     <!-- Dev Info -->
     <string name="cardinal_about_info">About Project</string>
@@ -49,4 +50,8 @@
     <!-- statusbar brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- Lockscreen tap-to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Double-tap to sleep anywhere</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
     </resources>
