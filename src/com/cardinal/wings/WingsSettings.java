@@ -78,9 +78,9 @@ public class WingsSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-	    frags[0] = new About();
-      frags[1] = new Ui();
-      frags[2] = new StatusBar();
+	    frags[0] = new Ui();
+      frags[1] = new StatusBar();
+      frags[2] = new About();
         }
 
         @Override
@@ -102,9 +102,9 @@ public class WingsSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-            getString(R.string.about_title),
             getString(R.string.ui_title),
-            getString(R.string.statusbar_title)};
+            getString(R.string.statusbar_title),
+            getString(R.string.about_title)};
         return titleString;
     }
 
