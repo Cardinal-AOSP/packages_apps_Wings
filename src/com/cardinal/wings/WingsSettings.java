@@ -40,12 +40,10 @@ public class WingsSettings extends SettingsPreferenceFragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
-	final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setIcon(R.drawable.ic_cardinal_logo);
-
+        
         View view = inflater.inflate(R.layout.wings_settings, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
-	mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
+	      mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
 
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
