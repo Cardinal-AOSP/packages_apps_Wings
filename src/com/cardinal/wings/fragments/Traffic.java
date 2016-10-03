@@ -123,7 +123,7 @@ public class Traffic extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-       return MetricsEvent.DIRTYTWEAKS;
+       return MetricsEvent.APPLICATION;
    }
 
     private void updateNetworkTrafficState(int mIndex) {
