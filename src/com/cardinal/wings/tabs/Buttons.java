@@ -43,6 +43,8 @@ public class Buttons extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
 
+    private PreferenceScreen hardwarekeys_settings; 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +68,16 @@ public class Buttons extends SettingsPreferenceFragment implements
         int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_MUSIC_CONTROLS, 0);
         mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
+    }
+
+        // look for hwkeys overlay
+        hardwarekeys_settings = (PreferenceScreen) prefScreen.findPreference("hardware_keys_settings");
+
+        boolean showHwKeys = getResources().getBoolean(
+                com.android.internal.R.bool.config_showHwKeys);
+
+        if(!showHwKeys) {
+        	prefScreen.removePreference(hardwarekeys_settings);
     }
 
     @Override
