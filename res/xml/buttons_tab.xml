@@ -20,7 +20,7 @@
 
         <PreferenceScreen
             android:key="hardware_keys_settings"
-            android:title="@string/key_settings_title"
+            android:title="@string/hardware_keys_settings_title"
             android:fragment="com.cardinal.wings.fragments.HardwareKeySettings" />
 
         <SwitchPreference

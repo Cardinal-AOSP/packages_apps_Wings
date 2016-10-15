@@ -21,12 +21,12 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.ListPreference;
-import android.support.v7.preference.SwitchPreference;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -43,7 +43,7 @@ public class Buttons extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
 
-    private PreferenceScreen hardwarekeys_settings; 
+    private PreferenceScreen hardwarekeys_settings;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,8 +53,17 @@ public class Buttons extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefScreen = getPreferenceScreen();
-        Resources res = getResources()
+        Resources res = getResources();
 
+        // look for hwkeys overlay
+        hardwarekeys_settings = (PreferenceScreen) prefScreen.findPreference("hardware_keys_settings");
+
+        boolean showHwKeys = getResources().getBoolean(
+                com.android.internal.R.bool.config_showHwKeys);
+
+        if(!showHwKeys) {
+        	prefScreen.removePreference(hardwarekeys_settings);
+    }
         //volume rocker wake
         mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
         mVolumeRockerWake.setOnPreferenceChangeListener(this);
@@ -68,16 +77,6 @@ public class Buttons extends SettingsPreferenceFragment implements
         int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_MUSIC_CONTROLS, 0);
         mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
-    }
-
-        // look for hwkeys overlay
-        hardwarekeys_settings = (PreferenceScreen) prefScreen.findPreference("hardware_keys_settings");
-
-        boolean showHwKeys = getResources().getBoolean(
-                com.android.internal.R.bool.config_showHwKeys);
-
-        if(!showHwKeys) {
-        	prefScreen.removePreference(hardwarekeys_settings);
     }
 
     @Override
@@ -109,10 +108,5 @@ public class Buttons extends SettingsPreferenceFragment implements
     @Override
     public void onPause() {
         super.onPause();
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
     }
 }

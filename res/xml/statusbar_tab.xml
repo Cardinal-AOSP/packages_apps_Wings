@@ -33,6 +33,6 @@
   <PreferenceScreen
         android:key="traffic"
         android:fragment="com.cardinal.wings.fragments.Traffic"
-        android:title="@string/traffic_category" />
+        android:title="@string/network_traffic_title" />
 
 </PreferenceScreen>
