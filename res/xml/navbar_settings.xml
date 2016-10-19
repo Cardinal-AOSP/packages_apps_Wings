@@ -25,6 +25,13 @@
     <PreferenceCategory
         android:key="category_navbar_interface"
         android:title="@string/navbar_interface_title" >
+    </PreferenceScreen>
+
+    <com.cardinal.wings.preference.SecureSettingSwitchPreference
+        android:key="overview_nav_bar_gesture"
+        android:title="@string/nav_gesture_title"
+        android:summary="@string/nav_gesture_summary"
+        android:defaultValue="false"/>
 
         <ListPreference
             android:entries="@array/systemui_navbar_mode_entries"
@@ -43,7 +50,7 @@
             android:fragment="com.cardinal.wings.fragments.FlingSettings" />
 
     </PreferenceCategory>
-    
+
     <PreferenceCategory
         android:key="category_navbar_general"
         android:title="@string/navbar_general_title" >

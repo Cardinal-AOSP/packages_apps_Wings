@@ -29,4 +29,12 @@
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
 
+    <PreferenceScreen
+            android:title="@string/display_color_title"
+            android:summary="@string/display_color_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.ColorAndAppearanceActivity" />
+    </PreferenceScreen>
+
 </PreferenceScreen>

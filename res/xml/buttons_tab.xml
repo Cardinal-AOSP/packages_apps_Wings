@@ -41,4 +41,5 @@
             android:title="@string/volume_rocker_music_controls_title"
             android:defaultValue="true"
             android:dependency="volume_rocker_wake" />
+
 </PreferenceScreen>

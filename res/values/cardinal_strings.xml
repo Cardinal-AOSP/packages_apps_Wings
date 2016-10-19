@@ -270,7 +270,7 @@
     <!-- General strings -->
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
-    
+
     <!-- Clock settings -->
     <string name="clock_settings_title">Clock settings</string>
     <string name="clock_settings_summary">Custom clock and date options</string>
@@ -297,5 +297,24 @@
     <string name="clock_date_style_lowercase">Lowercase</string>
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
-    
+
+    <!-- color tuner options -->
+    <string name="display_color_title">Screen color &amp; appearance</string>
+    <string name="display_color_summary">screen color controls and night mode</string>
+    <!-- multiwindow navbar gesture -->
+    <string name="nav_gesture_title">Enable multiwindow swipe-up gesture</string>
+    <string name="nav_gesture_summary">Gesture to enter multiwindow by swiping up from the recents button</string>
+    <!-- qs brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
+    <!-- Power notification controls -->
+    <string name="power_notification_title">Power notification controls</string>
+    <string name="power_notification_summary">Advanced notification controls and information</string>
+    <!-- Preference to show/hide embedded battery percentage -->
+    <string name="show_battery_percentage">Show battery percentage</string>
+    <string name="show_battery_percentage_summary">Show battery percentage when not charging</string>
+    <!-- statusbar icon blacklist -->
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
+
 </resources>
