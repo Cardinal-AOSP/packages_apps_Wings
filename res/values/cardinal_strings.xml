@@ -20,8 +20,9 @@
     <string name="keywords_cardinal">Cardinal-AOSP</string>
 
     <!-- TABS -->
-    <string name="ui_title">Ui</string>
     <string name="statusbar_title">StatusBar</string>
+    <string name="navigation_title">Navigation</string>
+    <string name="ui_title">Ui</string>
     <string name="buttons_title">Buttons</string>
 
     <!-- double tap to sleep - statusbar -->
