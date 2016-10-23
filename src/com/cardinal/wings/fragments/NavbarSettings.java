@@ -163,6 +163,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.THE_WINGS;
     }
 }

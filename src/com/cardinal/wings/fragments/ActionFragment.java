@@ -242,6 +242,6 @@ public class ActionFragment extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.THE_WINGS;
     }
 }
