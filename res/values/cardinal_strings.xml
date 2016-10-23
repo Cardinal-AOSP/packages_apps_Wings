@@ -60,4 +60,15 @@
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
 
-</resources>
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_category">Expanded Desktop</string>
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide status bar</string>
+    <string name="expanded_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Enabled for all</string>
+    <string name="expanded_user_configurable">User configurable</string>
+
+    </resources>
