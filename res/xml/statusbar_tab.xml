@@ -24,6 +24,11 @@
         android:title="@string/quicksettings_category" />
 
     <PreferenceScreen
+        android:fragment="com.cardinal.wings.fragments.CarrierLabelSettings"
+        android:title="@string/carrier_label_settings_title"
+        android:summary="@string/carrier_label_settings_summary" />
+
+    <PreferenceScreen
             android:title="@string/power_notification_title"
             android:summary="@string/power_notification_summary">
         <intent android:action="android.intent.action.MAIN"
