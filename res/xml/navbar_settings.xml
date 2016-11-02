@@ -25,7 +25,6 @@
     <PreferenceCategory
         android:key="category_navbar_interface"
         android:title="@string/navbar_interface_title" >
-    </PreferenceScreen>
 
     <com.cardinal.wings.preference.SecureSettingSwitchPreference
         android:key="overview_nav_bar_gesture"

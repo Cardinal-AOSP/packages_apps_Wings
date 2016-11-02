@@ -49,7 +49,7 @@
         android:dependency="network_traffic_state"
         android:defaultValue="false" />
 
-    <com.cardinal.wings.preference.CustomSeekBarPreference
+    <com.cardinal.wings.preference.SystemSettingSwitchPreference
         android:key="network_traffic_hidearrow"
         android:title="@string/network_traffic_hidearrow"
         android:summary="@string/network_traffic_hidearrow_summary"
