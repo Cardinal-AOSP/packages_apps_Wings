@@ -23,6 +23,11 @@
             android:title="@string/hardware_keys_settings_title"
             android:fragment="com.cardinal.wings.fragments.HardwareKeySettings" />
 
+        <Preference
+            android:key="navigation_options"
+            android:fragment="com.cardinal.wings.fragments.NavbarSettings"
+            android:title="@string/navigationbar_settings_title" />
+
         <SwitchPreference
             android:key="volume_rocker_wake"
             android:summary="@string/volume_rocker_wake_summary"
