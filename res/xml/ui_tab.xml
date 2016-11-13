@@ -35,6 +35,12 @@
         android:summary="@string/keyguard_torch_summary"
         android:defaultValue="false" />
 
+    <com.cardinal.wings.preference.SystemSettingSwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:defaultValue="true" />
+
     <PreferenceScreen
             android:title="@string/display_color_title"
             android:summary="@string/display_color_summary">
