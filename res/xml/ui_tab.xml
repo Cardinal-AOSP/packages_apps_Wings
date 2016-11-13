@@ -29,6 +29,12 @@
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
 
+    <com.cardinal.wings.preference.SystemSettingSwitchPreference
+        android:key="keyguard_toggle_torch"
+        android:title="@string/keyguard_torch_title"
+        android:summary="@string/keyguard_torch_summary"
+        android:defaultValue="false" />
+
     <PreferenceScreen
             android:title="@string/display_color_title"
             android:summary="@string/display_color_summary">

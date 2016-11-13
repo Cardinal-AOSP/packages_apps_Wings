@@ -140,6 +140,7 @@
     <string name="fling_def_summary">No action set</string>
     <string name="fling_swipe_actions">Swipe gestures</string>
     <string name="fling_tap_actions">Tap gestures</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
     <string name="fling_short_swipe_right">Right short swipe</string>
     <string name="fling_short_swipe_left">Left short swipe</string>
     <string name="fling_long_swipe_right">Right long swipe</string>
@@ -328,5 +329,9 @@
     <string name="show_carrier_keyguard">Lockscreen only</string>
     <string name="show_carrier_statusbar">Statusbar only</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+
+    <!-- Lockscreen torch -->
+    <string name="keyguard_torch_title">Lockscreen torch</string>
+    <string name="keyguard_torch_summary">Longpress power button with screen off turns on torch</string>
 
 </resources>
