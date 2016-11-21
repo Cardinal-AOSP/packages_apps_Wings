@@ -44,16 +44,15 @@
                 android:targetClass="com.android.systemui.tuner.TunerActivity" />
     </PreferenceScreen>
 
-    <com.cardinal.wings.preference.SystemSettingSwitchPreference
-        android:key="status_bar_show_battery_percent"
-        android:title="@string/show_battery_percentage"
-        android:summary="@string/show_battery_percentage_summary"
-        android:defaultValue="false" />
-
   <PreferenceScreen
         android:fragment="com.cardinal.wings.fragments.ClockSettings"
         android:title="@string/clock_settings_title"
         android:summary="@string/clock_settings_summary" />
+
+    <PreferenceScreen
+        android:key="status_bar_battery_style"
+        android:title="@string/status_bar_battery_style_category"
+        android:fragment="com.cardinal.wings.fragments.StatusbarBatteryStyle" />
 
   <com.cardinal.wings.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
