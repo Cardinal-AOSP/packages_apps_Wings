@@ -43,8 +43,6 @@ public class Buttons extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
 
-    private PreferenceScreen hardwarekeys_settings;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
