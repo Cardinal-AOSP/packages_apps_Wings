@@ -153,7 +153,7 @@ public class HardwareKeys extends ActionFragment implements OnPreferenceChangeLi
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SQUASH;
+        return MetricsEvent.THE_WINGS;
     }
 
     @Override

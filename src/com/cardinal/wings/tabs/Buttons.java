@@ -53,15 +53,6 @@ public class Buttons extends SettingsPreferenceFragment implements
         PreferenceScreen prefScreen = getPreferenceScreen();
         Resources res = getResources();
 
-        // look for hwkeys overlay
-        hardwarekeys_settings = (PreferenceScreen) prefScreen.findPreference("hardware_keys_settings");
-
-        boolean showHwKeys = getResources().getBoolean(
-                com.android.internal.R.bool.config_showHwKeys);
-
-        if(!showHwKeys) {
-        	prefScreen.removePreference(hardwarekeys_settings);
-    }
         //volume rocker wake
         mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
         mVolumeRockerWake.setOnPreferenceChangeListener(this);
