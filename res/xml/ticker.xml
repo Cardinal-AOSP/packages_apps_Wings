@@ -51,4 +51,11 @@
             android:defaultValue="0xffffffff" />
 
 	</PreferenceCategory>
+
+  <com.cardinal.wings.preference.GlobalSettingSwitchPreference
+        android:key="heads_up_notifications_enabled"
+        android:title="@string/heads_up_switch_title"
+        android:summary="@string/heads_up_switch_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
