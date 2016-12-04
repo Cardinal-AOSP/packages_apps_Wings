@@ -42,4 +42,9 @@
             android:defaultValue="true"
             android:dependency="volume_rocker_wake" />
 
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.cardinal.wings.fragments.VolumeSteps" />
+
 </PreferenceScreen>
