@@ -28,10 +28,17 @@
              android:summary="@string/qs_brightness_slider_summary"
              android:defaultValue="true"/>
 
+    <com.cardinal.wings.preference.SystemSettingSwitchPreference
+        android:key="qs_tile_title_visibility"
+        android:title="@string/qs_tile_title_visibility_title"
+        android:summaryOn="@string/qs_tile_title_visibility_summary_on"
+        android:summaryOff="@string/qs_tile_title_visibility_summary_off"
+        android:defaultValue="true"/>
+
     <com.cardinal.wings.preference.CustomSeekBarPreference
         android:key="qs_layout_columns"
         android:title="@string/qs_columns_title"
-        settings:max="7"
+        settings:max="9"
         settings:min="1"
         settings:units=""
         android:persistent="false" />
