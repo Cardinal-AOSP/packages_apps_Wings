@@ -41,12 +41,6 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
-    <ListPreference
-            android:entries="@array/screenshot_type_entries"
-            android:entryValues="@array/screenshot_type_values"
-            android:key="screenshot_type"
-            android:title="@string/screenshot_type_title" />
-
     <PreferenceScreen
             android:title="@string/display_color_title"
             android:summary="@string/display_color_summary">
