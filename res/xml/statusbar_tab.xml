@@ -18,49 +18,34 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+<!--
   <Preference
         android:key="quicksettings"
-        android:fragment="com.cardinal.wings.fragments.QuickSettings"
+        android:fragment="com.cardinal.settings.fragments.QuickSettings"
         android:title="@string/quicksettings_category" />
 
     <PreferenceScreen
-        android:fragment="com.cardinal.wings.fragments.CarrierLabelSettings"
+        android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
         android:title="@string/carrier_label_settings_title"
         android:summary="@string/carrier_label_settings_summary" />
 
-    <PreferenceScreen
-            android:title="@string/power_notification_title"
-            android:summary="@string/power_notification_summary">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.PowerNotificationControlsActivity" />
-    </PreferenceScreen>
-
-    <PreferenceScreen
-            android:title="@string/status_bar_icon_blacklist_title"
-            android:summary="@string/status_bar_icon_blacklist_summary" >
-         <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.TunerActivity" />
-    </PreferenceScreen>
-
   <PreferenceScreen
-        android:fragment="com.cardinal.wings.fragments.ClockSettings"
+        android:fragment="com.cardinal.settings.fragments.ClockSettings"
         android:title="@string/clock_settings_title"
         android:summary="@string/clock_settings_summary" />
 
     <PreferenceScreen
         android:key="status_bar_battery_style"
         android:title="@string/status_bar_battery_style_category"
-        android:fragment="com.cardinal.wings.fragments.StatusbarBatteryStyle" />
+        android:fragment="com.cardinal.settings.fragments.StatusbarBatteryStyle" />
 
-  <com.cardinal.wings.preference.SystemSettingSwitchPreference
+  <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_to_sleep_title"
         android:summary="@string/double_tap_to_sleep_summary"
         android:defaultValue="false" />
 
-  <com.cardinal.wings.preference.SystemSettingSwitchPreference
+  <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
         android:title="@string/status_bar_toggle_brightness"
         android:summary="@string/status_bar_toggle_brightness_summary"
@@ -68,12 +53,8 @@
 
   <PreferenceScreen
         android:key="traffic"
-        android:fragment="com.cardinal.wings.fragments.Traffic"
+        android:fragment="com.cardinal.settings.fragments.Traffic"
         android:title="@string/network_traffic_title" />
 
-  <Preference
-        android:key="ticker"
-        android:title="@string/ticker_screen_title"
-        android:fragment="com.cardinal.wings.fragments.StatusBarTickerSettings" />
-
+-->
 </PreferenceScreen>

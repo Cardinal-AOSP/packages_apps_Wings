@@ -17,36 +17,24 @@
     android:title="@string/ui_title"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
-
-    <Preference
-        android:key="expanded_desktop"
-        android:fragment="com.cardinal.wings.fragments.ExpandedDesktop"
-        android:title="@string/expanded_desktop_category" />
-
-    <com.cardinal.wings.preference.GlobalSettingSwitchPreference
+<!--
+    <com.cardinal.settings.preference.GlobalSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
 
-    <com.cardinal.wings.preference.SystemSettingSwitchPreference
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="keyguard_toggle_torch"
         android:title="@string/keyguard_torch_title"
         android:summary="@string/keyguard_torch_summary"
         android:defaultValue="false" />
 
-    <com.cardinal.wings.preference.SystemSettingSwitchPreference
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
-    <PreferenceScreen
-            android:title="@string/display_color_title"
-            android:summary="@string/display_color_summary">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.ColorAndAppearanceActivity" />
-    </PreferenceScreen>
-
+-->
 </PreferenceScreen>

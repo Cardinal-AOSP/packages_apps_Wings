@@ -17,17 +17,7 @@
     android:title="@string/buttons_title"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
-
-        <PreferenceScreen
-            android:key="hardware_keys_settings"
-            android:title="@string/hardware_keys_settings_title"
-            android:fragment="com.cardinal.wings.fragments.HardwareKeys" />
-
-        <Preference
-            android:key="navigation_options"
-            android:fragment="com.cardinal.wings.fragments.NavbarSettings"
-            android:title="@string/navigationbar_settings_title" />
-
+<!--
         <SwitchPreference
             android:key="volume_rocker_wake"
             android:summary="@string/volume_rocker_wake_summary"
@@ -42,21 +32,16 @@
             android:defaultValue="true"
             android:dependency="volume_rocker_wake" />
 
-        <PreferenceScreen
-                android:key="volume_steps"
-                android:title="@string/volume_steps_title"
-                android:fragment="com.cardinal.wings.fragments.VolumeSteps" />
-
         <ListPreference
             android:key="screenrecord_chord_type"
             android:title="@string/screen_record_chord_title"
             android:entries="@array/screen_record_chord_entries"
             android:entryValues="@array/screen_record_chord_values" />
 
-        <com.cardinal.wings.preference.SystemSettingSwitchPreference
+        <com.cardinal.settings.preference.SystemSettingSwitchPreference
             android:key="volume_keys_control_media_stream"
             android:title="@string/volume_keys_control_media_stream_title"
             android:summary="@string/volume_keys_control_media_stream_summary"
             android:defaultValue="false" />
-
+-->
 </PreferenceScreen>

@@ -21,21 +21,14 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category">
 
-
-        <com.cardinal.wings.preference.SecureSettingSwitchPreference
-            android:key="qs_show_brightness"
-            android:title="@string/qs_brightness_slider_title"
-             android:summary="@string/qs_brightness_slider_summary"
-             android:defaultValue="true"/>
-
-    <com.cardinal.wings.preference.SystemSettingSwitchPreference
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summaryOn="@string/qs_tile_title_visibility_summary_on"
         android:summaryOff="@string/qs_tile_title_visibility_summary_off"
         android:defaultValue="true"/>
 
-    <com.cardinal.wings.preference.CustomSeekBarPreference
+    <com.cardinal.settings.preference.CustomSeekBarPreference
         android:key="qs_layout_columns"
         android:title="@string/qs_columns_title"
         settings:max="9"
@@ -43,21 +36,21 @@
         settings:units=""
         android:persistent="false" />
 
-    <com.cardinal.wings.preference.CustomSeekBarPreference
-         android:key="qs_rows_portrait"
-         android:title="@string/qs_rows_portrait_title"
-         settings:max="7"
-         settings:min="1"
-         settings:units=""
-         android:persistent="false" />
+    <com.cardinal.settings.preference.CustomSeekBarPreference
+        android:key="qs_rows_portrait"
+        android:title="@string/qs_rows_portrait_title"
+        settings:max="7"
+        settings:min="1"
+        settings:units=""
+        android:persistent="false" />
  
-     <com.cardinal.wings.preference.CustomSeekBarPreference
-         android:key="qs_rows_landscape"
-         android:title="@string/qs_rows_landscape_title"
-         settings:max="3"
-         settings:min="1"
-         settings:units=""
-         android:persistent="false" />
+     <com.cardinal.settings.preference.CustomSeekBarPreference
+        android:key="qs_rows_landscape"
+        android:title="@string/qs_rows_landscape_title"
+        settings:max="3"
+        settings:min="1"
+        settings:units=""
+        android:persistent="false" />
 
     </PreferenceCategory>
 
