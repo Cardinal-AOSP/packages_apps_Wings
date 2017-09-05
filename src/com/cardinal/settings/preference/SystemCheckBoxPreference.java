@@ -59,9 +59,8 @@ public class SystemCheckBoxPreference extends CheckBoxPreference {
     }
 
     @Override
-    protected boolean isPersisted() {
-        // Using getString instead of getInt so we can simply check for null
-        // instead of catching an exception. (All values are stored as strings.)
-        return Settings.System.getString(getContext().getContentResolver(), getKey()) != null;
+    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
+        setChecked(Settings.System.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
+                : (Boolean) defaultValue);
     }
 }
