@@ -23,6 +23,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.cardinal.settings.tabs.Buttons;
 import com.cardinal.settings.tabs.StatusBar;
+import com.cardinal.settings.tabs.LockScreen;
 import com.cardinal.settings.tabs.Ui;
 import com.cardinal.settings.PagerSlidingTabStrip;
 
@@ -80,7 +81,8 @@ public class WingsSettings extends SettingsPreferenceFragment {
             super(fm);
         frags[0] = new Ui();
         frags[1] = new StatusBar();
-        frags[2] = new Buttons();
+        frags[2] = new LockScreen();
+        frags[3] = new Buttons();
         }
 
         @Override
@@ -104,6 +106,7 @@ public class WingsSettings extends SettingsPreferenceFragment {
         titleString = new String[]{
             getString(R.string.ui_title),
             getString(R.string.statusbar_title),
+            getString(R.string.lockscreen_title),
             getString(R.string.buttons_title)};
         return titleString;
     }

@@ -23,6 +23,8 @@
     <string name="statusbar_title">StatusBar</string>
     <string name="ui_title">Ui</string>
     <string name="buttons_title">Buttons</string>
+    <string name="lockscreen_title">LockScreen</string>
+
     <string name="button_settings">Buttons</string>
 
     <!-- double tap to sleep - statusbar -->
