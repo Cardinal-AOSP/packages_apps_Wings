@@ -19,13 +19,15 @@
     <string name="cardinal_wings_title">The Wings!</string>
     <string name="keywords_cardinal">Cardinal-AOSP</string>
 
-    <!-- TABS -->
-    <string name="statusbar_title">StatusBar</string>
+    <!-- Main Settings -->
     <string name="ui_title">Ui</string>
+    <string name="ui_summary">General User interface cutomizations.</string>
+    <string name="statusbar_title">StatusBar</string>
+    <string name="statusbar_summary">Options for customizing clock, date etc.</string>    
     <string name="buttons_title">Buttons</string>
+    <string name="buttons_summary">Options for Vol controls, Navigation bar, HardwareKeys etc.</string>
     <string name="lockscreen_title">LockScreen</string>
-
-    <string name="button_settings">Buttons</string>
+    <string name="lockscreen_summary">LockScreen customizations.</string>
 
     <!-- double tap to sleep - statusbar -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>

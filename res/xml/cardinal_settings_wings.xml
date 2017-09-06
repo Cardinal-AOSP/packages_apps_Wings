@@ -16,18 +16,22 @@
 
         <Preference
             android:title="@string/ui_title"
+            android:summary="@string/ui_summary"
             android:fragment="com.cardinal.settings.fragments.UiSettings" />
 
         <Preference
             android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
             android:fragment="com.cardinal.settings.fragments.StatusBarSettings" />
 
         <Preference
             android:title="@string/buttons_title"
+            android:summary="@string/buttons_summary"
             android:fragment="com.cardinal.settings.fragments.ButtonsSettings" />
 
         <Preference
             android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
             android:fragment="com.cardinal.settings.fragments.LockScreenSettings" />
 
 </PreferenceScreen>
