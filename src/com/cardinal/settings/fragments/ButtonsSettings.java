@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cardinal.settings.tabs;
+package com.cardinal.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,7 +34,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-public class Buttons extends SettingsPreferenceFragment implements
+public class ButtonsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 /**
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
@@ -51,10 +51,10 @@ public class Buttons extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.buttons_tab);
+        addPreferencesFromResource(R.xml.cardinal_settings_buttons);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        PreferenceScreen prefScreen = getPreferenceScreen();
+        PreferenceScreen prefSet = getPreferenceScreen();
         Resources res = getResources();
 /**
         //volume rocker wake

@@ -15,26 +15,25 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/statusbar_title"
-    android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
 <!--
-  <Preference
+    <Preference
         android:key="quicksettings"
         android:fragment="com.cardinal.settings.fragments.QuickSettings"
         android:title="@string/quicksettings_category" />
 
-    <PreferenceScreen
+    <Preference
         android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
         android:title="@string/carrier_label_settings_title"
         android:summary="@string/carrier_label_settings_summary" />
 
-  <PreferenceScreen
+    <Preference
         android:fragment="com.cardinal.settings.fragments.ClockSettings"
         android:title="@string/clock_settings_title"
         android:summary="@string/clock_settings_summary" />
 
-    <PreferenceScreen
+    <Preference
         android:key="status_bar_battery_style"
         android:title="@string/status_bar_battery_style_category"
         android:fragment="com.cardinal.settings.fragments.StatusbarBatteryStyle" />
@@ -51,7 +50,7 @@
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
 
-  <PreferenceScreen
+  <Preference
         android:key="traffic"
         android:fragment="com.cardinal.settings.fragments.Traffic"
         android:title="@string/network_traffic_title" />

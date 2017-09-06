@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cardinal.settings.tabs;
+package com.cardinal.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -36,7 +36,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
 import com.cardinal.settings.utils.Utils;
 
-public class Ui extends SettingsPreferenceFragment implements
+public class UiSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
 /**
@@ -49,7 +49,7 @@ public class Ui extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.ui_tab);
+        addPreferencesFromResource(R.xml.cardinal_settings_ui);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
 

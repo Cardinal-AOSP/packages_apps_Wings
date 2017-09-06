@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cardinal.settings.tabs;
+package com.cardinal.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -24,8 +24,8 @@ import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
 import android.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
@@ -34,14 +34,14 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-public class StatusBar extends SettingsPreferenceFragment implements
+public class StatusBarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.statusbar_tab);
+        addPreferencesFromResource(R.xml.cardinal_settings_statusbar);
         ContentResolver resolver = getActivity().getContentResolver();
     }
 

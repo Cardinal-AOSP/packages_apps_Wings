@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cardinal.settings.tabs;
+package com.cardinal.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -24,8 +24,8 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
@@ -36,7 +36,7 @@ import com.android.settings.Utils;
 
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
 
-public class LockScreen extends SettingsPreferenceFragment implements
+public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
@@ -51,7 +51,7 @@ public class LockScreen extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.lockscreen_tab);
+        addPreferencesFromResource(R.xml.cardinal_settings_lockscreen);
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 

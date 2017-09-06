@@ -23,8 +23,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
@@ -44,7 +44,7 @@ public class CarrierLabelSettings extends SettingsPreferenceFragment
     private static final String SHOW_CARRIER_LABEL = "status_bar_show_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
 
-    private PreferenceScreen mCustomCarrierLabel;
+    private Preference mCustomCarrierLabel;
     private ListPreference mShowCarrierLabel;
     private String mCustomCarrierLabelText;
 */
@@ -67,7 +67,7 @@ public class CarrierLabelSettings extends SettingsPreferenceFragment
             if (Utils.isWifiOnly(getActivity())) {
                 prefSet.removePreference(mShowCarrierLabel);
             }
-            mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
+            mCustomCarrierLabel = findPreference(CUSTOM_CARRIER_LABEL);
 
             updateCustomLabelTextSummary();
  */
