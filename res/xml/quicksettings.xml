@@ -20,37 +20,42 @@
     <PreferenceCategory
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category">
-
+<!--
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summaryOn="@string/qs_tile_title_visibility_summary_on"
         android:summaryOff="@string/qs_tile_title_visibility_summary_off"
         android:defaultValue="true"/>
-
-    <com.cardinal.settings.preference.CustomSeekBarPreference
-        android:key="qs_layout_columns"
-        android:title="@string/qs_columns_title"
-        settings:max="9"
-        settings:min="1"
-        settings:units=""
-        android:persistent="false" />
+-->
 
     <com.cardinal.settings.preference.CustomSeekBarPreference
         android:key="qs_rows_portrait"
         android:title="@string/qs_rows_portrait_title"
-        settings:max="7"
+        android:max="5"
         settings:min="1"
-        settings:units=""
-        android:persistent="false" />
- 
-     <com.cardinal.settings.preference.CustomSeekBarPreference
+        settings:units="" />
+
+    <com.cardinal.settings.preference.CustomSeekBarPreference
         android:key="qs_rows_landscape"
         android:title="@string/qs_rows_landscape_title"
-        settings:max="3"
+        android:max="3"
         settings:min="1"
-        settings:units=""
-        android:persistent="false" />
+        settings:units="" />
+
+    <com.cardinal.settings.preference.CustomSeekBarPreference
+        android:key="qs_columns_portrait"
+        android:title="@string/qs_columns_portrait_title"
+        android:max="7"
+        settings:min="1"
+        settings:units="" />
+
+    <com.cardinal.settings.preference.CustomSeekBarPreference
+        android:key="qs_columns_landscape"
+        android:title="@string/qs_columns_landscape_title"
+        android:max="9"
+        settings:min="1"
+        settings:units="" />
 
     </PreferenceCategory>
 

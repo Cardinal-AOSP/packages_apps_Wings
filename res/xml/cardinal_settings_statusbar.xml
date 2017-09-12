@@ -17,12 +17,13 @@
     android:title="@string/statusbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-<!--
+
     <Preference
         android:key="quicksettings"
         android:fragment="com.cardinal.settings.fragments.QuickSettings"
         android:title="@string/quicksettings_category" />
 
+<!--
     <Preference
         android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
         android:title="@string/carrier_label_settings_title"
