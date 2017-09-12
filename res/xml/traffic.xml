@@ -16,50 +16,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <ListPreference
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="network_traffic_state"
-        android:title="@string/show_network_traffic_state"
-        android:entries="@array/show_network_traffic_state_entries"
-        android:entryValues="@array/show_network_traffic_state_values"
-        android:persistent="false" />
-
-    <ListPreference
-        android:key="network_traffic_unit"
-        android:title="@string/show_network_traffic_unit"
-        android:entries="@array/show_network_traffic_unit_entries"
-        android:entryValues="@array/show_network_traffic_unit_values"
-        android:dependency="network_traffic_state"
-        android:persistent="false" />
-
-    <ListPreference
-        android:key="network_traffic_period"
-        android:title="@string/show_network_traffic_frequency"
-        android:entries="@array/show_network_traffic_frequency_entries"
-        android:entryValues="@array/show_network_traffic_frequency_values"
-        android:dependency="network_traffic_state"
-        android:persistent="false" />
-
-    <com.cardinal.settings.preference.SystemSettingSwitchPreference
-        android:key="network_traffic_autohide"
-        android:title="@string/network_traffic_autohide"
-        android:summary="@string/network_traffic_autohide_summary"
-        android:dependency="network_traffic_state"
-        android:defaultValue="false" />
-
-    <com.cardinal.settings.preference.SystemSettingSwitchPreference
-        android:key="network_traffic_hidearrow"
-        android:title="@string/network_traffic_hidearrow"
-        android:summary="@string/network_traffic_hidearrow_summary"
-        android:dependency="network_traffic_state"
-        android:defaultValue="false" />
+        android:title="@string/network_traffic_state_title"
+        android:defaultValue="true" />
 
     <com.cardinal.settings.preference.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
-        android:title="@string/network_traffic_autohide_threshold"
-        android:max="100"
+        android:title="@string/network_traffic_autohide_threshold_title"
+        android:max="10"
         settings:min="0"
-        settings:units="kB/s"
-        android:dependency="network_traffic_autohide"
-        android:persistent="false" />
+        settings:units="" />
 
 </PreferenceScreen>

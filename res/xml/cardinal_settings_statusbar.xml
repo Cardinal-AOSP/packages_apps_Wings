@@ -23,6 +23,11 @@
         android:fragment="com.cardinal.settings.fragments.QuickSettings"
         android:title="@string/quicksettings_category" />
 
+    <Preference
+        android:key="traffic"
+        android:fragment="com.cardinal.settings.fragments.Traffic"
+        android:title="@string/network_traffic_title" />
+
 <!--
     <Preference
         android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
@@ -51,10 +56,6 @@
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
 
-  <Preference
-        android:key="traffic"
-        android:fragment="com.cardinal.settings.fragments.Traffic"
-        android:title="@string/network_traffic_title" />
-
 -->
+
 </PreferenceScreen>
