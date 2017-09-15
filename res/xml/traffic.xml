@@ -19,7 +19,7 @@
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_state_title"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.cardinal.settings.preference.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
