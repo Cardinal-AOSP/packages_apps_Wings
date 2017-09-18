@@ -19,9 +19,12 @@ package com.cardinal.settings.fragments;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.net.TrafficStats;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
@@ -36,31 +39,45 @@ public class Traffic extends SettingsPreferenceFragment
     implements OnPreferenceChangeListener {
 
     private static final String TAG = "Traffic";
+    private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
+    private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
 
     private CustomSeekBarPreference mThreshold;
-    private SystemSettingSwitchPreference mNetMonitor;
+    private ListPreference mNetTrafficState;
+
+    private int mNetTrafficVal;
+    private int MASK_UP;
+    private int MASK_DOWN;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.traffic);
-        //loadResources();
+        loadResources();
 
         final ContentResolver resolver = getActivity().getContentResolver();
-
-        boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
-                Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT) == 1;
-        mNetMonitor = (SystemSettingSwitchPreference) findPreference("network_traffic_state");
-        mNetMonitor.setChecked(isNetMonitorEnabled);
-        mNetMonitor.setOnPreferenceChangeListener(this);
+        final PreferenceScreen prefSet = getPreferenceScreen();
 
         int value = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
-        mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
+        mThreshold = (CustomSeekBarPreference) findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
         mThreshold.setValue(value);
         mThreshold.setOnPreferenceChangeListener(this);
-        mThreshold.setEnabled(isNetMonitorEnabled);
+
+        mNetTrafficState = (ListPreference) prefSet.findPreference(NETWORK_TRAFFIC_STATE);
+        if (TrafficStats.getTotalTxBytes() != TrafficStats.UNSUPPORTED &&
+                TrafficStats.getTotalRxBytes() != TrafficStats.UNSUPPORTED) {
+        mNetTrafficVal = Settings.System.getInt(getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_STATE, 0);
+        int intIndex = mNetTrafficVal & (MASK_UP + MASK_DOWN);
+        intIndex = mNetTrafficState.findIndexOfValue(String.valueOf(intIndex));
+        updateNetworkTrafficState(intIndex);
+
+        mNetTrafficState.setValueIndex(intIndex >= 0 ? intIndex : 0);
+        mNetTrafficState.setSummary(mNetTrafficState.getEntry());
+        mNetTrafficState.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -68,14 +85,24 @@ public class Traffic extends SettingsPreferenceFragment
        return MetricsEvent.WINGS;
    }
 
+    private void updateNetworkTrafficState(int mIndex) {
+        if (mIndex <= 0) {
+            mThreshold.setEnabled(false);
+        } else {
+            mThreshold.setEnabled(true);
+        }
+    }
+
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mNetMonitor) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0,
-                    UserHandle.USER_CURRENT);
-            mNetMonitor.setChecked(value);
-            mThreshold.setEnabled(value);
+        if (preference == mNetTrafficState) {
+            int intState = Integer.valueOf((String)newValue);
+            mNetTrafficVal = setBit(mNetTrafficVal, MASK_UP, getBit(intState, MASK_UP));
+            mNetTrafficVal = setBit(mNetTrafficVal, MASK_DOWN, getBit(intState, MASK_DOWN));
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_STATE, mNetTrafficVal);
+            int index = mNetTrafficState.findIndexOfValue((String) newValue);
+            mNetTrafficState.setSummary(mNetTrafficState.getEntries()[index]);
+            updateNetworkTrafficState(index);
             return true;
         } else if (preference == mThreshold) {
             int val = (Integer) newValue;
@@ -85,5 +112,22 @@ public class Traffic extends SettingsPreferenceFragment
             return true;
         }
         return false;
+    }
+
+    private void loadResources() {
+        Resources resources = getActivity().getResources();
+        MASK_UP = resources.getInteger(R.integer.maskUp);
+        MASK_DOWN = resources.getInteger(R.integer.maskDown);
+    }
+
+    private int setBit(int intNumber, int intMask, boolean blnState) {
+        if (blnState) {
+            return (intNumber | intMask);
+        }
+        return (intNumber & ~intMask);
+    }
+
+    private boolean getBit(int intNumber, int intMask) {
+        return (intNumber & intMask) == intMask;
     }
 }
