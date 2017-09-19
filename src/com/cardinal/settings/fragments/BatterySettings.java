@@ -46,8 +46,11 @@ public class BatterySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "BatterySettings";
 
+    private boolean mChargingLedsEnabled;
+    private boolean mNotificationLedsEnabled;
     private PreferenceCategory mLedsCategory;
     private Preference mChargingLeds;
+    private Preference mNotificationLeds;
 
     @Override
     public int getMetricsCategory() {
@@ -62,18 +65,26 @@ public class BatterySettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mChargingLedsEnabled = (getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed));
+        mNotificationLedsEnabled = (getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveNotificationLed));
+
         mLedsCategory = (PreferenceCategory) findPreference("custom_leds");
         mChargingLeds = (Preference) findPreference("custom_charging_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            prefSet.removePreference(mChargingLeds);
-        }
-        if (mChargingLeds == null) {
-            prefSet.removePreference(mLedsCategory);
+        mNotificationLeds = (Preference) findPreference("custom_notification_light");
+        
+        if (mChargingLeds != null && mNotificationLeds != null) {
+            if (!mChargingLedsEnabled) {
+                mLedsCategory.removePreference(mChargingLeds);
+            } else if (!mNotificationLedsEnabled) {
+                mLedsCategory.removePreference(mNotificationLeds);
+            } else if (!mChargingLedsEnabled && !mNotificationLedsEnabled) {
+                prefSet.removePreference(mLedsCategory);
+            }
         }
     }
-    
+
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         // If we didn't handle it, let preferences handle it.
