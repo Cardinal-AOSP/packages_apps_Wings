@@ -16,13 +16,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/ui_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
-<!--
+
     <com.cardinal.settings.preference.GlobalSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
-
+<!--
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="keyguard_toggle_torch"
         android:title="@string/keyguard_torch_title"
