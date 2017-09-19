@@ -55,6 +55,7 @@
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_summary">Options to show net activity meter on status bar</string>    
     <string name="network_traffic_state_title">Net activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
     <string name="show_network_traffic_disable">Disabled</string>
@@ -74,6 +75,7 @@
 
     <!-- Quick settings tiles columns and rows config -->
     <string name="quicksettings_category">Quick settings</string>
+    <string name="quicksettings_summary">Configure QS layout</string>
     <string name="qs_layout_category">QS tiles layout</string>
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">QS rows and columns</string>

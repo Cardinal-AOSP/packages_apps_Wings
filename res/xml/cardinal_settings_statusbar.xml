@@ -20,7 +20,8 @@
     <Preference
         android:key="quicksettings"
         android:fragment="com.cardinal.settings.fragments.QuickSettings"
-        android:title="@string/quicksettings_category" />
+        android:title="@string/quicksettings_category"
+        android:summary="@string/quicksettings_summary" />
 
     <Preference
             android:title="@string/status_bar_icon_blacklist_title"
@@ -31,9 +32,16 @@
     </Preference>
 
     <Preference
+        android:key="battery_settings"
+        android:title="@string/battery_settings_title"
+        android:summary="@string/battery_settings_summary"
+        android:fragment="com.cardinal.settings.fragments.BatterySettings" />
+
+    <Preference
         android:key="traffic"
         android:fragment="com.cardinal.settings.fragments.Traffic"
-        android:title="@string/network_traffic_title" />
+        android:title="@string/network_traffic_title"
+        android:summary="@string/network_traffic_summary" />
 
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="less_boring_heads_up"
@@ -46,12 +54,6 @@
         android:title="@string/ime_switcher_notify"
         android:summary="@string/ime_switcher_notify_summary"
         android:defaultValue="false" />
-
-    <Preference
-        android:key="battery_settings"
-        android:title="@string/battery_settings_title"
-        android:summary="@string/battery_settings_summary"
-        android:fragment="com.cardinal.settings.fragments.BatterySettings" />
 
 <!--
     <Preference

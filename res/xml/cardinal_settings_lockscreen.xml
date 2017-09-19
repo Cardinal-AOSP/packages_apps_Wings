@@ -17,6 +17,14 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+    <Preference
+            android:title="@string/lockscreen_shortcuts_title"
+            android:summary="@string/lockscreen_shortcuts_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
+    </Preference>
+
 	<com.cardinal.settings.preference.SystemSettingSwitchPreference
     	    android:key="lockscreen_media_metadata"
             android:title="@string/media_art_title"
@@ -34,13 +42,5 @@
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
-
-    <Preference
-            android:title="@string/lockscreen_shortcuts_title"
-            android:summary="@string/lockscreen_shortcuts_summary">
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
-    </Preference>
 
 </PreferenceScreen>
