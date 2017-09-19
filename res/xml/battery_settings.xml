@@ -12,6 +12,17 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/battery_settings_title">
 
+    <PreferenceCategory
+          android:key="custom_leds"
+          android:title="@string/custom_leds" >
+  
+          <Preference
+                android:key="charging_light"
+                android:fragment="com.cardinal.settings.fragments.BatteryLightSettings"
+                android:title="@string/custom_battery_light_settings" />
+  
+    </PreferenceCategory>
 </PreferenceScreen>

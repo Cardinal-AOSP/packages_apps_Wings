@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
@@ -45,6 +46,9 @@ public class BatterySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "BatterySettings";
 
+    private PreferenceCategory mLedsCategory;
+    private Preference mChargingLeds;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.WINGS;
@@ -57,6 +61,17 @@ public class BatterySettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mLedsCategory = (PreferenceCategory) findPreference("custom_leds");
+        mChargingLeds = (Preference) findPreference("custom_charging_light");
+        if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            prefSet.removePreference(mChargingLeds);
+        }
+        if (mChargingLeds == null) {
+            prefSet.removePreference(mLedsCategory);
+        }
     }
     
     @Override
