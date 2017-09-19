@@ -16,6 +16,38 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/buttons_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+
+    <Preference
+            android:title="@string/navbar_buttons_title"
+            android:summary="@string/navbar_buttons_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
+    </Preference>
+
+    <PreferenceCategory
+        android:key="vol_dnd_category"
+        android:title="@string/vol_dnd_category_title" >
+
+        <com.cardinal.settings.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_down_silent"
+            android:title="@string/volbtn_down_zen_title"
+            android:summary="@string/volbtn_down_zen_summary"
+            android:defaultValue="true"/>
+
+        <com.cardinal.settings.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_up_silent"
+            android:title="@string/volbtn_up_zen_title"
+            android:summary="@string/volbtn_up_zen_summary"
+            android:defaultValue="true" />
+
+        <com.cardinal.settings.preference.SecureSettingSwitchPreference
+            android:key="sysui_show_full_zen"
+            android:title="@string/vol_zen_title"
+            android:summary="@string/vol_zen_summary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
 <!--
         <SwitchPreference
             android:key="volume_rocker_wake"

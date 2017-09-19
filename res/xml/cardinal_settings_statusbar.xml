@@ -23,6 +23,14 @@
         android:title="@string/quicksettings_category" />
 
     <Preference
+            android:title="@string/status_bar_icon_blacklist_title"
+            android:summary="@string/status_bar_icon_blacklist_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
+    </Preference>
+
+    <Preference
         android:key="traffic"
         android:fragment="com.cardinal.settings.fragments.Traffic"
         android:title="@string/network_traffic_title" />
@@ -46,6 +54,14 @@
         android:fragment="com.cardinal.settings.fragments.BatterySettings" />
 
 <!--
+    <Preference
+            android:title="@string/powern_notifications_title"
+            android:summary="@string/powern_notifications_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.PowerNotificationsTunerActivity" />
+    </Preference>
+
     <Preference
         android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
         android:title="@string/carrier_label_settings_title"

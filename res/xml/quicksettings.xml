@@ -17,6 +17,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quicksettings_category" >
 
+    <com.cardinal.settings.preference.SecureSettingSwitchPreference
+        android:key="qs_show_brightness"
+        android:title="@string/qs_brightness_slider_title"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true"/>
 
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
