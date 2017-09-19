@@ -24,5 +24,10 @@
                 android:fragment="com.cardinal.settings.fragments.BatteryLightSettings"
                 android:title="@string/custom_battery_light_settings" />
   
+          <Preference
+                android:key="custom_notification_light"
+                android:fragment="com.android.settings.applications.NotificationApps"
+                android:title="@string/custom_notification_light_settings" />
+
     </PreferenceCategory>
 </PreferenceScreen>
