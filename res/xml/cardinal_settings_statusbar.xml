@@ -17,7 +17,6 @@
     android:title="@string/statusbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-
     <Preference
         android:key="quicksettings"
         android:fragment="com.cardinal.settings.fragments.QuickSettings"
@@ -40,6 +39,12 @@
         android:summary="@string/ime_switcher_notify_summary"
         android:defaultValue="false" />
 
+    <Preference
+        android:key="battery_settings"
+        android:title="@string/battery_settings_title"
+        android:summary="@string/battery_settings_summary"
+        android:fragment="com.cardinal.settings.fragments.BatterySettings" />
+
 <!--
     <Preference
         android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
@@ -50,11 +55,6 @@
         android:fragment="com.cardinal.settings.fragments.ClockSettings"
         android:title="@string/clock_settings_title"
         android:summary="@string/clock_settings_summary" />
-
-    <Preference
-        android:key="status_bar_battery_style"
-        android:title="@string/status_bar_battery_style_category"
-        android:fragment="com.cardinal.settings.fragments.StatusbarBatteryStyle" />
 
   <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
