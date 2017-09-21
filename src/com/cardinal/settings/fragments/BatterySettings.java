@@ -22,35 +22,16 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.PreferenceFragment;
-import android.support.v14.preference.SwitchPreference;
-import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
-
-import java.util.List;
-import java.util.ArrayList;
-
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class BatterySettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener, Indexable {
+        Preference.OnPreferenceChangeListener {
     private static final String TAG = "BatterySettings";
-
-    private boolean mChargingLedsEnabled;
-    private boolean mNotificationLedsEnabled;
-    private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
-    private Preference mNotificationLeds;
 
     @Override
     public int getMetricsCategory() {
@@ -65,24 +46,6 @@ public class BatterySettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mChargingLedsEnabled = (getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed));
-        mNotificationLedsEnabled = (getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed));
-
-        mLedsCategory = (PreferenceCategory) findPreference("custom_leds");
-        mChargingLeds = (Preference) findPreference("custom_charging_light");
-        mNotificationLeds = (Preference) findPreference("custom_notification_light");
-        
-        if (mChargingLeds != null && mNotificationLeds != null) {
-            if (!mChargingLedsEnabled) {
-                mLedsCategory.removePreference(mChargingLeds);
-            } else if (!mNotificationLedsEnabled) {
-                mLedsCategory.removePreference(mNotificationLeds);
-            } else if (!mChargingLedsEnabled && !mNotificationLedsEnabled) {
-                prefSet.removePreference(mLedsCategory);
-            }
-        }
     }
 
     @Override
@@ -95,26 +58,4 @@ public class BatterySettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return true;
     }
-
-    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-                @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                        boolean enabled) {
-                    ArrayList<SearchIndexableResource> result =
-                            new ArrayList<SearchIndexableResource>();
-
-                    SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.battery_settings;
-                    result.add(sir);
-
-                    return result;
-                }
-
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    ArrayList<String> result = new ArrayList<String>();
-                    return result;
-                }
-            };
 }

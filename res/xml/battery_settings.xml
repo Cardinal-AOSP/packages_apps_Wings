@@ -15,19 +15,4 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/battery_settings_title">
 
-    <PreferenceCategory
-          android:key="custom_leds"
-          android:title="@string/custom_leds" >
-  
-          <Preference
-                android:key="charging_light"
-                android:fragment="com.cardinal.settings.fragments.BatteryLightSettings"
-                android:title="@string/custom_battery_light_settings" />
-  
-          <Preference
-                android:key="custom_notification_light"
-                android:fragment="com.android.settings.applications.NotificationApps"
-                android:title="@string/custom_notification_light_settings" />
-
-    </PreferenceCategory>
 </PreferenceScreen>
