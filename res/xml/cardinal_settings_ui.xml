@@ -23,7 +23,7 @@
         android:summary="@string/doze_always_on_summary"
         android:defaultValue="false" />
 
-    <com.cardinal.settings.preference.GlobalSettingSwitchPreference
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
