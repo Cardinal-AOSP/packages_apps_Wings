@@ -181,4 +181,8 @@
     <string name="notification_settings_title">Notifications</string>
     <string name="notification_settings_summary">Manage notification related settings</string>
 
+   <!-- HardwareKeys -->
+   <string name="hardwarekeys_settings_title">HardwareKeys</string>
+   <string name="hardwarekeys_settings_summary">Configure Hardware navigation buttons</string>
+
 </resources>

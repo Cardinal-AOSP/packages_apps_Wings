@@ -18,6 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <Preference
+            android:title="@string/hardwarekeys_settings_title"
+            android:summary="@string/hardwarekeys_settings_summary"
+            android:fragment="com.cardinal.settings.fragments.HardwareKeys" />
+
+    <Preference
             android:title="@string/navbar_buttons_title"
             android:summary="@string/navbar_buttons_summary">
         <intent android:action="android.intent.action.MAIN"
