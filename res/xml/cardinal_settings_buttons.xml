@@ -18,6 +18,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <Preference
+            android:key="hw_keys"
             android:title="@string/hardwarekeys_settings_title"
             android:summary="@string/hardwarekeys_settings_summary"
             android:fragment="com.cardinal.settings.fragments.HardwareKeys" />

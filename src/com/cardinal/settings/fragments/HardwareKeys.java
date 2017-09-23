@@ -22,16 +22,24 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
+
 import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.custom.CustomUtils;
 
 public class HardwareKeys extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "HardwareKeys";
+
+    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
+
+    private SwitchPreference mEnableNavBar;
 
     @Override
     public int getMetricsCategory() {
@@ -46,10 +54,24 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
+
+        mEnableNavBar = (SwitchPreference) prefSet.findPreference(
+                KEYS_SHOW_NAVBAR_KEY);
+
+        boolean showNavBarDefault = CustomUtils.deviceSupportNavigationBar(getActivity());
+        boolean showNavBar = Settings.System.getInt(resolver,
+                    Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1:0) == 1;
+        mEnableNavBar.setChecked(showNavBar);
     }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mEnableNavBar) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
+            return true;
+        }
         // If we didn't handle it, let preferences handle it.
         return super.onPreferenceTreeClick(preference);
     }

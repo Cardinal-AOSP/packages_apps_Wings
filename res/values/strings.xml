@@ -184,5 +184,8 @@
    <!-- HardwareKeys -->
    <string name="hardwarekeys_settings_title">HardwareKeys</string>
    <string name="hardwarekeys_settings_summary">Configure Hardware navigation buttons</string>
+   <!-- Navigationbar toggle -->
+   <string name="navigation_bar_show_title">Show navigation bar</string>
+   <string name="navigation_bar_show_summary">Force enable navigation bar</string>
 
 </resources>
