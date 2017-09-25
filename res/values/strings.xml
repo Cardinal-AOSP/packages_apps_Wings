@@ -135,10 +135,6 @@
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
 
-    <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less annoying HeadsUp</string>
-    <string name="less_boring_heads_up_summary">Show HeadsUp notification only for dialer or messaging app if they are not in foreground</string>
-
     <!-- Whether to display IME switcher notifcation -->
     <string name="ime_switcher_notify">Keyboard selector notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
