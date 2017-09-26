@@ -66,6 +66,8 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
 
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
 
+    private static final String KEY_ANBI = "anbi";
+  
     private static final String KEY_CATEGORY_BRIGHTNESS = "button_backlight";
     private static final String KEY_BUTTON_BACKLIGHT_ENABLE = "button_backlight_enable";
     private static final String KEY_BUTTON_BACKLIGHT_SCREEN_BRIGHTNESS = "custom_button_use_screen_brightness";
@@ -114,6 +116,7 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
     private ListPreference mCameraDoubleTapAction;
     private CustomSeekBarPreference mButtonTimoutBar;
     private CustomSeekBarPreference mManualButtonBrightness;
+    private SwitchPreference mAnbiPreference;
     private SwitchPreference mEnableNavBar;
     private SystemSettingSwitchPreference mButtonBacklight;
     private SystemSettingSwitchPreference mButtonBacklightTouch;
@@ -151,17 +154,13 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         boolean showNavBar = Settings.System.getInt(resolver,
                     Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1:0) == 1;
         mEnableNavBar.setChecked(showNavBar);
-
-        if (mDeviceHardwareKeys == 0) {
-        prefSet.removePreference(mEnableNavBar);  
-        }
         
         final PreferenceCategory brightnessCategory =
                 (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_BRIGHTNESS);
 
         mButtonScreenBrightness = (SystemSettingSwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_SCREEN_BRIGHTNESS);
         mManualButtonBrightness = (CustomSeekBarPreference) findPreference(KEY_BUTTON_MANUAL_BRIGHTNESS_NEW);
-        
+
         if (mDeviceHasButtonBrightnessSupport && mDeviceHasVariableButtonBrightness) {
         final int customButtonBrightness = getResources().getInteger(
                 com.android.internal.R.integer.config_button_brightness_default);
@@ -352,6 +351,20 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         } else {
             prefSet.removePreference(cameraCategory);
         }
+
+        /* Accidental navigation button interaction */
+        mAnbiPreference = (SwitchPreference) findPreference(KEY_ANBI);
+
+        if (mAnbiPreference != null) {
+            mAnbiPreference.setChecked((Settings.System.getInt(getContentResolver(),
+            Settings.System.ANBI_ENABLED, 0) == 1));
+            mAnbiPreference.setOnPreferenceChangeListener(this);
+        }
+        
+        if (mDeviceHardwareKeys == 0) {
+            prefSet.removePreference(mEnableNavBar); 
+            prefSet.removePreference(mAnbiPreference);
+        }
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -447,6 +460,11 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         } else if (preference == mCameraDoubleTapAction) {
             handleActionListChange(mCameraDoubleTapAction, newValue,
                     Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION);
+            return true;
+        } else if (preference == mAnbiPreference) {
+             boolean value = (Boolean) newValue;
+             Settings.System.putInt(getActivity().getContentResolver(),
+                      Settings.System.ANBI_ENABLED, value ? 1 : 0);
             return true;
         }
         return false;

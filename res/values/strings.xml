@@ -213,7 +213,10 @@
    <string name="action_launch_camera">Open camera</string>
    <string name="action_last_app">Launch last app</string>
    <string name="action_splitscreen">Splitscreen</string>
-
+   <!-- ANBI -->
+   <string name="anbi_title">Accidental touch</string>
+   <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+ 
    <!-- Heads up --> 
    <string name="heads_up_notifications">HeadsUp</string> 
    <string name="summary_heads_up_enabled">HeadsUp notifications are enabled</string> 
