@@ -51,6 +51,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.custom.CustomUtils;
 
 import com.cardinal.settings.preference.CustomSeekBarPreference;
+import com.cardinal.settings.preference.SystemSettingSwitchPreference;
 
 public class HardwareKeys extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -65,6 +66,10 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
 
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
 
+    private static final String KEY_CATEGORY_BRIGHTNESS = "button_backlight";
+    private static final String KEY_BUTTON_BACKLIGHT_ENABLE = "button_backlight_enable";
+    private static final String KEY_BUTTON_BACKLIGHT_SCREEN_BRIGHTNESS = "custom_button_use_screen_brightness";
+    private static final String KEY_BUTTON_BACKLIGHT_TOUCH = "button_backlight_on_touch_only";
     private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
 
@@ -91,6 +96,8 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
     private Handler mHandler;
 
     private int mDeviceHardwareKeys;
+    private boolean mDeviceHasButtonBrightnessSupport;
+    private boolean mDeviceHasVariableButtonBrightness;
 
     private IPowerManager mPowerService;
     private ListPreference mHomeLongPressAction;
@@ -108,6 +115,9 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mButtonTimoutBar;
     private CustomSeekBarPreference mManualButtonBrightness;
     private SwitchPreference mEnableNavBar;
+    private SystemSettingSwitchPreference mButtonBacklight;
+    private SystemSettingSwitchPreference mButtonBacklightTouch;
+    private SystemSettingSwitchPreference mButtonScreenBrightness;
 
     @Override
     public int getMetricsCategory() {
@@ -128,6 +138,12 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         mDeviceHardwareKeys = res.getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
 
+        mDeviceHasVariableButtonBrightness = res.getBoolean(
+                com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
+
+        mDeviceHasButtonBrightnessSupport = res.getBoolean(
+                com.android.internal.R.bool.config_button_brightness_support);
+
         mEnableNavBar = (SwitchPreference) prefSet.findPreference(
                 KEYS_SHOW_NAVBAR_KEY);
 
@@ -136,7 +152,17 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
                     Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1:0) == 1;
         mEnableNavBar.setChecked(showNavBar);
 
+        if (mDeviceHardwareKeys == 0) {
+        prefSet.removePreference(mEnableNavBar);  
+        }
+        
+        final PreferenceCategory brightnessCategory =
+                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_BRIGHTNESS);
+
+        mButtonScreenBrightness = (SystemSettingSwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_SCREEN_BRIGHTNESS);
         mManualButtonBrightness = (CustomSeekBarPreference) findPreference(KEY_BUTTON_MANUAL_BRIGHTNESS_NEW);
+        
+        if (mDeviceHasButtonBrightnessSupport && mDeviceHasVariableButtonBrightness) {
         final int customButtonBrightness = getResources().getInteger(
                 com.android.internal.R.integer.config_button_brightness_default);
         final int currentBrightness = Settings.System.getInt(resolver,
@@ -145,14 +171,30 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         mManualButtonBrightness.setMax(pm.getMaximumScreenBrightnessSetting());
         mManualButtonBrightness.setValue(currentBrightness);
         mManualButtonBrightness.setOnPreferenceChangeListener(this);
+        } else {
+        brightnessCategory.removePreference(mButtonScreenBrightness);
+        brightnessCategory.removePreference(mManualButtonBrightness);
+        }
 
+        mButtonBacklight = (SystemSettingSwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_ENABLE);
+        mButtonBacklightTouch = (SystemSettingSwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_TOUCH);
         mButtonTimoutBar = (CustomSeekBarPreference) findPreference(KEY_BUTTON_TIMEOUT);
+
+        if (mDeviceHasButtonBrightnessSupport) {
         int currentTimeout = Settings.System.getInt(resolver,
                         Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
         mButtonTimoutBar.setValue(currentTimeout);
         mButtonTimoutBar.setOnPreferenceChangeListener(this);
-
         mPowerService = IPowerManager.Stub.asInterface(ServiceManager.getService("power"));
+        } else {
+        brightnessCategory.removePreference(mButtonBacklight);
+        brightnessCategory.removePreference(mButtonTimoutBar);
+        brightnessCategory.removePreference(mButtonBacklightTouch);
+        }
+
+        if (!mDeviceHasButtonBrightnessSupport) {
+            prefSet.removePreference(brightnessCategory);
+        }
 
         final boolean hasHome = (mDeviceHardwareKeys & KEY_MASK_HOME) != 0 || showNavBar;
         final boolean hasMenu = (mDeviceHardwareKeys & KEY_MASK_MENU) != 0;
