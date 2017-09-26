@@ -157,8 +157,8 @@
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
     <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
     <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
-    <string name="navbar_buttons_title">Navigationbar buttons</string>
-    <string name="navbar_buttons_summary">Navigationbar layout and custom buttons</string>
+    <string name="navbar_buttons_title">Navigation bar</string>
+    <string name="navbar_buttons_summary">Navigation bar layout and custom buttons</string>
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
     <string name="vol_dnd_category_title">Do not disturb mode</string>
