@@ -20,8 +20,8 @@
     <string name="keywords_cardinal">Cardinal-AOSP</string>
 
     <!-- Main Settings -->
-    <string name="ui_title">Ui</string>
-    <string name="ui_summary">General User interface cutomizations.</string>
+    <string name="general_title">General</string>
+    <string name="general_summary">Misc. UI/UX cutomizations.</string>
     <string name="statusbar_title">StatusBar</string>
     <string name="statusbar_summary">Options for customizing statusbar, qs, notifications etc.</string>    
     <string name="buttons_title">Buttons</string>
@@ -227,4 +227,5 @@
    <string name="profile_choose_app">Choose app</string> 
    <string name="dialog_delete_title">Remove</string>
    <string name="dialog_delete_message">Remove selected item?</string>
+
 </resources>

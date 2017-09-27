@@ -15,9 +15,9 @@
     android:title="@string/cardinal_wings_title">
 
         <Preference
-            android:title="@string/ui_title"
-            android:summary="@string/ui_summary"
-            android:fragment="com.cardinal.settings.fragments.UiSettings" />
+            android:title="@string/general_title"
+            android:summary="@string/general_summary"
+            android:fragment="com.cardinal.settings.fragments.GeneralSettings" />
 
         <Preference
             android:title="@string/statusbar_title"

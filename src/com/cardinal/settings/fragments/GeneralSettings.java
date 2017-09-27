@@ -36,7 +36,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
 import com.cardinal.settings.utils.Utils;
 
-public class UiSettings extends SettingsPreferenceFragment implements
+public class GeneralSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
 /**
@@ -49,7 +49,7 @@ public class UiSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.cardinal_settings_ui);
+        addPreferencesFromResource(R.xml.cardinal_settings_general);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
 
