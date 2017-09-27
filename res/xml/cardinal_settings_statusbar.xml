@@ -43,6 +43,12 @@
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary" />
 
+  <com.cardinal.settings.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_to_sleep_title"
+        android:summary="@string/double_tap_to_sleep_summary"
+        android:defaultValue="false" />
+
 <!--
     <Preference
         android:key="battery_settings"
@@ -62,12 +68,6 @@
         android:fragment="com.cardinal.settings.fragments.CarrierLabelSettings"
         android:title="@string/carrier_label_settings_title"
         android:summary="@string/carrier_label_settings_summary" />
-
-  <com.cardinal.settings.preference.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/double_tap_to_sleep_title"
-        android:summary="@string/double_tap_to_sleep_summary"
-        android:defaultValue="false" />
 
   <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
