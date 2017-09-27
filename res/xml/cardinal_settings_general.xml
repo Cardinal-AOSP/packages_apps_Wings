@@ -29,6 +29,12 @@
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
 
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
+        android:key="sensor_block"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:defaultValue="false" />
+
 <!--
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="keyguard_toggle_torch"
