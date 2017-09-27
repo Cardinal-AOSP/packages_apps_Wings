@@ -57,14 +57,7 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
         Resources res = getResources();
-        final int deviceHwKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
 
-        final Preference HwkeysPreference = findPreference("hw_keys");
-
-        if (deviceHwKeys == 0) {
-            prefSet.removePreference(HwkeysPreference);
-        }
 /**
         //volume rocker wake
         mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);

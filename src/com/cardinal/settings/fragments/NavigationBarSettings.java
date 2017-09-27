@@ -53,9 +53,9 @@ import com.android.internal.util.custom.CustomUtils;
 import com.cardinal.settings.preference.CustomSeekBarPreference;
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
 
-public class HardwareKeys extends SettingsPreferenceFragment implements
+public class NavigationBarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "HardwareKeys";
+    private static final String TAG = "NavigationBar";
 
     private static final int KEY_MASK_HOME = 0x01;
     private static final int KEY_MASK_BACK = 0x02;
@@ -66,6 +66,8 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
 
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
 
+
+    private static final String KEY_CATEGORY_HWKEYS = "hw_keys_cat";
     private static final String KEY_ANBI = "anbi";
   
     private static final String KEY_CATEGORY_BRIGHTNESS = "button_backlight";
@@ -130,7 +132,7 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.cardinal_settings_hardwarekeys);
+        addPreferencesFromResource(R.xml.cardinal_settings_navigationbar);
 
         mHandler = new Handler();
 
@@ -360,10 +362,14 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
             Settings.System.ANBI_ENABLED, 0) == 1));
             mAnbiPreference.setOnPreferenceChangeListener(this);
         }
-        
+
+        final PreferenceCategory hwKeysCategory =
+                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_HWKEYS);
+
         if (mDeviceHardwareKeys == 0) {
-            prefSet.removePreference(mEnableNavBar); 
-            prefSet.removePreference(mAnbiPreference);
+            hwKeysCategory.removePreference(mEnableNavBar); 
+            hwKeysCategory.removePreference(mAnbiPreference);
+            prefSet.removePreference(hwKeysCategory);
         }
     }
 
@@ -384,7 +390,6 @@ public class HardwareKeys extends SettingsPreferenceFragment implements
         pref.setSummary(pref.getEntries()[index]);
         Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
     }
-
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {

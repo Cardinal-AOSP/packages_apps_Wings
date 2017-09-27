@@ -157,8 +157,8 @@
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
     <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
     <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
-    <string name="navbar_buttons_title">Navigation bar</string>
-    <string name="navbar_buttons_summary">Navigation bar layout and custom buttons</string>
+    <string name="navbar_buttons_title">On-screen navigation bar layout</string>
+    <string name="navbar_buttons_summary">Configure on-screen navigation bar layout and custom buttons</string>
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
     <string name="vol_dnd_category_title">Do not disturb mode</string>
@@ -177,56 +177,57 @@
     <string name="notification_settings_title">Notifications</string>
     <string name="notification_settings_summary">Manage notification related settings</string>
 
-   <!-- HardwareKeys -->
-   <string name="hardwarekeys_settings_title">HardwareKeys</string>
-   <string name="hardwarekeys_settings_summary">Configure Hardware navigation buttons</string>
+   <!-- Navigation bar -->
+   <string name="navigationbar_settings_title">Navigation bar</string>
+   <string name="navigationbar_settings_summary">Configure navigation buttons</string>
+   <string name="hardwarekeys_cat_title">Hardware Keys</string>
 
-   <!-- Navigationbar toggle -->
-   <string name="navigation_bar_show_title">Show navigation bar</string>
-   <string name="navigation_bar_show_summary">Force enable navigation bar</string>
-   <!-- Buttons Backlight -->
-   <string name="button_backlight_cat">Button backlight</string>
-   <string name="button_backlight_on_touch_only_title">Button touch</string>
-   <string name="button_backlight_on_touch_only_summary">Enable backlight with timout only on button touch</string>
-   <string name="button_timeout_title">Backlight timeout</string>
-   <string name="button_timeout_summary">Disabled on value 0</string>
-   <string name="button_link_brightness_title">Use screen brightness level</string>
-   <string name="button_manual_brightness">Brightness level</string>
-   <string name="unit_sec">sec</string>
-   <string name="button_backlight_enable_title">Enable</string>
-   <!-- Custom rebindings -->
-   <string name="home_key_title">Home button</string>
-   <string name="back_key_title">Back button</string>
-   <string name="menu_key_title">Menu button</string>
-   <string name="assist_key_title">Assist button</string>
-   <string name="app_switch_key_title">Recents button</string>
-   <string name="camera_key_title">Camera button</string>
-   <string name="short_press_title">Short press action</string>
-   <string name="long_press_title">Long press action</string>
-   <string name="double_tap_title">Double tap action</string>
-   <string name="action_nothing">No action</string>
-   <string name="action_menu">Open/close menu</string>
-   <string name="action_app_switch">Recents</string>
-   <string name="action_search">Search assistant</string>
-   <string name="action_voice_search">Voice search</string>
-   <string name="action_in_app_search">In-app search</string>
-   <string name="action_launch_camera">Open camera</string>
-   <string name="action_last_app">Launch last app</string>
-   <string name="action_splitscreen">Splitscreen</string>
-   <!-- ANBI -->
-   <string name="anbi_title">Accidental touch</string>
-   <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+    <!-- Navigationbar toggle -->
+    <string name="navigation_bar_show_title">Show on-screen navigation bar</string>
+    <string name="navigation_bar_show_summary">Force enable on-screen navigation bar</string>
+    <!-- Buttons Backlight -->
+    <string name="button_backlight_cat">Button backlight</string>
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timout only on button touch</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_timeout_summary">Disabled on value 0</string>
+    <string name="button_link_brightness_title">Use screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="unit_sec">sec</string>
+    <string name="button_backlight_enable_title">Enable</string>
+    <!-- Custom rebindings -->
+    <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
+    <string name="menu_key_title">Menu button</string>
+    <string name="assist_key_title">Assist button</string>
+    <string name="app_switch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
+    <string name="short_press_title">Short press action</string>
+    <string name="long_press_title">Long press action</string>
+    <string name="double_tap_title">Double tap action</string>
+    <string name="action_nothing">No action</string>
+    <string name="action_menu">Open/close menu</string>
+    <string name="action_app_switch">Recents</string>
+    <string name="action_search">Search assistant</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_in_app_search">In-app search</string>
+    <string name="action_launch_camera">Open camera</string>
+    <string name="action_last_app">Launch last app</string>
+    <string name="action_splitscreen">Splitscreen</string>
+    <!-- ANBI -->
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with hardware navigation buttons while the screen is being touched</string>
  
-   <!-- Heads up --> 
-   <string name="heads_up_notifications">HeadsUp</string> 
-   <string name="summary_heads_up_enabled">HeadsUp notifications are enabled</string> 
-   <string name="summary_heads_up_disabled">HeadsUp notifications are disabled</string> 
-   <string name="add_heads_up_package">Add an app to headsup whitelist</string> 
-   <string name="add_heads_up_whitelist_summary">Disable headsup notifications while using these apps</string> 
-   <string name="heads_up_whitelist_title">Whitelist</string> 
-   <string name="profile_choose_app">Choose app</string> 
-   <string name="dialog_delete_title">Remove</string>
-   <string name="dialog_delete_message">Remove selected item?</string>
+    <!-- Heads up --> 
+    <string name="heads_up_notifications">HeadsUp</string> 
+    <string name="summary_heads_up_enabled">HeadsUp notifications are enabled</string> 
+    <string name="summary_heads_up_disabled">HeadsUp notifications are disabled</string> 
+    <string name="add_heads_up_package">Add an app to headsup whitelist</string> 
+    <string name="add_heads_up_whitelist_summary">Disable headsup notifications while using these apps</string> 
+    <string name="heads_up_whitelist_title">Whitelist</string> 
+    <string name="profile_choose_app">Choose app</string> 
+    <string name="dialog_delete_title">Remove</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
 
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>

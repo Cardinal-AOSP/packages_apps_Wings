@@ -18,18 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <Preference
-            android:key="hw_keys"
-            android:title="@string/hardwarekeys_settings_title"
-            android:summary="@string/hardwarekeys_settings_summary"
-            android:fragment="com.cardinal.settings.fragments.HardwareKeys" />
-
-    <Preference
-            android:title="@string/navbar_buttons_title"
-            android:summary="@string/navbar_buttons_summary">
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
-    </Preference>
+            android:key="navigation_bar"
+            android:title="@string/navigationbar_settings_title"
+            android:summary="@string/navigationbar_settings_summary"
+            android:fragment="com.cardinal.settings.fragments.NavigationBarSettings" />
 
     <PreferenceCategory
         android:key="vol_dnd_category"
