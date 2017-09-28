@@ -38,12 +38,13 @@
             android:title="@string/volbtn_up_zen_title"
             android:summary="@string/volbtn_up_zen_summary"
             android:defaultValue="true" />
-
+<!--
         <com.cardinal.settings.preference.SecureSettingSwitchPreference
             android:key="sysui_show_full_zen"
             android:title="@string/vol_zen_title"
             android:summary="@string/vol_zen_summary"
             android:defaultValue="false"/>
+-->
     </PreferenceCategory>
 
 <!--
