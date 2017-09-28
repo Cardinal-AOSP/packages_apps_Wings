@@ -66,8 +66,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
 
-
-    private static final String KEY_CATEGORY_HWKEYS = "hw_keys_cat";
     private static final String KEY_ANBI = "anbi";
   
     private static final String KEY_CATEGORY_BRIGHTNESS = "button_backlight";
@@ -363,13 +361,9 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             mAnbiPreference.setOnPreferenceChangeListener(this);
         }
 
-        final PreferenceCategory hwKeysCategory =
-                (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_HWKEYS);
-
         if (mDeviceHardwareKeys == 0) {
-            hwKeysCategory.removePreference(mEnableNavBar); 
-            hwKeysCategory.removePreference(mAnbiPreference);
-            prefSet.removePreference(hwKeysCategory);
+            prefSet.removePreference(mEnableNavBar); 
+            prefSet.removePreference(mAnbiPreference);
         }
     }
 
