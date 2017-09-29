@@ -23,6 +23,12 @@
             android:summary="@string/navigationbar_settings_summary"
             android:fragment="com.cardinal.settings.fragments.NavigationBarSettings" />
 
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
+            android:key="volume_wake_screen"
+            android:title="@string/volbtn_wake_device_title"
+            android:summary="@string/button_wake_summary"
+            android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="vol_dnd_category"
         android:title="@string/vol_dnd_category_title" >
@@ -48,13 +54,6 @@
     </PreferenceCategory>
 
 <!--
-        <SwitchPreference
-            android:key="volume_rocker_wake"
-            android:summary="@string/volume_rocker_wake_summary"
-            android:title="@string/volume_rocker_wake_title"
-            android:defaultValue="false"
-            android:disableDependentsState="true" />
-
         <SwitchPreference
             android:key="volume_rocker_music_controls"
             android:summary="@string/volume_rocker_music_controls_summary"

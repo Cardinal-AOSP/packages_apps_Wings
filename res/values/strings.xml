@@ -37,9 +37,9 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
-    <!-- Volume rocker wake -->
-    <string name="volume_rocker_wake_title">Volume rocker wake</string>
-    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+    <!-- Volume button wake -->
+    <string name="volbtn_wake_device_title">Volume button wake</string>
+    <string name="button_wake_summary">May not wake device if music control is active and music is playing</string>
 
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Playback control</string>
