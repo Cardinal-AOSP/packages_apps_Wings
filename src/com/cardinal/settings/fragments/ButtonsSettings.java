@@ -40,10 +40,7 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
 /**
     private static final String SCREENRECORD_CHORD_TYPE = "screenrecord_chord_type";
 
-    public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
-
     private ListPreference mScreenrecordChordType;
-    private SwitchPreference mVolumeRockerMusicControl;
 */
 
     @Override
@@ -57,13 +54,6 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
         Resources res = getResources();
 
 /**
-        //volume rocker music control
-        mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
-        mVolumeRockerMusicControl.setOnPreferenceChangeListener(this);
-        int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
-                VOLUME_ROCKER_MUSIC_CONTROLS, 0);
-        mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
-
         int recordChordValue = Settings.System.getInt(resolver,
                 Settings.System.SCREENRECORD_CHORD_TYPE, 0);
         mScreenrecordChordType = initActionList(SCREENRECORD_CHORD_TYPE,
@@ -75,12 +65,7 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 /**
-        if (preference == mVolumeRockerMusicControl) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
-                    value ? 1 : 0);
-            return true;
-        } else if  (preference == mScreenrecordChordType) {
+        if  (preference == mScreenrecordChordType) {
             handleActionListChange(mScreenrecordChordType, newValue,
                     Settings.System.SCREENRECORD_CHORD_TYPE);
             return true;

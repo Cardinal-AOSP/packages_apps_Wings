@@ -41,9 +41,9 @@
     <string name="volbtn_wake_device_title">Volume button wake</string>
     <string name="button_wake_summary">May not wake device if music control is active and music is playing</string>
 
-    <!-- Volume rocker music control -->
-    <string name="volume_rocker_music_controls_title">Playback control</string>
-    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+    <!-- Volume button track change -->
+    <string name="volbtn_music_controls_title">Volume button Music control</string>
+    <string name="volbtn_music_controls_summary">With screen off, long pressing the volume keys will seek tracks</string>
 
     <!-- Wake on Plug -->
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
