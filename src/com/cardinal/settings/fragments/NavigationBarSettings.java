@@ -181,7 +181,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
         if (mDeviceHasButtonBrightnessSupport) {
         int currentTimeout = Settings.System.getInt(resolver,
-                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
+                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5);
         mButtonTimoutBar.setValue(currentTimeout);
         mButtonTimoutBar.setOnPreferenceChangeListener(this);
         mPowerService = IPowerManager.Stub.asInterface(ServiceManager.getService("power"));
