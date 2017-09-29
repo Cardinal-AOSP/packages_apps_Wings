@@ -32,6 +32,12 @@
         android:persistent="false"
         android:disableDependentsState="true" />
 
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
+        android:key="allow_incall_home"
+        android:title="@string/allow_incall_home_title"
+        android:summary="@string/allow_incall_home_summary"
+        android:defaultValue="true" />
+
     <SwitchPreference
         android:key="anbi"
         android:title="@string/anbi_title"
