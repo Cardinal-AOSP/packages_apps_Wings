@@ -30,13 +30,6 @@
         android:summaryOff="@string/qs_tile_title_visibility_summary_off"
         android:defaultValue="true"/>
 
-    <com.cardinal.settings.preference.SystemSettingSwitchPreference
-        android:key="music_tile_title"
-        android:title="@string/qs_music_tile_track_optional_title"
-        android:summary="@string/qs_music_tile_track_optional_summary"
-        android:defaultValue="false"
-        android:dependency="qs_tile_title_visibility" />
-
     <PreferenceCategory
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category">

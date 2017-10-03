@@ -240,8 +240,4 @@
     <string name="allow_incall_home_title">Home button when ringing</string>
     <string name="allow_incall_home_summary">Allow to use home button when incoming call is ringing</string>
 
-    <!-- Disable music track title in QS tile -->
-    <string name="qs_music_tile_track_optional_title">Music tile track title</string>
-    <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
-
 </resources>
