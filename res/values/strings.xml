@@ -137,7 +137,6 @@
 
     <!-- Whether to display IME switcher notifcation -->
     <string name="ime_switcher_notify">Keyboard selector notification</string>
-    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
     <!-- Battery light -->
     <string name="custom_leds">LED lights</string>
