@@ -22,7 +22,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
@@ -34,16 +33,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
-import com.cardinal.settings.utils.Utils;
 
 public class GeneralSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-/**
-    private static final String KEYGUARD_TORCH = "keyguard_toggle_torch";
-
-    private SystemSettingSwitchPreference mLsTorch;
-*/
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,12 +47,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
 
-/**
-        mLsTorch = (SystemSettingSwitchPreference) findPreference(KEYGUARD_TORCH);
-        if (!Utils.deviceSupportsFlashLight(getActivity())) {
-            prefScreen.removePreference(mLsTorch);
-        }
-*/
     }
 
     @Override

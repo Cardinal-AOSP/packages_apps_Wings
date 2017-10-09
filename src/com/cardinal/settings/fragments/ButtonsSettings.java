@@ -22,7 +22,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
@@ -37,12 +36,6 @@ import com.android.settings.Utils;
 public class ButtonsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-/**
-    private static final String SCREENRECORD_CHORD_TYPE = "screenrecord_chord_type";
-
-    private ListPreference mScreenrecordChordType;
-*/
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,26 +45,11 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
         Resources res = getResources();
-
-/**
-        int recordChordValue = Settings.System.getInt(resolver,
-                Settings.System.SCREENRECORD_CHORD_TYPE, 0);
-        mScreenrecordChordType = initActionList(SCREENRECORD_CHORD_TYPE,
-                recordChordValue);
- */
     }
 
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-/**
-        if  (preference == mScreenrecordChordType) {
-            handleActionListChange(mScreenrecordChordType, newValue,
-                    Settings.System.SCREENRECORD_CHORD_TYPE);
-            return true;
-         }
-        return false;
-*/
             return true;
     }
 
@@ -79,22 +57,6 @@ public class ButtonsSettings extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsEvent.WINGS;
     }
-/**
-    private ListPreference initActionList(String key, int value) {
-        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
-        list.setValue(Integer.toString(value));
-        list.setSummary(list.getEntry());
-        list.setOnPreferenceChangeListener(this);
-        return list;
-    }
-
-    private void handleActionListChange(ListPreference pref, Object newValue, String setting) {
-        String value = (String) newValue;
-        int index = pref.findIndexOfValue(value);
-        pref.setSummary(pref.getEntries()[index]);
-        Settings.System.putInt(getActivity().getContentResolver(), setting, Integer.valueOf(value));
-    }
-*/
 
     @Override
     public void onResume() {

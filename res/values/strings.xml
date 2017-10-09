@@ -33,10 +33,6 @@
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
 
-    <!-- statusbar brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
-
     <!-- Volume button wake -->
     <string name="volbtn_wake_device_title">Volume button wake</string>
     <string name="button_wake_summary">May not wake device if music control is active and music is playing</string>
@@ -48,10 +44,6 @@
     <!-- Wake on Plug -->
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
-
-    <!-- Volume key controls media stream -->
-    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
-    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
@@ -98,30 +90,9 @@
     <string name="color_title">Color</string>
     <string name="colors_title">Colors</string>
 
-   <!-- Custom carrier label and position -->
-    <string name="carrier_label_settings_title">Carrier Label</string>
-    <string name="carrier_label_settings_summary">Customize the carrier label</string>
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen only</string>
-    <string name="show_carrier_statusbar">Statusbar only</string>
-    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
-
-    <!-- Lockscreen torch -->
-    <string name="keyguard_torch_title">Lockscreen torch</string>
-    <string name="keyguard_torch_summary">Longpress power button with screen off turns on torch</string>
-
     <!-- fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
-
-    <!-- Screen record chord behavior -->
-    <string name="screen_record_chord_title">Power + volume up behavior</string>
-    <string name="screen_record_chord_screenrecord">Start screen recording</string>
-    <string name="screen_record_chord_selscreenshot">Take screenshot of selectable area</string>
 
     <!-- Battery customizations -->
     <string name="battery_settings_title">Battery Settings</string>
@@ -182,7 +153,7 @@
    <string name="hardwarekeys_cat_title">Hardware Keys</string>
 
     <!-- Navigationbar toggle -->
-    <string name="navigation_bar_show_title">Show on-screen navigation bar</string>
+    <string name="navigation_bar_show_title">Show navigation bar</string>
     <string name="navigation_bar_show_summary">Force enable on-screen navigation bar</string>
     <!-- Buttons Backlight -->
     <string name="button_backlight_cat">Button backlight</string>

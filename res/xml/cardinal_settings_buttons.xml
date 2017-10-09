@@ -59,17 +59,4 @@
 -->
     </PreferenceCategory>
 
-<!--
-        <ListPreference
-            android:key="screenrecord_chord_type"
-            android:title="@string/screen_record_chord_title"
-            android:entries="@array/screen_record_chord_entries"
-            android:entryValues="@array/screen_record_chord_values" />
-
-        <com.cardinal.settings.preference.SystemSettingSwitchPreference
-            android:key="volume_keys_control_media_stream"
-            android:title="@string/volume_keys_control_media_stream_title"
-            android:summary="@string/volume_keys_control_media_stream_summary"
-            android:defaultValue="false" />
--->
 </PreferenceScreen>
