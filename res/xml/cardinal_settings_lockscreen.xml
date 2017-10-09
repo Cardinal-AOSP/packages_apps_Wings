@@ -25,6 +25,12 @@
                 android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
     </Preference>
 
+    <com.cardinal.settings.preference.SecureSettingSwitchPreference
+        android:key="hide_lock_shortcuts"
+        android:title="@string/lockscreen_hide_shortcuts_title"
+        android:summary="@string/lockscreen_hide_shortcuts_summary"
+        android:defaultValue="false" />
+
 	<com.cardinal.settings.preference.SystemSettingSwitchPreference
     	    android:key="lockscreen_media_metadata"
             android:title="@string/media_art_title"

@@ -246,4 +246,8 @@
     <string name="lockscreen_qs_disabled_title">Secured quick settings</string>
     <string name="lockscreen_qs_disabled_summary">Prevent expanding quick settings on secure lock screens</string>
 
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <string name="lockscreen_hide_shortcuts_title">Hide bottom Shortcuts</string>
+    <string name="lockscreen_hide_shortcuts_summary">Hide bottom shortcuts on secure lock screens</string>
+
 </resources>
