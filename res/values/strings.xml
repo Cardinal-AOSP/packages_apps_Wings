@@ -221,4 +221,8 @@
     <string name="lockscreen_hide_shortcuts_title">Hide bottom Shortcuts</string>
     <string name="lockscreen_hide_shortcuts_summary">Hide bottom shortcuts on secure lock screens</string>
 
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
+    <string name="pixel_navbar_anim_summary">Enable pixel animation on home button</string>
+
 </resources>
