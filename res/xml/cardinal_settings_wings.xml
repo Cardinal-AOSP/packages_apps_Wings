@@ -34,4 +34,9 @@
             android:summary="@string/lockscreen_summary"
             android:fragment="com.cardinal.settings.fragments.LockScreenSettings" />
 
+        <Preference
+            android:title="@string/recents_ui_title"
+            android:summary="@string/recents_ui_summary"
+            android:fragment="com.cardinal.settings.fragments.RecentsUI" />
+
 </PreferenceScreen>
