@@ -26,9 +26,9 @@
     <string name="statusbar_summary">Options for customizing statusbar, qs, notifications etc.</string>    
     <string name="buttons_title">Buttons</string>
     <string name="buttons_summary">Options for Vol controls, Navigation bar etc.</string>
-    <string name="lockscreen_title">LockScreen</string>
-    <string name="lockscreen_summary">LockScreen customizations.</string>
-    <string name="recents_ui_title">Recents UI</string>
+    <string name="lockscreen_title">Lockscreen</string>
+    <string name="lockscreen_summary">Lockscreen customizations.</string>
+    <string name="recents_ui_title">Recents</string>
     <string name="recents_ui_summary">Recents customizations.</string>
 
     <!-- double tap to sleep - statusbar -->
