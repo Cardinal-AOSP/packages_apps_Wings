@@ -19,8 +19,9 @@
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="show_clear_all_recents"
         android:title="@string/show_clear_all_recents_button_title"
-        android:summary="@string/show_clear_all_recents_button_summary"
-        android:defaultValue="true" />
+        android:summaryOn="@string/show_clear_all_recents_button_summary_on"
+        android:summaryOff="@string/show_clear_all_recents_button_summary_off"
+        android:defaultValue="false" />
 
     <ListPreference
         android:key="recents_clear_all_location"
