@@ -32,13 +32,6 @@
         android:persistent="false"
         android:disableDependentsState="true" />
 
-
-    <com.cardinal.settings.preference.SystemSettingSwitchPreference
-        android:key="pixel_nav_animation"
-        android:title="@string/pixel_navbar_anim_title"
-        android:summary="@string/pixel_navbar_anim_summary"
-        android:defaultValue="false" />
-
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="allow_incall_home"
         android:title="@string/allow_incall_home_title"

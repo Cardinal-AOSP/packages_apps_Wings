@@ -66,8 +66,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
 
-    private static final String KEYS_PIXEL_NAV_ANIMATION = "pixel_nav_animation";
-  
     private static final String KEY_ANBI = "anbi";
   
     private static final String KEY_CATEGORY_BRIGHTNESS = "button_backlight";
@@ -123,7 +121,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mButtonBacklight;
     private SystemSettingSwitchPreference mButtonBacklightTouch;
     private SystemSettingSwitchPreference mButtonScreenBrightness;
-    private SystemSettingSwitchPreference mPixelAnimation;
 
     @Override
     public int getMetricsCategory() {
@@ -152,16 +149,12 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
         mEnableNavBar = (SwitchPreference) prefSet.findPreference(
                 KEYS_SHOW_NAVBAR_KEY);
-                
-        mPixelAnimation = (SystemSettingSwitchPreference) prefSet.findPreference(
-                KEYS_PIXEL_NAV_ANIMATION);
 
         boolean showNavBarDefault = CustomUtils.deviceSupportNavigationBar(getActivity());
         boolean showNavBar = Settings.System.getInt(resolver,
                     Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1:0) == 1;
         mEnableNavBar.setChecked(showNavBar);
-        mPixelAnimation.setEnabled(showNavBar);
-
+        
         final PreferenceCategory brightnessCategory =
                 (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_BRIGHTNESS);
 
@@ -398,7 +391,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
-            mPixelAnimation.setEnabled(checked);
             return true;
         }
         // If we didn't handle it, let preferences handle it.
