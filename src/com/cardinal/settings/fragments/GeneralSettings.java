@@ -28,14 +28,21 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
 
 public class GeneralSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
+    
+    private boolean mAlwaysOnDozeAvailable;
+   
+    private SwitchPreference mDozeAlwaysOn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,7 +53,14 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
+ 
+        mAlwaysOnDozeAvailable = (getResources().getBoolean(
+                    com.android.internal.R.bool.config_enableDozeAlwaysOn));
 
+        mDozeAlwaysOn = (SwitchPreference) findPreference(KEY_DOZE_ALWAYS_ON);
+        if (!mAlwaysOnDozeAvailable) {
+            prefScreen.removePreference(mDozeAlwaysOn);
+        }
     }
 
     @Override
