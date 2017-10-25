@@ -34,12 +34,15 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
+import com.cardinal.settings.utils.Utils;
 
 public class GeneralSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+
     private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
-    
+
     private boolean mAlwaysOnDozeAvailable;
    
     private SwitchPreference mDozeAlwaysOn;
@@ -60,6 +63,11 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         mDozeAlwaysOn = (SwitchPreference) findPreference(KEY_DOZE_ALWAYS_ON);
         if (!mAlwaysOnDozeAvailable) {
             prefScreen.removePreference(mDozeAlwaysOn);
+        }
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
         }
     }
 
