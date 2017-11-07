@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Cardinal Wings menus -->
-  <string name="cardinal_wings_title">The Wings!</string>
+  <string name="cardinal_wings_title">Wings!</string>
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">सामान्य</string>
@@ -27,6 +27,8 @@
   <string name="buttons_summary">वॉल्यूम नियंत्रण, पथ प्रदर्शन पट्टी आदि के लिए विकल्प</string>
   <string name="lockscreen_title">लॉकस्क्रीन</string>
   <string name="lockscreen_summary">लॉकस्क्रीन अनुकूलन</string>
+  <string name="recents_ui_title">हाल ही के</string>
+  <string name="recents_ui_summary">हाल ही के अनुकूलन</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">निद्रा के लिए दो बार टैप करें</string>
   <string name="double_tap_to_sleep_summary">उपकरण निद्रा में करने के लिए स्टेटस बार पर दो बार टैप करें</string>
@@ -133,6 +135,17 @@
   <string name="navigationbar_settings_title">पथ प्रदर्शन पट्टी</string>
   <string name="navigationbar_settings_summary">पथ प्रदर्शन कुंजियों को अनुकूल करे</string>
   <string name="hardwarekeys_cat_title">हार्डवेयर कुंजी</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">सभी FAB साफ़ करें</string>
+  <string name="show_clear_all_recents_button_summary_on">सभी FAB साफ़ करें बटन दिखाएँ</string>
+  <string name="show_clear_all_recents_button_summary_off">AOSP का सभी साफ़ करें दिखाए</string>
+  <string name="recents_clear_all_location_title">सभी साफ़ करें स्थान</string>
+  <string name="recents_clear_all_location_top_right">ऊपर दाएं</string>
+  <string name="recents_clear_all_location_top_left">ऊपर बाएं</string>
+  <string name="recents_clear_all_location_top_center">ऊपर मध्य</string>
+  <string name="recents_clear_all_location_bottom_right">नीचे दाएं</string>
+  <string name="recents_clear_all_location_bottom_left">नीचे बाएँ</string>
+  <string name="recents_clear_all_location_bottom_center">नीचे मध्य</string>
   <!-- Navigationbar toggle -->
   <string name="navigation_bar_show_title">पथ प्रदर्शन पट्टी दिखाए</string>
   <string name="navigation_bar_show_summary">स्क्रीन पर पथ प्रदर्शन कुंजियाँ प्रबल पूर्वक सक्षम करे</string>
@@ -195,4 +208,12 @@
   <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
   <string name="lockscreen_hide_shortcuts_title">नीचे के शॉर्टकट छुपाएँ</string>
   <string name="lockscreen_hide_shortcuts_summary">सुरक्षित लॉक स्क्रीन पर नीचे के शॉर्टकट छिपाएँ</string>
+  <!-- Incall vibrate options -->
+  <string name="incall_vibration_category">कॉल के दौरान कंपन</string>
+  <string name="incall_vibrate_connect_title">कनेक्ट होने पर कंपन करें</string>
+  <string name="incall_vibrate_connect_summary">कॉल कनेक्ट होने के बाद कंपन करने के लिए सक्षम करें</string>
+  <string name="incall_vibrate_call_wait_title">कॉल प्रतीक्षा पर कंपन</string>
+  <string name="incall_vibrate_call_wait_summary">कॉल प्रतीक्षा के दौरान कंपन करने के लिए सक्षम करें</string>
+  <string name="incall_vibrate_disconnect_title">डिसकनेक्ट होने पर कंपन करें</string>
+  <string name="incall_vibrate_disconnect_summary">कॉल डिसकनेक्ट होने के बाद कंपन करने के लिए सक्षम करें</string>
 </resources>
