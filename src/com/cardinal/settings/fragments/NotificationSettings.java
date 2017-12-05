@@ -35,10 +35,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "NotificationSettings";
 
     private boolean mChargingLedsEnabled;
-    private boolean mNotificationLedsEnabled;
     private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
-    private Preference mNotificationLeds;
 
     @Override
     public int getMetricsCategory() {
@@ -55,22 +52,12 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
 
         mChargingLedsEnabled = (getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveBatteryLed));
-        mNotificationLedsEnabled = (getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed));
 
         mLedsCategory = (PreferenceCategory) findPreference("custom_leds");
-        mChargingLeds = (Preference) findPreference("custom_charging_light");
-        mNotificationLeds = (Preference) findPreference("custom_notification_light");
 
-        if (mChargingLeds != null && mNotificationLeds != null) {
-            if (!mChargingLedsEnabled) {
-                mLedsCategory.removePreference(mChargingLeds);
-            } else if (!mNotificationLedsEnabled) {
-                mLedsCategory.removePreference(mNotificationLeds);
-            } else if (!mChargingLedsEnabled && !mNotificationLedsEnabled) {
-                prefSet.removePreference(mLedsCategory);
-            }
-        }
+    	if (!mChargingLedsEnabled) {
+    	prefSet.removePreference(mLedsCategory);
+    	}
     }
 
     @Override
