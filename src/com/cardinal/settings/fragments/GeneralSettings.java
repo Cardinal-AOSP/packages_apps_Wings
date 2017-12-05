@@ -41,12 +41,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
-    private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
-
-    private boolean mAlwaysOnDozeAvailable;
-   
-    private SwitchPreference mDozeAlwaysOn;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,14 +51,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
  
-        mAlwaysOnDozeAvailable = (getResources().getBoolean(
-                    com.android.internal.R.bool.config_enableDozeAlwaysOn));
-
-        mDozeAlwaysOn = (SwitchPreference) findPreference(KEY_DOZE_ALWAYS_ON);
-        if (!mAlwaysOnDozeAvailable) {
-            prefScreen.removePreference(mDozeAlwaysOn);
-        }
-
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!Utils.isVoiceCapable(getActivity())) {
             prefScreen.removePreference(incallVibCategory);
