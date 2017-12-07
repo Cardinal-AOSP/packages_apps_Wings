@@ -17,12 +17,6 @@
     android:title="@string/general_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-    <com.cardinal.settings.preference.SecureSettingSwitchPreference
-        android:key="doze_always_on"
-        android:title="@string/doze_always_on_title"
-        android:summary="@string/doze_always_on_summary"
-        android:defaultValue="true" />
-
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"
