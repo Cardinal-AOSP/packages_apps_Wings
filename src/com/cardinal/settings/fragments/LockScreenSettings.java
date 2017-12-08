@@ -40,11 +40,9 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
-    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFpKeystore;
-    private SystemSettingSwitchPreference mFingerprintVib;
 
 
     @Override
@@ -57,10 +55,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
-        mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
         if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
         prefSet.removePreference(mFpKeystore);
-        prefSet.removePreference(mFingerprintVib);
         } else {
         mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
                Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
