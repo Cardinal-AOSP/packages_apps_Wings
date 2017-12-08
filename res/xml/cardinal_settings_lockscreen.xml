@@ -37,6 +37,12 @@
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
 
+    <com.cardinal.settings.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_charging_current"
+        android:title="@string/lockscreen_charging_current_title"
+        android:summary="@string/lockscreen_charging_current_summary"
+        android:defaultValue="false" />
+
     <SwitchPreference
         android:key="fp_unlock_keystore"
         android:title="@string/fp_unlock_keystore_title"
