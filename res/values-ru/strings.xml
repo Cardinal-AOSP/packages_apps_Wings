@@ -82,9 +82,6 @@
   <string name="icon_title">Иконка</string>
   <string name="color_title">Цвет</string>
   <string name="colors_title">Цвета</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Вибрация сканера отпечатка</string>
-  <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Параметры батареи</string>
   <string name="battery_settings_summary">Настройка отображения различныых вариантов индикации батареи</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">Индикация</string>
   <string name="custom_battery_light_settings">Индикация зарядки</string>
-  <string name="custom_notification_light_settings">Индикатор событий</string>
   <string name="battery_light_enable">Включить</string>
   <string name="battery_light_allow_on_dnd_title">Индикатор батареи в режиме \"Не беспокоить\"</string>
   <string name="battery_light_low_blinking_title">Мигающий свет при низком заряде батареи</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">Увеличение громкости отключает режим Не беспокоить</string>
   <string name="vol_zen_title">Перекл. режима «Не беспокоить»</string>
   <string name="vol_zen_summary">Показывать переключатель в звуковой панели</string>
-  <string name="doze_always_on_title">Активный дисплей</string>
-  <string name="doze_always_on_summary">Активный дисплей будет включен если сенсор приближения не закрыт</string>
   <string name="powern_notifications_title">Уведомления о питании</string>
   <string name="powern_notifications_summary">Управление длительным нажатием на уведомления</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">Включить вибрацию во время ожидания вызова</string>
   <string name="incall_vibrate_disconnect_title">Вибрировать при отключении</string>
   <string name="incall_vibrate_disconnect_summary">Включить вибрацию после отключения вызова</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

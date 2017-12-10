@@ -53,7 +53,6 @@
   <string name="cancel">Cancelar</string>
   <string name="save">Guardar</string>
   <string name="reset_cardinal">Cardenal-AOSP</string>
-  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <!-- Fingerprint unlock keystore -->
   <!-- Media art -->
@@ -81,4 +80,6 @@
   <!-- Disable QS on secure Lockscreen -->
   <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
   <!-- Incall vibrate options -->
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

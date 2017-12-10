@@ -82,9 +82,6 @@
   <string name="icon_title">Icône</string>
   <string name="color_title">Couleur</string>
   <string name="colors_title">Couleurs</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibration du capteur d\'empreinte digitale à l’authentification</string>
-  <string name="fprint_sucess_vib_summary">Vibrer en cas d’authentification par emprunte réussie</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Paramètres de la batterie</string>
   <string name="battery_settings_summary">Personnaliser les styles de batterie</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">Témoin lumineux</string>
   <string name="custom_battery_light_settings">Témoin lumineux lors de la charge</string>
-  <string name="custom_notification_light_settings">Voyant de notification</string>
   <string name="battery_light_enable">Activer</string>
   <string name="battery_light_allow_on_dnd_title">Led de batterie en mode Ne Pas Déranger</string>
   <string name="battery_light_low_blinking_title">Led clignotante en cas de batterie faible</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">permettre au bouton volume haut de désactiver le mode \"Ne pas déranger\"</string>
   <string name="vol_zen_title">Bouton \"Ne pas déranger\"</string>
   <string name="vol_zen_summary">Afficher le bouton \"Ne pas déranger\" dans le panneau de volume</string>
-  <string name="doze_always_on_title">Ambient Display toujours actif</string>
-  <string name="doze_always_on_summary">Ambient Display actif lorsque le capteur de proximité est découvert</string>
   <string name="powern_notifications_title">Notifications d\'alimentation</string>
   <string name="powern_notifications_summary">Contrôle avancé des notifications par appui long</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">Permettre à vibrer pendant que l’appel est en attente</string>
   <string name="incall_vibrate_disconnect_title">Vibrer lors de la déconnexion</string>
   <string name="incall_vibrate_disconnect_summary">Permettre à vibrer après la déconnexion de l’appel</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

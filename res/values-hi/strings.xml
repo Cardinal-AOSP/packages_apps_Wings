@@ -82,9 +82,6 @@
   <string name="icon_title">चिह्न</string>
   <string name="color_title">रंग</string>
   <string name="colors_title">रंग</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">फ़िंगरप्रिंट प्रमाणन होने पर कंपन</string>
-  <string name="fprint_sucess_vib_summary">सफल फ़िंगरप्रिंट प्रमाणन पर कम्पन</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">बैटरी सेटिंग्स</string>
   <string name="battery_settings_summary">बैटरी शैलियाँ अनुकूलित करें</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">LED प्रकाश</string>
   <string name="custom_battery_light_settings">बैटरी चार्जीग प्रकाश</string>
-  <string name="custom_notification_light_settings">अधिसूचना प्रकाश</string>
   <string name="battery_light_enable">सक्षम करें</string>
   <string name="battery_light_allow_on_dnd_title">बैटरी प्रकाश परेशान नही करे मोड मे</string>
   <string name="battery_light_low_blinking_title">कम बैटरी होने पर निमिष प्रकाश करे</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">परेशान न करे मोड से बाहर जने के लिए वॉल्यूम बढ़ाने वाली कुंजी को अनुमति दे</string>
   <string name="vol_zen_title">परेशान ना करें कुंजी</string>
   <string name="vol_zen_summary">परेशान न करे स्विच को वॉल्यूम अनुसूची पर दिखाए</string>
-  <string name="doze_always_on_title">हमेशा-चालू परिवेशी प्रदर्शन</string>
-  <string name="doze_always_on_summary">निकटता संवेदक के खुलने पर परिवेश चालू हो जाएगा</string>
   <string name="powern_notifications_title">पॉवर अधिसूचना</string>
   <string name="powern_notifications_summary">उन्नत सूचनाएँ नियंत्रण देर से दबाने पर</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">कॉल प्रतीक्षा के दौरान कंपन करने के लिए सक्षम करें</string>
   <string name="incall_vibrate_disconnect_title">डिसकनेक्ट होने पर कंपन करें</string>
   <string name="incall_vibrate_disconnect_summary">कॉल डिसकनेक्ट होने के बाद कंपन करने के लिए सक्षम करें</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

@@ -82,9 +82,6 @@
   <string name="icon_title">Ícone</string>
   <string name="color_title">Côr</string>
   <string name="colors_title">Cores</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibração na autenticação da impressão digital</string>
-  <string name="fprint_sucess_vib_summary">Vibrar na autenticação de impressão digital bem-sucedida</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Definições de bateria</string>
   <string name="battery_settings_summary">Personalizar estilos de bateria</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">Luzes LED</string>
   <string name="custom_battery_light_settings">Luz de carregamento de bateria</string>
-  <string name="custom_notification_light_settings">Luz de notificação</string>
   <string name="battery_light_enable">Ativar</string>
   <string name="battery_light_allow_on_dnd_title">Luz de bateria no modo Não incomodar</string>
   <string name="battery_light_low_blinking_title">Piscar a luz com bateria fraca</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">permitir aumentar volume para sair do modo não incomodar</string>
   <string name="vol_zen_title">Interruptor de Não incomodar</string>
   <string name="vol_zen_summary">Mostrar um interruptor de Não incomodar no painel de volume</string>
-  <string name="doze_always_on_title">Display ambiente sempre ligado</string>
-  <string name="doze_always_on_summary">O ambiente será ligado quando o sensor de proximidade for descoberto</string>
   <string name="powern_notifications_title">Notificações de energia</string>
   <string name="powern_notifications_summary">Pressionar longamente para Controle de notificações avançadas</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">Habilitar a vibrar quando chamada em espera</string>
   <string name="incall_vibrate_disconnect_title">Vibrar ao desligar</string>
   <string name="incall_vibrate_disconnect_summary">Habilitar a vibrar depois chamada conectar</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

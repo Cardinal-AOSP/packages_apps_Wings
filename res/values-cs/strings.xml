@@ -82,9 +82,6 @@
   <string name="icon_title">Ikona</string>
   <string name="color_title">Barva</string>
   <string name="colors_title">Barvy</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibrovat při ověření otisků prstů</string>
-  <string name="fprint_sucess_vib_summary">Vibrovat při úspěšném otisku prstu</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Nastavení baterie</string>
   <string name="battery_settings_summary">Přizpůsobit styly baterie</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">Kontrolka LED</string>
   <string name="custom_battery_light_settings">Kontrolka nabíjení baterie</string>
-  <string name="custom_notification_light_settings">LED oznámení</string>
   <string name="battery_light_enable">Povolit</string>
   <string name="battery_light_allow_on_dnd_title">Světelná signalizace baterie v režimu „Nerušit“</string>
   <string name="battery_light_low_blinking_title">Blikat při nízkém stavu baterie</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">povolit režim \"Nerušit\" stiskem tlačítka hlasitosti nahoru</string>
   <string name="vol_zen_title">Přepínač stavu \"Nerušit\"</string>
   <string name="vol_zen_summary">Zobrazit přepínač stavu \"Nerušit\" v panelu hlasitosti</string>
-  <string name="doze_always_on_title">Ambientní displej vždy povolen</string>
-  <string name="doze_always_on_summary">Ambientní displej se rozsvítí při odkrytém senzoru přiblíení</string>
   <string name="powern_notifications_title">Rozšířené oznámení</string>
   <string name="powern_notifications_summary">Pokročilé ovládání oznámení při dlouhém stisknutí</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">Povolit vibrace při čekajícím hovoru</string>
   <string name="incall_vibrate_disconnect_title">Vibrovat při odpojení</string>
   <string name="incall_vibrate_disconnect_summary">Povolit vibrace při odpojení</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

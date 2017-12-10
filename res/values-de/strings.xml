@@ -81,9 +81,6 @@
   <string name="icon_title">Symbol</string>
   <string name="color_title">Farbe</string>
   <string name="colors_title">Farben</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibrieren bei Fingerabdruck-Authentifizierung</string>
-  <string name="fprint_sucess_vib_summary">Nach erfolgreicher Authentifizierung per Fingerabdruck vibrieren</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Akku-Einstellungen</string>
   <string name="battery_settings_summary">Batteriestatus anpassen</string>
@@ -98,7 +95,6 @@
   <!-- Battery light -->
   <string name="custom_leds">LED-Licht</string>
   <string name="custom_battery_light_settings">Akku Lade-Licht</string>
-  <string name="custom_notification_light_settings">Benachrichtigunglicht</string>
   <string name="battery_light_enable">Aktivieren</string>
   <string name="battery_light_allow_on_dnd_title">Akku-LED bei aktivem \"Bitte nicht stören\" Modus</string>
   <string name="battery_light_low_blinking_title">Blinklicht bei schwachem Akku</string>
@@ -122,7 +118,6 @@
   <string name="volbtn_up_zen_summary">Erlaube Lautstärke hoch zum deaktivieren von \"Nicht stören\" Modus</string>
   <string name="vol_zen_title">\"Nicht stören\"-Schalter</string>
   <string name="vol_zen_summary">\"Nicht stören\"-Schalter im Lautstärkeregler anzeigen</string>
-  <string name="doze_always_on_title">Ambient Display immer an</string>
   <string name="powern_notifications_title">Erweiterte Benachrichtigungseinstellungen</string>
   <string name="powern_notifications_summary">Erweiterte Benachrichtigungen Kontrolle bei langes Drücken</string>
   <!-- Notification Settings fragment -->
@@ -196,4 +191,6 @@
   <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
   <string name="lockscreen_hide_shortcuts_title">Verknüpfungen ausblenden</string>
   <!-- Incall vibrate options -->
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

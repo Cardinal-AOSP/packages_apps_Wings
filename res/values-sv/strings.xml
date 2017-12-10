@@ -82,9 +82,6 @@
   <string name="icon_title">Ikon</string>
   <string name="color_title">Färg</string>
   <string name="colors_title">Färger</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibration vid fingeravtrycksautentisering</string>
-  <string name="fprint_sucess_vib_summary">Vibrera vid lyckad fingeravtrycksautentisering</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Inställningar för batteri</string>
   <string name="battery_settings_summary">Anpassa batteristilar</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">LED-ljus</string>
   <string name="custom_battery_light_settings">Batteriladdningsljus</string>
-  <string name="custom_notification_light_settings">Aviseringsljus</string>
   <string name="battery_light_enable">Aktivera</string>
   <string name="battery_light_allow_on_dnd_title">Batteriljus i Stör Ej läge</string>
   <string name="battery_light_low_blinking_title">Blinkande ljus vid låg batterinivå</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">tillåt volym upp för att stänga av stör inte läge</string>
   <string name="vol_zen_title">Stör Ej omkopplare</string>
   <string name="vol_zen_summary">Visa stör ej knapp i volympanelen</string>
-  <string name="doze_always_on_title">Alltid-på Omgivningsskärm</string>
-  <string name="doze_always_on_summary">Omgivningsläge kommer att vara på när närhetssensorn är aktiverad</string>
   <string name="powern_notifications_title">Powermeddelanden</string>
   <string name="powern_notifications_summary">Avancerade meddelanden kontroll vid långt tryck</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">Aktivera vibrationer medan samtal är på väntar</string>
   <string name="incall_vibrate_disconnect_title">Vibrera vid frånkoppling</string>
   <string name="incall_vibrate_disconnect_summary">Aktivera vibrera efter samtalet frånkoppling</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>

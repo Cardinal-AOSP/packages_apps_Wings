@@ -82,9 +82,6 @@
   <string name="icon_title">Icona</string>
   <string name="color_title">Colore</string>
   <string name="colors_title">Colori</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Autenticazione impronta digitale con vibrazione</string>
-  <string name="fprint_sucess_vib_summary">Vibra all\'avvenuta autenticazione tramite impronta digitale</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Impostazioni batteria</string>
   <string name="battery_settings_summary">Personalizza lo stile della batteria</string>
@@ -99,7 +96,6 @@
   <!-- Battery light -->
   <string name="custom_leds">Luci LED</string>
   <string name="custom_battery_light_settings">Luce batteria in carica</string>
-  <string name="custom_notification_light_settings">Led di notifica</string>
   <string name="battery_light_enable">Abilita</string>
   <string name="battery_light_allow_on_dnd_title">Luce della batteria in modalità non disturbare</string>
   <string name="battery_light_low_blinking_title">Luce lampeggiante durante la bassa % di batteria</string>
@@ -124,8 +120,6 @@
   <string name="volbtn_up_zen_summary">permetti vol + per uscire dalla modalità non disturbare</string>
   <string name="vol_zen_title">Interruttore non disturbare</string>
   <string name="vol_zen_summary">Mostra lo switch per il non disturbare nel pannello volumi</string>
-  <string name="doze_always_on_title">Always-on Ambient Display</string>
-  <string name="doze_always_on_summary">L\'ambient si accenderà quando il sensore di prossimità è scoperto</string>
   <string name="powern_notifications_title">Gestione delle notifiche</string>
   <string name="powern_notifications_summary">Controllo delle notifiche avanzate sulla pressione prolungata</string>
   <!-- Notification Settings fragment -->
@@ -216,4 +210,6 @@
   <string name="incall_vibrate_call_wait_summary">Attiva la vibrazione mentre la chiamata è in attesa</string>
   <string name="incall_vibrate_disconnect_title">Vibra alla disconnessione</string>
   <string name="incall_vibrate_disconnect_summary">Attiva la vibrazione dopo essersi disconnessi dalla chiamata</string>
+  <!--  Lockscreen battery info indicator  -->
+  <!-- Statusbar ticker -->
 </resources>
