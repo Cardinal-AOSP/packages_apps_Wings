@@ -193,6 +193,7 @@
     <string name="action_splitscreen">Splitscreen</string>
     <string name="action_screenshot">Screenshot</string>
     <string name="action_partial_screenshot">Partial screenshot</string>
+    <string name="action_screen_off">Screen off</string> 
     
     <!-- ANBI -->
     <string name="anbi_title">Accidental touch</string>
