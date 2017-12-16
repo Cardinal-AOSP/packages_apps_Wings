@@ -216,7 +216,6 @@
     <string name="profile_choose_app">Choose app</string> 
     <string name="dialog_delete_title">Remove</string>
     <string name="dialog_delete_message">Remove selected item?</string>
-    <string name="heads_up_warning_text">Heads up notifications are meant to be used for multitasking while using full screen apps and/or playing games. Just know that while you use heads up notifications, you will not be able to use the ticker feature.</string>
 
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
@@ -252,5 +251,9 @@
     <string name="ticker_disabled">Disabled</string>
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notification and music ticker</string>
+
+    <!-- Notification style -->
+    <string name="notification_style_title">Notification style</string>    
+    <string name="notification_style_warning_text">While you use heads up notifications, you will not be able to use the ticker feature (vice versa).</string>
 
 </resources>

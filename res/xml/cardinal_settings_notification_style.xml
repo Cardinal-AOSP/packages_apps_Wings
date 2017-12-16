@@ -15,13 +15,19 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ListPreference
+            android:key="ticker_mode"
+            android:entries="@array/ticker_mode_entries"
+            android:entryValues="@array/ticker_mode_values"
+            android:summary="%s"
+            android:title="@string/ticker_mode_title" />
+
     <com.cardinal.settings.preference.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
             android:title="@string/heads_up_notifications"
             android:summaryOn="@string/summary_heads_up_enabled"
             android:summaryOff="@string/summary_heads_up_disabled"
             android:defaultValue="true" />
-
 
     <PreferenceCategory
             android:title="@string/heads_up_blacklist_title"
