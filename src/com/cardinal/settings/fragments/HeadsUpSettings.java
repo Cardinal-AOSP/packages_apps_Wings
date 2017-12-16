@@ -75,6 +75,9 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         // Get launch-able applications
         addPreferencesFromResource(R.xml.heads_up_settings);
+        
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.heads_up_warning_text);
+        
         mPackageManager = getPackageManager();
         mPackageAdapter = new PackageListAdapter(getActivity());
 
