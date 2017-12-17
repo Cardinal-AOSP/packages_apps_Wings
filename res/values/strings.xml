@@ -259,7 +259,6 @@
 
     <!-- Notification light dialogs -->
     <string name="advanced">Advanced</string>
-    <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
     <string name="default_time">Normal</string>
     <string name="custom_time">Custom</string>
@@ -288,11 +287,9 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
-    <string name="notification_light_brightness" translatable="false">@string/brightness</string>
     <string name="notification_light_screen_on">Lights with screen on</string>
     <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
-    <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
-    <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+    <string name="notification_light_no_apps_footer_text">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
 </resources>

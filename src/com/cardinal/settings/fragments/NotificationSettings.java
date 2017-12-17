@@ -33,9 +33,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "NotificationSettings";
 
-    private boolean mChargingLedsEnabled;
-    private PreferenceCategory mLedsCategory;
-    
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.WINGS;
@@ -49,14 +46,25 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mChargingLedsEnabled = (getResources().getBoolean(
+        boolean mChargingLedsEnabled = (getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveBatteryLed));
-
-        mLedsCategory = (PreferenceCategory) findPreference("custom_leds");
-
-    	if (!mChargingLedsEnabled) {
-    	prefSet.removePreference(mLedsCategory);
-    	}
+ 
+        boolean mNotificationLedsEnabled = (getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveNotificationLed));
+ 
+        PreferenceCategory mLedsCategory = (PreferenceCategory) findPreference("custom_leds");
+        Preference mChargingLeds = (Preference) findPreference("charging_light");
+        Preference mNotificationLeds = (Preference) findPreference("notification_light");
+ 
+        if (mChargingLeds != null && mNotificationLeds != null) {
+            if (!mChargingLedsEnabled) {
+                mLedsCategory.removePreference(mChargingLeds);
+            } else if (!mNotificationLedsEnabled) {
+                mLedsCategory.removePreference(mNotificationLeds);
+            } else if (!mChargingLedsEnabled && !mNotificationLedsEnabled) {
+                prefSet.removePreference(mLedsCategory);
+            }
+        }
     }
 
     @Override

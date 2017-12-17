@@ -31,7 +31,7 @@
   
           <Preference
                 android:key="charging_light"
-                android:fragment="com.cardinal.settings.fragments.BatteryLightSettings"
+                android:fragment="com.cardinal.settings.fragments.led.BatteryLightSettings"
                 android:title="@string/custom_battery_light_settings" />
 
           <Preference
