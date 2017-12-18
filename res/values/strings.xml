@@ -255,7 +255,7 @@
 
     <!-- Notification style -->
     <string name="notification_style_title">Notification style</string>    
-    <string name="notification_style_warning_text">While you use heads up notifications, you will not be able to use the ticker feature (vice versa).</string>
+    <string name="notification_style_warning_text">While you use heads up notifications, you will not be able to use the ticker feature, and vice versa.</string>
 
     <!-- Notification light dialogs -->
     <string name="advanced">Advanced</string>
@@ -294,8 +294,8 @@
     <string name="led_notification_text">LED light enabled by settings</string>
 
     <!-- Systemui theme -->
-    <string name="systemui_theme_style_title">Tiles panel and power menu style</string>
+    <string name="systemui_theme_style_title">Ui style</string>
     <string name="systemui_theme_style_auto">Wallpaper based</string>
-    <string name="systemui_theme_style_light">Light style</string>
-    <string name="systemui_theme_style_dark">Dark style</string>
+    <string name="systemui_theme_style_light">Light</string>
+    <string name="systemui_theme_style_dark">Dark</string>
 </resources>
