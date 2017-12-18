@@ -17,6 +17,13 @@
     android:title="@string/general_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+    <ListPreference
+        android:key="systemui_theme_style"
+        android:title="@string/systemui_theme_style_title"
+        android:persistent="false"
+        android:entries="@array/systemui_theme_style_entries"
+        android:entryValues="@array/systemui_theme_style_values" />
+
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"

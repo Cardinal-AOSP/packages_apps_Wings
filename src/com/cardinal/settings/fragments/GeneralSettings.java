@@ -21,6 +21,7 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -40,6 +41,10 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+ 
+    private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
+
+    private ListPreference mSystemUIThemeStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,14 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         if (!Utils.isVoiceCapable(getActivity())) {
             prefScreen.removePreference(incallVibCategory);
         }
+        
+        mSystemUIThemeStyle = (ListPreference) findPreference(SYSTEMUI_THEME_STYLE);
+        int systemUIThemeStyle = Settings.System.getInt(resolver,
+                Settings.System.SYSTEM_UI_THEME, 0);
+        int valueIndex = mSystemUIThemeStyle.findIndexOfValue(String.valueOf(systemUIThemeStyle));
+        mSystemUIThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
+        mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -73,7 +86,15 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     }
 
      public boolean onPreferenceChange(Preference preference, Object objValue) {
-       final String key = preference.getKey();
-       return true;
-    }
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mSystemUIThemeStyle) {
+            String value = (String) objValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SYSTEM_UI_THEME, Integer.valueOf(value));
+            int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
+            mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
+            return true;
+        }
+        return false;
+     }
 }

@@ -292,4 +292,10 @@
     <string name="notification_light_no_apps_footer_text">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
+
+    <!-- Systemui theme -->
+    <string name="systemui_theme_style_title">Tiles panel and power menu style</string>
+    <string name="systemui_theme_style_auto">Wallpaper based</string>
+    <string name="systemui_theme_style_light">Light style</string>
+    <string name="systemui_theme_style_dark">Dark style</string>
 </resources>
