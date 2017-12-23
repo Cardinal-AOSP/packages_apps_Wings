@@ -166,16 +166,24 @@
     <!-- Navigationbar toggle -->
     <string name="navigation_bar_show_title">Show navigation bar</string>
     <string name="navigation_bar_show_summary">Force enable on-screen navigation bar</string>
+    
     <!-- Buttons Backlight -->
     <string name="button_backlight_cat">Button backlight</string>
     <string name="button_backlight_on_touch_only_title">Button touch</string>
     <string name="button_backlight_on_touch_only_summary">Enable backlight with timout only on button touch</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_timeout_summary">Disabled on value 0</string>
-    <string name="button_link_brightness_title">Use screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="unit_sec">sec</string>
     <string name="button_backlight_enable_title">Enable</string>
+    <string name="button_manual_brightness">Brightness level, disabled on value 0</string>
+
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Backlight timeout</string>
+    <string name="backlight_timeout_on">Enabled always</string>
+    <string name="backlight_timeout_3s">3 sec</string>
+    <string name="backlight_timeout_default">5 sec (default)</string>
+    <string name="backlight_timeout_10s">10 sec</string>
+    <string name="backlight_timeout_15s">15 sec</string>
+    <string name="backlight_timeout_20s">20 sec</string>
+    <string name="backlight_timeout_30s">30 sec</string>
+
     <!-- Custom rebindings -->
     <string name="home_key_title">Home button</string>
     <string name="back_key_title">Back button</string>
