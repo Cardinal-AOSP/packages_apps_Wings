@@ -82,6 +82,7 @@
   <string name="icon_title">Ícone</string>
   <string name="color_title">Côr</string>
   <string name="colors_title">Cores</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">Definições de bateria</string>
   <string name="battery_settings_summary">Personalizar estilos de bateria</string>
@@ -147,12 +148,8 @@
   <string name="button_backlight_cat">Luz de fundo do botão</string>
   <string name="button_backlight_on_touch_only_title">Toque de botão</string>
   <string name="button_backlight_on_touch_only_summary">Ativar a luz de fundo com tempo limite apenas no toque de botão</string>
-  <string name="button_timeout_title">Tempo limite da luz de fundo</string>
-  <string name="button_timeout_summary">Desativar com valor 0</string>
-  <string name="button_link_brightness_title">Use o nível de brilho da tela</string>
-  <string name="button_manual_brightness">Nível de brilho</string>
-  <string name="unit_sec">seg.</string>
   <string name="button_backlight_enable_title">Ativar</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">Botão da Página Inicial</string>
   <string name="back_key_title">Botão voltar</string>
@@ -174,6 +171,7 @@
   <string name="action_splitscreen">Ecrã dividido</string>
   <string name="action_screenshot">Captura de ecrã</string>
   <string name="action_partial_screenshot">Captura parcial de ecrã</string>
+  <string name="action_screen_off">Desligar ecrã</string>
   <!-- ANBI -->
   <string name="anbi_title">Toque acidental</string>
   <string name="anbi_summary">Evitar a interação com os botões de navegação enquanto o ecrã é tocado</string>
@@ -211,5 +209,16 @@
   <string name="incall_vibrate_disconnect_title">Vibrar ao desligar</string>
   <string name="incall_vibrate_disconnect_summary">Habilitar a vibrar depois chamada conectar</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Info de carregamento do ecrã de bloqueio</string>
+  <string name="lockscreen_battery_info_summary">Mostra a tensão e a corrente máxima do carregador no ecrã de bloqueio</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">Relógio de notificação da barra de status</string>
+  <string name="ticker_disabled">Desativado</string>
+  <string name="ticker_enabled">Ativador de notificação</string>
+  <string name="ticker_media_enabled">Relógio de notificações e música</string>
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

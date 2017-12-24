@@ -82,6 +82,7 @@
   <string name="icon_title">Иконка</string>
   <string name="color_title">Цвет</string>
   <string name="colors_title">Цвета</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">Параметры батареи</string>
   <string name="battery_settings_summary">Настройка отображения различныых вариантов индикации батареи</string>
@@ -147,12 +148,8 @@
   <string name="button_backlight_cat">Подсветка кнопок</string>
   <string name="button_backlight_on_touch_only_title">Подсветка при касании</string>
   <string name="button_backlight_on_touch_only_summary">Включать подсветку клавиш только после касания</string>
-  <string name="button_timeout_title">Задержка подсветки</string>
-  <string name="button_timeout_summary">Отключено если 0</string>
-  <string name="button_link_brightness_title">Использовать уровень яркости экрана</string>
-  <string name="button_manual_brightness">Уровень яркости</string>
-  <string name="unit_sec">сек</string>
   <string name="button_backlight_enable_title">Включить</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">Кнопка Домой</string>
   <string name="back_key_title">Кнопка Назад</string>
@@ -174,6 +171,7 @@
   <string name="action_splitscreen">Режим разделения экрана</string>
   <string name="action_screenshot">Скриншот</string>
   <string name="action_partial_screenshot">Скриншот выбранной области экрана</string>
+  <string name="action_screen_off">Отключить экран</string>
   <!-- ANBI -->
   <string name="anbi_title">Случайное прикосновение</string>
   <string name="anbi_summary">Предотвращение нажатия кнопок навигации при касании экрана</string>
@@ -211,5 +209,16 @@
   <string name="incall_vibrate_disconnect_title">Вибрировать при отключении</string>
   <string name="incall_vibrate_disconnect_summary">Включить вибрацию после отключения вызова</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
+  <string name="lockscreen_battery_info_summary">Отображение тока зарядки и вольтажа на заблокированном экране</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">Бегущая строка в строке состояния</string>
+  <string name="ticker_disabled">Отключено</string>
+  <string name="ticker_enabled">Бегущая строка</string>
+  <string name="ticker_media_enabled">Бегущая строка уведомлений и музыки</string>
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

@@ -37,49 +37,188 @@
   <string name="button_wake_summary">Puede no despertar el dispositivo si el control de música está activo y se está reproduciendo música</string>
   <!-- Volume button track change -->
   <string name="volbtn_music_controls_title">Controles de música con las teclas de volumen</string>
+  <string name="volbtn_music_controls_summary">Cuando la pantalla esté apagada, mantener presionados los botones de volumen cambiarán entre las pistas de música</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Despertar al conectar el cargador</string>
   <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla al conectar o desconectar el cargador</string>
   <!-- Network traffic -->
+  <string name="network_traffic_title">Tráfico de la red</string>
+  <string name="network_traffic_summary">Muestra el medidor de actividad de red en barra de estado</string>
+  <string name="network_traffic_state_title">Mostrar velocidad de la red en la barra de estado</string>
+  <string name="network_traffic_autohide_threshold_title">Umbral mínimo de red para ocultarse (KB/s)</string>
   <string name="show_network_traffic_disable">Deshabilitado</string>
   <string name="show_network_traffic_up">Subida</string>
   <string name="show_network_traffic_down">Bajada</string>
   <string name="show_network_traffic_all">Subida y bajada</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Selector de color</string>
+  <string name="press_color_to_apply">Pulse en el color de abajo para aplicar</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Aplicar</string>
   <string name="color_default">Predeterminado</string>
   <!-- Quick settings tiles columns and rows config -->
+  <string name="quicksettings_category">Ajustes rápidos</string>
+  <string name="quicksettings_summary">Muestra las opciones para configurar el diseño de los ajustes rápidos</string>
+  <string name="qs_layout_category">Diseño de ajustes rápidos</string>
   <!-- QS rows and columns -->
+  <string name="qs_rows_columns_title">Número de filas, columnas</string>
+  <string name="qs_rows_portrait_title">Filas en modo vertical</string>
+  <string name="qs_rows_landscape_title">Filas en modo apaisado</string>
+  <string name="qs_columns_portrait_title">Columnas en modo vertical</string>
+  <string name="qs_columns_landscape_title">Columnas en modo apaisado</string>
+  <string name="qs_tile_title_visibility_title">Ajustes Rápidos</string>
+  <string name="qs_tile_title_visibility_summary_on">Títulos de ajustes rápidos visibles</string>
+  <string name="qs_tile_title_visibility_summary_off">Títulos de ajustes rápidos desactivados</string>
   <!-- General strings -->
   <string name="cancel">Cancelar</string>
   <string name="save">Guardar</string>
+  <string name="reset_android">Android</string>
   <string name="reset_cardinal">Cardenal-AOSP</string>
+  <string name="reset_colors">Restablecer colores</string>
+  <string name="text_title">Texto</string>
+  <string name="icon_title">Icono</string>
+  <string name="color_title">Color</string>
+  <string name="colors_title">Colores</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
+  <string name="battery_settings_title">Ajustes de la batería</string>
+  <string name="battery_settings_summary">Personalizar estilos de batería</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Desbloqueo con huella digital</string>
+  <string name="fp_unlock_keystore_summary">Permitir que el dispositivo de desbloqueo con huella digital directamente después del arranque.\nNote: Utilizar bajo su propio riesgo!</string>
   <!-- Media art -->
+  <string name="media_art_title">Caratula de música</string>
+  <string name="media_art_summary">Muestra caratula de la música en la pantalla de bloqueo</string>
   <!-- Whether to display IME switcher notifcation -->
+  <string name="ime_switcher_notify">Notificación de selector de teclado/autocompletado</string>
   <!-- Battery light -->
+  <string name="custom_leds">Luz LED</string>
+  <string name="custom_battery_light_settings">Ajustes de luz led de la batería</string>
+  <string name="battery_light_enable">Habilitar</string>
+  <string name="battery_light_allow_on_dnd_title">Led de batería en modo No Molestar</string>
+  <string name="battery_light_low_blinking_title">Led intermitente con batería baja</string>
+  <string name="battery_light_cat">Color del led cuando se esta cargando</string>
+  <string name="battery_light_low_color">Batería baja</string>
+  <string name="battery_light_medium_color">Media carga</string>
+  <string name="battery_light_full_color">Carga casi completa</string>
+  <string name="battery_light_reallyfull_color">Batería completa (100%)</string>
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Iconos de la barra de estado</string>
+  <string name="status_bar_icon_blacklist_summary">Configurar los iconos que se muestran en la barra de estado</string>
   <string name="lockscreen_shortcuts_title">Atajos de la pantalla de bloqueo</string>
+  <string name="lockscreen_shortcuts_summary">Accesos directos en la parte inferior</string>
+  <string name="navbar_buttons_title">Altura de la barra de navegación</string>
+  <string name="navbar_buttons_summary">Ajustes de barra de navegación y iconos</string>
+  <string name="qs_brightness_slider_title">Mostrar barra de brillo</string>
+  <string name="qs_brightness_slider_summary">Mostrar una barra de brillo en el panel de ajustes rápidos</string>
+  <string name="vol_dnd_category_title">Modo No molestar</string>
+  <string name="volbtn_down_zen_title">Modo No molestar con tecla de volumen bajo</string>
+  <string name="volbtn_down_zen_summary">permite entrar en modo No molestar cuando se presiona la tecla de bajar volumen</string>
+  <string name="volbtn_up_zen_title">Modo No molestar con tecla de volumen bajo</string>
+  <string name="volbtn_up_zen_summary">permite entrar en modo No molestar cuando se presiona la tecla de bajar volumen</string>
+  <string name="vol_zen_title">Interruptor de No molestar</string>
+  <string name="vol_zen_summary">Muestra el interruptor de No molestar en el panel de volumen</string>
   <string name="powern_notifications_title">Notificaciones de energía</string>
+  <string name="powern_notifications_summary">Ajustes avanzados de notificación cuando se mantiene presionado</string>
   <!-- Notification Settings fragment -->
+  <string name="notification_settings_title">Notificaciones</string>
+  <string name="notification_settings_summary">Administrar ajustes de Notificaciones relacionadas</string>
   <!-- Navigation bar -->
   <string name="navigationbar_settings_title">Barra de navegación</string>
+  <string name="navigationbar_settings_summary">Botones de navegación por software</string>
+  <string name="hardwarekeys_cat_title">Teclas físicas</string>
   <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Eliminar todos los recientes</string>
+  <string name="show_clear_all_recents_button_summary_on">Mostrar eliminar todo en aplicaciones recientes</string>
+  <string name="show_clear_all_recents_button_summary_off">Mostrar AOSP eliminar todos</string>
+  <string name="recents_clear_all_location_title">Posición de botón de Borrar todo</string>
+  <string name="recents_clear_all_location_top_right">Superior derecho</string>
+  <string name="recents_clear_all_location_top_left">Superior izquierdo</string>
+  <string name="recents_clear_all_location_top_center">Superior centrado</string>
+  <string name="recents_clear_all_location_bottom_right">Inferior derecho</string>
+  <string name="recents_clear_all_location_bottom_left">Inferior izquierdo</string>
+  <string name="recents_clear_all_location_bottom_center">Inferior centrado</string>
   <!-- Navigationbar toggle -->
+  <string name="navigation_bar_show_title">Mostrar barra de navegación</string>
+  <string name="navigation_bar_show_summary">Forzar - Activar barra de navegación</string>
   <!-- Buttons Backlight -->
+  <string name="button_backlight_cat">Luz led del botón</string>
+  <string name="button_backlight_on_touch_only_title">Botones táctiles</string>
+  <string name="button_backlight_on_touch_only_summary">Activar luz de fondo con tiempo de espera sólo en el botones táctiles</string>
+  <string name="button_backlight_enable_title">Habilitar</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
+  <string name="home_key_title">Botón Inicio</string>
+  <string name="back_key_title">Botón Atrás</string>
+  <string name="menu_key_title">Botón Menú</string>
+  <string name="assist_key_title">Botón de ayuda</string>
+  <string name="app_switch_key_title">Botón Recientes</string>
+  <string name="camera_key_title">Botón Cámara</string>
+  <string name="short_press_title">Acción pulsación corta</string>
+  <string name="long_press_title">Acción de pulsación larga</string>
+  <string name="double_tap_title">Acción doble pulsación</string>
+  <string name="action_nothing">Ninguna acción</string>
+  <string name="action_menu">Abrir/cerrar el menú</string>
   <string name="action_app_switch">Recientes</string>
+  <string name="action_search">Asistente de búsqueda</string>
+  <string name="action_voice_search">Búsqueda por voz</string>
+  <string name="action_in_app_search">Búsqueda dentro de la aplicación</string>
+  <string name="action_launch_camera">Abrir cámara</string>
+  <string name="action_last_app">Iniciar última aplicación</string>
+  <string name="action_splitscreen">Pantalla dividida</string>
   <string name="action_screenshot">Captura de pantalla</string>
   <string name="action_partial_screenshot">Captura de pantalla parcial</string>
+  <string name="action_screen_off">Apagar pantalla</string>
   <!-- ANBI -->
   <string name="anbi_title">Toque accidental</string>
+  <string name="anbi_summary">Previene la interacción con los botones de navegación mientras se está tocando la pantalla</string>
   <!-- Heads up -->
+  <string name="heads_up_notifications">Notificaciones flotantes</string>
+  <string name="summary_heads_up_enabled">Notificaciones flotantes habilitadas</string>
+  <string name="summary_heads_up_disabled">Notificaciones flotantes deshabilitadas</string>
+  <string name="add_heads_up_blacklist_package">Agregar aplicación a lista negra</string>
+  <string name="add_heads_up_whitelist_package">Agregar aplicación a lista blanca</string>
+  <string name="add_heads_up_blacklist_summary">Desactiva las notificaciones flotantes de las aplicaciones seleccionadas</string>
+  <string name="add_heads_up_whitelist_summary">Desactiva las notificaciones flotantes mientras se usan las aplicaciones seleccionadas</string>
+  <string name="heads_up_blacklist_title">Lista negra</string>
+  <string name="heads_up_whitelist_title">Lista blanca</string>
+  <string name="profile_choose_app">Elegir aplicación</string>
+  <string name="dialog_delete_title">Eliminar</string>
+  <string name="dialog_delete_message">¿Eliminar el elemento seleccionado?</string>
   <!-- Sensor block per-package -->
+  <string name="sensor_block_title">Bloqueo de sensor por aplicación</string>
+  <string name="sensor_block_summary">Bloquea el acceso a ciertos sensores de algunas aplicaciones para ahorrar batería.</string>
   <!-- Incall Home button behavior-->
+  <string name="allow_incall_home_title">Botón de inicio cuando timbre</string>
+  <string name="allow_incall_home_summary">Habilitar usar el boton de inicio cuando el dispositivo esté sonando / timbrando</string>
   <!-- Disable QS on secure Lockscreen -->
+  <string name="lockscreen_qs_disabled_title">Deshabilitar Ajustes rápidos</string>
+  <string name="lockscreen_qs_disabled_summary">Desactivar expandir ajustes rápidos en la pantalla de bloqueo</string>
   <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+  <string name="lockscreen_hide_shortcuts_title">Ocultar accesos directos inferiores</string>
+  <string name="lockscreen_hide_shortcuts_summary">Mostrar acceso directo a la cámara en pantalla de bloqueo</string>
   <!-- Incall vibrate options -->
+  <string name="incall_vibration_category">Vibración en llamada</string>
+  <string name="incall_vibrate_connect_title">Vibrar al conectar</string>
+  <string name="incall_vibrate_connect_summary">El dispositivo vibrará cuando se conecte una llamada</string>
+  <string name="incall_vibrate_call_wait_title">Vibrar en llamada en espera</string>
+  <string name="incall_vibrate_call_wait_summary">El dispositivo vibrará cuando la llamada este en espera</string>
+  <string name="incall_vibrate_disconnect_title">Vibrar al desconectar</string>
+  <string name="incall_vibrate_disconnect_summary">El dispositivo vibrará cuando se desconecte una llamada</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Información de carga en la pantalla de bloqueo</string>
+  <string name="lockscreen_battery_info_summary">Mostrar corriente máxima y voltaje usado en pantalla de bloqueo</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">Ticker de notificación de barra de estado</string>
+  <string name="ticker_disabled">Deshabilitado</string>
+  <string name="ticker_enabled">Texto de notificación en la barra de estado</string>
+  <string name="ticker_media_enabled">Ticker De música y notificaciones</string>
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

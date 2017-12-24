@@ -82,6 +82,7 @@
   <string name="icon_title">Icône</string>
   <string name="color_title">Couleur</string>
   <string name="colors_title">Couleurs</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">Paramètres de la batterie</string>
   <string name="battery_settings_summary">Personnaliser les styles de batterie</string>
@@ -147,12 +148,8 @@
   <string name="button_backlight_cat">Rétro-éclairage du bouton</string>
   <string name="button_backlight_on_touch_only_title">Bouton tactile</string>
   <string name="button_backlight_on_touch_only_summary">Activer le rétro-éclairage avec minuteur uniquement sur le bouton tactile</string>
-  <string name="button_timeout_title">Délai avant extinction</string>
-  <string name="button_timeout_summary">0 pour désactiver</string>
-  <string name="button_link_brightness_title">Utilisez le niveau de luminosité de l’écran</string>
-  <string name="button_manual_brightness">Niveau de luminosité</string>
-  <string name="unit_sec">seconde</string>
   <string name="button_backlight_enable_title">Activer</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">Bouton d\'accueil</string>
   <string name="back_key_title">Bouton retour</string>
@@ -212,4 +209,9 @@
   <string name="incall_vibrate_disconnect_summary">Permettre à vibrer après la déconnexion de l’appel</string>
   <!--  Lockscreen battery info indicator  -->
   <!-- Statusbar ticker -->
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

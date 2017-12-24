@@ -82,6 +82,7 @@
   <string name="icon_title">चिह्न</string>
   <string name="color_title">रंग</string>
   <string name="colors_title">रंग</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">बैटरी सेटिंग्स</string>
   <string name="battery_settings_summary">बैटरी शैलियाँ अनुकूलित करें</string>
@@ -147,12 +148,8 @@
   <string name="button_backlight_cat">कुंजी बैकलाइट</string>
   <string name="button_backlight_on_touch_only_title">कुंजी स्पर्श</string>
   <string name="button_backlight_on_touch_only_summary">केवल कुंजी स्पर्श पर समय समाप्ति के साथ बैकलाइट सक्षम करें</string>
-  <string name="button_timeout_title">बैकलाइट समय समाप्ति</string>
-  <string name="button_timeout_summary">० मान पर अछम</string>
-  <string name="button_link_brightness_title">स्क्रीन चमक स्तर का उपयोग करें</string>
-  <string name="button_manual_brightness">चमक स्तर</string>
-  <string name="unit_sec">सेकंड</string>
   <string name="button_backlight_enable_title">सक्षम करें</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">होम बटन</string>
   <string name="back_key_title">वापस जाएँ बटन</string>
@@ -174,6 +171,7 @@
   <string name="action_splitscreen">विभाजित स्क्रीन</string>
   <string name="action_screenshot">स्क्रीनशॉट</string>
   <string name="action_partial_screenshot">आंशिक स्क्रीनशॉट</string>
+  <string name="action_screen_off">स्क्रीन बंद</string>
   <!-- ANBI -->
   <string name="anbi_title">आकस्मिक स्पर्श</string>
   <string name="anbi_summary">स्क्रीन को छूते समय हार्डवेयर पथ प्रदर्शन कुंजी के साथ सहभागिता रोके</string>
@@ -211,5 +209,16 @@
   <string name="incall_vibrate_disconnect_title">डिसकनेक्ट होने पर कंपन करें</string>
   <string name="incall_vibrate_disconnect_summary">कॉल डिसकनेक्ट होने के बाद कंपन करने के लिए सक्षम करें</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">लॉकसक्रीन पर चार्ज होने कि जानकारी</string>
+  <string name="lockscreen_battery_info_summary">लॉक्सक्रीन पर तय किए हुए करेंट और वोल्टेज के अधिकतम में को दर्शाए</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">स्टेटसबार अधिसूचना टिकर</string>
+  <string name="ticker_disabled">अक्षम कर दिया गया</string>
+  <string name="ticker_enabled">सूचना टिकर</string>
+  <string name="ticker_media_enabled">सूचनाएँ और संगीत टिकर</string>
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

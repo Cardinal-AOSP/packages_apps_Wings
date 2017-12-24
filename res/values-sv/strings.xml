@@ -82,6 +82,7 @@
   <string name="icon_title">Ikon</string>
   <string name="color_title">Färg</string>
   <string name="colors_title">Färger</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">Inställningar för batteri</string>
   <string name="battery_settings_summary">Anpassa batteristilar</string>
@@ -147,12 +148,8 @@
   <string name="button_backlight_cat">Knappen för bakgrundsbelysning</string>
   <string name="button_backlight_on_touch_only_title">Knappen för tryck</string>
   <string name="button_backlight_on_touch_only_summary">Aktivera bakgrundsbelysningen med tidsgräns endast på knappen tryck</string>
-  <string name="button_timeout_title">Tidsgräns för knappljus</string>
-  <string name="button_timeout_summary">Inaktiverad på värdet 0</string>
-  <string name="button_link_brightness_title">Använd skärmens ljusstyrka</string>
-  <string name="button_manual_brightness">Ljusstyrka</string>
-  <string name="unit_sec">sek</string>
   <string name="button_backlight_enable_title">Aktivera</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">Hemknapp</string>
   <string name="back_key_title">Bakåtknapp</string>
@@ -174,6 +171,7 @@
   <string name="action_splitscreen">Delad skärm</string>
   <string name="action_screenshot">Skärmdump</string>
   <string name="action_partial_screenshot">Partiell skärmdump</string>
+  <string name="action_screen_off">Skärm av</string>
   <!-- ANBI -->
   <string name="anbi_title">Oavsiktligt tryck</string>
   <string name="anbi_summary">Förhindra interaktion med hårdvarans navigeringsknappar medan skärmen berörs</string>
@@ -211,5 +209,16 @@
   <string name="incall_vibrate_disconnect_title">Vibrera vid frånkoppling</string>
   <string name="incall_vibrate_disconnect_summary">Aktivera vibrera efter samtalet frånkoppling</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Lockscreen laddning information</string>
+  <string name="lockscreen_battery_info_summary">Visa förhandlade laddare max ström och spänning på lockscreen</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">StatusBar anmälan ticker</string>
+  <string name="ticker_disabled">Inaktiverad</string>
+  <string name="ticker_enabled">Anmälan ticker</string>
+  <string name="ticker_media_enabled">Anmälan och musik ticker</string>
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

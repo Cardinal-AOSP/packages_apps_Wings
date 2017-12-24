@@ -17,8 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Cardinal Wings menus -->
   <!-- Main Settings -->
-  <string name="lockscreen_summary">Προσαρμογές οθόνης κλειδώματος</string>
-  <string name="recents_ui_summary">Προσαρμογή μενού πρόσφατων εφαρμογών </string>
   <!-- double tap to sleep - statusbar -->
   <!-- Volume button wake -->
   <!-- Volume button track change -->

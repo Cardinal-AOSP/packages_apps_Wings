@@ -81,6 +81,7 @@
   <string name="icon_title">Symbol</string>
   <string name="color_title">Farbe</string>
   <string name="colors_title">Farben</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">Akku-Einstellungen</string>
   <string name="battery_settings_summary">Batteriestatus anpassen</string>
@@ -144,11 +145,8 @@
   <string name="button_backlight_cat">Tasten Beleuchtung</string>
   <string name="button_backlight_on_touch_only_title">Tastendruck</string>
   <string name="button_backlight_on_touch_only_summary">Tastenbeleuchtung nur beim Tastendruck aktivieren</string>
-  <string name="button_timeout_title">Timeout für Tastenbeleuchtung</string>
-  <string name="button_timeout_summary">Bei 0 deaktivieren</string>
-  <string name="button_manual_brightness">Helligkeitsstufe</string>
-  <string name="unit_sec">Sek</string>
   <string name="button_backlight_enable_title">Aktivieren</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">Home-Taste</string>
   <string name="back_key_title">Zurück-Taste</string>
@@ -177,6 +175,7 @@
   <string name="heads_up_notifications">Pop-Up-Benachrichtigungen</string>
   <string name="summary_heads_up_enabled">Pop-Up Benachrichtigungen aktiviert</string>
   <string name="summary_heads_up_disabled">Pop-Up Benachrichtigungen deaktiviert</string>
+  <string name="add_heads_up_blacklist_summary">Headsup Benachrichtigungen von diesen Apps deaktivieren</string>
   <string name="heads_up_blacklist_title">Blockiert</string>
   <string name="heads_up_whitelist_title">Erlaubt</string>
   <string name="profile_choose_app">Anwendung auswählen</string>
@@ -191,6 +190,12 @@
   <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
   <string name="lockscreen_hide_shortcuts_title">Verknüpfungen ausblenden</string>
   <!-- Incall vibrate options -->
+  <string name="incall_vibration_category">Vibration während eines Anrufes</string>
   <!--  Lockscreen battery info indicator  -->
   <!-- Statusbar ticker -->
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>

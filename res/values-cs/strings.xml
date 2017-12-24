@@ -82,6 +82,7 @@
   <string name="icon_title">Ikona</string>
   <string name="color_title">Barva</string>
   <string name="colors_title">Barvy</string>
+  <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <string name="battery_settings_title">Nastavení baterie</string>
   <string name="battery_settings_summary">Přizpůsobit styly baterie</string>
@@ -147,12 +148,8 @@
   <string name="button_backlight_cat">Podsvícení tlačítek</string>
   <string name="button_backlight_on_touch_only_title">Podsvícení tlačítek při dotyku</string>
   <string name="button_backlight_on_touch_only_summary">Aktivujte podsvícení s časovým omezením pouze při stisknutí tlačítka</string>
-  <string name="button_timeout_title">Délka podsvícení</string>
-  <string name="button_timeout_summary">Zakázáno na hodnotě 0</string>
-  <string name="button_link_brightness_title">Použít úroveň jasu obrazovky</string>
-  <string name="button_manual_brightness">Úroveň jasu</string>
-  <string name="unit_sec">sekund</string>
   <string name="button_backlight_enable_title">Povolit</string>
+  <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
   <string name="home_key_title">Tlačítko Domů</string>
   <string name="back_key_title">Tlačítko Zpět</string>
@@ -174,6 +171,7 @@
   <string name="action_splitscreen">Rozdělit obrazovku</string>
   <string name="action_screenshot">Snímek obrazovky</string>
   <string name="action_partial_screenshot">Částečný snímek obrazovky</string>
+  <string name="action_screen_off">Vypnout obrazovku</string>
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabránit interakci s harwarovými tlačítky během dotyku obrazovky</string>
@@ -211,5 +209,16 @@
   <string name="incall_vibrate_disconnect_title">Vibrovat při odpojení</string>
   <string name="incall_vibrate_disconnect_summary">Povolit vibrace při odpojení</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Informace o nabíjení na zamykací obrazovce</string>
+  <string name="lockscreen_battery_info_summary">Zobrazit maximální proud a napětí při nabíjení na zamykací obrazovce</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">Notifikační oznámení ve stavové liště</string>
+  <string name="ticker_disabled">Vypnuto</string>
+  <string name="ticker_enabled">Notifikační oznámení</string>
+  <string name="ticker_media_enabled">Notifikační a hudební oznámení</string>
+  <!-- Notification style -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Systemui theme -->
 </resources>
