@@ -17,7 +17,7 @@
     android:title="@string/general_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-    <ListPreference
+    <DropDownPreference
         android:key="systemui_theme_style"
         android:title="@string/systemui_theme_style_title"
         android:persistent="false"

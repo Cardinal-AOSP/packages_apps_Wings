@@ -21,7 +21,7 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -44,7 +44,7 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
  
     private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
 
-    private ListPreference mSystemUIThemeStyle;
+    private DropDownPreference mSystemUIThemeStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(incallVibCategory);
         }
         
-        mSystemUIThemeStyle = (ListPreference) findPreference(SYSTEMUI_THEME_STYLE);
+        mSystemUIThemeStyle = (DropDownPreference) findPreference(SYSTEMUI_THEME_STYLE);
         int systemUIThemeStyle = Settings.System.getInt(resolver,
                 Settings.System.SYSTEM_UI_THEME, 0);
         int valueIndex = mSystemUIThemeStyle.findIndexOfValue(String.valueOf(systemUIThemeStyle));
