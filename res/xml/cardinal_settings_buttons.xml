@@ -29,6 +29,12 @@
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values" />
 
+    <Preference
+        android:key="volume_steps"
+        android:title="@string/volume_steps_title"
+        android:summary="@string/volume_steps_summary"
+        android:fragment="com.cardinal.settings.fragments.VolumeSteps" />
+
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
             android:key="volume_wake_screen"
             android:title="@string/volbtn_wake_device_title"
