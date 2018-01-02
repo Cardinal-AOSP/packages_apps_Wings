@@ -21,7 +21,7 @@
 
     <!-- Main Settings -->
     <string name="general_title">General</string>
-    <string name="general_summary">Misc. UI/UX cutomizations.</string>
+    <string name="general_summary">Misc. UI/UX customization.</string>
     <string name="statusbar_title">StatusBar</string>
     <string name="statusbar_summary">Options for customizing statusbar, qs, notifications etc.</string>    
     <string name="buttons_title">Buttons</string>
@@ -115,7 +115,6 @@
     <string name="custom_leds">LED lights</string>
     <string name="custom_battery_light_settings">Battery charging light</string>
     <string name="battery_light_enable">Enable</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
     <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
     <string name="battery_light_cat">Battery light color when charging</string>
     <string name="battery_light_low_color">Low battery</string>

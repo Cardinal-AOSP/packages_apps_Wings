@@ -44,12 +44,6 @@
             android:dependency="notification_light_pulse" />
 
         <com.cardinal.settings.preference.SystemSettingSwitchPreference
-            android:key="allow_lights"
-            android:title="@string/notification_light_zen_mode"
-            android:dependency="notification_light_pulse"
-            android:defaultValue="true" />
-
-        <com.cardinal.settings.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:summary="@string/notification_light_use_custom_summary"
