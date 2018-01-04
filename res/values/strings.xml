@@ -121,7 +121,8 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full (100) battery</string>
-
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string> 
+     
     <!--SysUI tuner options -->
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
@@ -295,7 +296,6 @@
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
     <string name="notification_light_screen_on">Lights with screen on</string>
-    <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
     <string name="notification_light_no_apps_footer_text">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
