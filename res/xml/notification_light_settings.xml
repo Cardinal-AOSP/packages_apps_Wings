@@ -72,6 +72,7 @@
     <PreferenceCategory
         android:key="applications_list"
         android:title="@string/notification_light_applist_title"
+        settings:allowDividerBelow="false"
         android:dependency="notification_light_pulse_custom_enable" >
     </PreferenceCategory>
 
