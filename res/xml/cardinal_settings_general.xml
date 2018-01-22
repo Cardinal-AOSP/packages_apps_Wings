@@ -22,6 +22,11 @@
         android:fragment="com.cardinal.settings.fragments.ExpandedDesktop"
         android:title="@string/expanded_desktop_category" />
 
+    <Preference
+        android:key="suspend_actions"
+        android:title="@string/screen_state_toggles_title"
+        android:fragment="com.cardinal.settings.fragments.SuspendActions" />
+
     <ListPreference
         android:key="systemui_theme_style"
         android:title="@string/systemui_theme_style_title"
@@ -48,7 +53,6 @@
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:defaultValue="false" />
-
 
     <PreferenceCategory
         android:key="incall_vib_options"
