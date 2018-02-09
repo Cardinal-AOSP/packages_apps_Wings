@@ -42,6 +42,12 @@
         android:fragment="com.cardinal.settings.fragments.ClockDateSettings" />
 
     <Preference
+        android:key="carrier_label"
+        android:fragment="com.cardinal.settings.fragments.CarrierLabel"
+        android:title="@string/carrier_label_title"
+        android:summary="@string/carrier_label_summary" />
+
+    <Preference
             android:title="@string/status_bar_icon_blacklist_title"
             android:summary="@string/status_bar_icon_blacklist_summary">
         <intent android:action="android.intent.action.MAIN"
