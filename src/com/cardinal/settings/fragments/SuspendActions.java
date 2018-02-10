@@ -29,17 +29,23 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 
+import android.provider.SearchIndexableResource;
 import com.android.settings.SettingsPreferenceFragment;
 import com.cardinal.settings.preference.CustomSeekBarPreference;
 
+import java.util.ArrayList;
+import java.util.List;
+ 
 public class SuspendActions extends SettingsPreferenceFragment
-            implements Preference.OnPreferenceChangeListener {
+            implements Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "SuspendActions";
 
@@ -226,4 +232,25 @@ public class SuspendActions extends SettingsPreferenceFragment
         getActivity().stopService(service);
         getActivity().startService(service);
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.suspend_actions;
+                    result.add(sir);
+                    return result;
+                }
+ 
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }
