@@ -24,6 +24,14 @@
         android:entries="@array/systemui_theme_style_entries"
         android:entryValues="@array/systemui_theme_style_values" />
 
+    <ListPreference
+        android:key="pref_scrollingcache"
+        android:dialogTitle="@string/pref_scrollingcache_title"
+        android:title="@string/pref_scrollingcache_title"
+        android:summary="@string/pref_scrollingcache_summary"
+        android:entries="@array/entries_scrollingcache" 
+        android:entryValues="@array/values_scrollingcache"/>
+
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"

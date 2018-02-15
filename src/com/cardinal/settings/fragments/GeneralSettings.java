@@ -20,8 +20,10 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.support.v7.preference.DropDownPreference;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -50,7 +52,12 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
  
     private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
 
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
+ 
     private DropDownPreference mSystemUIThemeStyle;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +81,11 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         mSystemUIThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
         mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
+
+        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -100,6 +112,11 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
             int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
             mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
             return true;
+        } else if (preference == mScrollingCachePref) {
+            if (objValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) objValue);
+                return true;
+            }
         }
         return false;
      }
