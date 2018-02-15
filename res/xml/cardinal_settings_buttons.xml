@@ -22,6 +22,12 @@
             android:title="@string/navigationbar_settings_title"
             android:summary="@string/navigationbar_settings_summary"
             android:fragment="com.cardinal.settings.fragments.NavigationBarSettings" />
+ 
+    <ListPreference
+        android:key="torch_power_button_gesture"
+        android:title="@string/torch_power_button_gesture_title"
+        android:entries="@array/torch_power_button_gesture_entries"
+        android:entryValues="@array/torch_power_button_gesture_values" />
 
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
             android:key="volume_wake_screen"
