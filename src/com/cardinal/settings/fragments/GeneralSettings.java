@@ -22,7 +22,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.os.UserHandle;
-import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
@@ -56,7 +55,7 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "1";
  
-    private DropDownPreference mSystemUIThemeStyle;
+    private ListPreference mSystemUIThemeStyle;
     private ListPreference mScrollingCachePref;
 
     @Override
@@ -74,7 +73,7 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(incallVibCategory);
         }
         
-        mSystemUIThemeStyle = (DropDownPreference) findPreference(SYSTEMUI_THEME_STYLE);
+        mSystemUIThemeStyle = (ListPreference) findPreference(SYSTEMUI_THEME_STYLE);
         int systemUIThemeStyle = Settings.System.getInt(resolver,
                 Settings.System.SYSTEM_UI_THEME, 0);
         int valueIndex = mSystemUIThemeStyle.findIndexOfValue(String.valueOf(systemUIThemeStyle));
