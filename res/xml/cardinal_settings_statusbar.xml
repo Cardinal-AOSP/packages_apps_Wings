@@ -36,6 +36,12 @@
         android:fragment="com.cardinal.settings.fragments.BatterySettings" />
 
     <Preference
+        android:key="clock_settings"
+        android:title="@string/status_bar_clock"
+        android:summary="@string/status_bar_clock_summary"
+        android:fragment="com.cardinal.settings.fragments.ClockDateSettings" />
+
+    <Preference
             android:title="@string/status_bar_icon_blacklist_title"
             android:summary="@string/status_bar_icon_blacklist_summary">
         <intent android:action="android.intent.action.MAIN"
