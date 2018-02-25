@@ -23,7 +23,7 @@
     <string name="general_title">General</string>
     <string name="general_summary">Misc. UI/UX customization.</string>
     <string name="statusbar_title">StatusBar</string>
-    <string name="statusbar_summary">Options for customizing statusbar, qs, notifications etc.</string>    
+    <string name="statusbar_summary">Options for customizing statusbar, qs, notifications etc.</string>
     <string name="buttons_title">Buttons</string>
     <string name="buttons_summary">Options for Vol controls, Navigation bar etc.</string>
     <string name="lockscreen_title">Lockscreen</string>
@@ -49,7 +49,7 @@
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
-    <string name="network_traffic_summary">Option to show net activity meter on status bar</string>    
+    <string name="network_traffic_summary">Option to show net activity meter on status bar</string>
     <string name="network_traffic_state_title">Net activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
     <string name="show_network_traffic_disable">Disabled</string>
@@ -121,8 +121,8 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full (100) battery</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string> 
-     
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+
     <!--SysUI tuner options -->
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
@@ -166,7 +166,7 @@
     <!-- Navigationbar toggle -->
     <string name="navigation_bar_show_title">Show navigation bar</string>
     <string name="navigation_bar_show_summary">Force enable on-screen navigation bar</string>
-    
+
     <!-- Buttons Backlight -->
     <string name="button_backlight_cat">Button backlight</string>
     <string name="button_backlight_on_touch_only_title">Button touch</string>
@@ -205,24 +205,24 @@
     <string name="action_splitscreen">Splitscreen</string>
     <string name="action_screenshot">Screenshot</string>
     <string name="action_partial_screenshot">Partial screenshot</string>
-    <string name="action_screen_off">Screen off</string> 
-    
+    <string name="action_screen_off">Screen off</string>
+
     <!-- ANBI -->
     <string name="anbi_title">Accidental touch</string>
     <string name="anbi_summary">Prevent interaction with hardware navigation buttons while the screen is being touched</string>
- 
-    <!-- Heads up --> 
-    <string name="heads_up_notifications">HeadsUp</string> 
-    <string name="summary_heads_up_enabled">HeadsUp notifications are enabled</string> 
+
+    <!-- Heads up -->
+    <string name="heads_up_notifications">HeadsUp</string>
+    <string name="summary_heads_up_enabled">HeadsUp notifications are enabled</string>
     <string name="summary_heads_up_disabled">HeadsUp notifications are disabled</string>
-    <string name="add_heads_up_blacklist_package">Add an app to headsup blacklist</string>  
-    <string name="add_heads_up_whitelist_package">Add an app to headsup whitelist</string> 
+    <string name="add_heads_up_blacklist_package">Add an app to headsup blacklist</string>
+    <string name="add_heads_up_whitelist_package">Add an app to headsup whitelist</string>
     <string name="add_heads_up_blacklist_summary">Disable headsup notifications from these apps</string>
     <string name="add_heads_up_whitelist_summary">Disable headsup notifications while using these apps</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>  
+    <string name="heads_up_blacklist_title">Blacklist</string>
     <string name="heads_up_whitelist_title">Whitelist</string>
     <string name="profiles_add">Add</string>
-    <string name="profile_choose_app">Choose app</string> 
+    <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Remove</string>
     <string name="dialog_delete_message">Remove selected item?</string>
 
@@ -254,7 +254,7 @@
     <!--  Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage on lockscreen</string>
-    
+
     <!-- Statusbar ticker -->
     <string name="ticker_mode_title">Statusbar notification ticker</string>
     <string name="ticker_disabled">Disabled</string>
@@ -262,7 +262,7 @@
     <string name="ticker_media_enabled">Notification and music ticker</string>
 
     <!-- Notification style -->
-    <string name="notification_style_title">Notification style</string>    
+    <string name="notification_style_title">Notification style</string>
     <string name="notification_style_warning_text">While you use heads up notifications, you will not be able to use the ticker feature, and vice versa.</string>
 
     <!-- Notification light dialogs -->
@@ -336,7 +336,7 @@
     <string name="pref_scrollingcache_default_enable">Default enable</string>
     <string name="pref_scrollingcache_default_disable">Default disable</string>
     <string name="pref_scrollingcache_force_disable">Force disable</string>
-    
+
     <!-- Expanded desktop -->
     <string name="expanded_desktop_category">Expanded Desktop</string>
     <string name="expanded_hide_nothing">Hide nothing</string>
@@ -350,11 +350,28 @@
     <string name="expanded_desktop_style">Expanded desktop style</string>
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
-    
+
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Screen off power button torch</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
     <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
     <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+
+    <!-- Battery styles -->
+    <string name="battery_style_title">Battery icon style</string>
+    <string name="battery_style_summary">Change the look of the battery icon in the statusbar</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_land">Landscape</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_dotted_circle">Dotted circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
+
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">Show battery percentage</string>
+    <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
+    <string name="battery_percent_hidden">Hidden</string>
+    <string name="battery_percent_outside">Outside</string>
+    <string name="battery_percent_inside">Inside</string>
 
 </resources>

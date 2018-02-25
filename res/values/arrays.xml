@@ -15,7 +15,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    
+
    <!-- Network Traffic Display States -->
     <string-array name="show_network_traffic_state_entries" translatable="false">
         <item>@string/show_network_traffic_disable</item>
@@ -44,7 +44,7 @@
         <item>@string/action_splitscreen</item>
         <item>@string/action_screenshot</item>
         <item>@string/action_partial_screenshot</item>
-        <item>@string/action_screen_off</item> 
+        <item>@string/action_screen_off</item>
     </string-array>
 
     <string-array name="action_values" translatable="false">
@@ -83,7 +83,7 @@
 
     <!-- Ticker mode -->
     <string-array name="ticker_mode_entries">
-        <item>@string/ticker_disabled</item> 
+        <item>@string/ticker_disabled</item>
         <item>@string/ticker_enabled</item>
         <item>@string/ticker_media_enabled</item>
     </string-array>
@@ -93,7 +93,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    
+
     <!-- Values for the notification light pulse spinners -->
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_always_on</item>
@@ -229,6 +229,38 @@
     </string-array>
 
     <string-array name="torch_power_button_gesture_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Battery styles -->
+    <string-array name="battery_style_entries" translatable="false">
+        <item>@string/battery_style_port</item>
+        <item>@string/battery_style_land</item>
+        <item>@string/battery_style_circle</item>
+        <item>@string/battery_style_dotted_circle</item>
+        <item>@string/battery_style_text</item>
+        <item>@string/battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="battery_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- Battery styles -->
+    <string-array name="battery_percent_entries" translatable="false">
+        <item>@string/battery_percent_hidden</item>
+        <item>@string/battery_percent_outside</item>
+        <item>@string/battery_percent_inside</item>
+    </string-array>
+
+    <string-array name="battery_percent_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
