@@ -79,7 +79,8 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_BUTTON_BACKLIGHT_TOUCH = "button_backlight_on_touch_only";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
     private static final String KEY_BUTTON_ANBI = "button_anbi";
-  
+    private static final String KEY_BUTTON_SWAP_KEYS = "swap_navigation_keys";
+
     private static final String KEY_HOME_LONG_PRESS        = "home_key_long_press";
     private static final String KEY_HOME_DOUBLE_TAP        = "home_key_double_tap";
     private static final String KEY_BACK_LONG_PRESS        = "back_key_long_press";
@@ -125,8 +126,9 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mEnableNavBar;
     private SwitchPreference mButtonBrightness;
     private SystemSettingSwitchPreference mButtonBacklightTouch;
+    private SystemSettingSwitchPreference mSwapKeysPreference;
     private CustomSeekBarPreference mManualButtonBrightness;
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -150,6 +152,9 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         mEnableNavBar = (SwitchPreference) prefSet.findPreference(
                 KEYS_SHOW_NAVBAR_KEY);
 
+        mSwapKeysPreference = (SystemSettingSwitchPreference) prefSet.findPreference(
+                KEY_BUTTON_SWAP_KEYS);
+
         boolean showNavBarDefault = CustomUtils.deviceSupportNavigationBar(getActivity());
         boolean showNavBar = Settings.System.getInt(resolver,
                     Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1:0) == 1;
@@ -158,7 +163,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         final PreferenceCategory brightnessCategory =
                 (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_BRIGHTNESS);
 
-        mButtonBacklightTouch = 
+        mButtonBacklightTouch =
                 (SystemSettingSwitchPreference) findPreference(KEY_BUTTON_BACKLIGHT_TOUCH);
 
         mManualButtonBrightness = (CustomSeekBarPreference) findPreference(KEY_BUTTON_MANUAL_BRIGHTNESS_NEW);
@@ -191,7 +196,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             		Settings.System.ANBI_ENABLED, 0) == 1));
             mAnbiPreference.setOnPreferenceChangeListener(this);
         }
-		
+
         if (mDeviceHasVariableButtonBrightness) {
             brightnessCategory.removePreference(mButtonBrightness);
         } else {
@@ -200,12 +205,13 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
         if (mDeviceHardwareKeys == 0) {
             brightnessCategory.removePreference(mButtonBrightness);
-            brightnessCategory.removePreference(mManualButtonBrightness);						
+            brightnessCategory.removePreference(mManualButtonBrightness);
             brightnessCategory.removePreference(mBacklightTimeout);
             brightnessCategory.removePreference(mButtonBacklightTouch);
             prefSet.removePreference(brightnessCategory);
             prefSet.removePreference(mAnbiPreference);
-            prefSet.removePreference(mEnableNavBar); 
+            prefSet.removePreference(mSwapKeysPreference);
+            prefSet.removePreference(mEnableNavBar);
         }
 
         final boolean hasHome = (mDeviceHardwareKeys & KEY_MASK_HOME) != 0 || showNavBar;

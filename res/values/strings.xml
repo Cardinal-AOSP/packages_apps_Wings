@@ -207,6 +207,10 @@
     <string name="action_partial_screenshot">Partial screenshot</string>
     <string name="action_screen_off">Screen off</string>
 
+    <!-- Swap navigation keys -->
+    <string name="swap_navigation_keys_title">Swap keys</string>
+    <string name="swap_navigation_keys_title_summary">Swap back and recents hardware keys</string>
+
     <!-- ANBI -->
     <string name="anbi_title">Accidental touch</string>
     <string name="anbi_summary">Prevent interaction with hardware navigation buttons while the screen is being touched</string>
