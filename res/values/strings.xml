@@ -377,4 +377,8 @@
     <string name="battery_percent_outside">Outside</string>
     <string name="battery_percent_inside">Inside</string>
 
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
+
 </resources>
