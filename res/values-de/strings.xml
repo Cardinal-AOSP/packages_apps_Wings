@@ -20,15 +20,14 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Allgemein</string>
-  <string name="general_summary">Verschiedene UI/UX Anpassungen.</string>
   <string name="statusbar_title">Statusleiste</string>
-  <string name="statusbar_summary">Einstellungen für die Anpassung der Statusleiste, QS Benachrichtigungen etc.</string>
+  <string name="statusbar_summary">Einstellungen für die Anpassung der Statusleiste, QuickSettings, Benachrichtigungen etc.</string>
   <string name="buttons_title">Tasten</string>
   <string name="buttons_summary">Einstellungen für Lautstärketasten, Navigationsleiste etc.</string>
   <string name="lockscreen_title">Sperrbildschirm</string>
-  <string name="lockscreen_summary">Sperrbildschirm Anpassungen.</string>
+  <string name="lockscreen_summary">Sperrbildschirm-Anpassungen.</string>
   <string name="recents_ui_title">Anwendungsverlauf</string>
-  <string name="recents_ui_summary">Anwendungsverlauf Anpassungen.</string>
+  <string name="recents_ui_summary">Anwendungsverlauf-Anpassungen.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Doppeltippen für Standbymodus</string>
   <string name="double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Gerät in den Standbymodus zu versetzen</string>
@@ -36,7 +35,7 @@
   <string name="volbtn_wake_device_title">Aufwecken mit Lautstärketaste</string>
   <string name="button_wake_summary">Gerät kann nicht geweckt werden, wenn Musiksteuerung aktiv ist und die Musik spielt</string>
   <!-- Volume button track change -->
-  <string name="volbtn_music_controls_title">Lautstärketasten Musik-Kontrolle</string>
+  <string name="volbtn_music_controls_title">Musik-Kontrolle mit Lautstärketasten</string>
   <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langen Druck auf Lautstärketasten zum nächsten / vorherigen Titel springen</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Beim Anschließen aufwecken</string>
@@ -45,25 +44,26 @@
   <string name="network_traffic_title">Netzwerk-Datenverkehr</string>
   <string name="network_traffic_summary">Einstellung zum Anzeigen der Netzwerkaktivitäten in der Statusleiste</string>
   <string name="network_traffic_state_title">Netzwerk-Aktivität in der Statusleiste anzeigen</string>
+  <string name="network_traffic_autohide_threshold_title">Schwellenwert in (kB/s), ab dem die Netzwerk-Aktivitätsanzeige verborgen wird</string>
   <string name="show_network_traffic_disable">Deaktiviert</string>
   <string name="show_network_traffic_up">Ausgehend</string>
   <string name="show_network_traffic_down">Eingehend</string>
   <string name="show_network_traffic_all">Ausgehende und Eingehende</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Farbauswahl</string>
-  <string name="press_color_to_apply">Berühren Sie eine der Farben unten um sie anzuwenden</string>
+  <string name="press_color_to_apply">Drücken Sie auf die passende Farbe, um diese anzuwenden</string>
   <string name="arrow_right">→</string>
   <string name="arrow_down">↓</string>
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
   <string name="set">Festlegen</string>
-  <string name="color_default">Standart</string>
+  <string name="color_default">Standard</string>
   <!-- Quick settings tiles columns and rows config -->
   <string name="quicksettings_category">Schnelleinstellungen</string>
-  <string name="quicksettings_summary">QS Layout anpassen</string>
-  <string name="qs_layout_category">QS Kachel-Layout</string>
+  <string name="quicksettings_summary">QS-Layout anpassen</string>
+  <string name="qs_layout_category">QS-Kachel-Layout</string>
   <!-- QS rows and columns -->
-  <string name="qs_rows_columns_title">QS-Zeilen und Spalten</string>
+  <string name="qs_rows_columns_title">QS-Zeilen und -Spalten</string>
   <string name="qs_rows_portrait_title">Kachel-Zeilen im Hochformat</string>
   <string name="qs_rows_landscape_title">Kachel-Zeilen im Querformat</string>
   <string name="qs_columns_portrait_title">Kachel-Spalten im Hochformat</string>
@@ -82,45 +82,48 @@
   <string name="color_title">Farbe</string>
   <string name="colors_title">Farben</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibrieren bei Fingerabdruck-Authentifizierung</string>
+  <string name="fprint_sucess_vib_summary">Nach erfolgreicher Authentifizierung per Fingerabdruck vibrieren</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Akku-Einstellungen</string>
   <string name="battery_settings_summary">Batteriestatus anpassen</string>
   <!-- Fingerprint unlock keystore -->
-  <string name="fp_unlock_keystore_title">mit Fingerabdruck entsperren</string>
-  <string name="fp_unlock_keystore_summary">Erlaubt das Entsperren mit dem Fingerabdruck direkt nach dem Systemstart.\nNote: Auf eigene Gefahr!</string>
+  <string name="fp_unlock_keystore_title">Entsperrung mit Fingerabdruck</string>
+  <string name="fp_unlock_keystore_summary">Erlaubt das Entsperren mit dem Fingerabdruck direkt nach dem Systemstart.\nHinweis: Auf eigene Gefahr!</string>
   <!-- Media art -->
   <string name="media_art_title">Albumcover</string>
   <string name="media_art_summary">Zeigt das Albumcover auf dem Sperrbildschirm</string>
   <!-- Whether to display IME switcher notifcation -->
-  <string name="ime_switcher_notify">Tastatureingabe Benachrichtigung</string>
+  <string name="ime_switcher_notify">Eingabemethoden-Benachrichtigung</string>
   <!-- Battery light -->
   <string name="custom_leds">LED-Licht</string>
   <string name="custom_battery_light_settings">Akku Lade-Licht</string>
   <string name="battery_light_enable">Aktivieren</string>
-  <string name="battery_light_allow_on_dnd_title">Akku-LED bei aktivem \"Bitte nicht stören\" Modus</string>
   <string name="battery_light_low_blinking_title">Blinklicht bei schwachem Akku</string>
   <string name="battery_light_cat">Akku-LED beim Laden</string>
   <string name="battery_light_low_color">Niedriger Akkustand</string>
+  <string name="battery_light_medium_color">Mittlerer Akkustand</string>
   <string name="battery_light_full_color">Akku fast voll</string>
-  <string name="battery_light_reallyfull_color">Voll geladen (100)</string>
+  <string name="battery_light_reallyfull_color">Voll geladen (100%)</string>
+  <string name="battery_light_allow_on_dnd_title">Akku-LED bei aktivem \"Bitte nicht stören\"-Modus</string>
   <!--SysUI tuner options -->
-  <string name="status_bar_icon_blacklist_title">Statusleisten Symbole</string>
+  <string name="status_bar_icon_blacklist_title">Statusleisten-Symbole</string>
   <string name="status_bar_icon_blacklist_summary">Einstellung der anzuzeigenden Symbole in der Statusleiste</string>
   <string name="lockscreen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
   <string name="lockscreen_shortcuts_summary">Sperrbildschirm-Verknüpfungen</string>
-  <string name="navbar_buttons_title">Navigationsleiste Layout</string>
-  <string name="navbar_buttons_summary">Einstellungen der Navigationsleistengröße und Tasten</string>
+  <string name="navbar_buttons_title">Navigationsleistenlayout</string>
+  <string name="navbar_buttons_summary">Einstellungen der Navigationsleistengröße und der Tasten</string>
   <string name="qs_brightness_slider_title">Helligkeitsregler</string>
   <string name="qs_brightness_slider_summary">Zeige Helligkeitsregler in den Schnelleinstellungen</string>
-  <string name="vol_dnd_category_title">\"Nicht stören\" Modus</string>
-  <string name="volbtn_down_zen_title">Lautstärke runter für \"Nicht stören\" Modus</string>
-  <string name="volbtn_down_zen_summary">Erlaube Lautstärke runter zum aktivieren von \"Nicht stören\" Modus</string>
-  <string name="volbtn_up_zen_title">Lautstärke hoch im \"Nicht stören\" Modus</string>
-  <string name="volbtn_up_zen_summary">Erlaube Lautstärke hoch zum deaktivieren von \"Nicht stören\" Modus</string>
+  <string name="vol_dnd_category_title">\"Nicht stören\"-Modus</string>
+  <string name="volbtn_down_zen_title">Lautstärketaste runter für \"Nicht stören\"-Modus</string>
+  <string name="volbtn_down_zen_summary">Erlaube Lautstärketaste runter zum Aktivieren des \"Nicht stören\"-Modus</string>
+  <string name="volbtn_up_zen_title">Lautstärketaste hoch im \"Nicht stören\"-Modus</string>
+  <string name="volbtn_up_zen_summary">Erlaube Lautstärketaste hoch zum Deaktivieren des \"Nicht stören\"-Modus</string>
   <string name="vol_zen_title">\"Nicht stören\"-Schalter</string>
   <string name="vol_zen_summary">\"Nicht stören\"-Schalter im Lautstärkeregler anzeigen</string>
   <string name="powern_notifications_title">Erweiterte Benachrichtigungseinstellungen</string>
-  <string name="powern_notifications_summary">Erweiterte Benachrichtigungen Kontrolle bei langes Drücken</string>
+  <string name="powern_notifications_summary">Erweiterte Benachrichtigungskontrolle bei langem Drücken</string>
   <!-- Notification Settings fragment -->
   <string name="notification_settings_title">Benachrichtigungen</string>
   <string name="notification_settings_summary">Verwalten von Benachrichtigungen</string>
@@ -131,7 +134,8 @@
   <!-- Recents panel settings -->
   <string name="show_clear_all_recents_button_title">Alle Apps löschen</string>
   <string name="show_clear_all_recents_button_summary_on">Zeige \"Alle Apps löschen\"</string>
-  <string name="show_clear_all_recents_button_summary_off">AOSP Alle löschen anzeigen</string>
+  <string name="show_clear_all_recents_button_summary_off">AOSP-\"Alle Apps löschen\" anzeigen</string>
+  <string name="recents_clear_all_location_title">Button-Platzierung</string>
   <string name="recents_clear_all_location_top_right">Oben rechts</string>
   <string name="recents_clear_all_location_top_left">Oben links</string>
   <string name="recents_clear_all_location_top_center">Oben zentriert</string>
@@ -142,11 +146,20 @@
   <string name="navigation_bar_show_title">Navigationsleiste anzeigen</string>
   <string name="navigation_bar_show_summary">Navigationsleiste auf dem Bildschirm aktivieren</string>
   <!-- Buttons Backlight -->
-  <string name="button_backlight_cat">Tasten Beleuchtung</string>
+  <string name="button_backlight_cat">Tastenbeleuchtung</string>
   <string name="button_backlight_on_touch_only_title">Tastendruck</string>
   <string name="button_backlight_on_touch_only_summary">Tastenbeleuchtung nur beim Tastendruck aktivieren</string>
   <string name="button_backlight_enable_title">Aktivieren</string>
+  <string name="button_manual_brightness">Helligkeit, deaktiviert wenn 0</string>
   <!-- Buttons backlight timeout -->
+  <string name="backlight_timeout_title">Timeout für Hintergrundbeleuchtung</string>
+  <string name="backlight_timeout_on">Immer aktiv</string>
+  <string name="backlight_timeout_3s">3 Sek</string>
+  <string name="backlight_timeout_default">% Sek. (Standard)</string>
+  <string name="backlight_timeout_10s">10 Sek</string>
+  <string name="backlight_timeout_15s">15 Sek</string>
+  <string name="backlight_timeout_20s">20 Sek</string>
+  <string name="backlight_timeout_30s">30 Sek</string>
   <!-- Custom rebindings -->
   <string name="home_key_title">Home-Taste</string>
   <string name="back_key_title">Zurück-Taste</string>
@@ -158,7 +171,7 @@
   <string name="long_press_title">Langes Drücken</string>
   <string name="double_tap_title">Doppeltes Tippen</string>
   <string name="action_nothing">Keine Aktion</string>
-  <string name="action_menu">Öffne/Schließe Menü</string>
+  <string name="action_menu">Öffnen/Schließen-Menü</string>
   <string name="action_app_switch">Anwendungsverlauf</string>
   <string name="action_search">Suchassistent</string>
   <string name="action_voice_search">Sprachsuche</string>
@@ -168,34 +181,100 @@
   <string name="action_splitscreen">Bildschirm teilen</string>
   <string name="action_screenshot">Screenshot</string>
   <string name="action_partial_screenshot">Partieller Screenshot</string>
+  <string name="action_screen_off">Bildschirm aus</string>
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Unabsichtliches Berühren</string>
   <string name="anbi_summary">Verhindert die Interaktion mit den Hardwaretasten, während der Bildschirm berührt wird</string>
   <!-- Heads up -->
-  <string name="heads_up_notifications">Pop-Up-Benachrichtigungen</string>
-  <string name="summary_heads_up_enabled">Pop-Up Benachrichtigungen aktiviert</string>
-  <string name="summary_heads_up_disabled">Pop-Up Benachrichtigungen deaktiviert</string>
-  <string name="add_heads_up_blacklist_summary">Headsup Benachrichtigungen von diesen Apps deaktivieren</string>
-  <string name="heads_up_blacklist_title">Blockiert</string>
-  <string name="heads_up_whitelist_title">Erlaubt</string>
+  <string name="heads_up_notifications">Heads-Up-Benachrichtigungen</string>
+  <string name="summary_heads_up_enabled">Heads-Up-Benachrichtigungen aktiviert</string>
+  <string name="summary_heads_up_disabled">Heads-Up-Benachrichtigungen deaktiviert</string>
+  <string name="add_heads_up_blacklist_package">Eine App zu der Heads-Up-Blacklist hinzufügen</string>
+  <string name="add_heads_up_whitelist_package">Eine App zu der Heads-Up-Whitelist hinzufügen</string>
+  <string name="add_heads_up_blacklist_summary">Heads-Up-Benachrichtigungen von diesen Apps deaktivieren</string>
+  <string name="add_heads_up_whitelist_summary">Heads-Up-Benachrichtigungen von diesen Apps während der Benutzung deaktivieren</string>
+  <string name="heads_up_blacklist_title">Blacklist</string>
+  <string name="heads_up_whitelist_title">Whitelist</string>
+  <string name="profiles_add">Hinzufügen</string>
   <string name="profile_choose_app">Anwendung auswählen</string>
   <string name="dialog_delete_title">Entfernen</string>
   <string name="dialog_delete_message">Ausgewähltes Objekt entfernen?</string>
   <!-- Sensor block per-package -->
+  <string name="sensor_block_title">Sensoren blockieren</string>
+  <string name="sensor_block_summary">Blockiert den Zugriff auf bestimmte Sensoren für einige Apps, um Akku zu sparen.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Anruf mit Home-Taste annehmen</string>
   <string name="allow_incall_home_summary">Eingehende Anrufe können mit der Home-Taste angenommen werden</string>
   <!-- Disable QS on secure Lockscreen -->
-  <string name="lockscreen_qs_disabled_title">Schnelle Einstellungen ausblenden</string>
+  <string name="lockscreen_qs_disabled_title">Schnelleinstellungen ausblenden</string>
+  <string name="lockscreen_qs_disabled_summary">Deaktiviere die erweiterten Schnelleinstellungen, wenn der Sperrbildschirm gesichert ist</string>
   <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
   <string name="lockscreen_hide_shortcuts_title">Verknüpfungen ausblenden</string>
+  <string name="lockscreen_hide_shortcuts_summary">Untere Verknüpfungen bei gesichertem Sperrbildschirm verstecken</string>
   <!-- Incall vibrate options -->
   <string name="incall_vibration_category">Vibration während eines Anrufes</string>
+  <string name="incall_vibrate_connect_title">Vibriert bei Verbindung</string>
+  <string name="incall_vibrate_connect_summary">Aktivieren, um das Vibrieren nach dem Verbindungsaufbau einzustellen</string>
+  <string name="incall_vibrate_call_wait_title">Vibriert beim Warten des Anrufs</string>
+  <string name="incall_vibrate_call_wait_summary">Aktivieren, um die Vibration einzustellen, während der Anruf gehalten wird</string>
+  <string name="incall_vibrate_disconnect_title">Vibriert beim Trennen der Verbindung</string>
+  <string name="incall_vibrate_disconnect_summary">Aktivieren, um das Vibrieren nach dem Verbindungsabbruch einzustellen</string>
   <!--  Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Ladeinfo auf dem Sperrbildschirm</string>
+  <string name="lockscreen_battery_info_summary">Zeige max. Ladestrom und -spannung vom Ladegerät auf dem Sperrbildschirm an</string>
   <!-- Statusbar ticker -->
+  <string name="ticker_mode_title">Statusleisten-Ticker für Benachrichtigungen</string>
+  <string name="ticker_disabled">Deaktiviert</string>
+  <string name="ticker_enabled">Benachrichtigungsticker</string>
+  <string name="ticker_media_enabled">Benachrichtigungs- und Musikticker</string>
   <!-- Notification style -->
+  <string name="notification_style_title">Benachrichtigungsstil</string>
+  <string name="notification_style_warning_text">Während Sie Heads-Up-Benachrichtigungen verwenden, werden Sie nicht in der Lage sein, die Ticker-Funktion zu verwenden, genauso umgekehrt.</string>
   <!-- Notification light dialogs -->
+  <string name="advanced">Erweitert</string>
+  <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
+  <string name="default_time">Normal</string>
+  <string name="custom_time">Benutzerdefiniert</string>
   <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">Immer an</string>
+  <string name="pulse_length_very_short">Sehr kurz</string>
+  <string name="pulse_length_short">Kurz</string>
+  <string name="pulse_length_normal">Normal</string>
+  <string name="pulse_length_long">Lang</string>
+  <string name="pulse_length_very_long">Sehr lang</string>
+  <string name="pulse_speed_very_fast">Sehr schnell</string>
+  <string name="pulse_speed_fast">Schnell</string>
+  <string name="pulse_speed_normal">Normal</string>
+  <string name="pulse_speed_slow">Langsam</string>
+  <string name="pulse_speed_very_slow">Sehr langsam</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Benachrichtigunglicht</string>
+  <string name="notification_light_title_summary">Aktiviere Pulsierendes Benachrichtigungslicht</string>
+  <string name="notification_light_general_title">Allgemein</string>
+  <string name="notification_light_applist_title">Apps</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Benutzerdefinierte Werte verwenden</string>
+  <string name="notification_light_use_custom_summary">Aktivieren, um Benachrichtigungsfarben einzustellen</string>
+  <string name="notification_light_default_value">Standard</string>
+  <string name="notification_light_missed_call_title">Verpasster Anruf</string>
+  <string name="notification_light_voicemail_title">Sprachnachricht</string>
+  <string name="notification_light_screen_on">LED bei aktivem Bildschirm</string>
+  <string name="notification_light_no_apps_footer_text">Aktiviere %1$s und tippe auf \'\u002b\' in der Menüleiste, um Per-App-Kontrolle hinzuzufügen</string>
+  <string name="led_notification_title">LED-Einstellungen</string>
+  <string name="led_notification_text">Benachrichtigungslicht durch Einstellungen aktiviert</string>
   <!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Benutzeroberflächenstil</string>
+  <string name="systemui_theme_style_auto">Hintergrundbildbasiert</string>
+  <string name="systemui_theme_style_light">Hell</string>
+  <string name="systemui_theme_style_dark">Dunkel</string>
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>

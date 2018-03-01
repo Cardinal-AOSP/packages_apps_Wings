@@ -20,7 +20,6 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">常规信息</string>
-  <string name="general_summary">杂项用户界面</string>
   <string name="statusbar_title">状态栏</string>
   <string name="statusbar_summary">设置状态栏</string>
   <string name="buttons_title">按键</string>
@@ -83,6 +82,8 @@
   <string name="color_title">颜色</string>
   <string name="colors_title">颜色</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">验证指纹时振动</string>
+  <string name="fprint_sucess_vib_summary">验证指纹身份成功时振动</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">电池设置选项</string>
   <string name="battery_settings_summary">自定义电池样式</string>
@@ -98,13 +99,13 @@
   <string name="custom_leds">LED指示灯</string>
   <string name="custom_battery_light_settings">充电指示灯</string>
   <string name="battery_light_enable">启用</string>
-  <string name="battery_light_allow_on_dnd_title">勿扰模式启用充电指示灯</string>
   <string name="battery_light_low_blinking_title">低电量闪烁灯</string>
   <string name="battery_light_cat">充电时电池指示灯颜色</string>
   <string name="battery_light_low_color">低电量</string>
   <string name="battery_light_medium_color">中度电量</string>
   <string name="battery_light_full_color">接近满电</string>
   <string name="battery_light_reallyfull_color">100%电量(100)</string>
+  <string name="battery_light_allow_on_dnd_title">勿扰模式启用充电指示灯</string>
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">状态栏图标</string>
   <string name="status_bar_icon_blacklist_summary">配置显示在状态栏的图标</string>
@@ -149,7 +150,16 @@
   <string name="button_backlight_on_touch_only_title">触摸按钮</string>
   <string name="button_backlight_on_touch_only_summary">仅在按钮触摸时使用超时启用背光</string>
   <string name="button_backlight_enable_title">启用</string>
+  <string name="button_manual_brightness">亮度级别, 在值0上禁用</string>
   <!-- Buttons backlight timeout -->
+  <string name="backlight_timeout_title">背光超时</string>
+  <string name="backlight_timeout_on">始终启用</string>
+  <string name="backlight_timeout_3s">3 秒</string>
+  <string name="backlight_timeout_default">5秒（默认）</string>
+  <string name="backlight_timeout_10s">10秒</string>
+  <string name="backlight_timeout_15s">15 秒</string>
+  <string name="backlight_timeout_20s">20秒</string>
+  <string name="backlight_timeout_30s">30秒</string>
   <!-- Custom rebindings -->
   <string name="home_key_title">Home 键</string>
   <string name="back_key_title">返回键</string>
@@ -172,6 +182,7 @@
   <string name="action_screenshot">截图</string>
   <string name="action_partial_screenshot">局部截图</string>
   <string name="action_screen_off">关闭屏幕</string>
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">误触</string>
   <string name="anbi_summary">在触摸屏幕时防止与硬件导航按钮交互</string>
@@ -185,6 +196,7 @@
   <string name="add_heads_up_whitelist_summary">使用这些应用程序时禁用 headsup 通知</string>
   <string name="heads_up_blacklist_title">黑名单</string>
   <string name="heads_up_whitelist_title">白名单</string>
+  <string name="profiles_add">添加</string>
   <string name="profile_choose_app">选择应用</string>
   <string name="dialog_delete_title">移除</string>
   <string name="dialog_delete_message">移除选中的项目？</string>
@@ -217,8 +229,52 @@
   <string name="ticker_enabled">通知提示</string>
   <string name="ticker_media_enabled">通知和音乐提示</string>
   <!-- Notification style -->
+  <string name="notification_style_title">通知栏风格</string>
+  <string name="notification_style_warning_text">当您使用抬头通知时, 您将无法使用 \"股票代号\" 功能, 反之亦然。</string>
   <!-- Notification light dialogs -->
+  <string name="advanced">高级选项</string>
+  <string name="pulse_speed_title">呼吸长度与速度</string>
+  <string name="default_time">正常</string>
+  <string name="custom_time">自定义 </string>
   <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">始终开启</string>
+  <string name="pulse_length_very_short">很短</string>
+  <string name="pulse_length_short">短促</string>
+  <string name="pulse_length_normal">正常</string>
+  <string name="pulse_length_long">长</string>
+  <string name="pulse_length_very_long">极长</string>
+  <string name="pulse_speed_very_fast">极快</string>
+  <string name="pulse_speed_fast">较快</string>
+  <string name="pulse_speed_normal">正常</string>
+  <string name="pulse_speed_slow">较慢</string>
+  <string name="pulse_speed_very_slow">极慢</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">指示灯</string>
+  <string name="notification_light_title_summary">启用脉冲通知指示灯</string>
+  <string name="notification_light_general_title">常规信息</string>
+  <string name="notification_light_applist_title">应用</string>
+  <string name="notification_light_phonelist_title">电话</string>
+  <string name="notification_light_use_custom">使用自定义值</string>
+  <string name="notification_light_use_custom_summary">启用按应用程序通知颜色设置</string>
+  <string name="notification_light_default_value">默认</string>
+  <string name="notification_light_missed_call_title">错过电话</string>
+  <string name="notification_light_voicemail_title">语音邮件</string>
+  <string name="notification_light_screen_on">在屏幕开启时启用指示灯</string>
+  <string name="notification_light_no_apps_footer_text">若要单独控制每个应用程序，激活 \'%1$s\' 并且点击菜单栏上 \'\u002b\'</string>
+  <string name="led_notification_title">指示灯设置</string>
+  <string name="led_notification_text">LED 由设置启用</string>
   <!-- Systemui theme -->
+  <string name="systemui_theme_style_title">UI 样式</string>
+  <string name="systemui_theme_style_auto">墙纸为基础</string>
+  <string name="systemui_theme_style_light">亮的</string>
+  <string name="systemui_theme_style_dark">暗色</string>
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>

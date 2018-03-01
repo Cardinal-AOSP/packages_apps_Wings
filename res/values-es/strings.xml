@@ -20,7 +20,6 @@
   <string name="keywords_cardinal">Cardenal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">General</string>
-  <string name="general_summary">Ajustes UI/UX misceláneos.</string>
   <string name="statusbar_title">Barra de estado</string>
   <string name="statusbar_summary">Opciones para personalizar la barra de estado, qs, notificaciones, etc.</string>
   <string name="buttons_title">Botones</string>
@@ -83,6 +82,8 @@
   <string name="color_title">Color</string>
   <string name="colors_title">Colores</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibración de autenticación de huella digital</string>
+  <string name="fprint_sucess_vib_summary">Vibrar cuando la autenticación con la huella es correcta</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Ajustes de la batería</string>
   <string name="battery_settings_summary">Personalizar estilos de batería</string>
@@ -98,13 +99,13 @@
   <string name="custom_leds">Luz LED</string>
   <string name="custom_battery_light_settings">Ajustes de luz led de la batería</string>
   <string name="battery_light_enable">Habilitar</string>
-  <string name="battery_light_allow_on_dnd_title">Led de batería en modo No Molestar</string>
   <string name="battery_light_low_blinking_title">Led intermitente con batería baja</string>
   <string name="battery_light_cat">Color del led cuando se esta cargando</string>
   <string name="battery_light_low_color">Batería baja</string>
   <string name="battery_light_medium_color">Media carga</string>
   <string name="battery_light_full_color">Carga casi completa</string>
   <string name="battery_light_reallyfull_color">Batería completa (100%)</string>
+  <string name="battery_light_allow_on_dnd_title">Led de batería en modo No Molestar</string>
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Iconos de la barra de estado</string>
   <string name="status_bar_icon_blacklist_summary">Configurar los iconos que se muestran en la barra de estado</string>
@@ -149,7 +150,16 @@
   <string name="button_backlight_on_touch_only_title">Botones táctiles</string>
   <string name="button_backlight_on_touch_only_summary">Activar luz de fondo con tiempo de espera sólo en el botones táctiles</string>
   <string name="button_backlight_enable_title">Habilitar</string>
+  <string name="button_manual_brightness">Nivel de brillo, desactivado en valor 0</string>
   <!-- Buttons backlight timeout -->
+  <string name="backlight_timeout_title">Tiempo de espera de luz de fondo</string>
+  <string name="backlight_timeout_on">Permitido siempre</string>
+  <string name="backlight_timeout_3s">3 seg.</string>
+  <string name="backlight_timeout_default">5 segundos (por defecto)</string>
+  <string name="backlight_timeout_10s">10 segundos</string>
+  <string name="backlight_timeout_15s">15 segundos</string>
+  <string name="backlight_timeout_20s">20 segundos</string>
+  <string name="backlight_timeout_30s">30 segundos</string>
   <!-- Custom rebindings -->
   <string name="home_key_title">Botón Inicio</string>
   <string name="back_key_title">Botón Atrás</string>
@@ -172,6 +182,7 @@
   <string name="action_screenshot">Captura de pantalla</string>
   <string name="action_partial_screenshot">Captura de pantalla parcial</string>
   <string name="action_screen_off">Apagar pantalla</string>
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Toque accidental</string>
   <string name="anbi_summary">Previene la interacción con los botones de navegación mientras se está tocando la pantalla</string>
@@ -185,6 +196,7 @@
   <string name="add_heads_up_whitelist_summary">Desactiva las notificaciones flotantes mientras se usan las aplicaciones seleccionadas</string>
   <string name="heads_up_blacklist_title">Lista negra</string>
   <string name="heads_up_whitelist_title">Lista blanca</string>
+  <string name="profiles_add">Añadir</string>
   <string name="profile_choose_app">Elegir aplicación</string>
   <string name="dialog_delete_title">Eliminar</string>
   <string name="dialog_delete_message">¿Eliminar el elemento seleccionado?</string>
@@ -217,8 +229,52 @@
   <string name="ticker_enabled">Texto de notificación en la barra de estado</string>
   <string name="ticker_media_enabled">Ticker De música y notificaciones</string>
   <!-- Notification style -->
+  <string name="notification_style_title">Estilo de notificación</string>
+  <string name="notification_style_warning_text">Mientras uses las notificaciones Heads up, no podras usar la función teletípo y viceversa.</string>
   <!-- Notification light dialogs -->
+  <string name="advanced">Avanzado</string>
+  <string name="pulse_speed_title">Velocidad y longitud del pulso</string>
+  <string name="default_time">Normal</string>
+  <string name="custom_time">Personalizar</string>
   <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">Siempre encendido</string>
+  <string name="pulse_length_very_short">Muy corto</string>
+  <string name="pulse_length_short">Corto</string>
+  <string name="pulse_length_normal">Normal</string>
+  <string name="pulse_length_long">Largo</string>
+  <string name="pulse_length_very_long">Muy largo</string>
+  <string name="pulse_speed_very_fast">Muy rapido</string>
+  <string name="pulse_speed_fast">Rápido</string>
+  <string name="pulse_speed_normal">Normal</string>
+  <string name="pulse_speed_slow">Lento</string>
+  <string name="pulse_speed_very_slow">Muy lento</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Notificación de luz</string>
+  <string name="notification_light_title_summary">Habilitar el latido del LED de notificaciones</string>
+  <string name="notification_light_general_title">General</string>
+  <string name="notification_light_applist_title">Aplicaciones</string>
+  <string name="notification_light_phonelist_title">Teléfono</string>
+  <string name="notification_light_use_custom">Use valores perzonalizados</string>
+  <string name="notification_light_use_custom_summary">Habilitar la elección de color de notificación por aplicación</string>
+  <string name="notification_light_default_value">Predeterminado</string>
+  <string name="notification_light_missed_call_title">Llamada perdida</string>
+  <string name="notification_light_voicemail_title">Correo de voz</string>
+  <string name="notification_light_screen_on">Luces con la pantalla encendida</string>
+  <string name="notification_light_no_apps_footer_text">Para agregar al control de la aplicación, active %1$s y presione \u002b en la barra de menú</string>
+  <string name="led_notification_title">Ajustes de luz</string>
+  <string name="led_notification_text">Luz LED activada por ajustes</string>
   <!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Estilo de la Interfaz</string>
+  <string name="systemui_theme_style_auto">Basado en el Fondo de Pantalla</string>
+  <string name="systemui_theme_style_light">Claro</string>
+  <string name="systemui_theme_style_dark">Oscuro</string>
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>

@@ -20,7 +20,6 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">सामान्य</string>
-  <string name="general_summary">विविध UI/UX अनुकूलन</string>
   <string name="statusbar_title">स्टेटस बार</string>
   <string name="statusbar_summary">स्टेटसबार, त्वरित सेटिंग्स, सूचनाएं आदि को अनुकूलित करने के विकल्प</string>
   <string name="buttons_title">बटन</string>
@@ -83,6 +82,8 @@
   <string name="color_title">रंग</string>
   <string name="colors_title">रंग</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">फ़िंगरप्रिंट प्रमाणन होने पर कंपन</string>
+  <string name="fprint_sucess_vib_summary">सफल फ़िंगरप्रिंट प्रमाणन पर कम्पन</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">बैटरी सेटिंग्स</string>
   <string name="battery_settings_summary">बैटरी शैलियाँ अनुकूलित करें</string>
@@ -98,13 +99,13 @@
   <string name="custom_leds">LED प्रकाश</string>
   <string name="custom_battery_light_settings">बैटरी चार्जीग प्रकाश</string>
   <string name="battery_light_enable">सक्षम करें</string>
-  <string name="battery_light_allow_on_dnd_title">बैटरी प्रकाश परेशान नही करे मोड मे</string>
   <string name="battery_light_low_blinking_title">कम बैटरी होने पर निमिष प्रकाश करे</string>
   <string name="battery_light_cat">बैटरी प्रकाश का रंग जब चार्ज हो रहा हो</string>
   <string name="battery_light_low_color">कम बैटरी</string>
   <string name="battery_light_medium_color">मध्यम बैटरी</string>
   <string name="battery_light_full_color">लगभग पुर्ण बैटरी</string>
   <string name="battery_light_reallyfull_color">पूर्ण (१००) बैटरी</string>
+  <string name="battery_light_allow_on_dnd_title">बैटरी प्रकाश परेशान नही करे मोड मे</string>
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">स्टेटस बार चिह्न</string>
   <string name="status_bar_icon_blacklist_summary">स्टेटस बार पर को से चिन्ह दिखाए जाते हैं उस कॉन्फ़िगर करे</string>
@@ -149,7 +150,16 @@
   <string name="button_backlight_on_touch_only_title">कुंजी स्पर्श</string>
   <string name="button_backlight_on_touch_only_summary">केवल कुंजी स्पर्श पर समय समाप्ति के साथ बैकलाइट सक्षम करें</string>
   <string name="button_backlight_enable_title">सक्षम करें</string>
+  <string name="button_manual_brightness">चमक स्तर, ० मूल्य पर अक्षम</string>
   <!-- Buttons backlight timeout -->
+  <string name="backlight_timeout_title">बैकलाइट समय समाप्ति</string>
+  <string name="backlight_timeout_on">हमेशा सक्षम</string>
+  <string name="backlight_timeout_3s">३ सेकेंड</string>
+  <string name="backlight_timeout_default">५ सेकेंड (पूर्व निर्धारित)</string>
+  <string name="backlight_timeout_10s">१० सेकेंड</string>
+  <string name="backlight_timeout_15s">१५ सेकेंड</string>
+  <string name="backlight_timeout_20s">२० सेकेंड</string>
+  <string name="backlight_timeout_30s">३० सेकेंड</string>
   <!-- Custom rebindings -->
   <string name="home_key_title">होम बटन</string>
   <string name="back_key_title">वापस जाएँ बटन</string>
@@ -172,6 +182,7 @@
   <string name="action_screenshot">स्क्रीनशॉट</string>
   <string name="action_partial_screenshot">आंशिक स्क्रीनशॉट</string>
   <string name="action_screen_off">स्क्रीन बंद</string>
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">आकस्मिक स्पर्श</string>
   <string name="anbi_summary">स्क्रीन को छूते समय हार्डवेयर पथ प्रदर्शन कुंजी के साथ सहभागिता रोके</string>
@@ -185,6 +196,7 @@
   <string name="add_heads_up_whitelist_summary">इन अनुप्रयोगों का उपयोग करते समय सचेत सूचनाएँ अक्षम करें</string>
   <string name="heads_up_blacklist_title">वर्ज्य सूची</string>
   <string name="heads_up_whitelist_title">श्वेत सूची</string>
+  <string name="profiles_add">जोड़ें</string>
   <string name="profile_choose_app">ऐप का चयन करे</string>
   <string name="dialog_delete_title">हटाएं</string>
   <string name="dialog_delete_message">चुने हुए को हटाएँ</string>
@@ -217,8 +229,52 @@
   <string name="ticker_enabled">सूचना टिकर</string>
   <string name="ticker_media_enabled">सूचनाएँ और संगीत टिकर</string>
   <!-- Notification style -->
+  <string name="notification_style_title">सूचना शैली</string>
+  <string name="notification_style_warning_text">जब आप सचेत सूचनाओं का उपयोग करते हैं, तो आप टिकर सुविधा, या इसके विपरीत का उपयोग करने में सक्षम नहीं होंगे ।</string>
   <!-- Notification light dialogs -->
+  <string name="advanced">उन्नत</string>
+  <string name="pulse_speed_title">पल्स कि लम्बाई और गति</string>
+  <string name="default_time">सामान्य</string>
+  <string name="custom_time">अनुकूल</string>
   <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">हमेशा चालू</string>
+  <string name="pulse_length_very_short">बहुत ही छोटा</string>
+  <string name="pulse_length_short">छोटा</string>
+  <string name="pulse_length_normal">सामान्य</string>
+  <string name="pulse_length_long">लंबा</string>
+  <string name="pulse_length_very_long">बहुत लंबा</string>
+  <string name="pulse_speed_very_fast">बहुत तेज</string>
+  <string name="pulse_speed_fast">तेज</string>
+  <string name="pulse_speed_normal">सामान्य</string>
+  <string name="pulse_speed_slow">धीमा</string>
+  <string name="pulse_speed_very_slow">बहुत ही धीमा</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">अधिसूचना प्रकाश</string>
+  <string name="notification_light_title_summary">स्पंदन अधिसूचना एलईडी को सक्षम करें</string>
+  <string name="notification_light_general_title">सामान्य</string>
+  <string name="notification_light_applist_title">ऐप्स</string>
+  <string name="notification_light_phonelist_title">फ़ोन</string>
+  <string name="notification_light_use_custom">अनुकूल मानों का उपयोग करें</string>
+  <string name="notification_light_use_custom_summary">प्रति एप्लिकेशन अधिसूचना रंग सेट करने के लिए सक्षम करें</string>
+  <string name="notification_light_default_value">पूर्व निर्धारित</string>
+  <string name="notification_light_missed_call_title">मिस्ड कॉल</string>
+  <string name="notification_light_voicemail_title">ध्वनि डाक</string>
+  <string name="notification_light_screen_on">स्क्रीन चालू होने के साथ रोशनी</string>
+  <string name="notification_light_no_apps_footer_text">प्रति एप्प नियंत्रण जोड़ने के लिए, \'%1$s\' को सक्रिय करें, और मेनू बार पर \'\u002b\' दबाएँ</string>
+  <string name="led_notification_title">प्रकाश सेटिंग्स</string>
+  <string name="led_notification_text">एलईडी लाइट सेटिंग्स के द्वारा सक्षम किया गया</string>
   <!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Ui शैली</string>
+  <string name="systemui_theme_style_auto">वॉलपेपर आधारित</string>
+  <string name="systemui_theme_style_light">उजाला</string>
+  <string name="systemui_theme_style_dark">अंधेरा</string>
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>

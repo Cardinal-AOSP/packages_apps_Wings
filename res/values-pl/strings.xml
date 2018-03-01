@@ -83,6 +83,7 @@
   <!-- Buttons Backlight -->
   <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Przypadkowe dotknięcie</string>
   <!-- Heads up -->
@@ -104,4 +105,13 @@
   <!-- Values for the notification light pulse spinners -->
   <!-- Lights settings screen, notification light settings -->
   <!-- Systemui theme -->
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>

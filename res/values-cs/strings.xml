@@ -20,7 +20,6 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Hlavní</string>
-  <string name="general_summary">Různé přizpůsobení UI/UX.</string>
   <string name="statusbar_title">Stavová lišta</string>
   <string name="statusbar_summary">Možnosti pro přizpůsobení stavové lišty, QS, oznámení atd.</string>
   <string name="buttons_title">Tlačítka</string>
@@ -83,6 +82,8 @@
   <string name="color_title">Barva</string>
   <string name="colors_title">Barvy</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibrovat při ověření otisků prstů</string>
+  <string name="fprint_sucess_vib_summary">Vibrovat při úspěšném otisku prstu</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Nastavení baterie</string>
   <string name="battery_settings_summary">Přizpůsobit styly baterie</string>
@@ -98,13 +99,13 @@
   <string name="custom_leds">Kontrolka LED</string>
   <string name="custom_battery_light_settings">Kontrolka nabíjení baterie</string>
   <string name="battery_light_enable">Povolit</string>
-  <string name="battery_light_allow_on_dnd_title">Světelná signalizace baterie v režimu „Nerušit“</string>
   <string name="battery_light_low_blinking_title">Blikat při nízkém stavu baterie</string>
   <string name="battery_light_cat">Barva světla baterie při nabíjení</string>
   <string name="battery_light_low_color">Nízký stav baterie</string>
   <string name="battery_light_medium_color">Střední stav baterie</string>
   <string name="battery_light_full_color">Téměř nabito</string>
   <string name="battery_light_reallyfull_color">Plně nabito (100%)</string>
+  <string name="battery_light_allow_on_dnd_title">Světelná signalizace baterie v režimu „Nerušit“</string>
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Ikony stavové lišty</string>
   <string name="status_bar_icon_blacklist_summary">Nastavit, které ikony jsou zobrazeny na stavové liště</string>
@@ -118,7 +119,7 @@
   <string name="volbtn_down_zen_title">Snížit hlasitost pro režim \"Nerušit\"</string>
   <string name="volbtn_down_zen_summary">povolit režim \"Nerušit\" stiskem tlačítka hlasitosti dolů</string>
   <string name="volbtn_up_zen_title">Zvýšit hlasitost pro režim \"Nerušit\"</string>
-  <string name="volbtn_up_zen_summary">povolit režim \"Nerušit\" stiskem tlačítka hlasitosti nahoru</string>
+  <string name="volbtn_up_zen_summary">povolit ukončení režimu \"Nerušit\" stiskem tlačítka hlasitosti nahoru</string>
   <string name="vol_zen_title">Přepínač stavu \"Nerušit\"</string>
   <string name="vol_zen_summary">Zobrazit přepínač stavu \"Nerušit\" v panelu hlasitosti</string>
   <string name="powern_notifications_title">Rozšířené oznámení</string>
@@ -149,7 +150,16 @@
   <string name="button_backlight_on_touch_only_title">Podsvícení tlačítek při dotyku</string>
   <string name="button_backlight_on_touch_only_summary">Aktivujte podsvícení s časovým omezením pouze při stisknutí tlačítka</string>
   <string name="button_backlight_enable_title">Povolit</string>
+  <string name="button_manual_brightness">Úroveň jasu, zakázáno na hodnotě 0</string>
   <!-- Buttons backlight timeout -->
+  <string name="backlight_timeout_title">Délka podsvícení</string>
+  <string name="backlight_timeout_on">Vždy povoleno</string>
+  <string name="backlight_timeout_3s">30 sekund</string>
+  <string name="backlight_timeout_default">5 sekund (výchozí)</string>
+  <string name="backlight_timeout_10s">10 sekund</string>
+  <string name="backlight_timeout_15s">15 sekund</string>
+  <string name="backlight_timeout_20s">20 sekund</string>
+  <string name="backlight_timeout_30s">30 sekund</string>
   <!-- Custom rebindings -->
   <string name="home_key_title">Tlačítko Domů</string>
   <string name="back_key_title">Tlačítko Zpět</string>
@@ -172,6 +182,7 @@
   <string name="action_screenshot">Snímek obrazovky</string>
   <string name="action_partial_screenshot">Částečný snímek obrazovky</string>
   <string name="action_screen_off">Vypnout obrazovku</string>
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabránit interakci s harwarovými tlačítky během dotyku obrazovky</string>
@@ -185,6 +196,7 @@
   <string name="add_heads_up_whitelist_summary">Zakázat plovoucí oznámení při používání těchto aplikací</string>
   <string name="heads_up_blacklist_title">Černá listina</string>
   <string name="heads_up_whitelist_title">Bílá listina</string>
+  <string name="profiles_add">Přidat</string>
   <string name="profile_choose_app">Vybrat aplikaci</string>
   <string name="dialog_delete_title">Odstranit</string>
   <string name="dialog_delete_message">Odstranit vybranou položku?</string>
@@ -217,8 +229,52 @@
   <string name="ticker_enabled">Notifikační oznámení</string>
   <string name="ticker_media_enabled">Notifikační a hudební oznámení</string>
   <!-- Notification style -->
+  <string name="notification_style_title">Styl oznámení</string>
+  <string name="notification_style_warning_text">Pokud používáte plovoucí oznámení, nebudete moci používat funkci notifikačního oznámení a naopak.</string>
   <!-- Notification light dialogs -->
+  <string name="advanced">Pokročilé</string>
+  <string name="pulse_speed_title">Délka impulsu a rychlost</string>
+  <string name="default_time">Normální</string>
+  <string name="custom_time">Vlastní</string>
   <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">Vždy zapnuto</string>
+  <string name="pulse_length_very_short">Velmi krátce</string>
+  <string name="pulse_length_short">Krátce</string>
+  <string name="pulse_length_normal">Normální</string>
+  <string name="pulse_length_long">Dlouze</string>
+  <string name="pulse_length_very_long">Velmi dlouze</string>
+  <string name="pulse_speed_very_fast">Velmi rychle</string>
+  <string name="pulse_speed_fast">Rychle</string>
+  <string name="pulse_speed_normal">Normální</string>
+  <string name="pulse_speed_slow">Pomalu</string>
+  <string name="pulse_speed_very_slow">Velmi pomalu</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">LED oznámení</string>
+  <string name="notification_light_title_summary">Povolit pulzující oznámení LED</string>
+  <string name="notification_light_general_title">Hlavní</string>
+  <string name="notification_light_applist_title">Aplikace</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Použít vlastní hodnoty</string>
+  <string name="notification_light_use_custom_summary">Umožňuje nastavit barvy oznámení podle aplikace</string>
+  <string name="notification_light_default_value">Výchozí</string>
+  <string name="notification_light_missed_call_title">Zmeškaný hovor</string>
+  <string name="notification_light_voicemail_title">Hlasová schránka</string>
+  <string name="notification_light_screen_on">Světelná signalizace při zapnuté obrazovce</string>
+  <string name="notification_light_no_apps_footer_text">Chcete-li přidat jeden ovládací prvek aplikace, aktivujte \'%1$s\' a stiskněte \'\u002b\' na panelu nabídek</string>
+  <string name="led_notification_title">Nastavení LED</string>
+  <string name="led_notification_text">Výchozí nastavení LED</string>
   <!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Styl UI</string>
+  <string name="systemui_theme_style_auto">Podle tapety</string>
+  <string name="systemui_theme_style_light">Světlý</string>
+  <string name="systemui_theme_style_dark">Tmavý</string>
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>

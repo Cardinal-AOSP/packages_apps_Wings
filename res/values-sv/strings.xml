@@ -20,7 +20,6 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Allmän</string>
-  <string name="general_summary">Blandade UI/UX ändringar.</string>
   <string name="statusbar_title">Statusfält</string>
   <string name="statusbar_summary">Alternativ för att anpassa statusfält, qs, meddelanden etc.</string>
   <string name="buttons_title">Knappar</string>
@@ -83,6 +82,8 @@
   <string name="color_title">Färg</string>
   <string name="colors_title">Färger</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibration vid fingeravtrycksautentisering</string>
+  <string name="fprint_sucess_vib_summary">Vibrera vid lyckad fingeravtrycksautentisering</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Inställningar för batteri</string>
   <string name="battery_settings_summary">Anpassa batteristilar</string>
@@ -98,13 +99,13 @@
   <string name="custom_leds">LED-ljus</string>
   <string name="custom_battery_light_settings">Batteriladdningsljus</string>
   <string name="battery_light_enable">Aktivera</string>
-  <string name="battery_light_allow_on_dnd_title">Batteriljus i Stör Ej läge</string>
   <string name="battery_light_low_blinking_title">Blinkande ljus vid låg batterinivå</string>
   <string name="battery_light_cat">Batteriljusfärg vid laddning</string>
   <string name="battery_light_low_color">Låg batterinivå</string>
   <string name="battery_light_medium_color">Medium batteri</string>
   <string name="battery_light_full_color">Nästan fullt batteri</string>
   <string name="battery_light_reallyfull_color">Fullt (100) batteri</string>
+  <string name="battery_light_allow_on_dnd_title">Batteriljus i Stör Ej läge</string>
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Statusfältsikoner</string>
   <string name="status_bar_icon_blacklist_summary">Konfigurera vilka ikoner som visas på statusfältet</string>
@@ -149,7 +150,16 @@
   <string name="button_backlight_on_touch_only_title">Knappen för tryck</string>
   <string name="button_backlight_on_touch_only_summary">Aktivera bakgrundsbelysningen med tidsgräns endast på knappen tryck</string>
   <string name="button_backlight_enable_title">Aktivera</string>
+  <string name="button_manual_brightness">Ljusstyrka nivå, inaktiverad på värde 0</string>
   <!-- Buttons backlight timeout -->
+  <string name="backlight_timeout_title">Tidsgräns för knappljus</string>
+  <string name="backlight_timeout_on">Alltid aktiv</string>
+  <string name="backlight_timeout_3s">3 sek</string>
+  <string name="backlight_timeout_default">5 sek (standard)</string>
+  <string name="backlight_timeout_10s">10 sek</string>
+  <string name="backlight_timeout_15s">15 sek</string>
+  <string name="backlight_timeout_20s">20 sek</string>
+  <string name="backlight_timeout_30s">30 sek</string>
   <!-- Custom rebindings -->
   <string name="home_key_title">Hemknapp</string>
   <string name="back_key_title">Bakåtknapp</string>
@@ -172,6 +182,7 @@
   <string name="action_screenshot">Skärmdump</string>
   <string name="action_partial_screenshot">Partiell skärmdump</string>
   <string name="action_screen_off">Skärm av</string>
+  <!-- Swap navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Oavsiktligt tryck</string>
   <string name="anbi_summary">Förhindra interaktion med hårdvarans navigeringsknappar medan skärmen berörs</string>
@@ -185,6 +196,7 @@
   <string name="add_heads_up_whitelist_summary">Inaktivera headsup-meddelanden medan du använder dessa appar</string>
   <string name="heads_up_blacklist_title">Svartlista</string>
   <string name="heads_up_whitelist_title">Vitlista</string>
+  <string name="profiles_add">Lägg till</string>
   <string name="profile_choose_app">Välj applikation</string>
   <string name="dialog_delete_title">Ta bort</string>
   <string name="dialog_delete_message">Ta bort valt objekt?</string>
@@ -217,8 +229,52 @@
   <string name="ticker_enabled">Anmälan ticker</string>
   <string name="ticker_media_enabled">Anmälan och musik ticker</string>
   <!-- Notification style -->
+  <string name="notification_style_title">Anmälningsstil</string>
+  <string name="notification_style_warning_text">Medan du använder meddelanden om huvudenheter, Du kommer inte att kunna använda tickerfunktionen och vice versa.</string>
   <!-- Notification light dialogs -->
+  <string name="advanced">Avancerad</string>
+  <string name="pulse_speed_title">Pulslängd och hastighet</string>
+  <string name="default_time">Normal</string>
+  <string name="custom_time">Anpassa</string>
   <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">Alltid på</string>
+  <string name="pulse_length_very_short">Mycket kort</string>
+  <string name="pulse_length_short">Kort</string>
+  <string name="pulse_length_normal">Normal</string>
+  <string name="pulse_length_long">Lång</string>
+  <string name="pulse_length_very_long">Mycket lång</string>
+  <string name="pulse_speed_very_fast">Väldigt snabbt</string>
+  <string name="pulse_speed_fast">Snabb</string>
+  <string name="pulse_speed_normal">Normal</string>
+  <string name="pulse_speed_slow">Långsam</string>
+  <string name="pulse_speed_very_slow">Mycket långsam</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Aviseringsljus</string>
+  <string name="notification_light_title_summary">Aktivera pulserande meddelande LED</string>
+  <string name="notification_light_general_title">Allmän</string>
+  <string name="notification_light_applist_title">Apps</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Använd anpassade värden</string>
+  <string name="notification_light_use_custom_summary">Aktivera inställningsfärger per app</string>
+  <string name="notification_light_default_value">Standard</string>
+  <string name="notification_light_missed_call_title">Missat samtal</string>
+  <string name="notification_light_voicemail_title">Röstbrevlåda</string>
+  <string name="notification_light_screen_on">Lampor med skärm på</string>
+  <string name="notification_light_no_apps_footer_text">Lägg till per app kontroll, aktivera \'%1$s\' och tryck på \'\u002b\' på menyraden</string>
+  <string name="led_notification_title">Ljudinställningar</string>
+  <string name="led_notification_text">LED-ljus aktiverat av inställningar</string>
   <!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Ui style</string>
+  <string name="systemui_theme_style_auto">Bakgrundsbild</string>
+  <string name="systemui_theme_style_light">Ljus</string>
+  <string name="systemui_theme_style_dark">Mörk</string>
+  <!-- Power menu on secure lockscreen -->
+  <!-- Suppress notification sound/vibration -->
+  <!-- less notifucations -->
+  <!-- QS footer warnings -->
+  <!-- Scrolling Cache -->
+  <!-- Expanded desktop -->
+  <!-- Torch Power button gestures -->
+  <!-- Battery styles -->
+  <!-- Battery percent -->
 </resources>
