@@ -20,6 +20,7 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Generale</string>
+  <string name="general_summary">Personalizzazione varie. UI/UX.</string>
   <string name="statusbar_title">Barra di stato</string>
   <string name="statusbar_summary">Opzioni per personalizzare la barra di stato, qs, notifiche ecc.</string>
   <string name="buttons_title">Pulsanti</string>
@@ -183,6 +184,8 @@
   <string name="action_partial_screenshot">Screenshot parziale</string>
   <string name="action_screen_off">Schermo spento</string>
   <!-- Swap navigation keys -->
+  <string name="swap_navigation_keys_title">Sostituisci i pulsanti</string>
+  <string name="swap_navigation_keys_title_summary">Sostituisci i pulsanti hardware \"Recenti\" e \"Indietro\"</string>
   <!-- ANBI -->
   <string name="anbi_title">Tocco accidentale</string>
   <string name="anbi_summary">Previeni l\'interazione con i pulsanti fisici di navigazione mentre si tocca lo schermo</string>
@@ -269,12 +272,62 @@
   <string name="systemui_theme_style_light">Chiaro</string>
   <string name="systemui_theme_style_dark">Scuro</string>
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_power_menu_disabled_title">Menù di alimentazione protetto</string>
+  <string name="lockscreen_power_menu_disabled_summary">Disattiva il menù di alimentazione nella schermata di blocco</string>
   <!-- Suppress notification sound/vibration -->
+  <string name="notification_sound_vib_screen_on_title">Notifiche audio e vibrazione mentre lo schermo è acceso</string>
+  <string name="notification_sound_vib_screen_on_never">Mai</string>
+  <string name="notification_sound_vib_screen_on_always">Sempre (predefinito)</string>
+  <string name="notification_sound_vib_screen_on_nomedia">Senza riproduzione multimediale</string>
   <!-- less notifucations -->
+  <string name="less_notification_sounds_title">Suoni di notifica intelligenti</string>
+  <string name="less_notification_sounds_summary">Riproduci il suono di notifica di ogni app solo una volta per il periodo di tempo impostato</string>
+  <string name="less_notification_sounds_default">App predefinita</string>
+  <string name="less_notification_sounds_10s">Ogni 10 secondi</string>
+  <string name="less_notification_sounds_30s">Ogni 30 secondi</string>
+  <string name="less_notification_sounds_1m">Ogni minuto</string>
+  <string name="less_notification_sounds_2m">Ogni 2 minuti</string>
   <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">Avvisi footer</string>
+  <string name="qs_footer_warnings_summary">Visualizzare un avviso in fondo al pannello delle impostazioni rapide, mentre la rete è monitorata da applicazioni esterne o una rete VPN</string>
   <!-- Scrolling Cache -->
+  <string name="pref_scrollingcache_title">Scorrimento cache</string>
+  <string name="pref_scrollingcache_summary">Lo scorrimento della cache può migliorare le prestazioni di scorrimento a discapito della memoria</string>
+  <string name="pref_scrollingcache_force_enable">Forza abilitazione</string>
+  <string name="pref_scrollingcache_default_enable">Abilitato predefinito</string>
+  <string name="pref_scrollingcache_default_disable">Disabilitato predefinito</string>
+  <string name="pref_scrollingcache_force_disable">Forza disabilitazione</string>
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_category">Desktop esteso</string>
+  <string name="expanded_hide_nothing">Non nascondere nulla</string>
+  <string name="expanded_hide_status">Nascondi la barra di stato</string>
+  <string name="expanded_hide_navigation">Nascondi la barra di navigazione</string>
+  <string name="expanded_hide_both">Nascondi entrambi</string>
+  <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata dello schermo esteso su ogni app, impostato su \"Abilitato per tutti\" in posizione spento</string>
+  <string name="expanded_desktop_state">Schermo espanso</string>
+  <string name="expanded_enabled_for_all">Abilitato per tutti</string>
+  <string name="expanded_user_configurable">Configurabile dall\'utente</string>
+  <string name="expanded_desktop_style">Stile schermo esteso</string>
+  <string name="expanded_desktop_style_description">Scegli lo stile predefinito dello schermo esteso</string>
+  <string name="expanded_desktop_title">Opzioni schermo esteso</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">Torcia a schermo spento col pulsante di alimentazione</string>
+  <string name="torch_power_button_gesture_none">Disattivato</string>
+  <string name="torch_power_button_gesture_dt">Doppio tocco per accendere la torcia (aggiungerà un piccolo ritardo al tocco singolo)</string>
+  <string name="torch_power_button_gesture_lp">Pressione prolungata sul pulsante alimentazione per attivare la torcia</string>
   <!-- Battery styles -->
+  <string name="battery_style_title">Stile icona batteria</string>
+  <string name="battery_style_summary">Cambia l\'aspetto dell\'icona della batteria nella barra di stato</string>
+  <string name="battery_style_port">Verticale</string>
+  <string name="battery_style_circle">Cerchio</string>
+  <string name="battery_style_dotted_circle">Cerchio tratteggiato</string>
+  <string name="battery_style_text">Testo</string>
+  <string name="battery_style_hidden">Nascosta</string>
   <!-- Battery percent -->
+  <string name="show_battery_percent_title">Mostra la percentuale della batteria</string>
+  <string name="show_battery_percent_summary">Mostra la percentuale del livello della batteria vicino all\'icona</string>
+  <string name="battery_percent_hidden">Nascosta</string>
+  <string name="battery_percent_outside">Esterno</string>
+  <string name="battery_percent_inside">Interno</string>
+  <!-- Quick Settings brightness icon -->
 </resources>

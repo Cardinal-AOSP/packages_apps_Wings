@@ -275,6 +275,8 @@
   <!-- Scrolling Cache -->
   <!-- Expanded desktop -->
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_dt">双击电源键开启手电筒 (单击操作将会有微小延迟)</string>
   <!-- Battery styles -->
   <!-- Battery percent -->
+  <!-- Quick Settings brightness icon -->
 </resources>

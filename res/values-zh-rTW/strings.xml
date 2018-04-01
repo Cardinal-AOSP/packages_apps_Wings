@@ -20,6 +20,7 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">一般</string>
+  <string name="general_summary">自訂UI/UX。</string>
   <string name="statusbar_title">狀態列</string>
   <string name="statusbar_summary">用於狀態列、快速開關、通知等的選項。</string>
   <string name="buttons_title">按鍵</string>
@@ -183,6 +184,8 @@
   <string name="action_partial_screenshot">部分螢幕截圖</string>
   <string name="action_screen_off">關閉螢幕</string>
   <!-- Swap navigation keys -->
+  <string name="swap_navigation_keys_title">交換按鍵</string>
+  <string name="swap_navigation_keys_title_summary">將返回與多工實體鍵互換</string>
   <!-- ANBI -->
   <string name="anbi_title">誤觸</string>
   <string name="anbi_summary">當觸控螢幕時，避免與實體導覽列互動</string>
@@ -269,12 +272,62 @@
   <string name="systemui_theme_style_light">細體</string>
   <string name="systemui_theme_style_dark">暗色</string>
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_power_menu_disabled_title">保護電源選單</string>
+  <string name="lockscreen_power_menu_disabled_summary">停用安全鎖定畫面上顯示電源選單</string>
   <!-- Suppress notification sound/vibration -->
+  <string name="notification_sound_vib_screen_on_title">螢幕為開啟狀態時, 發出通知提醒聲音和震動</string>
+  <string name="notification_sound_vib_screen_on_never">永不</string>
+  <string name="notification_sound_vib_screen_on_always">一律 (預設)</string>
+  <string name="notification_sound_vib_screen_on_nomedia">如果沒有媒體正在播放</string>
   <!-- less notifucations -->
+  <string name="less_notification_sounds_title">智慧通知音效</string>
+  <string name="less_notification_sounds_summary">限制應用程式在一段時間內只能播放一次通知音效</string>
+  <string name="less_notification_sounds_default">應用程式 預設</string>
+  <string name="less_notification_sounds_10s">每 10 秒</string>
+  <string name="less_notification_sounds_30s">每 30 秒</string>
+  <string name="less_notification_sounds_1m">每分鐘</string>
+  <string name="less_notification_sounds_2m">每隔 2 分鐘</string>
   <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">快速設定頁尾警告</string>
+  <string name="qs_footer_warnings_summary">當你的網路被 VPN 或者應用程式監測時，在快速設定底部顯示一個警告。</string>
   <!-- Scrolling Cache -->
+  <string name="pref_scrollingcache_title">滑動快取</string>
+  <string name="pref_scrollingcache_summary">滑動快取可提升滑動時的效能，但同時也會提高記憶體使用量</string>
+  <string name="pref_scrollingcache_force_enable">強制啟用</string>
+  <string name="pref_scrollingcache_default_enable">預設啟用</string>
+  <string name="pref_scrollingcache_default_disable">預設停用</string>
+  <string name="pref_scrollingcache_force_disable">強制停用</string>
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_category">延伸桌面</string>
+  <string name="expanded_hide_nothing">不隱藏</string>
+  <string name="expanded_hide_status">隱藏狀態列</string>
+  <string name="expanded_hide_navigation">隱藏導覽列</string>
+  <string name="expanded_hide_both">全部隱藏</string>
+  <string name="expanded_nothing_to_show">若要為特定的應用程式設定延伸狀態，請關閉「全部延伸」的選項</string>
+  <string name="expanded_desktop_state">延伸狀態</string>
+  <string name="expanded_enabled_for_all">全部啟用</string>
+  <string name="expanded_user_configurable">使用者可配置</string>
+  <string name="expanded_desktop_style">延伸桌面樣式</string>
+  <string name="expanded_desktop_style_description">選擇預設延伸桌面樣式</string>
+  <string name="expanded_desktop_title">延伸桌面選項</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">螢幕關閉狀態按電源鍵開啟手電筒</string>
+  <string name="torch_power_button_gesture_none">已停用</string>
+  <string name="torch_power_button_gesture_dt">連續按下兩次電源鍵開啟手電筒 (單次按下會稍微延遲)</string>
+  <string name="torch_power_button_gesture_lp">長按電源鍵以打開手電筒</string>
   <!-- Battery styles -->
+  <string name="battery_style_title">電池圖示樣式</string>
+  <string name="battery_style_summary">更改狀態列中電池圖示的外觀</string>
+  <string name="battery_style_port">縱向</string>
+  <string name="battery_style_circle">環狀</string>
+  <string name="battery_style_dotted_circle">點陣環形</string>
+  <string name="battery_style_text">文字</string>
+  <string name="battery_style_hidden">隱藏</string>
   <!-- Battery percent -->
+  <string name="show_battery_percent_title">顯示電量百分比</string>
+  <string name="show_battery_percent_summary">在圖示旁顯示電量百分比</string>
+  <string name="battery_percent_hidden">隱藏</string>
+  <string name="battery_percent_outside">外面</string>
+  <string name="battery_percent_inside">裡面</string>
+  <!-- Quick Settings brightness icon -->
 </resources>
