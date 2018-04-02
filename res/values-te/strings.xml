@@ -17,28 +17,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Cardinal Wings menus -->
   <!-- Main Settings -->
-  <string name="statusbar_title">স্ট্যাটাস বার</string>
-  <string name="buttons_title">বোতামগুলি</string>
   <!-- double tap to sleep - statusbar -->
   <!-- Volume button wake -->
   <!-- Volume button track change -->
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবথায় জেগে উঠা</string>
-  <string name="wake_when_plugged_or_unplugged_summary">শক্তির উৎস যখন যুক্ত অথবা বিচ্ছিন্ন করা হচ্ছে তখন পর্দা সচল করুন</string>
   <!-- Network traffic -->
-  <string name="network_traffic_title">নেটওয়ার্ক ট্রাফিক</string>
-  <string name="show_network_traffic_disable">নিষ্ক্রিয়</string>
-  <string name="show_network_traffic_up">বহির্গামী</string>
-  <string name="show_network_traffic_down">আগত</string>
-  <string name="show_network_traffic_all">বহির্গামী এবং আগত</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">রং বছাইকারী</string>
-  <string name="press_color_to_apply">আবেদন করতে নীচের রংটি চাপুন</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">নির্ধারণ করুন</string>
   <!-- Quick settings tiles columns and rows config -->
   <!-- QS rows and columns -->
   <!-- General strings -->

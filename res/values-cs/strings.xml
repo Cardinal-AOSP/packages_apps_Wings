@@ -20,6 +20,7 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Hlavní</string>
+  <string name="general_summary">Různé přizpůsobení UI/UX.</string>
   <string name="statusbar_title">Stavová lišta</string>
   <string name="statusbar_summary">Možnosti pro přizpůsobení stavové lišty, QS, oznámení atd.</string>
   <string name="buttons_title">Tlačítka</string>
@@ -183,6 +184,8 @@
   <string name="action_partial_screenshot">Částečný snímek obrazovky</string>
   <string name="action_screen_off">Vypnout obrazovku</string>
   <!-- Swap navigation keys -->
+  <string name="swap_navigation_keys_title">Prohodit tlačítka</string>
+  <string name="swap_navigation_keys_title_summary">Prohodit hardwarová tlačítka \"Nedávné\" a \"Zpět\"</string>
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabránit interakci s harwarovými tlačítky během dotyku obrazovky</string>
@@ -269,12 +272,62 @@
   <string name="systemui_theme_style_light">Světlý</string>
   <string name="systemui_theme_style_dark">Tmavý</string>
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_power_menu_disabled_title">Zabezpečené menu napájení</string>
+  <string name="lockscreen_power_menu_disabled_summary">Zakázat menu napájení na zabezpečené zamykací obrazovce</string>
   <!-- Suppress notification sound/vibration -->
+  <string name="notification_sound_vib_screen_on_title">Zvuky a vibrace oznámení při zapnuté obrazovce</string>
+  <string name="notification_sound_vib_screen_on_never">Nikdy</string>
+  <string name="notification_sound_vib_screen_on_always">Vždy (výchozí)</string>
+  <string name="notification_sound_vib_screen_on_nomedia">Pokud se nepřehrávají média</string>
   <!-- less notifucations -->
+  <string name="less_notification_sounds_title">Inteligentní zvuky oznámení</string>
+  <string name="less_notification_sounds_summary">Přehrát zvuk oznámení každé aplikace pouze jednou za stanovené časové období</string>
+  <string name="less_notification_sounds_default">Výchozí podle aplikace</string>
+  <string name="less_notification_sounds_10s">Každých 10 sekund</string>
+  <string name="less_notification_sounds_30s">Každých 30 sekund</string>
+  <string name="less_notification_sounds_1m">Každou minutu</string>
+  <string name="less_notification_sounds_2m">Každé 2 minuty</string>
   <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">Výstrahy ve spodní části panelu rychlého nastavení</string>
+  <string name="qs_footer_warnings_summary">Zobrazit varování ve spodní části panelu rychlého nastavení při monitorování sítě externími aplikacemi nebo VPN</string>
   <!-- Scrolling Cache -->
+  <string name="pref_scrollingcache_title">Cache pro posun</string>
+  <string name="pref_scrollingcache_summary">Cache pro posun může zlepšit výkon na úkor úbytku paměti</string>
+  <string name="pref_scrollingcache_force_enable">Vynuceně povolit</string>
+  <string name="pref_scrollingcache_default_enable">Povolit výchozí</string>
+  <string name="pref_scrollingcache_default_disable">Zakázat výchozí</string>
+  <string name="pref_scrollingcache_force_disable">Vynuceně zakázat</string>
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_category">Rozšířená plocha</string>
+  <string name="expanded_hide_nothing">Nic neskrývat</string>
+  <string name="expanded_hide_status">Skrýt stavovou lištu</string>
+  <string name="expanded_hide_navigation">Skrýt navigační panel</string>
+  <string name="expanded_hide_both">Skrýt oboji</string>
+  <string name="expanded_nothing_to_show">Dotykem přidejte nastavení pro aplikace, nebo přepněte na vypnuto pro \"Povoleno pro všechny aplikace\"</string>
+  <string name="expanded_desktop_state">Rozšířená obrazovka</string>
+  <string name="expanded_enabled_for_all">Povoleno pro všechny aplikace</string>
+  <string name="expanded_user_configurable">Uživatelsky nastavitelné</string>
+  <string name="expanded_desktop_style">Vzhled rozšířené plochy</string>
+  <string name="expanded_desktop_style_description">Vyberte výchozí styl rozšířené plochy</string>
+  <string name="expanded_desktop_title">Možnosti rozšířené plochy</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">Svítilna při vypnuté obrazovce</string>
+  <string name="torch_power_button_gesture_none">Vypnuto</string>
+  <string name="torch_power_button_gesture_dt">Dvojím klepnutím zapnout svítilnu (přidá malé zpoždění při jednom klepnutí)</string>
+  <string name="torch_power_button_gesture_lp">Dlouhým stisknutím tlačítka napájení přepínat svítilnu</string>
   <!-- Battery styles -->
+  <string name="battery_style_title">Styl ikony baterie</string>
+  <string name="battery_style_summary">Změna vzhledu ikony baterie ve stavové liště</string>
+  <string name="battery_style_port">Na výšku</string>
+  <string name="battery_style_circle">Kruh</string>
+  <string name="battery_style_dotted_circle">Tečkovaný kruh</string>
+  <string name="battery_style_text">Text</string>
+  <string name="battery_style_hidden">Skrytá</string>
   <!-- Battery percent -->
+  <string name="show_battery_percent_title">Zobrazit stav baterie v procentech</string>
+  <string name="show_battery_percent_summary">Zobrazit úroveň nabití baterie v procentech vedle ikony</string>
+  <string name="battery_percent_hidden">Skryté</string>
+  <string name="battery_percent_outside">Vedle ikony</string>
+  <string name="battery_percent_inside">Uvnitř ikony</string>
+  <!-- Quick Settings brightness icon -->
 </resources>
