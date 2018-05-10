@@ -42,6 +42,12 @@
         android:entries="@array/entries_scrollingcache" 
         android:entryValues="@array/values_scrollingcache"/>
 
+    <com.cardinal.settings.preference.GlobalSettingSwitchPreference
+        android:key="show_cpu_overlay"
+        android:title="@string/show_cpu_title"
+        android:summary="@string/show_cpu_summary"
+        android:defaultValue="false" />
+
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"
