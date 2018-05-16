@@ -418,6 +418,7 @@
     <string name="clock_date_style_lowercase">Lowercase</string>
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_warning_text">Do note that center clock position is experimental and might be unstable to use and can cause issues.</string>
 
     <!-- Screen state service -->
     <string name="screen_state_toggles_summary">@null</string>
