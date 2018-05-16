@@ -20,15 +20,10 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">一般</string>
-  <string name="general_summary">自訂UI/UX。</string>
   <string name="statusbar_title">狀態列</string>
-  <string name="statusbar_summary">用於狀態列、快速開關、通知等的選項。</string>
   <string name="buttons_title">按鍵</string>
-  <string name="buttons_summary">音量控制、導覽列等選項。</string>
   <string name="lockscreen_title">鎖定畫面</string>
-  <string name="lockscreen_summary">鎖定畫面自訂</string>
   <string name="recents_ui_title">最近的應用程式</string>
-  <string name="recents_ui_summary">最近的應用程式自訂。</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">輕觸兩下即可休眠</string>
   <string name="double_tap_to_sleep_summary">輕觸兩下狀態列以使裝置進入休眠</string>
@@ -205,7 +200,6 @@
   <string name="dialog_delete_message">移除已選取的項目？</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止個別套件存取感應器</string>
-  <string name="sensor_block_summary">阻止應用程式存取某些感應器來省電</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">鈴響時使用主畫面鍵</string>
   <string name="allow_incall_home_summary">當來電鈴響時允許使用主畫面鍵</string>
@@ -330,4 +324,11 @@
   <string name="battery_percent_outside">外面</string>
   <string name="battery_percent_inside">裡面</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">亮度圖示</string>
+  <string name="brightness_icon_summary">在亮度滑動條左邊顯示一個亮度圖示以用來調整是否開啟自動亮度</string>
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

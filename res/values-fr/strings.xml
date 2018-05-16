@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">General</string>
   <string name="statusbar_title">Barre d\'état</string>
-  <string name="statusbar_summary">Options pour personnaliser la barre d’État, paramètres rapides, notifications, etc.</string>
   <string name="buttons_title">Boutons</string>
-  <string name="buttons_summary">Options pour les contrôles de Vol, Barre de Navigation etc.</string>
   <string name="lockscreen_title">Écran de verrouillage</string>
-  <string name="lockscreen_summary">Personnalisations de l\'écran de verrouillage.</string>
   <string name="recents_ui_title">Applications récentes</string>
-  <string name="recents_ui_summary">Personnalisations des Applications récentes.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Double-tap pour mise en veille</string>
   <string name="double_tap_to_sleep_summary">Double tap sur la barre d’État pour mettre l’appareil en veille</string>
@@ -200,7 +196,6 @@
   <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blocage du capteur par paquet</string>
-  <string name="sensor_block_summary">Bloquer l’accès aux capteurs pour certaines applications afin d\'économiser la batterie.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Bouton \"Accueil\" durant l\'appel</string>
   <string name="allow_incall_home_summary">Permettre d’utiliser le bouton d’accueil lorsque l’appareil sonne</string>
@@ -263,4 +258,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

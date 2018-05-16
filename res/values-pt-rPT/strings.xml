@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">Geral</string>
   <string name="statusbar_title">Barra de estado</string>
-  <string name="statusbar_summary">Opções para personalizar a barra de estado, qs, notificações etc.</string>
   <string name="buttons_title">Botões</string>
-  <string name="buttons_summary">Opções para controles de Vol, barra de navegação etc.</string>
   <string name="lockscreen_title">Ecrã de bloqueio</string>
-  <string name="lockscreen_summary">Personalizações do Ecrã de Bloqueio.</string>
   <string name="recents_ui_title">Recentes</string>
-  <string name="recents_ui_summary">Personalizações recentes.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
   <string name="double_tap_to_sleep_summary">Toque duplo na barra de estado para desligar o ecrã</string>
@@ -202,7 +198,6 @@
   <string name="dialog_delete_message">Remover o item selecionado?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Restringir o uso dos sensores</string>
-  <string name="sensor_block_summary">Bloquear o acesso das aplicações a determinados sensores para economizar bateria.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Botão Home em toque de chamada</string>
   <string name="allow_incall_home_summary">Permitir que o botão Home seja usado quando o dispositivo estiver a tocar</string>
@@ -278,4 +273,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

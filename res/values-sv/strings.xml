@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">Allmän</string>
   <string name="statusbar_title">Statusfält</string>
-  <string name="statusbar_summary">Alternativ för att anpassa statusfält, qs, meddelanden etc.</string>
   <string name="buttons_title">Knappar</string>
-  <string name="buttons_summary">Alternativ för Vol kontroller, Navigationsfält etc.</string>
   <string name="lockscreen_title">Låsskärm</string>
-  <string name="lockscreen_summary">Låsskärmsanpassningar.</string>
   <string name="recents_ui_title">Senaste</string>
-  <string name="recents_ui_summary">Senaste anpassningar.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Dubbeltryck för att släcka</string>
   <string name="double_tap_to_sleep_summary">Dubbeltryck på statusfältet för att försätta enheten i viloläge</string>
@@ -202,7 +198,6 @@
   <string name="dialog_delete_message">Ta bort valt objekt?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blockera sensor per paket</string>
-  <string name="sensor_block_summary">Blockera åtkomst till vissa sensorer för vissa appar för att spara på batteriet.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Hemknappen när det ringer</string>
   <string name="allow_incall_home_summary">Tillåt att använda hemknappen när det ringer</string>
@@ -278,4 +273,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

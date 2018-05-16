@@ -20,15 +20,10 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Główne</string>
-  <string name="general_summary">Dodatkowa personalizacja interfejsu.</string>
   <string name="statusbar_title">Pasek Statusu</string>
-  <string name="statusbar_summary">Opcje personalizacji paska stanu, powiadomień, itp.</string>
   <string name="buttons_title">Przyciski</string>
-  <string name="buttons_summary">Opcje przycisków głośności, nawigacji, itp.</string>
   <string name="lockscreen_title">Ekran blokady</string>
-  <string name="lockscreen_summary">Personalizacja ekranu blokady.</string>
   <string name="recents_ui_title">Ostatnie</string>
-  <string name="recents_ui_summary">Personalizacja - Ostatnie.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Stuknij dwukrotnie aby uśpić</string>
   <string name="double_tap_to_sleep_summary">Podwójnie stuknij na pasek statusu aby uśpić urządzenie</string>
@@ -205,7 +200,6 @@
   <string name="dialog_delete_message">Usunąć wybrany element?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Czujnik blokady na pakiet</string>
-  <string name="sensor_block_summary">Zablokuj dostęp do niektórych sensorów dla części aplikacji, aby oszczędzić baterię.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Przyisk home podczas dzownienia</string>
   <string name="allow_incall_home_summary">Zezwól na używanie przycisku Home przy połączeniach</string>
@@ -330,4 +324,11 @@
   <string name="battery_percent_outside">Poza</string>
   <string name="battery_percent_inside">Wewnątrz</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Ikona jasności</string>
+  <string name="brightness_icon_summary">Pokaż automatyczną ikonę jasności po lewej stronie suwaka jasności</string>
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

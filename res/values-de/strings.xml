@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">Allgemein</string>
   <string name="statusbar_title">Statusleiste</string>
-  <string name="statusbar_summary">Einstellungen für die Anpassung der Statusleiste, QuickSettings, Benachrichtigungen etc.</string>
   <string name="buttons_title">Tasten</string>
-  <string name="buttons_summary">Einstellungen für Lautstärketasten, Navigationsleiste etc.</string>
   <string name="lockscreen_title">Sperrbildschirm</string>
-  <string name="lockscreen_summary">Sperrbildschirm-Anpassungen.</string>
   <string name="recents_ui_title">Anwendungsverlauf</string>
-  <string name="recents_ui_summary">Anwendungsverlauf-Anpassungen.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Doppeltippen für Standbymodus</string>
   <string name="double_tap_to_sleep_summary">Doppelt auf die Statusleiste tippen, um das Gerät in den Standbymodus zu versetzen</string>
@@ -202,7 +198,6 @@
   <string name="dialog_delete_message">Ausgewähltes Objekt entfernen?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Sensoren blockieren</string>
-  <string name="sensor_block_summary">Blockiert den Zugriff auf bestimmte Sensoren für einige Apps, um Akku zu sparen.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Anruf mit Home-Taste annehmen</string>
   <string name="allow_incall_home_summary">Eingehende Anrufe können mit der Home-Taste angenommen werden</string>
@@ -278,4 +273,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

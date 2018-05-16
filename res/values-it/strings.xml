@@ -20,15 +20,10 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Generale</string>
-  <string name="general_summary">Personalizzazione varie. UI/UX.</string>
   <string name="statusbar_title">Barra di stato</string>
-  <string name="statusbar_summary">Opzioni per personalizzare la barra di stato, qs, notifiche ecc.</string>
   <string name="buttons_title">Pulsanti</string>
-  <string name="buttons_summary">Opzioni per i controlli del volume, barra di navigazione, ecc.</string>
   <string name="lockscreen_title">Schermata di sblocco</string>
-  <string name="lockscreen_summary">Personalizzazioni schermata di sblocco.</string>
   <string name="recents_ui_title">App Recenti</string>
-  <string name="recents_ui_summary">Personalizzazioni recenti.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Doppio-tap per sospendere</string>
   <string name="double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per sospendere il dispositivo</string>
@@ -205,7 +200,6 @@
   <string name="dialog_delete_message">Rimuovere l\'elemento selezionato?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blocca sensori per pacchetto</string>
-  <string name="sensor_block_summary">Impedisci l\'accesso a determinati sensori per alcune applicazioni per risparmiare batteria.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Pulsante home durante uno squillo</string>
   <string name="allow_incall_home_summary">Consenti di utilizzare il pulsante home quando il dispositivo squilla per una chiamata</string>
@@ -330,4 +324,11 @@
   <string name="battery_percent_outside">Esterno</string>
   <string name="battery_percent_inside">Interno</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Icona luminosità</string>
+  <string name="brightness_icon_summary">Visualizza un\'icona di luminosità a sinistra del dispositivo di scorrimento per attivare o disattivare la luminosità automatica</string>
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

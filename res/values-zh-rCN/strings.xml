@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">常规信息</string>
   <string name="statusbar_title">状态栏</string>
-  <string name="statusbar_summary">设置状态栏</string>
   <string name="buttons_title">按键</string>
-  <string name="buttons_summary">音量控制、导航栏等选项</string>
   <string name="lockscreen_title">锁屏界面</string>
-  <string name="lockscreen_summary">锁屏界面定制</string>
   <string name="recents_ui_title">最近使用</string>
-  <string name="recents_ui_summary">自定义最近按钮</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">双击休眠</string>
   <string name="double_tap_to_sleep_summary">双击状态栏爱机休眠</string>
@@ -202,7 +198,6 @@
   <string name="dialog_delete_message">移除选中的项目？</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止个別应用使用传感器</string>
-  <string name="sensor_block_summary">阻止某些应用程序使用某些传感器来节省电池。</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">响铃时使用 Home 键</string>
   <string name="allow_incall_home_summary">当来电铃声响起时允许使用 home 按钮</string>
@@ -279,4 +274,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

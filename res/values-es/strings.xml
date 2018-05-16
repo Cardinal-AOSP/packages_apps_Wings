@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">General</string>
   <string name="statusbar_title">Barra de estado</string>
-  <string name="statusbar_summary">Opciones para personalizar la barra de estado, qs, notificaciones, etc.</string>
   <string name="buttons_title">Botones</string>
-  <string name="buttons_summary">Opciones para controles de volumen, barra de navegación, etc.</string>
   <string name="lockscreen_title">Bloqueo de pantalla</string>
-  <string name="lockscreen_summary">Ajustes de pantalla de bloqueo.</string>
   <string name="recents_ui_title">Recientes</string>
-  <string name="recents_ui_summary">Ajustes de recientes.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Doble toque para bloquear</string>
   <string name="double_tap_to_sleep_summary">Habilitar el doble toque en la barra de estado para poner el dispositivo en reposo</string>
@@ -183,6 +179,8 @@
   <string name="action_partial_screenshot">Captura de pantalla parcial</string>
   <string name="action_screen_off">Apagar pantalla</string>
   <!-- Swap navigation keys -->
+  <string name="swap_navigation_keys_title">Intercambiar botones</string>
+  <string name="swap_navigation_keys_title_summary">Intercambiar botones de atrás y recientes</string>
   <!-- ANBI -->
   <string name="anbi_title">Toque accidental</string>
   <string name="anbi_summary">Previene la interacción con los botones de navegación mientras se está tocando la pantalla</string>
@@ -202,7 +200,6 @@
   <string name="dialog_delete_message">¿Eliminar el elemento seleccionado?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Bloqueo de sensor por aplicación</string>
-  <string name="sensor_block_summary">Bloquea el acceso a ciertos sensores de algunas aplicaciones para ahorrar batería.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Botón de inicio cuando timbre</string>
   <string name="allow_incall_home_summary">Habilitar usar el boton de inicio cuando el dispositivo esté sonando / timbrando</string>
@@ -269,13 +266,69 @@
   <string name="systemui_theme_style_light">Claro</string>
   <string name="systemui_theme_style_dark">Oscuro</string>
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_power_menu_disabled_title">Menú de apagado seguro</string>
+  <string name="lockscreen_power_menu_disabled_summary">Desactivar el menú de apagado en la pantalla de bloqueo segura</string>
   <!-- Suppress notification sound/vibration -->
+  <string name="notification_sound_vib_screen_on_title">Sonido de las notificaciones y vibración si la pantalla está encendida</string>
+  <string name="notification_sound_vib_screen_on_never">Nunca</string>
+  <string name="notification_sound_vib_screen_on_always">Siempre (por defecto)</string>
+  <string name="notification_sound_vib_screen_on_nomedia">Si no hay nada en reproducción</string>
   <!-- less notifucations -->
+  <string name="less_notification_sounds_title">Sonidos de notificación inteligentes</string>
+  <string name="less_notification_sounds_summary">Limitar los sonidos de notificacion de cada aplicacion para que suenen una vez cada cierto tiempo</string>
+  <string name="less_notification_sounds_default">Aplicación predeterminada</string>
+  <string name="less_notification_sounds_10s">Cada 10 segundos</string>
+  <string name="less_notification_sounds_30s">Cada 30 segundos</string>
+  <string name="less_notification_sounds_1m">Cada minuto</string>
+  <string name="less_notification_sounds_2m">Cada 2 minutos</string>
   <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">Advertencias al pie de página de Ajustes Rápidos</string>
+  <string name="qs_footer_warnings_summary">Mostrar una advertencia en la parte inferior del panel de ajustes rápidos cuando la red se supervisa mediante aplicaciones externas o vpn</string>
   <!-- Scrolling Cache -->
+  <string name="pref_scrollingcache_title">Cache de desplazamiento</string>
+  <string name="pref_scrollingcache_summary">Desplazar la memoria caché puede mejorar el rendimiento de desplazamiento a costa de la memoria</string>
+  <string name="pref_scrollingcache_force_enable">Forzar activación</string>
+  <string name="pref_scrollingcache_default_enable">Activado por defecto</string>
+  <string name="pref_scrollingcache_default_disable">Desactivado por defecto</string>
+  <string name="pref_scrollingcache_force_disable">Forzar desactivado</string>
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_category">Escritorio expandido</string>
+  <string name="expanded_hide_nothing">Sin ocultar nada</string>
+  <string name="expanded_hide_status">Ocultar barra de estado</string>
+  <string name="expanded_hide_navigation">Ocultar la barra de navegación</string>
+  <string name="expanded_hide_both">Ocultar ambos</string>
+  <string name="expanded_nothing_to_show">Para agregar una configuración personalizada por cada aplicación para el escritorio expandido, deshabilita la opción \"Habilitado para todos\"</string>
+  <string name="expanded_desktop_state">Estado del escritorio expandido</string>
+  <string name="expanded_enabled_for_all">Habilitado para todos</string>
+  <string name="expanded_user_configurable">Configurable por el usuario</string>
+  <string name="expanded_desktop_style">Estilo de escritorio expandido</string>
+  <string name="expanded_desktop_style_description">Escoge un estilo de escritorio extendido</string>
+  <string name="expanded_desktop_title">Opciones de escritorio expandido</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">Con la pantalla apagada el botón de encendido enciende la linterna</string>
+  <string name="torch_power_button_gesture_none">Deshabilitado</string>
+  <string name="torch_power_button_gesture_dt">Doble pulsación del botón de encendido enciende la linterna (añadirá un pequeño retraso a la pulsación normal)</string>
+  <string name="torch_power_button_gesture_lp">Pulsación larga del botón de encendido para encender la linterna</string>
   <!-- Battery styles -->
+  <string name="battery_style_title">Estilo del icono de la batería</string>
+  <string name="battery_style_summary">Cambiar la apariencia del icono de la batería en la barra de estado</string>
+  <string name="battery_style_port">Vertical</string>
+  <string name="battery_style_circle">Circulo</string>
+  <string name="battery_style_dotted_circle">Circular punteado</string>
+  <string name="battery_style_text">Texto</string>
+  <string name="battery_style_hidden">Oculto</string>
   <!-- Battery percent -->
+  <string name="show_battery_percent_title">Mostrar porcentaje de batería</string>
+  <string name="show_battery_percent_summary">Mostrar nivel de la batería junto al icono</string>
+  <string name="battery_percent_hidden">Oculto</string>
+  <string name="battery_percent_outside">Exterior</string>
+  <string name="battery_percent_inside">Interior</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Icono de brillo</string>
+  <string name="brightness_icon_summary">Mostrar un icono de brillo a la izquierda de la barra de brillo para ajustar el brillo automático</string>
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

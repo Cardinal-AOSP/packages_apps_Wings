@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">Общие</string>
   <string name="statusbar_title">Строка состояния</string>
-  <string name="statusbar_summary">Настройка статусбара, быстрых настроек, уведомлений, тд.</string>
   <string name="buttons_title">Кнопки</string>
-  <string name="buttons_summary">Настройка управления звуком, навбаром, тд.</string>
   <string name="lockscreen_title">Экран блокировки</string>
-  <string name="lockscreen_summary">Настройка экрана блокировки</string>
   <string name="recents_ui_title">Недавние приложения</string>
-  <string name="recents_ui_summary">Настройка недавних приложений</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
   <string name="double_tap_to_sleep_summary">Двойной тап по строке состояние переводит устройство в режим сна</string>
@@ -202,7 +198,6 @@
   <string name="dialog_delete_message">Удалить выбранные элементы?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Блокировка датчиков попакетно</string>
-  <string name="sensor_block_summary">Заблокировать доступ к датчикам для некоторых приложений для экономии заряда батареи.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Кнопка «Домой» при звонке</string>
   <string name="allow_incall_home_summary">Разрешить использование кнопки «Домой» при входящем звонке</string>
@@ -278,4 +273,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

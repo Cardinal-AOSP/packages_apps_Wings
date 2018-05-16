@@ -20,15 +20,10 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Hlavní</string>
-  <string name="general_summary">Různé přizpůsobení UI/UX.</string>
   <string name="statusbar_title">Stavová lišta</string>
-  <string name="statusbar_summary">Možnosti pro přizpůsobení stavové lišty, QS, oznámení atd.</string>
   <string name="buttons_title">Tlačítka</string>
-  <string name="buttons_summary">Možnosti pro ovládání hlasitosti, navigačního panelu atd.</string>
   <string name="lockscreen_title">Zamykací obrazovka</string>
-  <string name="lockscreen_summary">Přizpůsobení zamykací obrazovky.</string>
   <string name="recents_ui_title">Nedávné</string>
-  <string name="recents_ui_summary">Přizpůsobení nedávných aplikací.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Dvojitým poklepáním uspat</string>
   <string name="double_tap_to_sleep_summary">Dvojí poklepání na stavovou lištu uvede zařízení do režimu spánku</string>
@@ -205,7 +200,6 @@
   <string name="dialog_delete_message">Odstranit vybranou položku?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Zablokovat senzory</string>
-  <string name="sensor_block_summary">Zamezení přístupu k některým senzorům pro některé aplikace za účelem úspory energie.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Tlačítko Domů při vyzvánění</string>
   <string name="allow_incall_home_summary">Povolit použití tlačítka Domů při vyzvánění zařízení</string>
@@ -330,4 +324,11 @@
   <string name="battery_percent_outside">Vedle ikony</string>
   <string name="battery_percent_inside">Uvnitř ikony</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Ikona jasu</string>
+  <string name="brightness_icon_summary">Zobrazit ikonu k přepínání automatického jasu nalevo od posuvníku</string>
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>
