@@ -38,7 +38,10 @@ import com.android.settings.search.Indexable;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
+import com.android.internal.util.custom.CustomUtils;
+
 import com.cardinal.settings.preference.SystemSettingSwitchPreference;
+import com.cardinal.settings.preference.SecureSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,10 +51,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
-    
+
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFpKeystore;
     private SystemSettingSwitchPreference mFingerprintVib;
+    private SecureSettingSwitchPreference mFaceUnlock;
 
 
     @Override
@@ -66,12 +70,17 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
         mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
         if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
-        prefSet.removePreference(mFpKeystore);
-        prefSet.removePreference(mFingerprintVib);
+            prefSet.removePreference(mFpKeystore);
+            prefSet.removePreference(mFingerprintVib);
         } else {
-        mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
-               Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
-        mFpKeystore.setOnPreferenceChangeListener(this);
+            mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
+            mFpKeystore.setOnPreferenceChangeListener(this);
+        }
+
+        mFaceUnlock = (SecureSettingSwitchPreference) findPreference("face_auto_unlock");
+        if (!CustomUtils.isAppInstalled(getContext(), "com.android.facelock")) {
+            prefSet.removePreference(mFaceUnlock);
         }
     }
 

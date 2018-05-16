@@ -60,6 +60,12 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
+    <com.cardinal.settings.preference.SecureSettingSwitchPreference
+        android:key="face_auto_unlock"
+        android:title="@string/face_auto_unlock_title"
+        android:summary="@string/face_auto_unlock_summary"
+        android:defaultValue="false" />
+
     <SwitchPreference
         android:key="fp_unlock_keystore"
         android:title="@string/fp_unlock_keystore_title"
