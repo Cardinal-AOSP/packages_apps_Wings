@@ -207,9 +207,11 @@
     <string name="action_partial_screenshot">Partial screenshot</string>
     <string name="action_screen_off">Screen off</string>
 
-    <!-- Swap navigation keys -->
-    <string name="swap_navigation_keys_title">Swap keys</string>
-    <string name="swap_navigation_keys_title_summary">Swap back and recents hardware keys</string>
+    <!-- Swap sw & hw navigation keys -->
+    <string name="swap_hardware_navigation_keys_title">Swap hardware keys</string>
+    <string name="swap_hardware_navigation_keys_title_summary">Swap back and recents hardware navigation keys</string>
+    <string name="swap_software_navigation_keys_title">Swap software keys</string>
+    <string name="swap_software_navigation_keys_title_summary">Swap back and recents software navigation keys</string>
 
     <!-- ANBI -->
     <string name="anbi_title">Accidental touch</string>
