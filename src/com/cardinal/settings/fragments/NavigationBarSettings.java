@@ -106,6 +106,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private int mDeviceHardwareKeys;
     private int mDeviceDefaultButtonBrightness;
 
+    private boolean mDeviceHasButtonBrightnessSupport;
     private boolean mDeviceHasVariableButtonBrightness;
 
     private IPowerManager mPowerService;
@@ -148,6 +149,9 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
         mDeviceDefaultButtonBrightness = res.getInteger(
                 com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+
+        mDeviceHasButtonBrightnessSupport = res.getBoolean(
+                com.android.internal.R.bool.config_button_brightness_support);
 
         mEnableNavBar = (SwitchPreference) prefSet.findPreference(
                 KEYS_SHOW_NAVBAR_KEY);
@@ -203,12 +207,15 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             brightnessCategory.removePreference(mManualButtonBrightness);
         }
 
-        if (mDeviceHardwareKeys == 0) {
+        if (!mDeviceHasButtonBrightnessSupport) {
             brightnessCategory.removePreference(mButtonBrightness);
             brightnessCategory.removePreference(mManualButtonBrightness);
             brightnessCategory.removePreference(mBacklightTimeout);
             brightnessCategory.removePreference(mButtonBacklightTouch);
             prefSet.removePreference(brightnessCategory);
+        }
+
+        if (mDeviceHardwareKeys == 0) {
             prefSet.removePreference(mAnbiPreference);
             prefSet.removePreference(mSwapKeysPreference);
             prefSet.removePreference(mEnableNavBar);
