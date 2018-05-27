@@ -178,9 +178,7 @@
   <string name="action_screenshot">Captura de pantalla</string>
   <string name="action_partial_screenshot">Captura de pantalla parcial</string>
   <string name="action_screen_off">Apagar pantalla</string>
-  <!-- Swap navigation keys -->
-  <string name="swap_navigation_keys_title">Intercambiar botones</string>
-  <string name="swap_navigation_keys_title_summary">Intercambiar botones de atrás y recientes</string>
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Toque accidental</string>
   <string name="anbi_summary">Previene la interacción con los botones de navegación mientras se está tocando la pantalla</string>

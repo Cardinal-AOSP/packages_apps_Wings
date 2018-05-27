@@ -21,13 +21,9 @@
   <!-- Main Settings -->
   <string name="general_title">Umum</string>
   <string name="statusbar_title">Status bar</string>
-  <string name="statusbar_summary">Pilihan untuk menyesuaikan statusbar, qs, pemberitahuan dll.</string>
   <string name="buttons_title">Tombol</string>
-  <string name="buttons_summary">Pilihan untuk Vol kontrol, navigasi bar dll.</string>
   <string name="lockscreen_title">Kunci layar</string>
-  <string name="lockscreen_summary">Kustomisasi lockscreen.</string>
   <string name="recents_ui_title">Yang baru terjadi</string>
-  <string name="recents_ui_summary">Kustomisasi Recents.</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Ketuk dua kali untuk tidur</string>
   <string name="double_tap_to_sleep_summary">Tap dua kali pada status bar untuk menempatkan perangkat untuk tidur</string>
@@ -182,7 +178,7 @@
   <string name="action_screenshot">tangkapan layar</string>
   <string name="action_partial_screenshot">Screenshot parsial</string>
   <string name="action_screen_off">Matikan</string>
-  <!-- Swap navigation keys -->
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Sentuhan yang tidak disengaja</string>
   <string name="anbi_summary">Cegah interaksi dengan tombol navigasi perangkat keras saat layar sedang disentuh</string>
@@ -202,7 +198,6 @@
   <string name="dialog_delete_message">Hapus item yang dipilih?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Sensor blok per-paket</string>
-  <string name="sensor_block_summary">Blokir akses ke sensor tertentu untuk beberapa aplikasi untuk menghemat baterai.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Tombol Beranda ketika berdering</string>
   <string name="allow_incall_home_summary">Izinkan untuk menggunakan tombol asal saat panggilan masuk berdering</string>
@@ -278,4 +273,9 @@
   <!-- Battery styles -->
   <!-- Battery percent -->
   <!-- Quick Settings brightness icon -->
+  <!-- Status bar clock options -->
+  <!-- Screen state service -->
+  <!--show cpu overlay -->
+  <!-- Ambient music -->
+  <!-- d2ts on lockscreen -->
 </resources>

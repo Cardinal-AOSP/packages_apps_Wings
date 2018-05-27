@@ -20,10 +20,15 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Hlavní</string>
+  <string name="general_summary">Různé přizpůsobení UI/UX</string>
   <string name="statusbar_title">Stavová lišta</string>
+  <string name="statusbar_summary">Možnosti pro přizpůsobení stavové lišty, QS, oznámení atd.</string>
   <string name="buttons_title">Tlačítka</string>
+  <string name="buttons_summary">Možnosti pro ovládání hlasitosti, navigačního panelu atd.</string>
   <string name="lockscreen_title">Zamykací obrazovka</string>
+  <string name="lockscreen_summary">Přizpůsobení zamykací obrazovky</string>
   <string name="recents_ui_title">Nedávné</string>
+  <string name="recents_ui_summary">Přizpůsobení nedávných aplikací</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Dvojitým poklepáním uspat</string>
   <string name="double_tap_to_sleep_summary">Dvojí poklepání na stavovou lištu uvede zařízení do režimu spánku</string>
@@ -178,9 +183,7 @@
   <string name="action_screenshot">Snímek obrazovky</string>
   <string name="action_partial_screenshot">Částečný snímek obrazovky</string>
   <string name="action_screen_off">Vypnout obrazovku</string>
-  <!-- Swap navigation keys -->
-  <string name="swap_navigation_keys_title">Prohodit tlačítka</string>
-  <string name="swap_navigation_keys_title_summary">Prohodit hardwarová tlačítka \"Nedávné\" a \"Zpět\"</string>
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabránit interakci s harwarovými tlačítky během dotyku obrazovky</string>
@@ -200,6 +203,7 @@
   <string name="dialog_delete_message">Odstranit vybranou položku?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Zablokovat senzory</string>
+  <string name="sensor_block_summary">Zamezení přístupu k některým senzorům pro některé aplikace za účelem úspory energie</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Tlačítko Domů při vyzvánění</string>
   <string name="allow_incall_home_summary">Povolit použití tlačítka Domů při vyzvánění zařízení</string>
@@ -225,6 +229,9 @@
   <string name="ticker_disabled">Vypnuto</string>
   <string name="ticker_enabled">Notifikační oznámení</string>
   <string name="ticker_media_enabled">Notifikační a hudební oznámení</string>
+  <string name="ticker_animation_mode_title">Styl animace textu oznámení</string>
+  <string name="ticker_animation_mode_alpha_fade">Slábnutí</string>
+  <string name="ticker_animation_mode_scroll">Rolování</string>
   <!-- Notification style -->
   <string name="notification_style_title">Styl oznámení</string>
   <string name="notification_style_warning_text">Pokud používáte plovoucí oznámení, nebudete moci používat funkci notifikačního oznámení a naopak.</string>
@@ -327,8 +334,68 @@
   <string name="brightness_icon_title">Ikona jasu</string>
   <string name="brightness_icon_summary">Zobrazit ikonu k přepínání automatického jasu nalevo od posuvníku</string>
   <!-- Status bar clock options -->
+  <string name="clock_category">Hodiny</string>
+  <string name="status_bar_clock">Hodiny a datum</string>
+  <string name="status_bar_clock_summary">Konfigurace zobrazení hodin a data ve stavové liště</string>
+  <string name="clock_title_enable">Zarovnání</string>
+  <string name="clock_enabled">Povoleno</string>
+  <string name="clock_disabled">Zakázáno</string>
+  <string name="status_bar_clock_style_reset">Obnovit barvu</string>
+  <string name="status_bar_show_clock_title">Zobrazit hodiny a datum</string>
+  <string name="status_bar_clock_seconds_title">Zobrazit sekundy</string>
+  <string name="status_bar_am_pm_title">dop./odp.</string>
+  <string name="status_bar_am_pm_info">24-hodinový formát je povolen</string>
+  <string name="enable_clock_weekday">Den v týdnu</string>
+  <string name="enable_clock_weekday_summary">Zobrazit zkratku dne v týdnu před hodinami</string>
+  <string name="right_clock">Hodiny vpravo</string>
+  <string name="center_clock">Hodiny uprostřed</string>
+  <string name="left_clock">Hodiny vlevo</string>
+  <string name="dont_show">Nezobrazovat</string>
+  <string name="clock_date_display">Datum</string>
+  <string name="clock_date_display_summary">Zobrazit vlastní datum před hodinami</string>
+  <string name="clock_date_style">Styl data</string>
+  <string name="clock_date_format">Formát data</string>
+  <string name="clock_date_string_edittext_title">Musí být ve formátu např. MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Vložte textový řetězec</string>
+  <string name="am_pm_clock_normal">Normální velikost písma</string>
+  <string name="am_pm_clock_small">Malá velikost písma</string>
+  <string name="am_pm_clock_none">Nezobrazovat</string>
+  <string name="clock_date_display_none">Nezobrazovat</string>
+  <string name="clock_date_display_small">Malá velikost písma</string>
+  <string name="clock_date_display_normal">Normální velikost písma</string>
+  <string name="clock_date_style_normal">Normální</string>
+  <string name="clock_date_style_lowercase">Malá písmena</string>
+  <string name="clock_date_style_uppercase">Velká písmena</string>
+  <string name="clock_date_format_custom">Vlastní formát Java</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_summary">\@null</string>
+  <string name="screen_state_toggles_title">Akce po zhasnutí obrazovky</string>
+  <string name="screen_state_toggles_enable_title">Povolit</string>
+  <string name="screen_state_toggles_enable_summary">Akce budou provedeny při vypnutí obrazovky. Při zapnutí a uvedení do předchozího stavu budou obnoveny.</string>
+  <string name="screen_state_toggles_mobile_title">Mobilní sítě</string>
+  <string name="screen_state_toggles_location_title">Poloha</string>
+  <string name="screen_state_toggles_twog">Přepnout na 2G</string>
+  <string name="screen_state_toggles_twog_summary">Režim sítě se přepne na 2G při vypnutí obrazovky</string>
+  <string name="screen_state_toggles_gps">Vypnout GPS</string>
+  <string name="screen_state_toggles_gps_summary">GPS služba bude vypnuta při vypnutí obrazovky</string>
+  <string name="screen_state_toggles_mobile_data">Vypnout mobilní data</string>
+  <string name="screen_state_toggles_mobile_data_summary">Mobilní data budou vypnuta po zhasnutí obrazovky</string>
+  <string name="screen_state_off_delay_title">Zpoždění akcí po vypnutí obrazovky</string>
+  <string name="screen_state_off_delay_summary">Počet minut čekání před provedením akce po vypnutí obrazovky</string>
+  <string name="screen_state_on_delay_title">Zpoždění akcí po zapnutí obrazovky</string>
+  <string name="screen_state_on_delay_summary">Počet minut čekání před provedením akce po zapnutí obrazovky</string>
   <!--show cpu overlay -->
+  <string name="show_cpu_title">Zobrazit využití CPU</string>
+  <string name="show_cpu_summary">Překrytí obrazovky informacemi o aktuálním vytížení CPU</string>
   <!-- Ambient music -->
+  <string name="force_ambient_for_media_pref_title">Hudební oznámení na Ambientním displeji</string>
+  <string name="force_ambient_for_media_pref_summary">Nastavení hudebního oznámení na Ambientním displeji</string>
+  <string name="ambient_ticker_footer">Tato funkce umožňuje zobrazit aktuální informace o hudebních skladbách na zamykací obrazovce při zapnutém nebo vypnutém Ambientním displeji.\n\nMůžete si vybrat ze dvou zobrazení, normálního a minimálního. I když tato funkce využívá výhody Ambientního displeje, není na něm závislá. Může být spuštěna i bez zapnutí Ambientního displeje pomocí (vynucených) voleb.\n\nNormální zobrazení obsahuje hodiny, datum a text na zamykací obrazovce.\n\nMinimální zobrazení obsahuje pouze text uprostřed obrazovky.</string>
+  <string name="force_ambient_for_media_title">Vybrat rozložení</string>
+  <string name="force_ambient_for_media_off">Vypnuto</string>
+  <string name="force_ambient_for_media_on">Normální</string>
+  <string name="force_ambient_for_media_on_forced">Normální (vynucené)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Minimální (vynucené)</string>
   <!-- d2ts on lockscreen -->
+  <string name="double_tap_sleep_lockscreen">Dvojitým poklepáním na zamykací obrazovku uspat zařízení</string>
 </resources>

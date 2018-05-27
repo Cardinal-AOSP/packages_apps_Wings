@@ -178,9 +178,7 @@
   <string name="action_screenshot">Cattura screenshot</string>
   <string name="action_partial_screenshot">Screenshot parziale</string>
   <string name="action_screen_off">Schermo spento</string>
-  <!-- Swap navigation keys -->
-  <string name="swap_navigation_keys_title">Sostituisci i pulsanti</string>
-  <string name="swap_navigation_keys_title_summary">Sostituisci i pulsanti hardware \"Recenti\" e \"Indietro\"</string>
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Tocco accidentale</string>
   <string name="anbi_summary">Previeni l\'interazione con i pulsanti fisici di navigazione mentre si tocca lo schermo</string>

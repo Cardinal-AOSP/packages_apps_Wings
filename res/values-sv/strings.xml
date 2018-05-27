@@ -178,7 +178,7 @@
   <string name="action_screenshot">Skärmdump</string>
   <string name="action_partial_screenshot">Partiell skärmdump</string>
   <string name="action_screen_off">Skärm av</string>
-  <!-- Swap navigation keys -->
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Oavsiktligt tryck</string>
   <string name="anbi_summary">Förhindra interaktion med hårdvarans navigeringsknappar medan skärmen berörs</string>

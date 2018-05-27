@@ -178,7 +178,7 @@
   <string name="action_screenshot">Скриншот</string>
   <string name="action_partial_screenshot">Скриншот выбранной области экрана</string>
   <string name="action_screen_off">Отключить экран</string>
-  <!-- Swap navigation keys -->
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Случайное прикосновение</string>
   <string name="anbi_summary">Предотвращение нажатия кнопок навигации при касании экрана</string>

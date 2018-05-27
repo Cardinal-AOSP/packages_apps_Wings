@@ -176,7 +176,7 @@
   <string name="action_splitscreen">Écran partagé</string>
   <string name="action_screenshot">Capture d\'écran</string>
   <string name="action_partial_screenshot">Capture d’écran partielle</string>
-  <!-- Swap navigation keys -->
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Appui accidentel</string>
   <string name="anbi_summary">Empêcher l’interaction avec les boutons de navigation physique lorsque l’écran est touché</string>

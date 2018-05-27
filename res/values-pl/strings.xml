@@ -178,9 +178,7 @@
   <string name="action_screenshot">Zrzut ekranu</string>
   <string name="action_partial_screenshot">Częściowy zrzut ekranu</string>
   <string name="action_screen_off">Wyłącz ekran</string>
-  <!-- Swap navigation keys -->
-  <string name="swap_navigation_keys_title">Zamień przyciski</string>
-  <string name="swap_navigation_keys_title_summary">Zamień przycisk wstecz i ostatnio używanych</string>
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">Przypadkowe dotknięcie</string>
   <string name="anbi_summary">Zapobiegaj przypadkowemu użyciu przycisków nawigacyjnych, gdy dotykasz ekranu</string>

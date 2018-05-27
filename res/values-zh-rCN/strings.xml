@@ -178,7 +178,7 @@
   <string name="action_screenshot">截图</string>
   <string name="action_partial_screenshot">局部截图</string>
   <string name="action_screen_off">关闭屏幕</string>
-  <!-- Swap navigation keys -->
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">误触</string>
   <string name="anbi_summary">在触摸屏幕时防止与硬件导航按钮交互</string>

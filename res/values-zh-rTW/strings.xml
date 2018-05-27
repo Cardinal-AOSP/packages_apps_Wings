@@ -20,10 +20,15 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">一般</string>
+  <string name="general_summary">雜項、UI/UX 自訂</string>
   <string name="statusbar_title">狀態列</string>
+  <string name="statusbar_summary">用於狀態列、快速開關、通知等的選項</string>
   <string name="buttons_title">按鍵</string>
+  <string name="buttons_summary">音量控制、導覽列等選項</string>
   <string name="lockscreen_title">鎖定畫面</string>
+  <string name="lockscreen_summary">鎖定畫面自訂</string>
   <string name="recents_ui_title">最近的應用程式</string>
+  <string name="recents_ui_summary">最近的應用程式自訂</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">輕觸兩下即可休眠</string>
   <string name="double_tap_to_sleep_summary">輕觸兩下狀態列以使裝置進入休眠</string>
@@ -178,9 +183,7 @@
   <string name="action_screenshot">擷取螢幕畫面</string>
   <string name="action_partial_screenshot">部分螢幕截圖</string>
   <string name="action_screen_off">關閉螢幕</string>
-  <!-- Swap navigation keys -->
-  <string name="swap_navigation_keys_title">交換按鍵</string>
-  <string name="swap_navigation_keys_title_summary">將返回與多工實體鍵互換</string>
+  <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
   <string name="anbi_title">誤觸</string>
   <string name="anbi_summary">當觸控螢幕時，避免與實體導覽列互動</string>
@@ -200,6 +203,7 @@
   <string name="dialog_delete_message">移除已選取的項目？</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止個別套件存取感應器</string>
+  <string name="sensor_block_summary">阻止應用程式存取某些感應器來省電</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">鈴響時使用主畫面鍵</string>
   <string name="allow_incall_home_summary">當來電鈴響時允許使用主畫面鍵</string>
@@ -225,6 +229,9 @@
   <string name="ticker_disabled">已停用</string>
   <string name="ticker_enabled">通知提示</string>
   <string name="ticker_media_enabled">通知與音樂提示</string>
+  <string name="ticker_animation_mode_title">狀態列通知動畫樣式</string>
+  <string name="ticker_animation_mode_alpha_fade">淡化</string>
+  <string name="ticker_animation_mode_scroll">滾動</string>
   <!-- Notification style -->
   <string name="notification_style_title">通知風格</string>
   <string name="notification_style_warning_text">當您使用抬頭通知時, 您將無法使用通知提示功能, 反之亦然。</string>
@@ -327,8 +334,68 @@
   <string name="brightness_icon_title">亮度圖示</string>
   <string name="brightness_icon_summary">在亮度滑動條左邊顯示一個亮度圖示以用來調整是否開啟自動亮度</string>
   <!-- Status bar clock options -->
+  <string name="clock_category">時鐘</string>
+  <string name="status_bar_clock">時鐘與日期</string>
+  <string name="status_bar_clock_summary">配置狀態列時鐘和日期外觀</string>
+  <string name="clock_title_enable">對齊方式</string>
+  <string name="clock_enabled">已啟用</string>
+  <string name="clock_disabled">已停用</string>
+  <string name="status_bar_clock_style_reset">重置顏色</string>
+  <string name="status_bar_show_clock_title">顯示時鐘和日期</string>
+  <string name="status_bar_clock_seconds_title">顯示秒數</string>
+  <string name="status_bar_am_pm_title">上午/下午</string>
+  <string name="status_bar_am_pm_info">使用 24 小時格式</string>
+  <string name="enable_clock_weekday">一週中的一天</string>
+  <string name="enable_clock_weekday_summary">在時間之前顯示星期幾的縮寫</string>
+  <string name="right_clock">右側時鐘</string>
+  <string name="center_clock">置中時鐘</string>
+  <string name="left_clock">左側時鐘</string>
+  <string name="dont_show">不顯示</string>
+  <string name="clock_date_display">日期</string>
+  <string name="clock_date_display_summary">在時鐘前顯示自訂日期</string>
+  <string name="clock_date_style">日期樣式</string>
+  <string name="clock_date_format">日期格式</string>
+  <string name="clock_date_string_edittext_title">必須符合 DateFormat 格式 例如：MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">輸入字串</string>
+  <string name="am_pm_clock_normal">正常字體大小</string>
+  <string name="am_pm_clock_small">小字體大小</string>
+  <string name="am_pm_clock_none">不顯示</string>
+  <string name="clock_date_display_none">不顯示</string>
+  <string name="clock_date_display_small">小字體大小</string>
+  <string name="clock_date_display_normal">正常字體大小</string>
+  <string name="clock_date_style_normal">一般</string>
+  <string name="clock_date_style_lowercase">小寫</string>
+  <string name="clock_date_style_uppercase">大寫</string>
+  <string name="clock_date_format_custom">自訂 java 格式</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_summary">\@null</string>
+  <string name="screen_state_toggles_title">暫停動作</string>
+  <string name="screen_state_toggles_enable_title">啟用</string>
+  <string name="screen_state_toggles_enable_summary">在螢幕關閉時才執行操作。螢幕開啟後會還原先前的狀態。</string>
+  <string name="screen_state_toggles_mobile_title">行動網路</string>
+  <string name="screen_state_toggles_location_title">位置</string>
+  <string name="screen_state_toggles_twog">切換至 2G</string>
+  <string name="screen_state_toggles_twog_summary">螢幕關閉時網路模式將會切換至 2G</string>
+  <string name="screen_state_toggles_gps">定位服務</string>
+  <string name="screen_state_toggles_gps_summary">螢幕關閉時根據 GPS 的定位服務將被停用</string>
+  <string name="screen_state_toggles_mobile_data">停用行動數據</string>
+  <string name="screen_state_toggles_mobile_data_summary">螢幕關閉時將會停用行動數據</string>
+  <string name="screen_state_off_delay_title">螢幕關閉動作延遲</string>
+  <string name="screen_state_off_delay_summary">螢幕關閉後執行動作之前等待的分鐘數</string>
+  <string name="screen_state_on_delay_title">螢幕關閉動作延遲</string>
+  <string name="screen_state_on_delay_summary">螢幕開啟後執行動作之前等待的分鐘數</string>
   <!--show cpu overlay -->
+  <string name="show_cpu_title">顯示處理器資訊</string>
+  <string name="show_cpu_summary">目前的處理器資訊重疊在螢幕上</string>
   <!-- Ambient music -->
+  <string name="force_ambient_for_media_pref_title">環境音樂通知</string>
+  <string name="force_ambient_for_media_pref_summary">配置環境音樂通知</string>
+  <string name="ambient_ticker_footer">此功能允許在啟用或未啟用環境顯示的情況下，在鎖定螢幕顯示當前的音樂曲目資訊。 \n\n你可以選擇兩個佈局——\"正常\" 和 \"最小\"。雖然此功能利用了環境顯示，但它並不依賴於它。它可以在不使用(強制)選項啟用環境顯示的情況下觸發。\n\n\"正常\"佈局包括鎖定螢幕時鐘、日期和通知。\n\n \"最小\"佈局只包含螢幕中心的通知。</string>
+  <string name="force_ambient_for_media_title">選擇佈局</string>
+  <string name="force_ambient_for_media_off">停用</string>
+  <string name="force_ambient_for_media_on">正常</string>
+  <string name="force_ambient_for_media_on_forced">正常 (強制)</string>
+  <string name="force_ambient_for_media_on_forced_clean">極簡 (強制)</string>
   <!-- d2ts on lockscreen -->
+  <string name="double_tap_sleep_lockscreen">輕觸兩下鎖定畫面以關閉螢幕</string>
 </resources>
