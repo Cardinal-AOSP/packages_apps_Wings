@@ -34,10 +34,10 @@
   <string name="double_tap_to_sleep_summary">Cihazı uyutmak için durum çubuğuna çift dokunun</string>
   <!-- Volume button wake -->
   <string name="volbtn_wake_device_title">Ses tuşlarıyla uyandır</string>
-  <string name="button_wake_summary">Ses tuşlarına dokunulduğunda cihazı uyandırır</string>
+  <string name="button_wake_summary">Ses tuşlarına basıldığında cihazı uyandır</string>
   <!-- Volume button track change -->
   <string name="volbtn_music_controls_title">Oynatma kontrolü</string>
-  <string name="volbtn_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun dokunmak şarkıyı değiştirir</string>
+  <string name="volbtn_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basmak şarkıyı değiştirir</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
   <string name="wake_when_plugged_or_unplugged_summary">Şarj aleti takıldığında veya çıkarıldığında ekranı aç</string>
@@ -184,6 +184,10 @@
   <string name="action_partial_screenshot">Kısmi ekran görüntüsü</string>
   <string name="action_screen_off">Ekranı kapat</string>
   <!-- Swap sw & hw navigation keys -->
+  <string name="swap_hardware_navigation_keys_title">Donanım tuşunu değiştir</string>
+  <string name="swap_hardware_navigation_keys_title_summary">Donanımsal tuşlarda geri ve son uygulama tuşlarının yerini değiştir</string>
+  <string name="swap_software_navigation_keys_title">Yazılım tuşunu değiştir</string>
+  <string name="swap_software_navigation_keys_title_summary">Yazılımsal tuşlarda geri ve son uygulama tuşlarının yerini değiştir</string>
   <!-- ANBI -->
   <string name="anbi_title">Yanlışlıkla dokunma</string>
   <string name="anbi_summary">Ekrana dokunulduğunda gezinme tuşları ile etkileşimi önle</string>
@@ -203,7 +207,7 @@
   <string name="dialog_delete_message">Seçili öğe kaldırılsın mı?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Uygulama başına sensör engelleme</string>
-  <string name="sensor_block_summary">Bazı uygulamaların pil tasarrufu yapmabilmesi için belirli sensörlere erişimini engelleyin</string>
+  <string name="sensor_block_summary">Pil tasarrufu için bazı uygulamaların belirli sensörlere erişimini engelleyin.</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Çağrıyı çevapla</string>
   <string name="allow_incall_home_summary">Ana ekran tuşunu kullanarak gelen çağrıları cevaplamaya izin ver</string>
@@ -298,6 +302,7 @@
   <string name="pref_scrollingcache_default_enable">Varsayılan etkin</string>
   <string name="pref_scrollingcache_default_disable">Varsayılan devre dışı</string>
   <string name="pref_scrollingcache_force_disable">Zorla devre dışı</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Genişletilmiş masaüstü</string>
   <string name="expanded_hide_nothing">Hiçbir şeyi gizleme</string>
@@ -367,6 +372,7 @@
   <string name="clock_date_style_lowercase">Küçük harf</string>
   <string name="clock_date_style_uppercase">Büyük harf</string>
   <string name="clock_date_format_custom">Özel Java biçimi</string>
+  <string name="clock_warning_text">Merkezi saat konumunun deneysel olduğunu ve kullanım için kararsız olabileceğini ve sorunlara neden olabileceğini unutmayın.</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_summary">Ekranı kapattığınızda gerçekleştirilecek eylemleri seçin</string>
   <string name="screen_state_toggles_title">Eylemler</string>
@@ -390,7 +396,7 @@
   <!-- Ambient music -->
   <string name="force_ambient_for_media_pref_title">Ortam müzik bilgisi</string>
   <string name="force_ambient_for_media_pref_summary">Ortam ekranında müzik bilgisini yapılandır</string>
-  <string name="ambient_ticker_footer">Bu özellik, Ortam ekranı etkinleştirilmiş veya aktif olmaması durumunda mevcut müzik parça bilgilerini ortam ekranında gösterme olanağına izin verir.\n\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranından yararlanırken, buna bağımlı değildir. (Zorla) seçeneklerini kullanarak ortam ekranı etkinleştirmeden kullanılabilir.\n\nNormal görünüm, kilit ekranı saati, tarihi ve müzik bilgilerini içerir.\n\nMinimum görünüm, ekranın ortasında yalnızca müzik bilgisini içerir.</string>
+  <string name="ambient_ticker_footer">Bu özellik, Ortam ekranı etkinleştirilmiş veya aktif olmaması durumunda mevcut müzik parça bilgilerini ortam ekranında gösterme olanağına izin verir.\n\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranından yararlanırken, buna bağımlı değildir. (Zorla) seçeneklerini kullanarak ortam ekranı etkinleştirmeden kullanılabilir.\n\nNormal görünüm, kilit ekranı saati, tarihi ve müzik bilgilerini içerir.\n\nMinimum görünüm, ekran ortasında yalnızca müzik bilgisini içerir.</string>
   <string name="force_ambient_for_media_title">Düzen seç</string>
   <string name="force_ambient_for_media_off">Devre dışı</string>
   <string name="force_ambient_for_media_on">Normal</string>
@@ -398,4 +404,6 @@
   <string name="force_ambient_for_media_on_forced_clean">Minimum (zorla)</string>
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Kilit ekranında uyutmak için çift dokunun</string>
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

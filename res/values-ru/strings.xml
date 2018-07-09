@@ -20,10 +20,12 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Общие</string>
+  <string name="general_summary">Дополнительные настройки интерфейса</string>
   <string name="statusbar_title">Строка состояния</string>
   <string name="buttons_title">Кнопки</string>
   <string name="lockscreen_title">Экран блокировки</string>
   <string name="recents_ui_title">Недавние приложения</string>
+  <string name="recents_ui_summary">Кастомизация панели недавних приложений</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
   <string name="double_tap_to_sleep_summary">Двойной тап по строке состояние переводит устройство в режим сна</string>
@@ -198,6 +200,7 @@
   <string name="dialog_delete_message">Удалить выбранные элементы?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Блокировка датчиков попакетно</string>
+  <string name="sensor_block_summary">Запретить доступ к датчикам для некоторых приложений для экономии энергии</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Кнопка «Домой» при звонке</string>
   <string name="allow_incall_home_summary">Разрешить использование кнопки «Домой» при входящем звонке</string>
@@ -223,6 +226,7 @@
   <string name="ticker_disabled">Отключено</string>
   <string name="ticker_enabled">Бегущая строка</string>
   <string name="ticker_media_enabled">Бегущая строка уведомлений и музыки</string>
+  <string name="ticker_animation_mode_title">Анимация уведомлений в статусбаре</string>
   <!-- Notification style -->
   <string name="notification_style_title">Стиль уведомлений</string>
   <string name="notification_style_warning_text">Используя всплывающие уведомления Вы не можете использовать бегущую строку и наоборот.</string>
@@ -264,18 +268,86 @@
   <string name="systemui_theme_style_light">Светлый</string>
   <string name="systemui_theme_style_dark">Темный</string>
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_power_menu_disabled_title">Скрыть меню питания</string>
+  <string name="lockscreen_power_menu_disabled_summary">Отключить меню питания на экране блокировки</string>
   <!-- Suppress notification sound/vibration -->
+  <string name="notification_sound_vib_screen_on_title">Звук уведомлений и вибрация когда экран включён</string>
+  <string name="notification_sound_vib_screen_on_never">Никогда</string>
+  <string name="notification_sound_vib_screen_on_always">Всегда (по умолчанию)</string>
+  <string name="notification_sound_vib_screen_on_nomedia">Когда звук не воспроизводится</string>
   <!-- less notifucations -->
+  <string name="less_notification_sounds_title">Звук умных уведомлений</string>
+  <string name="less_notification_sounds_summary">Огрничить частоту звука уведомления для каждого приложения до одного</string>
+  <string name="less_notification_sounds_default">Приложения по умолчанию</string>
+  <string name="less_notification_sounds_10s">Каждые 10 секунд</string>
+  <string name="less_notification_sounds_30s">Каждын 30 секунд</string>
+  <string name="less_notification_sounds_1m">Каждую минуту</string>
+  <string name="less_notification_sounds_2m">Каждые 2 минуты</string>
   <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">Предупреждение в нижний части панели уведомлений</string>
+  <string name="qs_footer_warnings_summary">Показывать предупреждение в нижней части панели быстрых настроек когда включен VPN</string>
   <!-- Scrolling Cache -->
+  <string name="pref_scrollingcache_title">Кэш прокрутки</string>
+  <string name="pref_scrollingcache_summary">Кэш прокрутки может повысить быстродействие за счёт использования памяти</string>
+  <string name="pref_scrollingcache_force_enable">Включить</string>
+  <string name="pref_scrollingcache_default_enable">Включить по умолчанию</string>
+  <string name="pref_scrollingcache_default_disable">Выключить по умолчанию</string>
+  <string name="pref_scrollingcache_force_disable">Отключить принудительно</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_category">Расширенный экран</string>
+  <string name="expanded_hide_nothing">Не скрывать</string>
+  <string name="expanded_hide_status">Скрыть статус бар</string>
+  <string name="expanded_hide_navigation">Скрыть панель навигации</string>
+  <string name="expanded_hide_both">Скрыть всё</string>
+  <string name="expanded_nothing_to_show">Для настройка параметров расширенного экрана для отдельных приложений отключите \"включить для всех\"</string>
+  <string name="expanded_desktop_state">Расширенный режим</string>
+  <string name="expanded_enabled_for_all">Включить для всего</string>
+  <string name="expanded_user_configurable">Пользоваьельские кофигурации</string>
+  <string name="expanded_desktop_style">Стиль расширенного экрана</string>
+  <string name="expanded_desktop_style_description">Выбрать стиль расширенного экрана по умолчанию</string>
+  <string name="expanded_desktop_title">Настройки расширенного экрана</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">Включение фонарика долгим нажатием кнопки питания</string>
+  <string name="torch_power_button_gesture_none">Отключено</string>
+  <string name="torch_power_button_gesture_dt">Включение фонарика двойным нажатием кнопки питания</string>
+  <string name="torch_power_button_gesture_lp">Долгое нажатие кнопки питания для включения фонарика</string>
   <!-- Battery styles -->
+  <string name="battery_style_title">Стиль значка батареи</string>
+  <string name="battery_style_summary">Изменение вида иконки батареи в статус баре</string>
+  <string name="battery_style_port">Вертикальный</string>
+  <string name="battery_style_circle">Круг</string>
+  <string name="battery_style_dotted_circle">Точечный круг</string>
+  <string name="battery_style_text">Текст</string>
+  <string name="battery_style_hidden">Скрыть</string>
   <!-- Battery percent -->
+  <string name="show_battery_percent_title">Показывать процент зарядка батареи</string>
+  <string name="show_battery_percent_summary">Показывать уровень заряда батареи рядом с иконой</string>
+  <string name="battery_percent_hidden">Скрыть</string>
+  <string name="battery_percent_outside">Снаружи</string>
+  <string name="battery_percent_inside">Внутри</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Значок авто яркости</string>
+  <string name="brightness_icon_summary">Показывать икноку авто - яркости слева от слайдера</string>
   <!-- Status bar clock options -->
+  <string name="clock_category">Часы</string>
+  <string name="status_bar_clock">Дата и время</string>
+  <string name="status_bar_clock_summary">Нкстройка часов и даты в статусбаре</string>
+  <string name="clock_title_enable">Выравнивание</string>
+  <string name="clock_enabled">Включено</string>
+  <string name="clock_disabled">Выключено</string>
+  <string name="status_bar_clock_style_reset">Сброс цвета</string>
+  <string name="status_bar_show_clock_title">Показывать часы и дату</string>
+  <string name="status_bar_clock_seconds_title">Отображать секунды</string>
+  <string name="status_bar_am_pm_info">24-часовой режим</string>
   <!-- Screen state service -->
+  <string name="screen_state_off_delay_summary">Задержка</string>
   <!--show cpu overlay -->
+  <string name="show_cpu_title">Отображать состояние цп</string>
   <!-- Ambient music -->
+  <string name="force_ambient_for_media_title">Выберите расположение</string>
+  <string name="force_ambient_for_media_off">Выключено</string>
   <!-- d2ts on lockscreen -->
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

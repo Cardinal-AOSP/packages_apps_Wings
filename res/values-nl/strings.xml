@@ -16,16 +16,62 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Cardinal Wings menus -->
+  <string name="cardinal_wings_title">Wings!</string>
+  <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
+  <string name="general_title">Algemeen</string>
+  <string name="statusbar_title">Statusbalk</string>
+  <string name="buttons_title">Knoppen</string>
+  <string name="lockscreen_title">Vergrendelscherm</string>
+  <string name="recents_ui_title">Laatst gebruikt</string>
   <!-- double tap to sleep - statusbar -->
+  <string name="double_tap_to_sleep_title">Dubbel-tik voor slaapstand</string>
+  <string name="double_tap_to_sleep_summary">Dubbel tikken op de statusbalk om het apparaat in slaapstand te zetten</string>
   <!-- Volume button wake -->
+  <string name="volbtn_wake_device_title">Ontwaken met de volumeknoppen</string>
+  <string name="button_wake_summary">Kan het apparaat niet activeren als de muziekbediening actief is en er muziek wordt afgespeeld</string>
   <!-- Volume button track change -->
+  <string name="volbtn_music_controls_title">Volumeknoppen muziekcontrole</string>
+  <string name="volbtn_music_controls_summary">Wanneer het scherm uit is zal langdurig indrukken van de volume knoppen door je muziek tracks zoeken</string>
   <!-- Wake on Plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Ontwaken wanneer aangesloten aan stroomnet</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Het scherm inschakelen wanneer aansluiten of loskoppelen van een voedingsbron</string>
   <!-- Network traffic -->
+  <string name="network_traffic_title">Netwerkverkeer</string>
+  <string name="network_traffic_summary">Optie voor het weergeven van internet activiteitsmeter op de statusbalk</string>
+  <string name="network_traffic_state_title">Netwerkactiviteit weergeven in statusbalk</string>
+  <string name="network_traffic_autohide_threshold_title">Drempel voor netwerkactiviteit (KB/s)</string>
+  <string name="show_network_traffic_disable">Uitgeschakeld</string>
+  <string name="show_network_traffic_up">Uitgaand</string>
+  <string name="show_network_traffic_down">Inkomend</string>
+  <string name="show_network_traffic_all">Uitgaande en inkomende</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Kleurenkiezer</string>
+  <string name="press_color_to_apply">Druk op de kleur hieronder om toe te passen</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Instellen</string>
+  <string name="color_default">Standaard</string>
   <!-- Quick settings tiles columns and rows config -->
+  <string name="quicksettings_category">QuickSettings</string>
+  <string name="quicksettings_summary">QS indeling configureren</string>
+  <string name="qs_layout_category">QS tegels lay-out</string>
   <!-- QS rows and columns -->
+  <string name="qs_rows_columns_title">QS rijen en kolommen</string>
+  <string name="qs_rows_portrait_title">Rijen met tegels staand</string>
+  <string name="qs_rows_landscape_title">Rijen met tegels liggend</string>
+  <string name="qs_columns_portrait_title">Kolommen met tegels staand</string>
+  <string name="qs_columns_landscape_title">Kolommen met tegels liggend</string>
+  <string name="qs_tile_title_visibility_title">QS tegel titels</string>
+  <string name="qs_tile_title_visibility_summary_on">SI tegel titels worden getoond</string>
+  <string name="qs_tile_title_visibility_summary_off">SI tegel titels worden niet getoond</string>
   <!-- General strings -->
+  <string name="cancel">Annuleren</string>
+  <string name="save">Opslaan</string>
+  <string name="reset_android">Android</string>
+  <string name="reset_cardinal">Cardinal-AOSP</string>
   <!-- fingerprint authentication vibration -->
   <!-- Battery customizations -->
   <!-- Fingerprint unlock keystore -->
@@ -33,15 +79,23 @@
   <!-- Whether to display IME switcher notifcation -->
   <!-- Battery light -->
   <!--SysUI tuner options -->
+  <string name="status_bar_icon_blacklist_title">Statusbalk iconen</string>
+  <string name="lockscreen_shortcuts_title">Vergrendelscherm snelkoppelingen</string>
+  <string name="powern_notifications_title">Stroomverbruik meldingsinstellingen</string>
   <!-- Notification Settings fragment -->
   <!-- Navigation bar -->
+  <string name="navigationbar_settings_title">Navigatiebalk</string>
   <!-- Recents panel settings -->
   <!-- Navigationbar toggle -->
   <!-- Buttons Backlight -->
   <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
+  <string name="action_app_switch">Laatst gebruikt</string>
+  <string name="action_screenshot">Schermafdruk</string>
+  <string name="action_partial_screenshot">Gedeeltelijke schermafdruk</string>
   <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
+  <string name="anbi_title">Onopzettelijke aanraking</string>
   <!-- Heads up -->
   <!-- Sensor block per-package -->
   <!-- Incall Home button behavior-->
@@ -50,6 +104,7 @@
   <!-- Incall vibrate options -->
   <!--  Lockscreen battery info indicator  -->
   <!-- Statusbar ticker -->
+  <string name="ticker_disabled">Uitgeschakeld</string>
   <!-- Notification style -->
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
@@ -60,6 +115,7 @@
   <!-- less notifucations -->
   <!-- QS footer warnings -->
   <!-- Scrolling Cache -->
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <!-- Torch Power button gestures -->
   <!-- Battery styles -->
@@ -70,4 +126,6 @@
   <!--show cpu overlay -->
   <!-- Ambient music -->
   <!-- d2ts on lockscreen -->
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

@@ -184,6 +184,10 @@
   <string name="action_partial_screenshot">Čiast. snímka obrazovky</string>
   <string name="action_screen_off">Vypnúť obrazovku</string>
   <!-- Swap sw & hw navigation keys -->
+  <string name="swap_hardware_navigation_keys_title">Prehodiť hardvérové tlačidlá</string>
+  <string name="swap_hardware_navigation_keys_title_summary">Prehodiť hardvérové tlačidlá Späť a Nedávne</string>
+  <string name="swap_software_navigation_keys_title">Prehodiť sofvérové tlačidlá</string>
+  <string name="swap_software_navigation_keys_title_summary">Prehodiť softvérové tlačidlá Späť a Nedávne</string>
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabrániť interakcii s hardvérovými tlačidlami počas dotyku obrazovky</string>
@@ -298,6 +302,7 @@
   <string name="pref_scrollingcache_default_enable">Predvolene zapnuté</string>
   <string name="pref_scrollingcache_default_disable">Predvolene vypnuté</string>
   <string name="pref_scrollingcache_force_disable">Vynútene zakázať</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Rozšírená plocha</string>
   <string name="expanded_hide_nothing">Nič neskrývať</string>
@@ -367,6 +372,7 @@
   <string name="clock_date_style_lowercase">Malé písmená</string>
   <string name="clock_date_style_uppercase">Veľké písmená</string>
   <string name="clock_date_format_custom">Vlastný java formát</string>
+  <string name="clock_warning_text">Upozorňujeme, že umiestnenie hodín v strede je experimentálna funkcia, ktorá môže byť nestabilná a spôsobovať problémy.</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Akcie po vypnutí obrazovky</string>
@@ -398,4 +404,6 @@
   <string name="force_ambient_for_media_on_forced_clean">Minimálne (vynútené)</string>
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Uspať dvojklikom na obrazovke uzamknutia</string>
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

@@ -151,7 +151,6 @@
   <string name="backlight_timeout_title">Timeout für Hintergrundbeleuchtung</string>
   <string name="backlight_timeout_on">Immer aktiv</string>
   <string name="backlight_timeout_3s">3 Sek</string>
-  <string name="backlight_timeout_default">5 Sek. (Standard)</string>
   <string name="backlight_timeout_10s">10 Sek</string>
   <string name="backlight_timeout_15s">15 Sek</string>
   <string name="backlight_timeout_20s">20 Sek</string>
@@ -255,7 +254,6 @@
   <string name="notification_light_missed_call_title">Verpasster Anruf</string>
   <string name="notification_light_voicemail_title">Sprachnachricht</string>
   <string name="notification_light_screen_on">LED bei aktivem Bildschirm</string>
-  <string name="notification_light_no_apps_footer_text">Aktiviere \'%1$s\' und tippe auf \'\u002b\' in der Menüleiste, um Per-App-Kontrolle hinzuzufügen</string>
   <string name="led_notification_title">LED-Einstellungen</string>
   <string name="led_notification_text">Benachrichtigungslicht durch Einstellungen aktiviert</string>
   <!-- Systemui theme -->
@@ -268,6 +266,7 @@
   <!-- less notifucations -->
   <!-- QS footer warnings -->
   <!-- Scrolling Cache -->
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <!-- Torch Power button gestures -->
   <!-- Battery styles -->
@@ -278,4 +277,6 @@
   <!--show cpu overlay -->
   <!-- Ambient music -->
   <!-- d2ts on lockscreen -->
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

@@ -20,10 +20,15 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Geral</string>
+  <string name="general_summary">Misc, customização da UI/UX</string>
   <string name="statusbar_title">Barra de estado</string>
+  <string name="statusbar_summary">Opções para personalizar a barra de status, qs, notificações, etc</string>
   <string name="buttons_title">Botões</string>
+  <string name="buttons_summary">Opções para controle de volume, Barra de navegação, etc</string>
   <string name="lockscreen_title">Ecrã de bloqueio</string>
+  <string name="lockscreen_summary">Personalizações da tela de bloqueio</string>
   <string name="recents_ui_title">Recentes</string>
+  <string name="recents_ui_summary">Customizações recentes</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
   <string name="double_tap_to_sleep_summary">Toque duplo na barra de estado para desligar o ecrã</string>
@@ -179,6 +184,10 @@
   <string name="action_partial_screenshot">Captura parcial de ecrã</string>
   <string name="action_screen_off">Desligar ecrã</string>
   <!-- Swap sw & hw navigation keys -->
+  <string name="swap_hardware_navigation_keys_title">Alterar para teclas físicas</string>
+  <string name="swap_hardware_navigation_keys_title_summary">Alterar para \"voltar\" e \"recentes\" da barra de navegação física</string>
+  <string name="swap_software_navigation_keys_title">Alterar para teclas físicas</string>
+  <string name="swap_software_navigation_keys_title_summary">Alterar para \"voltar\" e \"recentes\" da barra de navegação física</string>
   <!-- ANBI -->
   <string name="anbi_title">Toque acidental</string>
   <string name="anbi_summary">Evitar a interação com os botões de navegação enquanto o ecrã é tocado</string>
@@ -198,6 +207,7 @@
   <string name="dialog_delete_message">Remover o item selecionado?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Restringir o uso dos sensores</string>
+  <string name="sensor_block_summary">Bloquear o acesso das aplicações a determinados sensores para economizar bateria</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Botão Home em toque de chamada</string>
   <string name="allow_incall_home_summary">Permitir que o botão Home seja usado quando o dispositivo estiver a tocar</string>
@@ -223,6 +233,9 @@
   <string name="ticker_disabled">Desativado</string>
   <string name="ticker_enabled">Ativador de notificação</string>
   <string name="ticker_media_enabled">Relógio de notificações e música</string>
+  <string name="ticker_animation_mode_title">Estilo da animação do Ticker</string>
+  <string name="ticker_animation_mode_alpha_fade">Desvanescer</string>
+  <string name="ticker_animation_mode_scroll">Rolar</string>
   <!-- Notification style -->
   <string name="notification_style_title">Estilo de notificação</string>
   <string name="notification_style_warning_text">Enquanto você usa as notificações heads up, você não poderá usar o recurso ticker, e vice-versa.</string>
@@ -264,18 +277,133 @@
   <string name="systemui_theme_style_light">Suave</string>
   <string name="systemui_theme_style_dark">Escuro</string>
   <!-- Power menu on secure lockscreen -->
+  <string name="lockscreen_power_menu_disabled_title">Menu de energia seguro</string>
+  <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia na tela de bloqueio</string>
   <!-- Suppress notification sound/vibration -->
+  <string name="notification_sound_vib_screen_on_title">Notificações de som e vibração enquanto a tela estiver ligada</string>
+  <string name="notification_sound_vib_screen_on_never">Nunca</string>
+  <string name="notification_sound_vib_screen_on_always">Sempre (padrão)</string>
+  <string name="notification_sound_vib_screen_on_nomedia">Se nenhuma mídia estiver reproduzindo</string>
   <!-- less notifucations -->
+  <string name="less_notification_sounds_title">Sons de notificação inteligente</string>
+  <string name="less_notification_sounds_summary">Reproduzir o som de notificação de cada aplicativo apenas uma vez num intervalo de tempo definido</string>
+  <string name="less_notification_sounds_default">App padrão</string>
+  <string name="less_notification_sounds_10s">A cada 10 segundos</string>
+  <string name="less_notification_sounds_30s">A cada 30 segundos</string>
+  <string name="less_notification_sounds_1m">A cada minuto</string>
+  <string name="less_notification_sounds_2m">A cada 2 minutos</string>
   <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">Avisos de rodapé</string>
+  <string name="qs_footer_warnings_summary">Mostrar um aviso no fundo do painel de definições rápidas quando a rede estiver a ser monitorizada por aplicações externas ou VPNs</string>
   <!-- Scrolling Cache -->
+  <string name="pref_scrollingcache_title">Cache de rolagem</string>
+  <string name="pref_scrollingcache_summary">O cache de deslocamento pode melhorar o desempenho de rolagem ao custo da memória</string>
+  <string name="pref_scrollingcache_force_enable">Forçar ativação</string>
+  <string name="pref_scrollingcache_default_enable">Ativar por predefinição</string>
+  <string name="pref_scrollingcache_default_disable">Desativar por predefinição</string>
+  <string name="pref_scrollingcache_force_disable">Forçar desativação</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_category">Área de trabalho expandida</string>
+  <string name="expanded_hide_nothing">Não ocultar nada</string>
+  <string name="expanded_hide_status">Ocultar barra de status</string>
+  <string name="expanded_hide_navigation">Ocultar barra de navegação</string>
+  <string name="expanded_hide_both">Ocultar ambas</string>
+  <string name="expanded_nothing_to_show">Para adicionar uma configuração personalizada por aplicativo para o estado expandido, defina \"Ativado para todos\" para a posição desligada</string>
+  <string name="expanded_desktop_state">Estado expandido</string>
+  <string name="expanded_enabled_for_all">Ativado para todas</string>
+  <string name="expanded_user_configurable">Configuração do usuário</string>
+  <string name="expanded_desktop_style">Estilo de desktop expandido</string>
+  <string name="expanded_desktop_style_description">Escolher um estilo padrão para a área de trabalho expandida</string>
+  <string name="expanded_desktop_title">Opções da área de trabalho expandida</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">Desligue a lanterna com o botão de energia</string>
+  <string name="torch_power_button_gesture_none">Desativado</string>
+  <string name="torch_power_button_gesture_dt">Toque duplo poder para alternar a lanterna (irá adicionar um pequeno atraso para toque único)</string>
+  <string name="torch_power_button_gesture_lp">Manter pressionado o botão de energia para ativar a lanterna</string>
   <!-- Battery styles -->
+  <string name="battery_style_title">Estilo do indicador da bateria</string>
+  <string name="battery_style_summary">Alterar a aparência do ícone de bateria na barra de status</string>
+  <string name="battery_style_port">Retrato</string>
+  <string name="battery_style_circle">Circulo</string>
+  <string name="battery_style_dotted_circle">Círculo pontilhado</string>
+  <string name="battery_style_text">Texto</string>
+  <string name="battery_style_hidden">Oculto</string>
   <!-- Battery percent -->
+  <string name="show_battery_percent_title">Mostrar a percentagem da bateria</string>
+  <string name="show_battery_percent_summary">Mostrar a porcentagem da bateria perto do ícone</string>
+  <string name="battery_percent_hidden">Oculto</string>
+  <string name="battery_percent_outside">Fora</string>
+  <string name="battery_percent_inside">Dentro</string>
   <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Ícone de brilho</string>
+  <string name="brightness_icon_summary">Mostrar um icone de brilho à esquerda do controle deslizante de brilho para ativar a luminosidade adaptável</string>
   <!-- Status bar clock options -->
+  <string name="clock_category">Relógio</string>
+  <string name="status_bar_clock">Relógio e Data</string>
+  <string name="status_bar_clock_summary">Configure a aparência de relógio e data na barra de status</string>
+  <string name="clock_title_enable">Alinhamento</string>
+  <string name="clock_enabled">Ativo</string>
+  <string name="clock_disabled">Desativado</string>
+  <string name="status_bar_clock_style_reset">Redefinir a cor</string>
+  <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
+  <string name="status_bar_clock_seconds_title">Mostrar segundos</string>
+  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_am_pm_info">O formato de 24 horas está ativado</string>
+  <string name="enable_clock_weekday">Dia da Semana</string>
+  <string name="enable_clock_weekday_summary">Dia da semana abreviado antes do relógio</string>
+  <string name="right_clock">Relógio à direita</string>
+  <string name="center_clock">Relógio no centro</string>
+  <string name="left_clock">Relógio à esquerda</string>
+  <string name="dont_show">Não mostrar</string>
+  <string name="clock_date_display">Data</string>
+  <string name="clock_date_display_summary">Mostrar data personalizada antes do relógio</string>
+  <string name="clock_date_style">Estilo de data</string>
+  <string name="clock_date_format">Formato da data</string>
+  <string name="clock_date_string_edittext_title">Precisa estar em formato de data, por exemplo: MM/DD/AA</string>
+  <string name="clock_date_string_edittext_summary">Digite seqüência de caracteres</string>
+  <string name="am_pm_clock_normal">Tamanho da letra Normal</string>
+  <string name="am_pm_clock_small">Tamanho da letra pequena</string>
+  <string name="am_pm_clock_none">Não mostrar</string>
+  <string name="clock_date_display_none">Não mostrar</string>
+  <string name="clock_date_display_small">Tamanho da letra pequena</string>
+  <string name="clock_date_display_normal">Tamanho da letra normal</string>
+  <string name="clock_date_style_normal">Normal</string>
+  <string name="clock_date_style_lowercase">Minúsculas</string>
+  <string name="clock_date_style_uppercase">Maiúsculas</string>
+  <string name="clock_date_format_custom">Formato de java personalizado</string>
+  <string name="clock_warning_text">Note que a posição do relógio central é experimental e pode ser instável para usar e pode causar problemas.</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_summary">\@null</string>
+  <string name="screen_state_toggles_title">Suspender as Ações</string>
+  <string name="screen_state_toggles_enable_title">Ativar</string>
+  <string name="screen_state_toggles_enable_summary">As ações serão executadas com a tela desligada. A tela no estado anterior será restaurada.</string>
+  <string name="screen_state_toggles_mobile_title">Redes móveis</string>
+  <string name="screen_state_toggles_location_title">Localização</string>
+  <string name="screen_state_toggles_twog">Alterar para 2G</string>
+  <string name="screen_state_toggles_twog_summary">O modo de rede será alterado para 2G quando a tela for desligada</string>
+  <string name="screen_state_toggles_gps">Desativar o GPS</string>
+  <string name="screen_state_toggles_gps_summary">O serviço de localização baseado em GPS será desativado quando a tela for desligada</string>
+  <string name="screen_state_toggles_mobile_data">Desativar dados móveis</string>
+  <string name="screen_state_toggles_mobile_data_summary">Os dados móveis serão desativados enquanto a tela estiver desligada</string>
+  <string name="screen_state_off_delay_title">Atrasar ações ao desligar tela</string>
+  <string name="screen_state_off_delay_summary">Número de minutos a esperar antes de executar ações depois de a tela ser desligada</string>
+  <string name="screen_state_on_delay_title">Atraso das ações ao ligar a tela</string>
+  <string name="screen_state_on_delay_summary">Número de minutos a esperar antes de executar ações depois de a tela ser ligada</string>
   <!--show cpu overlay -->
+  <string name="show_cpu_title">Mostrar informações da CPU</string>
+  <string name="show_cpu_summary">Sobreposição de tela mostrando informações atuais da CPU</string>
   <!-- Ambient music -->
+  <string name="force_ambient_for_media_pref_title">Ícone de música ambiente</string>
+  <string name="force_ambient_for_media_pref_summary">Configurar o ícone de música ambiente</string>
+  <string name="ambient_ticker_footer">Este recurso permite a capacidade de mostrar as informações atuais da música na tela de bloqueio com ou sem exibição de ambiente ativada.\n\nVocê pode selecionar entre duas interfaces, normais e mínimos. Embora este recurso aproveite a exibição do ambiente, não depende disso. Pode ser ativado sem ter a exibição do ambiente ativada usando as opções (forçadas).\n\A visualização normal inclui o relógio, a data e o ícone de bloqueio.\n\nA visualização mínima inclui apenas o ícone no centro da tela.</string>
+  <string name="force_ambient_for_media_title">Selecionar a interface</string>
+  <string name="force_ambient_for_media_off">Desativado</string>
+  <string name="force_ambient_for_media_on">Normal</string>
+  <string name="force_ambient_for_media_on_forced">Normal (forçado)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Mínimo (forçado)</string>
   <!-- d2ts on lockscreen -->
+  <string name="double_tap_sleep_lockscreen">Duplo toque para desligar a tela</string>
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

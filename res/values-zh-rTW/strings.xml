@@ -184,6 +184,10 @@
   <string name="action_partial_screenshot">部分螢幕截圖</string>
   <string name="action_screen_off">關閉螢幕</string>
   <!-- Swap sw & hw navigation keys -->
+  <string name="swap_hardware_navigation_keys_title">對調硬體按鍵</string>
+  <string name="swap_hardware_navigation_keys_title_summary">將返回與多工導覽列實體鍵互換</string>
+  <string name="swap_software_navigation_keys_title">對調軟體按鍵</string>
+  <string name="swap_software_navigation_keys_title_summary">將返回與多工導覽列軟體鍵互換</string>
   <!-- ANBI -->
   <string name="anbi_title">誤觸</string>
   <string name="anbi_summary">當觸控螢幕時，避免與實體導覽列互動</string>
@@ -298,6 +302,7 @@
   <string name="pref_scrollingcache_default_enable">預設啟用</string>
   <string name="pref_scrollingcache_default_disable">預設停用</string>
   <string name="pref_scrollingcache_force_disable">強制停用</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">延伸桌面</string>
   <string name="expanded_hide_nothing">不隱藏</string>
@@ -367,8 +372,8 @@
   <string name="clock_date_style_lowercase">小寫</string>
   <string name="clock_date_style_uppercase">大寫</string>
   <string name="clock_date_format_custom">自訂 java 格式</string>
+  <string name="clock_warning_text">請注意，時鐘置中的功能是實驗性的，且可能會不穩定並發生錯誤。</string>
   <!-- Screen state service -->
-  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">暫停動作</string>
   <string name="screen_state_toggles_enable_title">啟用</string>
   <string name="screen_state_toggles_enable_summary">在螢幕關閉時才執行操作。螢幕開啟後會還原先前的狀態。</string>
@@ -398,4 +403,6 @@
   <string name="force_ambient_for_media_on_forced_clean">極簡 (強制)</string>
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">輕觸兩下鎖定畫面以關閉螢幕</string>
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

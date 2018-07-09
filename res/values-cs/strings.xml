@@ -184,6 +184,10 @@
   <string name="action_partial_screenshot">Částečný snímek obrazovky</string>
   <string name="action_screen_off">Vypnout obrazovku</string>
   <!-- Swap sw & hw navigation keys -->
+  <string name="swap_hardware_navigation_keys_title">Prohodit hardwarová tlačítka</string>
+  <string name="swap_hardware_navigation_keys_title_summary">Prohodit hardwarová tlačítka \"Nedávné\" a \"Zpět\"</string>
+  <string name="swap_software_navigation_keys_title">Prohodit softwarová tlačítka</string>
+  <string name="swap_software_navigation_keys_title_summary">Prohodit softwarová tlačítka \"Nedávné\" a \"Zpět\"</string>
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabránit interakci s harwarovými tlačítky během dotyku obrazovky</string>
@@ -298,6 +302,7 @@
   <string name="pref_scrollingcache_default_enable">Povolit výchozí</string>
   <string name="pref_scrollingcache_default_disable">Zakázat výchozí</string>
   <string name="pref_scrollingcache_force_disable">Vynuceně zakázat</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Rozšířená plocha</string>
   <string name="expanded_hide_nothing">Nic neskrývat</string>
@@ -367,8 +372,8 @@
   <string name="clock_date_style_lowercase">Malá písmena</string>
   <string name="clock_date_style_uppercase">Velká písmena</string>
   <string name="clock_date_format_custom">Vlastní formát Java</string>
+  <string name="clock_warning_text">Upozorňujeme, že umístění hodin uprostřed je experimentální funkce, která může být nestabilní a způsobovat problémy.</string>
   <!-- Screen state service -->
-  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Akce po zhasnutí obrazovky</string>
   <string name="screen_state_toggles_enable_title">Povolit</string>
   <string name="screen_state_toggles_enable_summary">Akce budou provedeny při vypnutí obrazovky. Při zapnutí a uvedení do předchozího stavu budou obnoveny.</string>
@@ -398,4 +403,6 @@
   <string name="force_ambient_for_media_on_forced_clean">Minimální (vynucené)</string>
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Dvojitým poklepáním na zamykací obrazovku uspat zařízení</string>
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

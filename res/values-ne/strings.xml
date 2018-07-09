@@ -60,6 +60,7 @@
   <!-- less notifucations -->
   <!-- QS footer warnings -->
   <!-- Scrolling Cache -->
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <!-- Torch Power button gestures -->
   <!-- Battery styles -->
@@ -70,4 +71,6 @@
   <!--show cpu overlay -->
   <!-- Ambient music -->
   <!-- d2ts on lockscreen -->
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

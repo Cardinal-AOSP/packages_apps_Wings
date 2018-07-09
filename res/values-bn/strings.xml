@@ -39,6 +39,7 @@
   <string name="hex">Hex:</string>
   <string name="hex_hint">#ff000000</string>
   <string name="set">নির্ধারণ করুন</string>
+  <string name="color_default">ডিফল্ট</string>
   <!-- Quick settings tiles columns and rows config -->
   <!-- QS rows and columns -->
   <!-- General strings -->
@@ -49,15 +50,22 @@
   <!-- Whether to display IME switcher notifcation -->
   <!-- Battery light -->
   <!--SysUI tuner options -->
+  <string name="status_bar_icon_blacklist_title">স্থিতি বার আইকন</string>
+  <string name="lockscreen_shortcuts_title">লকস্ক্রিন শর্টকাট</string>
+  <string name="powern_notifications_title">বিজ্ঞপ্তির পর্যায়</string>
   <!-- Notification Settings fragment -->
   <!-- Navigation bar -->
+  <string name="navigationbar_settings_title">নেভিগেশন দণ্ড</string>
   <!-- Recents panel settings -->
   <!-- Navigationbar toggle -->
   <!-- Buttons Backlight -->
   <!-- Buttons backlight timeout -->
   <!-- Custom rebindings -->
+  <string name="action_screenshot">স্ক্রীনচিত্র</string>
+  <string name="action_partial_screenshot">আংশিক স্ক্রীন প্রতিকৃতি</string>
   <!-- Swap sw & hw navigation keys -->
   <!-- ANBI -->
+  <string name="anbi_title">আকস্মিক টাচ</string>
   <!-- Heads up -->
   <!-- Sensor block per-package -->
   <!-- Incall Home button behavior-->
@@ -66,6 +74,7 @@
   <!-- Incall vibrate options -->
   <!--  Lockscreen battery info indicator  -->
   <!-- Statusbar ticker -->
+  <string name="ticker_disabled">নিষ্ক্রিয়</string>
   <!-- Notification style -->
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
@@ -76,6 +85,7 @@
   <!-- less notifucations -->
   <!-- QS footer warnings -->
   <!-- Scrolling Cache -->
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <!-- Torch Power button gestures -->
   <!-- Battery styles -->
@@ -86,4 +96,6 @@
   <!--show cpu overlay -->
   <!-- Ambient music -->
   <!-- d2ts on lockscreen -->
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>

@@ -20,10 +20,15 @@
   <string name="keywords_cardinal">Cardinal-AOSP</string>
   <!-- Main Settings -->
   <string name="general_title">Generale</string>
+  <string name="general_summary">Personalizzazioni UI/UX varie</string>
   <string name="statusbar_title">Barra di stato</string>
+  <string name="statusbar_summary">Opzioni per personalizzare la barra di stato, qs, notifiche ecc</string>
   <string name="buttons_title">Pulsanti</string>
+  <string name="buttons_summary">Opzioni per i controlli del volume, barra di navigazione, ecc</string>
   <string name="lockscreen_title">Schermata di sblocco</string>
+  <string name="lockscreen_summary">Personalizzazioni schermata di sblocco</string>
   <string name="recents_ui_title">App Recenti</string>
+  <string name="recents_ui_summary">Personalizzazioni recenti</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Doppio-tap per sospendere</string>
   <string name="double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per sospendere il dispositivo</string>
@@ -179,6 +184,10 @@
   <string name="action_partial_screenshot">Screenshot parziale</string>
   <string name="action_screen_off">Schermo spento</string>
   <!-- Swap sw & hw navigation keys -->
+  <string name="swap_hardware_navigation_keys_title">Inverti dei pulsanti hardware</string>
+  <string name="swap_hardware_navigation_keys_title_summary">Inverti i pulsanti hardware indietro e recenti</string>
+  <string name="swap_software_navigation_keys_title">Inverti i tasti software</string>
+  <string name="swap_software_navigation_keys_title_summary">Inverti i pulsanti software indietro e recenti</string>
   <!-- ANBI -->
   <string name="anbi_title">Tocco accidentale</string>
   <string name="anbi_summary">Previeni l\'interazione con i pulsanti fisici di navigazione mentre si tocca lo schermo</string>
@@ -198,6 +207,7 @@
   <string name="dialog_delete_message">Rimuovere l\'elemento selezionato?</string>
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blocca sensori per pacchetto</string>
+  <string name="sensor_block_summary">Impedisce alle applicazioni di accedere a determinati sensori e risparmiare batteria</string>
   <!-- Incall Home button behavior-->
   <string name="allow_incall_home_title">Pulsante home durante uno squillo</string>
   <string name="allow_incall_home_summary">Consenti di utilizzare il pulsante home quando il dispositivo squilla per una chiamata</string>
@@ -223,6 +233,9 @@
   <string name="ticker_disabled">Disattivato</string>
   <string name="ticker_enabled">Ticker di notifica</string>
   <string name="ticker_media_enabled">Ticker per le notifiche e musica</string>
+  <string name="ticker_animation_mode_title">Stile animazione Ticker</string>
+  <string name="ticker_animation_mode_alpha_fade">Dissolvenza</string>
+  <string name="ticker_animation_mode_scroll">Scorrimento</string>
   <!-- Notification style -->
   <string name="notification_style_title">Stile di notifica</string>
   <string name="notification_style_warning_text">Mentre usi le notifiche heads up, non potrai usare la funzione ticker, e viceversa.</string>
@@ -289,6 +302,7 @@
   <string name="pref_scrollingcache_default_enable">Abilitato predefinito</string>
   <string name="pref_scrollingcache_default_disable">Disabilitato predefinito</string>
   <string name="pref_scrollingcache_force_disable">Forza disabilitazione</string>
+  <!-- Notification count -->
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Desktop esteso</string>
   <string name="expanded_hide_nothing">Non nascondere nulla</string>
@@ -325,8 +339,71 @@
   <string name="brightness_icon_title">Icona luminosità</string>
   <string name="brightness_icon_summary">Visualizza un\'icona di luminosità a sinistra del dispositivo di scorrimento per attivare o disattivare la luminosità automatica</string>
   <!-- Status bar clock options -->
+  <string name="clock_category">Orologio</string>
+  <string name="status_bar_clock">Data e Ora</string>
+  <string name="status_bar_clock_summary">Configura l\'ora nella barra di stato e l\'aspetto della data</string>
+  <string name="clock_title_enable">Allineamento</string>
+  <string name="clock_enabled">Abilitato</string>
+  <string name="clock_disabled">Disabilitato</string>
+  <string name="status_bar_clock_style_reset">Reimposta colore</string>
+  <string name="status_bar_show_clock_title">Visualizza orologio e data</string>
+  <string name="status_bar_clock_seconds_title">Mostra i secondi</string>
+  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_am_pm_info">Formato 24 ore attivo</string>
+  <string name="enable_clock_weekday">Giorno della settimana</string>
+  <string name="enable_clock_weekday_summary">Giorno della settimana abbreviato prima dell\'orario</string>
+  <string name="right_clock">Orologio a destra</string>
+  <string name="center_clock">Orologio al centro</string>
+  <string name="left_clock">Orologio a sinistra</string>
+  <string name="dont_show">Non visualizzare</string>
+  <string name="clock_date_display">Data</string>
+  <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'orologio</string>
+  <string name="clock_date_style">Stile data</string>
+  <string name="clock_date_format">Formato data</string>
+  <string name="clock_date_string_edittext_title">Deve essere in formato data. Es: MM/gg/aa</string>
+  <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
+  <string name="am_pm_clock_normal">Dimensione del carattere normale</string>
+  <string name="am_pm_clock_small">Dimensione del carattere piccolo</string>
+  <string name="am_pm_clock_none">Non visualizzare</string>
+  <string name="clock_date_display_none">Non visualizzare</string>
+  <string name="clock_date_display_small">Dimensione del carattere piccolo</string>
+  <string name="clock_date_display_normal">Dimensione del carattere normale</string>
+  <string name="clock_date_style_normal">Normale</string>
+  <string name="clock_date_style_lowercase">Minuscolo</string>
+  <string name="clock_date_style_uppercase">Maiuscolo</string>
+  <string name="clock_date_format_custom">Formato Java personalizzato</string>
+  <string name="clock_warning_text">Nota che la posizione dell\'orologio centrale è sperimentale e potrebbe essere instabile e causare problemi.</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_summary">\@null</string>
+  <string name="screen_state_toggles_title">Sospendi le azioni</string>
+  <string name="screen_state_toggles_enable_title">Abilita</string>
+  <string name="screen_state_toggles_enable_summary">Le azioni saranno eseguite a schermo spento. A schermo acceso verrà ripristinato allo stato precedente.</string>
+  <string name="screen_state_toggles_mobile_title">Reti mobili</string>
+  <string name="screen_state_toggles_location_title">Posizione</string>
+  <string name="screen_state_toggles_twog">Passa a 2G</string>
+  <string name="screen_state_toggles_twog_summary">La modalità di rete passerà a 2G a schermo spento</string>
+  <string name="screen_state_toggles_gps">Disabilita GPS</string>
+  <string name="screen_state_toggles_gps_summary">La localizzazione via GPS verra disabilita a schermo spento</string>
+  <string name="screen_state_toggles_mobile_data">Disabilita dati mobili</string>
+  <string name="screen_state_toggles_mobile_data_summary">I dati mobili verranno disabilitati a schermo spento</string>
+  <string name="screen_state_off_delay_title">Ritardo azioni a schermo spento</string>
+  <string name="screen_state_off_delay_summary">Numero di minuti da aspettare prima di eseguire le azioni dopo aver spento lo schermo</string>
+  <string name="screen_state_on_delay_title">Ritardo azioni a schermo acceso</string>
+  <string name="screen_state_on_delay_summary">Numero di minuti da aspettare prima di eseguire le azioni dopo aver acceso lo schermo</string>
   <!--show cpu overlay -->
+  <string name="show_cpu_title">Mostra informazioni CPU</string>
+  <string name="show_cpu_summary">Sovrapporre sullo schermo le informazioni attuali della CPU</string>
   <!-- Ambient music -->
+  <string name="force_ambient_for_media_pref_title">Ticker Ambient musicale</string>
+  <string name="force_ambient_for_media_pref_summary">Configura il ticker musicale su Ambient Display</string>
+  <string name="ambient_ticker_footer">Questa funzionalità da la possibilità di visualizzare l\'attuale canzone sulla schermata di blocco con o senza Ambient Display abilitato.\n\nPuoi scegliere tra due layout, normale e minimale. Anche se questa modalità sfrutta l\'Ambient Display, non dipende da esso. Può essere attivata senza avere Ambient Display abilitato utilizzando l\'opzione (forzata).\n\nLa visualizzazione Normale include l\'orologio della schermata di blocco, la data e il quadrante.\n\nLa visualizzazione Minimale include solo il quadrante al centro dello schermo.</string>
+  <string name="force_ambient_for_media_title">Seleziona layout</string>
+  <string name="force_ambient_for_media_off">Disattivato</string>
+  <string name="force_ambient_for_media_on">Normale</string>
+  <string name="force_ambient_for_media_on_forced">Normale (forzato)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Minimo (forzato)</string>
   <!-- d2ts on lockscreen -->
+  <string name="double_tap_sleep_lockscreen">Doppio tocco per spegnere lo schermo sulla schermata di blocco</string>
+  <!-- Carrier Label -->
+  <!-- Volume Steps -->
 </resources>
