@@ -484,4 +484,9 @@
     <string name="volume_steps_5">5 steps</string>
     <string name="system_volume_option_title">System volume</string>
     <string name="call_volume_option_title">Voice call volume</string>
+    
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+
 </resources>
