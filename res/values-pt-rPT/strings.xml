@@ -406,4 +406,5 @@
   <string name="double_tap_sleep_lockscreen">Duplo toque para desligar a tela</string>
   <!-- Carrier Label -->
   <!-- Volume Steps -->
+  <!-- Volume key controls media stream -->
 </resources>

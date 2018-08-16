@@ -406,4 +406,5 @@
   <string name="double_tap_sleep_lockscreen">锁屏界面双击屏幕休眠</string>
   <!-- Carrier Label -->
   <!-- Volume Steps -->
+  <!-- Volume key controls media stream -->
 </resources>

@@ -303,6 +303,8 @@
   <string name="pref_scrollingcache_default_disable">Zakázat výchozí</string>
   <string name="pref_scrollingcache_force_disable">Vynuceně zakázat</string>
   <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Zobrazit počet oznámení</string>
+  <string name="status_bar_notif_count_summary">Zobrazí počet nezobrazených oznámení</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Rozšířená plocha</string>
   <string name="expanded_hide_nothing">Nic neskrývat</string>
@@ -374,6 +376,7 @@
   <string name="clock_date_format_custom">Vlastní formát Java</string>
   <string name="clock_warning_text">Upozorňujeme, že umístění hodin uprostřed je experimentální funkce, která může být nestabilní a způsobovat problémy.</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Akce po zhasnutí obrazovky</string>
   <string name="screen_state_toggles_enable_title">Povolit</string>
   <string name="screen_state_toggles_enable_summary">Akce budou provedeny při vypnutí obrazovky. Při zapnutí a uvedení do předchozího stavu budou obnoveny.</string>
@@ -404,5 +407,26 @@
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Dvojitým poklepáním na zamykací obrazovku uspat zařízení</string>
   <!-- Carrier Label -->
+  <string name="carrier_label_title">Název operátora</string>
+  <string name="carrier_label_summary">Přizpůsobte název operátora na zamykací obrazovce a stavové liště</string>
+  <string name="carrier_options">Vyberte umístění zobrazení</string>
+  <string name="custom_carrier_label_title">Vlastní název operátora</string>
+  <string name="custom_carrier_label_explain">Zadejte vlastní název. Chcete-li použít název sítě, ponechte prázdné</string>
+  <string name="custom_carrier_label_notset">Vlastní název není momentálně nastaven</string>
+  <string name="show_carrier_title">Název operátora</string>
+  <string name="show_carrier_disabled">Vypnuto</string>
+  <string name="show_carrier_keyguard">Zamykací obrazovka</string>
+  <string name="show_carrier_statusbar">Stavová lišta</string>
+  <string name="show_carrier_enabled">Obojí</string>
+  <string name="carrier_label_warning_text">Upozorňujeme, že vlastní název operátora není k dispozici v rozšířené oblasti stavové lišty, známé také jako oblast rychlých nastavení. Používání emoji jako názvu operátora může způsobit problémy s viditelností na světlejších pozadích.</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">Kroky hlasitosti</string>
+  <string name="volume_steps_summary">Nastavit dostupné kroky pro různé zvukové zdroje</string>
+  <string name="volume_steps_30">30 kroků</string>
+  <string name="volume_steps_15">15 kroků</string>
+  <string name="volume_steps_7">7 kroků</string>
+  <string name="volume_steps_5">5 kroků</string>
+  <string name="system_volume_option_title">Systémová hlasitost</string>
+  <string name="call_volume_option_title">Hlasitost hovoru</string>
+  <!-- Volume key controls media stream -->
 </resources>

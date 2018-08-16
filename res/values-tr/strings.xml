@@ -303,6 +303,8 @@
   <string name="pref_scrollingcache_default_disable">Varsayılan devre dışı</string>
   <string name="pref_scrollingcache_force_disable">Zorla devre dışı</string>
   <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Bildirim sayısı</string>
+  <string name="status_bar_notif_count_summary">Bekleyen bildirimlerin sayısını görüntüle</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Genişletilmiş masaüstü</string>
   <string name="expanded_hide_nothing">Hiçbir şeyi gizleme</string>
@@ -405,5 +407,26 @@
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Kilit ekranında uyutmak için çift dokunun</string>
   <!-- Carrier Label -->
+  <string name="carrier_label_title">Operatör etiketi</string>
+  <string name="carrier_label_summary">Kilit ekranında veya durum çubuğunda operatör etiketini özelleştirin</string>
+  <string name="carrier_options">Ekran konumu seç</string>
+  <string name="custom_carrier_label_title">Özel operatör etiketi</string>
+  <string name="custom_carrier_label_explain">Özel bir etiket girin. Ağ adınızı kullanmak için boş bırakın</string>
+  <string name="custom_carrier_label_notset">Özel etiket ayarlanmadı</string>
+  <string name="show_carrier_title">Operatör etiketi</string>
+  <string name="show_carrier_disabled">Devre dışı</string>
+  <string name="show_carrier_keyguard">Kilit ekranı</string>
+  <string name="show_carrier_statusbar">Durum çubuğu</string>
+  <string name="show_carrier_enabled">Etkin</string>
+  <string name="carrier_label_warning_text">Özel operatör etiketini sadece durum çubuğunda kullanabilirsiniz. Ayrıca özel operatör etiket emoji\'si kullanmak açık renkli arkaplanlarda bazı görünürlük sorunlarına neden olabilir.</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">Ses seviyeleri</string>
+  <string name="volume_steps_summary">Farklı ses seviyeleri için kullanılabilir adımları yapılandır</string>
+  <string name="volume_steps_30">30 seviyesi</string>
+  <string name="volume_steps_15">15 seviyesi</string>
+  <string name="volume_steps_7">7 seviyesi</string>
+  <string name="volume_steps_5">5 seviyesi</string>
+  <string name="system_volume_option_title">Sistem ses seviyesi</string>
+  <string name="call_volume_option_title">Arama ses seviyesi</string>
+  <!-- Volume key controls media stream -->
 </resources>

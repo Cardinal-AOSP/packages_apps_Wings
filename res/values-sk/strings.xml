@@ -303,6 +303,8 @@
   <string name="pref_scrollingcache_default_disable">Predvolene vypnuté</string>
   <string name="pref_scrollingcache_force_disable">Vynútene zakázať</string>
   <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Zobraziť počítadlo upozornení</string>
+  <string name="status_bar_notif_count_summary">Zobraziť počet čakajúcich upozornení v stavovom riadku</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">Rozšírená plocha</string>
   <string name="expanded_hide_nothing">Nič neskrývať</string>
@@ -405,5 +407,26 @@
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Uspať dvojklikom na obrazovke uzamknutia</string>
   <!-- Carrier Label -->
+  <string name="carrier_label_title">Názov operátora</string>
+  <string name="carrier_label_summary">Prispôsobiť názov operátora na obrazovke uzamknutia alebo stavovom riadku</string>
+  <string name="carrier_options">Vyberte umiestnenie zobrazenia</string>
+  <string name="custom_carrier_label_title">Vlastný názov operátora</string>
+  <string name="custom_carrier_label_explain">Zadajte vlastný názov. Ak chcete použiť názov siete, ponechajte prázdne</string>
+  <string name="custom_carrier_label_notset">Vlastný názov momentálne nie je nastavený</string>
+  <string name="show_carrier_title">Názov operátora</string>
+  <string name="show_carrier_disabled">Vypnuté</string>
+  <string name="show_carrier_keyguard">Obrazovka uzamknutia</string>
+  <string name="show_carrier_statusbar">Stavový riadok</string>
+  <string name="show_carrier_enabled">Oboje</string>
+  <string name="carrier_label_warning_text">Upozorňujeme, že vlastný názov operátora nie je k dispozícii v rozšírenej oblasti stavového riadku, známej aj ako oblasť rýchlych nastavení. Používanie emoji ako názvu operátora môže spôsobiť problémy s viditeľnosťou na svetlejších pozadiach.</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">Úrovne hlasitosti</string>
+  <string name="volume_steps_summary">Konfigurujte dostupné kroky pre rôzne zdroje zvuku</string>
+  <string name="volume_steps_30">30 krokov</string>
+  <string name="volume_steps_15">15 krokov</string>
+  <string name="volume_steps_7">7 krokov</string>
+  <string name="volume_steps_5">5 krokov</string>
+  <string name="system_volume_option_title">Hlasitosť systému</string>
+  <string name="call_volume_option_title">Hlasitosť hovoru</string>
+  <!-- Volume key controls media stream -->
 </resources>

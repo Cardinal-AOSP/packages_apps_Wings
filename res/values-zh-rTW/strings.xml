@@ -303,6 +303,8 @@
   <string name="pref_scrollingcache_default_disable">預設停用</string>
   <string name="pref_scrollingcache_force_disable">強制停用</string>
   <!-- Notification count -->
+  <string name="status_bar_notif_count_title">顯示通知計數</string>
+  <string name="status_bar_notif_count_summary">顯示未處理通知的數量</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_category">延伸桌面</string>
   <string name="expanded_hide_nothing">不隱藏</string>
@@ -374,6 +376,7 @@
   <string name="clock_date_format_custom">自訂 java 格式</string>
   <string name="clock_warning_text">請注意，時鐘置中的功能是實驗性的，且可能會不穩定並發生錯誤。</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">暫停動作</string>
   <string name="screen_state_toggles_enable_title">啟用</string>
   <string name="screen_state_toggles_enable_summary">在螢幕關閉時才執行操作。螢幕開啟後會還原先前的狀態。</string>
@@ -404,5 +407,26 @@
   <!-- d2ts on lockscreen -->
   <string name="double_tap_sleep_lockscreen">輕觸兩下鎖定畫面以關閉螢幕</string>
   <!-- Carrier Label -->
+  <string name="carrier_label_title">電信業者標籤</string>
+  <string name="carrier_label_summary">自訂位於螢幕鎖定畫面或狀態列上的電信業者標籤</string>
+  <string name="carrier_options">選擇顯示位置</string>
+  <string name="custom_carrier_label_title">自訂電信業者標籤</string>
+  <string name="custom_carrier_label_explain">輸入自訂標籤。保留為空以使用您的電信業者名稱</string>
+  <string name="custom_carrier_label_notset">自定義標籤目前沒有設置</string>
+  <string name="show_carrier_title">電信業者標籤</string>
+  <string name="show_carrier_disabled">已停用</string>
+  <string name="show_carrier_keyguard">鎖定畫面</string>
+  <string name="show_carrier_statusbar">狀態列</string>
+  <string name="show_carrier_enabled">兩者</string>
+  <string name="carrier_label_warning_text">請注意, 自訂電信業者標籤在擴展欄區域 (也稱為快速設置區域) 中不可用。同時, 若使用表情符號作為您的電信業者標籤可能會在較亮的背景上導致某些視覺上的問題。</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">音量調整步進</string>
+  <string name="volume_steps_summary">為不同音訊的音量設置可用的調整階數</string>
+  <string name="volume_steps_30">30 階</string>
+  <string name="volume_steps_15">15 階</string>
+  <string name="volume_steps_7">7 階</string>
+  <string name="volume_steps_5">5 階</string>
+  <string name="system_volume_option_title">系统音量</string>
+  <string name="call_volume_option_title">語音通話音量</string>
+  <!-- Volume key controls media stream -->
 </resources>

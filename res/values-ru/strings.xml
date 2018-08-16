@@ -25,7 +25,7 @@
   <string name="buttons_title">Кнопки</string>
   <string name="lockscreen_title">Экран блокировки</string>
   <string name="recents_ui_title">Недавние приложения</string>
-  <string name="recents_ui_summary">Кастомизация панели недавних приложений</string>
+  <string name="recents_ui_summary">Настройки панели недавних приложений</string>
   <!-- double tap to sleep - statusbar -->
   <string name="double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
   <string name="double_tap_to_sleep_summary">Двойной тап по строке состояние переводит устройство в режим сна</string>
@@ -40,9 +40,9 @@
   <string name="wake_when_plugged_or_unplugged_summary">Включить экран при подключении или отключении источника питания</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Индикатор трафика</string>
-  <string name="network_traffic_summary">Индикатор активности сети в статусбаре</string>
+  <string name="network_traffic_summary">Индикатор активности сети в строке состояния</string>
   <string name="network_traffic_state_title">Показывать индикатор сетевого трафика в строке состояния</string>
-  <string name="network_traffic_autohide_threshold_title">Порог автосрытия индикатора сетевого трафика (КБ/с)</string>
+  <string name="network_traffic_autohide_threshold_title">Порог автоскрытия индикатора сетевого трафика (КБ/с)</string>
   <string name="show_network_traffic_disable">Отключено</string>
   <string name="show_network_traffic_up">Исходящий</string>
   <string name="show_network_traffic_down">Входящий</string>
@@ -84,7 +84,7 @@
   <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
   <!-- Battery customizations -->
   <string name="battery_settings_title">Параметры батареи</string>
-  <string name="battery_settings_summary">Настройка отображения различныых вариантов индикации батареи</string>
+  <string name="battery_settings_summary">Настройка отображения значка заряда батареи</string>
   <!-- Fingerprint unlock keystore -->
   <string name="fp_unlock_keystore_title">Разблокировать по отпечатку пальца</string>
   <string name="fp_unlock_keystore_summary">Разрешить разблокировку отпечатком сразу после запуска устройства\nВнимание: использовать на свой страх и риск!</string>
@@ -332,7 +332,7 @@
   <!-- Status bar clock options -->
   <string name="clock_category">Часы</string>
   <string name="status_bar_clock">Дата и время</string>
-  <string name="status_bar_clock_summary">Нкстройка часов и даты в статусбаре</string>
+  <string name="status_bar_clock_summary">Настройка часов и даты в строке состояния</string>
   <string name="clock_title_enable">Выравнивание</string>
   <string name="clock_enabled">Включено</string>
   <string name="clock_disabled">Выключено</string>
@@ -341,7 +341,7 @@
   <string name="status_bar_clock_seconds_title">Отображать секунды</string>
   <string name="status_bar_am_pm_info">24-часовой режим</string>
   <!-- Screen state service -->
-  <string name="screen_state_off_delay_summary">Задержка</string>
+  <string name="screen_state_off_delay_summary">Отложить действия при выключении экрана на указанное количество секунд</string>
   <!--show cpu overlay -->
   <string name="show_cpu_title">Отображать состояние цп</string>
   <!-- Ambient music -->
@@ -350,4 +350,5 @@
   <!-- d2ts on lockscreen -->
   <!-- Carrier Label -->
   <!-- Volume Steps -->
+  <!-- Volume key controls media stream -->
 </resources>
