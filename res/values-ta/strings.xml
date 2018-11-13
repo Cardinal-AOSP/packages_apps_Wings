@@ -15,75 +15,76 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Cardinal Wings menus -->
-  <!-- Main Settings -->
-  <!-- double tap to sleep - statusbar -->
-  <!-- Volume button wake -->
-  <!-- Volume button track change -->
-  <!-- Wake on Plug -->
-  <!-- Network traffic -->
-  <string name="show_network_traffic_disable">முடக்கப்பட்டுள்ளது</string>
-  <!-- Color Picker -->
-  <string name="color_default">இயல்பு</string>
-  <!-- Quick settings tiles columns and rows config -->
-  <!-- QS rows and columns -->
-  <!-- General strings -->
-  <!-- fingerprint authentication vibration -->
-  <!-- Battery customizations -->
-  <!-- Fingerprint unlock keystore -->
-  <!-- Media art -->
-  <!-- Whether to display IME switcher notifcation -->
-  <!-- Battery light -->
-  <string name="battery_light_enable">இயக்கு</string>
-  <!--SysUI tuner options -->
-  <string name="status_bar_icon_blacklist_title">நிலைப் பட்டி சின்னங்கள்</string>
-  <string name="lockscreen_shortcuts_title">பூட்டு திரை குறுக்குவழிகள்</string>
-  <string name="powern_notifications_title">சக்தி அறிவிப்புகள்</string>
-  <!-- Notification Settings fragment -->
-  <!-- Navigation bar -->
-  <string name="navigationbar_settings_title">வழிநடத்தும் பட்டி</string>
-  <!-- Recents panel settings -->
-  <!-- Navigationbar toggle -->
-  <!-- Buttons Backlight -->
-  <string name="button_backlight_enable_title">இயக்கு</string>
-  <!-- Buttons backlight timeout -->
-  <!-- Custom rebindings -->
-  <string name="action_screenshot">திரைப்பிடிப்பு</string>
-  <string name="action_partial_screenshot">பகுதி திரைப்பிடிப்பு</string>
-  <!-- Swap sw & hw navigation keys -->
-  <!-- ANBI -->
-  <string name="anbi_title">எதிர்பாரா தொடுதல்</string>
-  <!-- Heads up -->
-  <!-- Sensor block per-package -->
-  <!-- Incall Home button behavior-->
-  <!-- Disable QS on secure Lockscreen -->
-  <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
-  <!-- Incall vibrate options -->
-  <!--  Lockscreen battery info indicator  -->
-  <!-- Statusbar ticker -->
-  <string name="ticker_disabled">முடக்கப்பட்டுள்ளது</string>
-  <!-- Notification style -->
-  <!-- Notification light dialogs -->
-  <!-- Values for the notification light pulse spinners -->
-  <!-- Lights settings screen, notification light settings -->
-  <!-- Systemui theme -->
-  <!-- Power menu on secure lockscreen -->
-  <!-- Suppress notification sound/vibration -->
-  <!-- less notifucations -->
-  <!-- QS footer warnings -->
-  <!-- Scrolling Cache -->
-  <!-- Notification count -->
-  <!-- Expanded desktop -->
-  <!-- Torch Power button gestures -->
-  <!-- Battery styles -->
-  <!-- Battery percent -->
-  <!-- Quick Settings brightness icon -->
-  <!-- Status bar clock options -->
-  <!-- Screen state service -->
-  <!--show cpu overlay -->
-  <!-- Ambient music -->
-  <!-- d2ts on lockscreen -->
-  <!-- Carrier Label -->
-  <!-- Volume Steps -->
-  <!-- Volume key controls media stream -->
+    <!-- Cardinal Wings menus -->
+    <!-- Main Settings -->
+    <!-- double tap to sleep - statusbar -->
+    <!-- Volume button wake -->
+    <!-- Volume button track change -->
+    <!-- Wake on Plug -->
+    <!-- Network traffic -->
+    <string name="show_network_traffic_disable">முடக்கப்பட்டுள்ளது</string>
+    <!-- Color Picker -->
+    <string name="color_default">இயல்பு</string>
+    <!-- Quick settings tiles columns and rows config -->
+    <!-- QS rows and columns -->
+    <!-- General strings -->
+    <!-- fingerprint authentication vibration -->
+    <!-- Battery customizations -->
+    <!-- Fingerprint unlock keystore -->
+    <!-- Media art -->
+    <!-- Whether to display IME switcher notifcation -->
+    <!-- Battery light -->
+    <string name="battery_light_enable">இயக்கு</string>
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">நிலைப் பட்டி சின்னங்கள்</string>
+    <string name="lockscreen_shortcuts_title">பூட்டு திரை குறுக்குவழிகள்</string>
+    <string name="powern_notifications_title">சக்தி அறிவிப்புகள்</string>
+    <!-- Notification Settings fragment -->
+    <!-- Navigation bar -->
+    <string name="navigationbar_settings_title">வழிநடத்தும் பட்டி</string>
+    <!-- Recents panel settings -->
+    <!-- Navigationbar toggle -->
+    <!-- Buttons Backlight -->
+    <string name="button_backlight_enable_title">இயக்கு</string>
+    <!-- Buttons backlight timeout -->
+    <!-- Custom rebindings -->
+    <string name="action_screenshot">திரைப்பிடிப்பு</string>
+    <string name="action_partial_screenshot">பகுதி திரைப்பிடிப்பு</string>
+    <!-- Swap sw & hw navigation keys -->
+    <!-- ANBI -->
+    <string name="anbi_title">எதிர்பாரா தொடுதல்</string>
+    <!-- Heads up -->
+    <!-- Sensor block per-package -->
+    <!-- Incall Home button behavior-->
+    <!-- Disable QS on secure Lockscreen -->
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <!-- Incall vibrate options -->
+    <!--  Lockscreen battery info indicator  -->
+    <!-- Statusbar ticker -->
+    <string name="ticker_disabled">முடக்கப்பட்டுள்ளது</string>
+    <!-- Notification style -->
+    <!-- Notification light dialogs -->
+    <!-- Values for the notification light pulse spinners -->
+    <!-- Lights settings screen, notification light settings -->
+    <!-- Systemui theme -->
+    <!-- Power menu on secure lockscreen -->
+    <!-- Suppress notification sound/vibration -->
+    <!-- less notifucations -->
+    <!-- QS footer warnings -->
+    <!-- Scrolling Cache -->
+    <!-- Notification count -->
+    <!-- Expanded desktop -->
+    <!-- Torch Power button gestures -->
+    <!-- Battery styles -->
+    <!-- Battery percent -->
+    <!-- Quick Settings brightness icon -->
+    <!-- Status bar clock options -->
+    <!-- Screen state service -->
+    <!--show cpu overlay -->
+    <!-- Ambient music -->
+    <!-- d2ts on lockscreen -->
+    <!-- Carrier Label -->
+    <!-- Volume Steps -->
+    <!-- Volume key controls media stream -->
+    <!-- Brightness control -->
 </resources>

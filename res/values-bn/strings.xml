@@ -15,88 +15,89 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Cardinal Wings menus -->
-  <!-- Main Settings -->
-  <string name="statusbar_title">স্ট্যাটাস বার</string>
-  <string name="buttons_title">বোতামগুলি</string>
-  <!-- double tap to sleep - statusbar -->
-  <!-- Volume button wake -->
-  <!-- Volume button track change -->
-  <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবথায় জেগে উঠা</string>
-  <string name="wake_when_plugged_or_unplugged_summary">শক্তির উৎস যখন যুক্ত অথবা বিচ্ছিন্ন করা হচ্ছে তখন পর্দা সচল করুন</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">নেটওয়ার্ক ট্রাফিক</string>
-  <string name="show_network_traffic_disable">নিষ্ক্রিয়</string>
-  <string name="show_network_traffic_up">বহির্গামী</string>
-  <string name="show_network_traffic_down">আগত</string>
-  <string name="show_network_traffic_all">বহির্গামী এবং আগত</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">রং বছাইকারী</string>
-  <string name="press_color_to_apply">আবেদন করতে নীচের রংটি চাপুন</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">নির্ধারণ করুন</string>
-  <string name="color_default">ডিফল্ট</string>
-  <!-- Quick settings tiles columns and rows config -->
-  <!-- QS rows and columns -->
-  <!-- General strings -->
-  <!-- fingerprint authentication vibration -->
-  <!-- Battery customizations -->
-  <!-- Fingerprint unlock keystore -->
-  <!-- Media art -->
-  <!-- Whether to display IME switcher notifcation -->
-  <!-- Battery light -->
-  <!--SysUI tuner options -->
-  <string name="status_bar_icon_blacklist_title">স্থিতি বার আইকন</string>
-  <string name="lockscreen_shortcuts_title">লকস্ক্রিন শর্টকাট</string>
-  <string name="powern_notifications_title">বিজ্ঞপ্তির পর্যায়</string>
-  <!-- Notification Settings fragment -->
-  <!-- Navigation bar -->
-  <string name="navigationbar_settings_title">নেভিগেশন দণ্ড</string>
-  <!-- Recents panel settings -->
-  <!-- Navigationbar toggle -->
-  <!-- Buttons Backlight -->
-  <!-- Buttons backlight timeout -->
-  <!-- Custom rebindings -->
-  <string name="action_screenshot">স্ক্রীনচিত্র</string>
-  <string name="action_partial_screenshot">আংশিক স্ক্রীন প্রতিকৃতি</string>
-  <!-- Swap sw & hw navigation keys -->
-  <!-- ANBI -->
-  <string name="anbi_title">আকস্মিক টাচ</string>
-  <!-- Heads up -->
-  <!-- Sensor block per-package -->
-  <!-- Incall Home button behavior-->
-  <!-- Disable QS on secure Lockscreen -->
-  <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
-  <!-- Incall vibrate options -->
-  <!--  Lockscreen battery info indicator  -->
-  <!-- Statusbar ticker -->
-  <string name="ticker_disabled">নিষ্ক্রিয়</string>
-  <!-- Notification style -->
-  <!-- Notification light dialogs -->
-  <!-- Values for the notification light pulse spinners -->
-  <!-- Lights settings screen, notification light settings -->
-  <!-- Systemui theme -->
-  <!-- Power menu on secure lockscreen -->
-  <!-- Suppress notification sound/vibration -->
-  <!-- less notifucations -->
-  <!-- QS footer warnings -->
-  <!-- Scrolling Cache -->
-  <!-- Notification count -->
-  <!-- Expanded desktop -->
-  <!-- Torch Power button gestures -->
-  <!-- Battery styles -->
-  <!-- Battery percent -->
-  <!-- Quick Settings brightness icon -->
-  <!-- Status bar clock options -->
-  <!-- Screen state service -->
-  <!--show cpu overlay -->
-  <!-- Ambient music -->
-  <!-- d2ts on lockscreen -->
-  <!-- Carrier Label -->
-  <!-- Volume Steps -->
-  <!-- Volume key controls media stream -->
+    <!-- Cardinal Wings menus -->
+    <!-- Main Settings -->
+    <string name="statusbar_title">স্ট্যাটাস বার</string>
+    <string name="buttons_title">বোতামগুলি</string>
+    <!-- double tap to sleep - statusbar -->
+    <!-- Volume button wake -->
+    <!-- Volume button track change -->
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবথায় জেগে উঠা</string>
+    <string name="wake_when_plugged_or_unplugged_summary">শক্তির উৎস যখন যুক্ত অথবা বিচ্ছিন্ন করা হচ্ছে তখন পর্দা সচল করুন</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">নেটওয়ার্ক ট্রাফিক</string>
+    <string name="show_network_traffic_disable">নিষ্ক্রিয়</string>
+    <string name="show_network_traffic_up">বহির্গামী</string>
+    <string name="show_network_traffic_down">আগত</string>
+    <string name="show_network_traffic_all">বহির্গামী এবং আগত</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">রং বছাইকারী</string>
+    <string name="press_color_to_apply">আবেদন করতে নীচের রংটি চাপুন</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">নির্ধারণ করুন</string>
+    <string name="color_default">ডিফল্ট</string>
+    <!-- Quick settings tiles columns and rows config -->
+    <!-- QS rows and columns -->
+    <!-- General strings -->
+    <!-- fingerprint authentication vibration -->
+    <!-- Battery customizations -->
+    <!-- Fingerprint unlock keystore -->
+    <!-- Media art -->
+    <!-- Whether to display IME switcher notifcation -->
+    <!-- Battery light -->
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">স্থিতি বার আইকন</string>
+    <string name="lockscreen_shortcuts_title">লকস্ক্রিন শর্টকাট</string>
+    <string name="powern_notifications_title">বিজ্ঞপ্তির পর্যায়</string>
+    <!-- Notification Settings fragment -->
+    <!-- Navigation bar -->
+    <string name="navigationbar_settings_title">নেভিগেশন দণ্ড</string>
+    <!-- Recents panel settings -->
+    <!-- Navigationbar toggle -->
+    <!-- Buttons Backlight -->
+    <!-- Buttons backlight timeout -->
+    <!-- Custom rebindings -->
+    <string name="action_screenshot">স্ক্রীনচিত্র</string>
+    <string name="action_partial_screenshot">আংশিক স্ক্রীন প্রতিকৃতি</string>
+    <!-- Swap sw & hw navigation keys -->
+    <!-- ANBI -->
+    <string name="anbi_title">আকস্মিক টাচ</string>
+    <!-- Heads up -->
+    <!-- Sensor block per-package -->
+    <!-- Incall Home button behavior-->
+    <!-- Disable QS on secure Lockscreen -->
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <!-- Incall vibrate options -->
+    <!--  Lockscreen battery info indicator  -->
+    <!-- Statusbar ticker -->
+    <string name="ticker_disabled">নিষ্ক্রিয়</string>
+    <!-- Notification style -->
+    <!-- Notification light dialogs -->
+    <!-- Values for the notification light pulse spinners -->
+    <!-- Lights settings screen, notification light settings -->
+    <!-- Systemui theme -->
+    <!-- Power menu on secure lockscreen -->
+    <!-- Suppress notification sound/vibration -->
+    <!-- less notifucations -->
+    <!-- QS footer warnings -->
+    <!-- Scrolling Cache -->
+    <!-- Notification count -->
+    <!-- Expanded desktop -->
+    <!-- Torch Power button gestures -->
+    <!-- Battery styles -->
+    <!-- Battery percent -->
+    <!-- Quick Settings brightness icon -->
+    <!-- Status bar clock options -->
+    <!-- Screen state service -->
+    <!--show cpu overlay -->
+    <!-- Ambient music -->
+    <!-- d2ts on lockscreen -->
+    <!-- Carrier Label -->
+    <!-- Volume Steps -->
+    <!-- Volume key controls media stream -->
+    <!-- Brightness control -->
 </resources>

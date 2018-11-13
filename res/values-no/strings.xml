@@ -15,121 +15,122 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Cardinal Wings menus -->
-  <string name="keywords_cardinal">Cardinal-AOSP</string>
-  <!-- Main Settings -->
-  <!-- double tap to sleep - statusbar -->
-  <string name="double_tap_to_sleep_title">Dobbelttrykk for å sove</string>
-  <string name="double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å få enheten til å sove</string>
-  <!-- Volume button wake -->
-  <string name="volbtn_wake_device_title">Vekk med volumknappene</string>
-  <string name="button_wake_summary">Kan hende enheten ikke vekkes hvis musikkontroll er aktiv og musikk spilles</string>
-  <!-- Volume button track change -->
-  <string name="volbtn_music_controls_title">Volumknappen musikkontroll</string>
-  <string name="volbtn_music_controls_summary">Når skjermen er av, vil langtrykk av volumknappene søke i musikkspor</string>
-  <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Våkne ved tilkobling</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Slå skjermen på når du kobler til eller kobler fra en strømkilde</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">Nettverkstrafikk</string>
-  <string name="network_traffic_summary">Alternativ for å vise nett-aktivitetsmeter på statuslinjen</string>
-  <string name="network_traffic_state_title">Nett-aktivitet i statuslinjen</string>
-  <string name="network_traffic_autohide_threshold_title">Nett-aktivitet autoskjul terskel (KB/s)</string>
-  <string name="show_network_traffic_disable">Deaktivert</string>
-  <string name="show_network_traffic_up">Utgående</string>
-  <string name="show_network_traffic_down">Innkommende</string>
-  <string name="show_network_traffic_all">Utgående og innkommende</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Fargevelger</string>
-  <string name="press_color_to_apply">Trykk på en av fargene under for å angi den</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Angi</string>
-  <string name="color_default">Standard</string>
-  <!-- Quick settings tiles columns and rows config -->
-  <string name="quicksettings_category">Hurtiginstillinger</string>
-  <string name="quicksettings_summary">Konfigurer QS oppsett</string>
-  <string name="qs_layout_category">QS ruteoppsettet</string>
-  <!-- QS rows and columns -->
-  <string name="qs_rows_columns_title">QS rader og kolonner</string>
-  <string name="qs_rows_portrait_title">Flisers rader på portrett</string>
-  <string name="qs_rows_landscape_title">Flisers rader i landskap</string>
-  <string name="qs_columns_portrait_title">Flisers kolonner på portrett</string>
-  <string name="qs_columns_landscape_title">Flisers kolonner i landskap</string>
-  <string name="qs_tile_title_visibility_title">QS flis titler</string>
-  <string name="qs_tile_title_visibility_summary_on">QS flisers titler er nå synlig</string>
-  <string name="qs_tile_title_visibility_summary_off">QS flisers titler er nå borte</string>
-  <!-- General strings -->
-  <string name="cancel">Avbryt</string>
-  <string name="save">Lagre</string>
-  <string name="reset_android">Android</string>
-  <string name="reset_cardinal">Cardinal-AOSP</string>
-  <string name="reset_colors">Tilbakestill farger</string>
-  <string name="text_title">Tekst</string>
-  <string name="icon_title">Ikoner</string>
-  <string name="color_title">Farge</string>
-  <string name="colors_title">Farger</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibrasjon ved fingeravtrykksautentisering</string>
-  <string name="fprint_sucess_vib_summary">Vibrer ved godkjent fingeravtrykksautentisering</string>
-  <!-- Battery customizations -->
-  <string name="battery_settings_title">Batteriinnstillinger</string>
-  <string name="battery_settings_summary">Tilpass batteristiler</string>
-  <!-- Fingerprint unlock keystore -->
-  <string name="fp_unlock_keystore_title">FP opplåsning</string>
-  <!-- Media art -->
-  <!-- Whether to display IME switcher notifcation -->
-  <!-- Battery light -->
-  <!--SysUI tuner options -->
-  <string name="status_bar_icon_blacklist_title">Statuslinjeikoner</string>
-  <string name="lockscreen_shortcuts_title">Låseskjermsnarveier</string>
-  <string name="powern_notifications_title">Strømvarsler</string>
-  <!-- Notification Settings fragment -->
-  <!-- Navigation bar -->
-  <string name="navigationbar_settings_title">Navigasjonsfelt</string>
-  <!-- Recents panel settings -->
-  <!-- Navigationbar toggle -->
-  <!-- Buttons Backlight -->
-  <!-- Buttons backlight timeout -->
-  <!-- Custom rebindings -->
-  <string name="action_screenshot">Skjermbilde</string>
-  <string name="action_partial_screenshot">Delvis skjermbilde</string>
-  <!-- Swap sw & hw navigation keys -->
-  <!-- ANBI -->
-  <string name="anbi_title">Utilsiktet berøring</string>
-  <!-- Heads up -->
-  <!-- Sensor block per-package -->
-  <!-- Incall Home button behavior-->
-  <!-- Disable QS on secure Lockscreen -->
-  <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
-  <!-- Incall vibrate options -->
-  <!--  Lockscreen battery info indicator  -->
-  <!-- Statusbar ticker -->
-  <string name="ticker_disabled">Deaktivert</string>
-  <!-- Notification style -->
-  <!-- Notification light dialogs -->
-  <!-- Values for the notification light pulse spinners -->
-  <!-- Lights settings screen, notification light settings -->
-  <!-- Systemui theme -->
-  <!-- Power menu on secure lockscreen -->
-  <!-- Suppress notification sound/vibration -->
-  <!-- less notifucations -->
-  <!-- QS footer warnings -->
-  <!-- Scrolling Cache -->
-  <!-- Notification count -->
-  <!-- Expanded desktop -->
-  <!-- Torch Power button gestures -->
-  <!-- Battery styles -->
-  <!-- Battery percent -->
-  <!-- Quick Settings brightness icon -->
-  <!-- Status bar clock options -->
-  <!-- Screen state service -->
-  <!--show cpu overlay -->
-  <!-- Ambient music -->
-  <!-- d2ts on lockscreen -->
-  <!-- Carrier Label -->
-  <!-- Volume Steps -->
-  <!-- Volume key controls media stream -->
+    <!-- Cardinal Wings menus -->
+    <string name="keywords_cardinal">Cardinal-AOSP</string>
+    <!-- Main Settings -->
+    <!-- double tap to sleep - statusbar -->
+    <string name="double_tap_to_sleep_title">Dobbelttrykk for å sove</string>
+    <string name="double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å få enheten til å sove</string>
+    <!-- Volume button wake -->
+    <string name="volbtn_wake_device_title">Vekk med volumknappene</string>
+    <string name="button_wake_summary">Kan hende enheten ikke vekkes hvis musikkontroll er aktiv og musikk spilles</string>
+    <!-- Volume button track change -->
+    <string name="volbtn_music_controls_title">Volumknappen musikkontroll</string>
+    <string name="volbtn_music_controls_summary">Når skjermen er av, vil langtrykk av volumknappene søke i musikkspor</string>
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Våkne ved tilkobling</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Slå skjermen på når du kobler til eller kobler fra en strømkilde</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Nettverkstrafikk</string>
+    <string name="network_traffic_summary">Alternativ for å vise nett-aktivitetsmeter på statuslinjen</string>
+    <string name="network_traffic_state_title">Nett-aktivitet i statuslinjen</string>
+    <string name="network_traffic_autohide_threshold_title">Nett-aktivitet autoskjul terskel (KB/s)</string>
+    <string name="show_network_traffic_disable">Deaktivert</string>
+    <string name="show_network_traffic_up">Utgående</string>
+    <string name="show_network_traffic_down">Innkommende</string>
+    <string name="show_network_traffic_all">Utgående og innkommende</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Fargevelger</string>
+    <string name="press_color_to_apply">Trykk på en av fargene under for å angi den</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Angi</string>
+    <string name="color_default">Standard</string>
+    <!-- Quick settings tiles columns and rows config -->
+    <string name="quicksettings_category">Hurtiginstillinger</string>
+    <string name="quicksettings_summary">Konfigurer QS oppsett</string>
+    <string name="qs_layout_category">QS ruteoppsettet</string>
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS rader og kolonner</string>
+    <string name="qs_rows_portrait_title">Flisers rader på portrett</string>
+    <string name="qs_rows_landscape_title">Flisers rader i landskap</string>
+    <string name="qs_columns_portrait_title">Flisers kolonner på portrett</string>
+    <string name="qs_columns_landscape_title">Flisers kolonner i landskap</string>
+    <string name="qs_tile_title_visibility_title">QS flis titler</string>
+    <string name="qs_tile_title_visibility_summary_on">QS flisers titler er nå synlig</string>
+    <string name="qs_tile_title_visibility_summary_off">QS flisers titler er nå borte</string>
+    <!-- General strings -->
+    <string name="cancel">Avbryt</string>
+    <string name="save">Lagre</string>
+    <string name="reset_android">Android</string>
+    <string name="reset_cardinal">Cardinal-AOSP</string>
+    <string name="reset_colors">Tilbakestill farger</string>
+    <string name="text_title">Tekst</string>
+    <string name="icon_title">Ikoner</string>
+    <string name="color_title">Farge</string>
+    <string name="colors_title">Farger</string>
+    <!-- fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibrasjon ved fingeravtrykksautentisering</string>
+    <string name="fprint_sucess_vib_summary">Vibrer ved godkjent fingeravtrykksautentisering</string>
+    <!-- Battery customizations -->
+    <string name="battery_settings_title">Batteriinnstillinger</string>
+    <string name="battery_settings_summary">Tilpass batteristiler</string>
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">FP opplåsning</string>
+    <!-- Media art -->
+    <!-- Whether to display IME switcher notifcation -->
+    <!-- Battery light -->
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">Statuslinjeikoner</string>
+    <string name="lockscreen_shortcuts_title">Låseskjermsnarveier</string>
+    <string name="powern_notifications_title">Strømvarsler</string>
+    <!-- Notification Settings fragment -->
+    <!-- Navigation bar -->
+    <string name="navigationbar_settings_title">Navigasjonsfelt</string>
+    <!-- Recents panel settings -->
+    <!-- Navigationbar toggle -->
+    <!-- Buttons Backlight -->
+    <!-- Buttons backlight timeout -->
+    <!-- Custom rebindings -->
+    <string name="action_screenshot">Skjermbilde</string>
+    <string name="action_partial_screenshot">Delvis skjermbilde</string>
+    <!-- Swap sw & hw navigation keys -->
+    <!-- ANBI -->
+    <string name="anbi_title">Utilsiktet berøring</string>
+    <!-- Heads up -->
+    <!-- Sensor block per-package -->
+    <!-- Incall Home button behavior-->
+    <!-- Disable QS on secure Lockscreen -->
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <!-- Incall vibrate options -->
+    <!--  Lockscreen battery info indicator  -->
+    <!-- Statusbar ticker -->
+    <string name="ticker_disabled">Deaktivert</string>
+    <!-- Notification style -->
+    <!-- Notification light dialogs -->
+    <!-- Values for the notification light pulse spinners -->
+    <!-- Lights settings screen, notification light settings -->
+    <!-- Systemui theme -->
+    <!-- Power menu on secure lockscreen -->
+    <!-- Suppress notification sound/vibration -->
+    <!-- less notifucations -->
+    <!-- QS footer warnings -->
+    <!-- Scrolling Cache -->
+    <!-- Notification count -->
+    <!-- Expanded desktop -->
+    <!-- Torch Power button gestures -->
+    <!-- Battery styles -->
+    <!-- Battery percent -->
+    <!-- Quick Settings brightness icon -->
+    <!-- Status bar clock options -->
+    <!-- Screen state service -->
+    <!--show cpu overlay -->
+    <!-- Ambient music -->
+    <!-- d2ts on lockscreen -->
+    <!-- Carrier Label -->
+    <!-- Volume Steps -->
+    <!-- Volume key controls media stream -->
+    <!-- Brightness control -->
 </resources>

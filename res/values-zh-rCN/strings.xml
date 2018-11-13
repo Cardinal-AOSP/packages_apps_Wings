@@ -15,396 +15,397 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Cardinal Wings menus -->
-  <string name="cardinal_wings_title">特色功能</string>
-  <string name="keywords_cardinal">Cardinal-AOSP</string>
-  <!-- Main Settings -->
-  <string name="general_title">常规信息</string>
-  <string name="general_summary">杂项，UI/UX 自定义</string>
-  <string name="statusbar_title">状态栏</string>
-  <string name="statusbar_summary">自定义状态栏、快速设置和通知等</string>
-  <string name="buttons_title">按键</string>
-  <string name="buttons_summary">自定义音量控制和导航栏等</string>
-  <string name="lockscreen_title">锁屏界面</string>
-  <string name="lockscreen_summary">锁屏界面自定义</string>
-  <string name="recents_ui_title">最近使用</string>
-  <string name="recents_ui_summary">最近任务自定义</string>
-  <!-- double tap to sleep - statusbar -->
-  <string name="double_tap_to_sleep_title">双击休眠</string>
-  <string name="double_tap_to_sleep_summary">双击状态栏爱机休眠</string>
-  <!-- Volume button wake -->
-  <string name="volbtn_wake_device_title">音量键唤醒爱机</string>
-  <string name="button_wake_summary">播放音乐或音乐控制处于活动时无法唤醒你的爱机</string>
-  <!-- Volume button track change -->
-  <string name="volbtn_music_controls_title">音量键控制音乐</string>
-  <string name="volbtn_music_controls_summary">熄屏时长按音量键切换音乐曲目</string>
-  <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">插入唤醒</string>
-  <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">显示网速</string>
-  <string name="network_traffic_summary">网络显示选项</string>
-  <string name="network_traffic_state_title">在状态栏显示网络状态</string>
-  <string name="network_traffic_autohide_threshold_title">单位(kb/s)</string>
-  <string name="show_network_traffic_disable">不高兴用</string>
-  <string name="show_network_traffic_up">上传</string>
-  <string name="show_network_traffic_down">下载</string>
-  <string name="show_network_traffic_all">上传和下载</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">取色器</string>
-  <string name="press_color_to_apply">点击取色器下部应用</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">取值</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">设置</string>
-  <string name="color_default">默认</string>
-  <!-- Quick settings tiles columns and rows config -->
-  <string name="quicksettings_category">快速设置</string>
-  <string name="quicksettings_summary">配置布局</string>
-  <string name="qs_layout_category">快速设置面板布局</string>
-  <!-- QS rows and columns -->
-  <string name="qs_rows_columns_title">行和列</string>
-  <string name="qs_rows_portrait_title">按行排列瓷块</string>
-  <string name="qs_rows_landscape_title">按行</string>
-  <string name="qs_columns_portrait_title">按列</string>
-  <string name="qs_columns_landscape_title">按行</string>
-  <string name="qs_tile_title_visibility_title">快捷设置磁块标题</string>
-  <string name="qs_tile_title_visibility_summary_on">快捷设置磁块标题可见</string>
-  <string name="qs_tile_title_visibility_summary_off">快捷设置磁块标题不可见</string>
-  <!-- General strings -->
-  <string name="cancel">取消</string>
-  <string name="save">保存</string>
-  <string name="reset_android">安卓</string>
-  <string name="reset_cardinal">Cardinal-AOSP</string>
-  <string name="reset_colors">重置颜色</string>
-  <string name="text_title">文本</string>
-  <string name="icon_title">图标</string>
-  <string name="color_title">颜色</string>
-  <string name="colors_title">颜色</string>
-  <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">验证指纹时振动</string>
-  <string name="fprint_sucess_vib_summary">验证指纹身份成功时振动</string>
-  <!-- Battery customizations -->
-  <string name="battery_settings_title">电池设置选项</string>
-  <string name="battery_settings_summary">自定义电池样式</string>
-  <!-- Fingerprint unlock keystore -->
-  <string name="fp_unlock_keystore_title">指纹解锁</string>
-  <string name="fp_unlock_keystore_summary">允许解锁装置启动后直接使用指纹</string>
-  <!-- Media art -->
-  <string name="media_art_title">音乐封面</string>
-  <string name="media_art_summary">在锁屏界面显示音乐封面</string>
-  <!-- Whether to display IME switcher notifcation -->
-  <string name="ime_switcher_notify">键盘选择器通知</string>
-  <!-- Battery light -->
-  <string name="custom_leds">LED指示灯</string>
-  <string name="custom_battery_light_settings">充电指示灯</string>
-  <string name="battery_light_enable">启用</string>
-  <string name="battery_light_low_blinking_title">低电量闪烁灯</string>
-  <string name="battery_light_cat">充电时电池指示灯颜色</string>
-  <string name="battery_light_low_color">低电量</string>
-  <string name="battery_light_medium_color">中度电量</string>
-  <string name="battery_light_full_color">接近满电</string>
-  <string name="battery_light_reallyfull_color">100%电量(100)</string>
-  <string name="battery_light_allow_on_dnd_title">勿扰模式启用充电指示灯</string>
-  <!--SysUI tuner options -->
-  <string name="status_bar_icon_blacklist_title">状态栏图标</string>
-  <string name="status_bar_icon_blacklist_summary">配置显示在状态栏的图标</string>
-  <string name="lockscreen_shortcuts_title">锁屏快捷方式</string>
-  <string name="lockscreen_shortcuts_summary">底部快捷方式</string>
-  <string name="navbar_buttons_title">导航栏高度</string>
-  <string name="navbar_buttons_summary">配置导航栏布局和自定义按钮</string>
-  <string name="qs_brightness_slider_title">亮度条</string>
-  <string name="qs_brightness_slider_summary">在快捷开关面板中显示亮度滑块</string>
-  <string name="vol_dnd_category_title">勿扰模式</string>
-  <string name="volbtn_down_zen_title">音量勿扰</string>
-  <string name="volbtn_down_zen_summary">音量—进入请勿打扰模式</string>
-  <string name="volbtn_up_zen_title">音量勿扰</string>
-  <string name="volbtn_up_zen_summary">音量+进入请勿打扰模式</string>
-  <string name="vol_zen_title">勿扰模式开关</string>
-  <string name="vol_zen_summary">在音量面板显示勿扰模式开关</string>
-  <string name="powern_notifications_title">电源通知</string>
-  <string name="powern_notifications_summary">长按显示高级通知设置</string>
-  <!-- Notification Settings fragment -->
-  <string name="notification_settings_title">通知</string>
-  <string name="notification_settings_summary">管理通知相关设置</string>
-  <!-- Navigation bar -->
-  <string name="navigationbar_settings_title">导航栏</string>
-  <string name="navigationbar_settings_summary">虚拟导航按钮</string>
-  <string name="hardwarekeys_cat_title">实体按键</string>
-  <!-- Recents panel settings -->
-  <string name="show_clear_all_recents_button_title">一键清除按钮</string>
-  <string name="show_clear_all_recents_button_summary_on">显示一键清除按钮</string>
-  <string name="show_clear_all_recents_button_summary_off">使用 AOSP 一键清除按钮</string>
-  <string name="recents_clear_all_location_title">“一键清除”按钮位置</string>
-  <string name="recents_clear_all_location_top_right">屏幕右上方</string>
-  <string name="recents_clear_all_location_top_left">屏幕左上方</string>
-  <string name="recents_clear_all_location_top_center">顶部居中</string>
-  <string name="recents_clear_all_location_bottom_right">右下角</string>
-  <string name="recents_clear_all_location_bottom_left">左下角</string>
-  <string name="recents_clear_all_location_bottom_center">底部居中</string>
-  <!-- Navigationbar toggle -->
-  <string name="navigation_bar_show_title">显示导航栏</string>
-  <string name="navigation_bar_show_summary">启用屏幕内导航键</string>
-  <!-- Buttons Backlight -->
-  <string name="button_backlight_cat">按钮背光</string>
-  <string name="button_backlight_on_touch_only_title">触摸按钮</string>
-  <string name="button_backlight_on_touch_only_summary">仅在按钮触摸时使用超时启用背光</string>
-  <string name="button_backlight_enable_title">启用</string>
-  <string name="button_manual_brightness">亮度级别, 在值0上禁用</string>
-  <!-- Buttons backlight timeout -->
-  <string name="backlight_timeout_title">背光超时</string>
-  <string name="backlight_timeout_on">始终启用</string>
-  <string name="backlight_timeout_3s">3 秒</string>
-  <string name="backlight_timeout_default">5秒（默认）</string>
-  <string name="backlight_timeout_10s">10秒</string>
-  <string name="backlight_timeout_15s">15 秒</string>
-  <string name="backlight_timeout_20s">20秒</string>
-  <string name="backlight_timeout_30s">30秒</string>
-  <!-- Custom rebindings -->
-  <string name="home_key_title">Home 键</string>
-  <string name="back_key_title">返回键</string>
-  <string name="menu_key_title">菜单键</string>
-  <string name="assist_key_title">辅助按钮</string>
-  <string name="app_switch_key_title">最近任务键</string>
-  <string name="camera_key_title">相机键</string>
-  <string name="short_press_title">短按动作</string>
-  <string name="long_press_title">长按动作</string>
-  <string name="double_tap_title">双击操作</string>
-  <string name="action_nothing">无动作</string>
-  <string name="action_menu">开启/关闭菜单</string>
-  <string name="action_app_switch">最近使用</string>
-  <string name="action_search">搜索助手</string>
-  <string name="action_voice_search">语音搜索</string>
-  <string name="action_in_app_search">应用内搜索</string>
-  <string name="action_launch_camera">打开相机</string>
-  <string name="action_last_app">启动上一个应用</string>
-  <string name="action_splitscreen">分屏</string>
-  <string name="action_screenshot">截图</string>
-  <string name="action_partial_screenshot">局部截图</string>
-  <string name="action_screen_off">关闭屏幕</string>
-  <!-- Swap sw & hw navigation keys -->
-  <string name="swap_hardware_navigation_keys_title">交换实体按键</string>
-  <string name="swap_hardware_navigation_keys_title_summary">交换返回和最近任务键</string>
-  <string name="swap_software_navigation_keys_title">交换导航栏按键</string>
-  <string name="swap_software_navigation_keys_title_summary">交换导航栏中的返回和最近任务键</string>
-  <!-- ANBI -->
-  <string name="anbi_title">误触</string>
-  <string name="anbi_summary">在触摸屏幕时防止与硬件导航按钮交互</string>
-  <!-- Heads up -->
-  <string name="heads_up_notifications">浮动通知</string>
-  <string name="summary_heads_up_enabled">浮动通知已启用</string>
-  <string name="summary_heads_up_disabled">浮动通知已禁用</string>
-  <string name="add_heads_up_blacklist_package">将应用程序添加到 headsup 黑名单</string>
-  <string name="add_heads_up_whitelist_package">将应用程序添加到 headsup 白名单</string>
-  <string name="add_heads_up_blacklist_summary">禁用来自这些应用程序的 headsup 通知</string>
-  <string name="add_heads_up_whitelist_summary">使用这些应用程序时禁用 headsup 通知</string>
-  <string name="heads_up_blacklist_title">黑名单</string>
-  <string name="heads_up_whitelist_title">白名单</string>
-  <string name="profiles_add">添加</string>
-  <string name="profile_choose_app">选择应用</string>
-  <string name="dialog_delete_title">移除</string>
-  <string name="dialog_delete_message">移除选中的项目？</string>
-  <!-- Sensor block per-package -->
-  <string name="sensor_block_title">阻止个別应用使用传感器</string>
-  <string name="sensor_block_summary">阻止某些应用程序使用某些传感器来节省电池</string>
-  <!-- Incall Home button behavior-->
-  <string name="allow_incall_home_title">响铃时使用 Home 键</string>
-  <string name="allow_incall_home_summary">当来电铃声响起时允许使用 home 按钮</string>
-  <!-- Disable QS on secure Lockscreen -->
-  <string name="lockscreen_qs_disabled_title">切换快速设置</string>
-  <string name="lockscreen_qs_disabled_summary">在锁屏界面禁用下拉访问快捷设置</string>
-  <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
-  <string name="lockscreen_hide_shortcuts_title">隐藏底部快捷键</string>
-  <string name="lockscreen_hide_shortcuts_summary">隐藏安全锁屏幕上的底部快捷方式</string>
-  <!-- Incall vibrate options -->
-  <string name="incall_vibration_category">来电震动</string>
-  <string name="incall_vibrate_connect_title">接通时振动</string>
-  <string name="incall_vibrate_connect_summary">启用呼叫连接后振动</string>
-  <string name="incall_vibrate_call_wait_title">呼叫保持时振动</string>
-  <string name="incall_vibrate_call_wait_summary">在等待呼叫时启用震动</string>
-  <string name="incall_vibrate_disconnect_title">挂断时振动</string>
-  <string name="incall_vibrate_disconnect_summary">在呼叫断开后启用震动</string>
-  <!--  Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">锁屏界面下的充电信息</string>
-  <string name="lockscreen_battery_info_summary">在锁屏界面上显示充电器可达到的最大电流和电压</string>
-  <!-- Statusbar ticker -->
-  <string name="ticker_mode_title">状态栏通知</string>
-  <string name="ticker_disabled">禁用</string>
-  <string name="ticker_enabled">通知提示</string>
-  <string name="ticker_media_enabled">通知和音乐提示</string>
-  <string name="ticker_animation_mode_title">通知提示动画样式</string>
-  <string name="ticker_animation_mode_alpha_fade">淡入淡出</string>
-  <string name="ticker_animation_mode_scroll">滚动</string>
-  <!-- Notification style -->
-  <string name="notification_style_title">通知栏风格</string>
-  <string name="notification_style_warning_text">当您使用抬头通知时, 您将无法使用 \"股票代号\" 功能, 反之亦然。</string>
-  <!-- Notification light dialogs -->
-  <string name="advanced">高级选项</string>
-  <string name="pulse_speed_title">呼吸长度与速度</string>
-  <string name="default_time">正常</string>
-  <string name="custom_time">自定义 </string>
-  <!-- Values for the notification light pulse spinners -->
-  <string name="pulse_length_always_on">始终开启</string>
-  <string name="pulse_length_very_short">很短</string>
-  <string name="pulse_length_short">短促</string>
-  <string name="pulse_length_normal">正常</string>
-  <string name="pulse_length_long">长</string>
-  <string name="pulse_length_very_long">极长</string>
-  <string name="pulse_speed_very_fast">极快</string>
-  <string name="pulse_speed_fast">较快</string>
-  <string name="pulse_speed_normal">正常</string>
-  <string name="pulse_speed_slow">较慢</string>
-  <string name="pulse_speed_very_slow">极慢</string>
-  <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">指示灯</string>
-  <string name="notification_light_title_summary">启用脉冲通知指示灯</string>
-  <string name="notification_light_general_title">常规信息</string>
-  <string name="notification_light_applist_title">应用</string>
-  <string name="notification_light_phonelist_title">电话</string>
-  <string name="notification_light_use_custom">使用自定义值</string>
-  <string name="notification_light_use_custom_summary">启用按应用程序通知颜色设置</string>
-  <string name="notification_light_default_value">默认</string>
-  <string name="notification_light_missed_call_title">错过电话</string>
-  <string name="notification_light_voicemail_title">语音邮件</string>
-  <string name="notification_light_screen_on">在屏幕开启时启用指示灯</string>
-  <string name="notification_light_no_apps_footer_text">若要单独控制每个应用程序，激活 \'%1$s\' 并且点击菜单栏上 \'\u002b\'</string>
-  <string name="led_notification_title">指示灯设置</string>
-  <string name="led_notification_text">LED 由设置启用</string>
-  <!-- Systemui theme -->
-  <string name="systemui_theme_style_title">UI 样式</string>
-  <string name="systemui_theme_style_auto">墙纸为基础</string>
-  <string name="systemui_theme_style_light">亮的</string>
-  <string name="systemui_theme_style_dark">暗色</string>
-  <!-- Power menu on secure lockscreen -->
-  <string name="lockscreen_power_menu_disabled_title">安全锁屏电源菜单</string>
-  <string name="lockscreen_power_menu_disabled_summary">安全锁屏时禁用电源菜单</string>
-  <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">如果屏幕处于打开状态，发出声音和振动</string>
-  <string name="notification_sound_vib_screen_on_never">从不</string>
-  <string name="notification_sound_vib_screen_on_always">始终 (默认)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">如果没有媒体正在播放</string>
-  <!-- less notifucations -->
-  <string name="less_notification_sounds_title">智能通知提示音</string>
-  <string name="less_notification_sounds_summary">每个应用的通知提示音在设定的时间段内只响一次</string>
-  <string name="less_notification_sounds_default">应用默认值</string>
-  <string name="less_notification_sounds_10s">每 10 秒</string>
-  <string name="less_notification_sounds_30s">每 30 秒</string>
-  <string name="less_notification_sounds_1m">每分钟</string>
-  <string name="less_notification_sounds_2m">每 2 分钟</string>
-  <!-- QS footer warnings -->
-  <string name="qs_footer_warnings_title">快速设置页脚警告</string>
-  <string name="qs_footer_warnings_summary">当网络被 VPN 或者应用程序监测时，在快速设置底部显示警告。</string>
-  <!-- Scrolling Cache -->
-  <string name="pref_scrollingcache_title">滚动缓存</string>
-  <string name="pref_scrollingcache_summary">滚动缓存可以提高滚动性能，但会消耗更多内存。</string>
-  <string name="pref_scrollingcache_force_enable">强制启用</string>
-  <string name="pref_scrollingcache_default_enable">默认启用</string>
-  <string name="pref_scrollingcache_default_disable">默认禁用</string>
-  <string name="pref_scrollingcache_force_disable">强制禁用</string>
-  <!-- Notification count -->
-  <!-- Expanded desktop -->
-  <string name="expanded_desktop_category">扩展桌面</string>
-  <string name="expanded_hide_nothing">不隐藏</string>
-  <string name="expanded_hide_status">隐藏状态栏</string>
-  <string name="expanded_hide_navigation">隐藏导航栏</string>
-  <string name="expanded_hide_both">全部隐藏</string>
-  <string name="expanded_nothing_to_show">若要为单个应用设定不同的的扩展状态，请关闭 “全部开启”选项</string>
-  <string name="expanded_desktop_state">扩展桌面状态</string>
-  <string name="expanded_enabled_for_all">为全部应用启用</string>
-  <string name="expanded_user_configurable">用户配置</string>
-  <string name="expanded_desktop_style">扩展桌面样式</string>
-  <string name="expanded_desktop_style_description">选择默认扩展桌面样式</string>
-  <string name="expanded_desktop_title">扩展桌面选项</string>
-  <!-- Torch Power button gestures -->
-  <string name="torch_power_button_gesture_title">熄屏状态按电源键开启手电筒</string>
-  <string name="torch_power_button_gesture_none">禁用</string>
-  <string name="torch_power_button_gesture_dt">双击电源键开启手电筒 (单击操作将会有微小延迟)</string>
-  <string name="torch_power_button_gesture_lp">长按电源按钮开启手电筒</string>
-  <!-- Battery styles -->
-  <string name="battery_style_title">电池图标样式</string>
-  <string name="battery_style_summary">更改状态栏中电池图标的外观</string>
-  <string name="battery_style_port">纵向</string>
-  <string name="battery_style_circle">环形</string>
-  <string name="battery_style_dotted_circle">虚线圆圈</string>
-  <string name="battery_style_text">文本</string>
-  <string name="battery_style_hidden">隐藏</string>
-  <!-- Battery percent -->
-  <string name="show_battery_percent_title">显示电量百分比</string>
-  <string name="show_battery_percent_summary">在电池图标旁边显示电量</string>
-  <string name="battery_percent_hidden">隐藏</string>
-  <string name="battery_percent_outside">外部</string>
-  <string name="battery_percent_inside">内部</string>
-  <!-- Quick Settings brightness icon -->
-  <string name="brightness_icon_title">亮度图标</string>
-  <string name="brightness_icon_summary">在亮度条左侧显示一个亮度图标以开关自动亮度</string>
-  <!-- Status bar clock options -->
-  <string name="clock_category">时钟</string>
-  <string name="status_bar_clock">时钟和日期</string>
-  <string name="status_bar_clock_summary">配置状态栏时钟和日期外观</string>
-  <string name="clock_title_enable">对齐方式</string>
-  <string name="clock_enabled">启用</string>
-  <string name="clock_disabled">禁用</string>
-  <string name="status_bar_clock_style_reset">重置颜色</string>
-  <string name="status_bar_show_clock_title">显示时钟和日期</string>
-  <string name="status_bar_clock_seconds_title">显示秒数</string>
-  <string name="status_bar_am_pm_title">上午/下午</string>
-  <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
-  <string name="enable_clock_weekday">星期计数</string>
-  <string name="enable_clock_weekday_summary">在时间前显示简写的星期</string>
-  <string name="right_clock">时钟居右</string>
-  <string name="center_clock">时钟居中</string>
-  <string name="left_clock">时钟居左</string>
-  <string name="dont_show">不显示</string>
-  <string name="clock_date_display">日期</string>
-  <string name="clock_date_display_summary">在时钟前显示自定义日期</string>
-  <string name="clock_date_style">日期样式</string>
-  <string name="clock_date_format">日期格式</string>
-  <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
-  <string name="clock_date_string_edittext_summary">输入字符串</string>
-  <string name="am_pm_clock_normal">正常字体大小</string>
-  <string name="am_pm_clock_small">较小字体大小</string>
-  <string name="am_pm_clock_none">不显示</string>
-  <string name="clock_date_display_none">不显示</string>
-  <string name="clock_date_display_small">较小字体大小</string>
-  <string name="clock_date_display_normal">正常字体大小</string>
-  <string name="clock_date_style_normal">正常</string>
-  <string name="clock_date_style_lowercase">小写字母</string>
-  <string name="clock_date_style_uppercase">大写字母</string>
-  <string name="clock_date_format_custom">自定义 java 格式</string>
-  <string name="clock_warning_text">请注意，时钟居中功能是测试性的，并且可能不稳定导致产生一些问题</string>
-  <!-- Screen state service -->
-  <string name="screen_state_toggles_summary">\@null</string>
-  <string name="screen_state_toggles_title">暂停动作</string>
-  <string name="screen_state_toggles_enable_title">启用</string>
-  <string name="screen_state_toggles_enable_summary">操作将在屏幕关闭时执行。屏幕上的当前状态将会被还原。</string>
-  <string name="screen_state_toggles_mobile_title">移动网络</string>
-  <string name="screen_state_toggles_location_title">位置</string>
-  <string name="screen_state_toggles_twog">切换到 2G</string>
-  <string name="screen_state_toggles_twog_summary">网络将在屏幕关闭时切换至 2G</string>
-  <string name="screen_state_toggles_gps">禁用 GPS</string>
-  <string name="screen_state_toggles_gps_summary">GPS 定位服务将在屏幕关闭后禁用</string>
-  <string name="screen_state_toggles_mobile_data">禁用移动数据</string>
-  <string name="screen_state_toggles_mobile_data_summary">移动数据将在屏幕关闭后禁用</string>
-  <string name="screen_state_off_delay_title">屏幕关闭操作延迟</string>
-  <string name="screen_state_off_delay_summary">在屏幕关闭后执行操作前等待的时长</string>
-  <string name="screen_state_on_delay_title">屏幕点亮操作延迟</string>
-  <string name="screen_state_on_delay_summary">在屏幕开启后执行操作前等待的时长</string>
-  <!--show cpu overlay -->
-  <string name="show_cpu_title">显示 CPU 信息</string>
-  <string name="show_cpu_summary">屏幕叠加层显示当前 CPU 信息</string>
-  <!-- Ambient music -->
-  <string name="force_ambient_for_media_pref_title">环境音乐提示</string>
-  <string name="force_ambient_for_media_pref_summary">配置环境音乐通知提示</string>
-  <string name="ambient_ticker_footer">此功能允许在启用或未启用环境显示的情况下在锁屏显示当前音乐曲目信息。\n\n您有两个布局可供选择，分别是“正常”和“最小”。虽然此功能利用了环境显示，但它并不依赖于环境显示。它可以通过使用“强制”选项从而在未启用环境显示的情况下触发。\n\n正常视图包括锁屏时钟，日期和环境音乐通知。\n\n最小视图只包含屏幕中间的环境音乐通知。</string>
-  <string name="force_ambient_for_media_title">选择布局</string>
-  <string name="force_ambient_for_media_off">禁用</string>
-  <string name="force_ambient_for_media_on">正常</string>
-  <string name="force_ambient_for_media_on_forced">正常（强制）</string>
-  <string name="force_ambient_for_media_on_forced_clean">最小（强制）</string>
-  <!-- d2ts on lockscreen -->
-  <string name="double_tap_sleep_lockscreen">锁屏界面双击屏幕休眠</string>
-  <!-- Carrier Label -->
-  <!-- Volume Steps -->
-  <!-- Volume key controls media stream -->
+    <!-- Cardinal Wings menus -->
+    <string name="cardinal_wings_title">特色功能</string>
+    <string name="keywords_cardinal">Cardinal-AOSP</string>
+    <!-- Main Settings -->
+    <string name="general_title">常规信息</string>
+    <string name="general_summary">杂项，UI/UX 自定义</string>
+    <string name="statusbar_title">状态栏</string>
+    <string name="statusbar_summary">自定义状态栏、快速设置和通知等</string>
+    <string name="buttons_title">按键</string>
+    <string name="buttons_summary">自定义音量控制和导航栏等</string>
+    <string name="lockscreen_title">锁屏界面</string>
+    <string name="lockscreen_summary">锁屏界面自定义</string>
+    <string name="recents_ui_title">最近使用</string>
+    <string name="recents_ui_summary">最近任务自定义</string>
+    <!-- double tap to sleep - statusbar -->
+    <string name="double_tap_to_sleep_title">双击休眠</string>
+    <string name="double_tap_to_sleep_summary">双击状态栏爱机休眠</string>
+    <!-- Volume button wake -->
+    <string name="volbtn_wake_device_title">音量键唤醒爱机</string>
+    <string name="button_wake_summary">播放音乐或音乐控制处于活动时无法唤醒你的爱机</string>
+    <!-- Volume button track change -->
+    <string name="volbtn_music_controls_title">音量键控制音乐</string>
+    <string name="volbtn_music_controls_summary">熄屏时长按音量键切换音乐曲目</string>
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">插入唤醒</string>
+    <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时唤醒屏幕</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">显示网速</string>
+    <string name="network_traffic_summary">网络显示选项</string>
+    <string name="network_traffic_state_title">在状态栏显示网络状态</string>
+    <string name="network_traffic_autohide_threshold_title">单位(kb/s)</string>
+    <string name="show_network_traffic_disable">不高兴用</string>
+    <string name="show_network_traffic_up">上传</string>
+    <string name="show_network_traffic_down">下载</string>
+    <string name="show_network_traffic_all">上传和下载</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">取色器</string>
+    <string name="press_color_to_apply">点击取色器下部应用</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">取值</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">设置</string>
+    <string name="color_default">默认</string>
+    <!-- Quick settings tiles columns and rows config -->
+    <string name="quicksettings_category">快速设置</string>
+    <string name="quicksettings_summary">配置布局</string>
+    <string name="qs_layout_category">快速设置面板布局</string>
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">行和列</string>
+    <string name="qs_rows_portrait_title">按行排列瓷块</string>
+    <string name="qs_rows_landscape_title">按行</string>
+    <string name="qs_columns_portrait_title">按列</string>
+    <string name="qs_columns_landscape_title">按行</string>
+    <string name="qs_tile_title_visibility_title">快捷设置磁块标题</string>
+    <string name="qs_tile_title_visibility_summary_on">快捷设置磁块标题可见</string>
+    <string name="qs_tile_title_visibility_summary_off">快捷设置磁块标题不可见</string>
+    <!-- General strings -->
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="reset_android">安卓</string>
+    <string name="reset_cardinal">Cardinal-AOSP</string>
+    <string name="reset_colors">重置颜色</string>
+    <string name="text_title">文本</string>
+    <string name="icon_title">图标</string>
+    <string name="color_title">颜色</string>
+    <string name="colors_title">颜色</string>
+    <!-- fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">验证指纹时振动</string>
+    <string name="fprint_sucess_vib_summary">验证指纹身份成功时振动</string>
+    <!-- Battery customizations -->
+    <string name="battery_settings_title">电池设置选项</string>
+    <string name="battery_settings_summary">自定义电池样式</string>
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">指纹解锁</string>
+    <string name="fp_unlock_keystore_summary">允许解锁装置启动后直接使用指纹</string>
+    <!-- Media art -->
+    <string name="media_art_title">音乐封面</string>
+    <string name="media_art_summary">在锁屏界面显示音乐封面</string>
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">键盘选择器通知</string>
+    <!-- Battery light -->
+    <string name="custom_leds">LED指示灯</string>
+    <string name="custom_battery_light_settings">充电指示灯</string>
+    <string name="battery_light_enable">启用</string>
+    <string name="battery_light_low_blinking_title">低电量闪烁灯</string>
+    <string name="battery_light_cat">充电时电池指示灯颜色</string>
+    <string name="battery_light_low_color">低电量</string>
+    <string name="battery_light_medium_color">中度电量</string>
+    <string name="battery_light_full_color">接近满电</string>
+    <string name="battery_light_reallyfull_color">100%电量(100)</string>
+    <string name="battery_light_allow_on_dnd_title">勿扰模式启用充电指示灯</string>
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">状态栏图标</string>
+    <string name="status_bar_icon_blacklist_summary">配置显示在状态栏的图标</string>
+    <string name="lockscreen_shortcuts_title">锁屏快捷方式</string>
+    <string name="lockscreen_shortcuts_summary">底部快捷方式</string>
+    <string name="navbar_buttons_title">导航栏高度</string>
+    <string name="navbar_buttons_summary">配置导航栏布局和自定义按钮</string>
+    <string name="qs_brightness_slider_title">亮度条</string>
+    <string name="qs_brightness_slider_summary">在快捷开关面板中显示亮度滑块</string>
+    <string name="vol_dnd_category_title">勿扰模式</string>
+    <string name="volbtn_down_zen_title">音量勿扰</string>
+    <string name="volbtn_down_zen_summary">音量—进入请勿打扰模式</string>
+    <string name="volbtn_up_zen_title">音量勿扰</string>
+    <string name="volbtn_up_zen_summary">音量+进入请勿打扰模式</string>
+    <string name="vol_zen_title">勿扰模式开关</string>
+    <string name="vol_zen_summary">在音量面板显示勿扰模式开关</string>
+    <string name="powern_notifications_title">电源通知</string>
+    <string name="powern_notifications_summary">长按显示高级通知设置</string>
+    <!-- Notification Settings fragment -->
+    <string name="notification_settings_title">通知</string>
+    <string name="notification_settings_summary">管理通知相关设置</string>
+    <!-- Navigation bar -->
+    <string name="navigationbar_settings_title">导航栏</string>
+    <string name="navigationbar_settings_summary">虚拟导航按钮</string>
+    <string name="hardwarekeys_cat_title">实体按键</string>
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">一键清除按钮</string>
+    <string name="show_clear_all_recents_button_summary_on">显示一键清除按钮</string>
+    <string name="show_clear_all_recents_button_summary_off">使用 AOSP 一键清除按钮</string>
+    <string name="recents_clear_all_location_title">“一键清除”按钮位置</string>
+    <string name="recents_clear_all_location_top_right">屏幕右上方</string>
+    <string name="recents_clear_all_location_top_left">屏幕左上方</string>
+    <string name="recents_clear_all_location_top_center">顶部居中</string>
+    <string name="recents_clear_all_location_bottom_right">右下角</string>
+    <string name="recents_clear_all_location_bottom_left">左下角</string>
+    <string name="recents_clear_all_location_bottom_center">底部居中</string>
+    <!-- Navigationbar toggle -->
+    <string name="navigation_bar_show_title">显示导航栏</string>
+    <string name="navigation_bar_show_summary">启用屏幕内导航键</string>
+    <!-- Buttons Backlight -->
+    <string name="button_backlight_cat">按钮背光</string>
+    <string name="button_backlight_on_touch_only_title">触摸按钮</string>
+    <string name="button_backlight_on_touch_only_summary">仅在按钮触摸时使用超时启用背光</string>
+    <string name="button_backlight_enable_title">启用</string>
+    <string name="button_manual_brightness">亮度级别, 在值0上禁用</string>
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">背光超时</string>
+    <string name="backlight_timeout_on">始终启用</string>
+    <string name="backlight_timeout_3s">3 秒</string>
+    <string name="backlight_timeout_default">5秒（默认）</string>
+    <string name="backlight_timeout_10s">10秒</string>
+    <string name="backlight_timeout_15s">15 秒</string>
+    <string name="backlight_timeout_20s">20秒</string>
+    <string name="backlight_timeout_30s">30秒</string>
+    <!-- Custom rebindings -->
+    <string name="home_key_title">Home 键</string>
+    <string name="back_key_title">返回键</string>
+    <string name="menu_key_title">菜单键</string>
+    <string name="assist_key_title">辅助按钮</string>
+    <string name="app_switch_key_title">最近任务键</string>
+    <string name="camera_key_title">相机键</string>
+    <string name="short_press_title">短按动作</string>
+    <string name="long_press_title">长按动作</string>
+    <string name="double_tap_title">双击操作</string>
+    <string name="action_nothing">无动作</string>
+    <string name="action_menu">开启/关闭菜单</string>
+    <string name="action_app_switch">最近使用</string>
+    <string name="action_search">搜索助手</string>
+    <string name="action_voice_search">语音搜索</string>
+    <string name="action_in_app_search">应用内搜索</string>
+    <string name="action_launch_camera">打开相机</string>
+    <string name="action_last_app">启动上一个应用</string>
+    <string name="action_splitscreen">分屏</string>
+    <string name="action_screenshot">截图</string>
+    <string name="action_partial_screenshot">局部截图</string>
+    <string name="action_screen_off">关闭屏幕</string>
+    <!-- Swap sw & hw navigation keys -->
+    <string name="swap_hardware_navigation_keys_title">交换实体按键</string>
+    <string name="swap_hardware_navigation_keys_title_summary">交换返回和最近任务键</string>
+    <string name="swap_software_navigation_keys_title">交换导航栏按键</string>
+    <string name="swap_software_navigation_keys_title_summary">交换导航栏中的返回和最近任务键</string>
+    <!-- ANBI -->
+    <string name="anbi_title">误触</string>
+    <string name="anbi_summary">在触摸屏幕时防止与硬件导航按钮交互</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">浮动通知</string>
+    <string name="summary_heads_up_enabled">浮动通知已启用</string>
+    <string name="summary_heads_up_disabled">浮动通知已禁用</string>
+    <string name="add_heads_up_blacklist_package">将应用程序添加到 headsup 黑名单</string>
+    <string name="add_heads_up_whitelist_package">将应用程序添加到 headsup 白名单</string>
+    <string name="add_heads_up_blacklist_summary">禁用来自这些应用程序的 headsup 通知</string>
+    <string name="add_heads_up_whitelist_summary">使用这些应用程序时禁用 headsup 通知</string>
+    <string name="heads_up_blacklist_title">黑名单</string>
+    <string name="heads_up_whitelist_title">白名单</string>
+    <string name="profiles_add">添加</string>
+    <string name="profile_choose_app">选择应用</string>
+    <string name="dialog_delete_title">移除</string>
+    <string name="dialog_delete_message">移除选中的项目？</string>
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">阻止个別应用使用传感器</string>
+    <string name="sensor_block_summary">阻止某些应用程序使用某些传感器来节省电池</string>
+    <!-- Incall Home button behavior-->
+    <string name="allow_incall_home_title">响铃时使用 Home 键</string>
+    <string name="allow_incall_home_summary">当来电铃声响起时允许使用 home 按钮</string>
+    <!-- Disable QS on secure Lockscreen -->
+    <string name="lockscreen_qs_disabled_title">切换快速设置</string>
+    <string name="lockscreen_qs_disabled_summary">在锁屏界面禁用下拉访问快捷设置</string>
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <string name="lockscreen_hide_shortcuts_title">隐藏底部快捷键</string>
+    <string name="lockscreen_hide_shortcuts_summary">隐藏安全锁屏幕上的底部快捷方式</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">来电震动</string>
+    <string name="incall_vibrate_connect_title">接通时振动</string>
+    <string name="incall_vibrate_connect_summary">启用呼叫连接后振动</string>
+    <string name="incall_vibrate_call_wait_title">呼叫保持时振动</string>
+    <string name="incall_vibrate_call_wait_summary">在等待呼叫时启用震动</string>
+    <string name="incall_vibrate_disconnect_title">挂断时振动</string>
+    <string name="incall_vibrate_disconnect_summary">在呼叫断开后启用震动</string>
+    <!--  Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">锁屏界面下的充电信息</string>
+    <string name="lockscreen_battery_info_summary">在锁屏界面上显示充电器可达到的最大电流和电压</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_mode_title">状态栏通知</string>
+    <string name="ticker_disabled">禁用</string>
+    <string name="ticker_enabled">通知提示</string>
+    <string name="ticker_media_enabled">通知和音乐提示</string>
+    <string name="ticker_animation_mode_title">通知提示动画样式</string>
+    <string name="ticker_animation_mode_alpha_fade">淡入淡出</string>
+    <string name="ticker_animation_mode_scroll">滚动</string>
+    <!-- Notification style -->
+    <string name="notification_style_title">通知栏风格</string>
+    <string name="notification_style_warning_text">当您使用抬头通知时, 您将无法使用 \"股票代号\" 功能, 反之亦然。</string>
+    <!-- Notification light dialogs -->
+    <string name="advanced">高级选项</string>
+    <string name="pulse_speed_title">呼吸长度与速度</string>
+    <string name="default_time">正常</string>
+    <string name="custom_time">自定义 </string>
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">始终开启</string>
+    <string name="pulse_length_very_short">很短</string>
+    <string name="pulse_length_short">短促</string>
+    <string name="pulse_length_normal">正常</string>
+    <string name="pulse_length_long">长</string>
+    <string name="pulse_length_very_long">极长</string>
+    <string name="pulse_speed_very_fast">极快</string>
+    <string name="pulse_speed_fast">较快</string>
+    <string name="pulse_speed_normal">正常</string>
+    <string name="pulse_speed_slow">较慢</string>
+    <string name="pulse_speed_very_slow">极慢</string>
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">指示灯</string>
+    <string name="notification_light_title_summary">启用脉冲通知指示灯</string>
+    <string name="notification_light_general_title">常规信息</string>
+    <string name="notification_light_applist_title">应用</string>
+    <string name="notification_light_phonelist_title">电话</string>
+    <string name="notification_light_use_custom">使用自定义值</string>
+    <string name="notification_light_use_custom_summary">启用按应用程序通知颜色设置</string>
+    <string name="notification_light_default_value">默认</string>
+    <string name="notification_light_missed_call_title">错过电话</string>
+    <string name="notification_light_voicemail_title">语音邮件</string>
+    <string name="notification_light_screen_on">在屏幕开启时启用指示灯</string>
+    <string name="notification_light_no_apps_footer_text">若要单独控制每个应用程序，激活 \'%1$s\' 并且点击菜单栏上 \'\u002b\'</string>
+    <string name="led_notification_title">指示灯设置</string>
+    <string name="led_notification_text">LED 由设置启用</string>
+    <!-- Systemui theme -->
+    <string name="systemui_theme_style_title">UI 样式</string>
+    <string name="systemui_theme_style_auto">墙纸为基础</string>
+    <string name="systemui_theme_style_light">亮的</string>
+    <string name="systemui_theme_style_dark">暗色</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">安全锁屏电源菜单</string>
+    <string name="lockscreen_power_menu_disabled_summary">安全锁屏时禁用电源菜单</string>
+    <!-- Suppress notification sound/vibration -->
+    <string name="notification_sound_vib_screen_on_title">如果屏幕处于打开状态，发出声音和振动</string>
+    <string name="notification_sound_vib_screen_on_never">从不</string>
+    <string name="notification_sound_vib_screen_on_always">始终 (默认)</string>
+    <string name="notification_sound_vib_screen_on_nomedia">如果没有媒体正在播放</string>
+    <!-- less notifucations -->
+    <string name="less_notification_sounds_title">智能通知提示音</string>
+    <string name="less_notification_sounds_summary">每个应用的通知提示音在设定的时间段内只响一次</string>
+    <string name="less_notification_sounds_default">应用默认值</string>
+    <string name="less_notification_sounds_10s">每 10 秒</string>
+    <string name="less_notification_sounds_30s">每 30 秒</string>
+    <string name="less_notification_sounds_1m">每分钟</string>
+    <string name="less_notification_sounds_2m">每 2 分钟</string>
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">快速设置页脚警告</string>
+    <string name="qs_footer_warnings_summary">当网络被 VPN 或者应用程序监测时，在快速设置底部显示警告。</string>
+    <!-- Scrolling Cache -->
+    <string name="pref_scrollingcache_title">滚动缓存</string>
+    <string name="pref_scrollingcache_summary">滚动缓存可以提高滚动性能，但会消耗更多内存。</string>
+    <string name="pref_scrollingcache_force_enable">强制启用</string>
+    <string name="pref_scrollingcache_default_enable">默认启用</string>
+    <string name="pref_scrollingcache_default_disable">默认禁用</string>
+    <string name="pref_scrollingcache_force_disable">强制禁用</string>
+    <!-- Notification count -->
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_category">扩展桌面</string>
+    <string name="expanded_hide_nothing">不隐藏</string>
+    <string name="expanded_hide_status">隐藏状态栏</string>
+    <string name="expanded_hide_navigation">隐藏导航栏</string>
+    <string name="expanded_hide_both">全部隐藏</string>
+    <string name="expanded_nothing_to_show">若要为单个应用设定不同的的扩展状态，请关闭 “全部开启”选项</string>
+    <string name="expanded_desktop_state">扩展桌面状态</string>
+    <string name="expanded_enabled_for_all">为全部应用启用</string>
+    <string name="expanded_user_configurable">用户配置</string>
+    <string name="expanded_desktop_style">扩展桌面样式</string>
+    <string name="expanded_desktop_style_description">选择默认扩展桌面样式</string>
+    <string name="expanded_desktop_title">扩展桌面选项</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">熄屏状态按电源键开启手电筒</string>
+    <string name="torch_power_button_gesture_none">禁用</string>
+    <string name="torch_power_button_gesture_dt">双击电源键开启手电筒 (单击操作将会有微小延迟)</string>
+    <string name="torch_power_button_gesture_lp">长按电源按钮开启手电筒</string>
+    <!-- Battery styles -->
+    <string name="battery_style_title">电池图标样式</string>
+    <string name="battery_style_summary">更改状态栏中电池图标的外观</string>
+    <string name="battery_style_port">纵向</string>
+    <string name="battery_style_circle">环形</string>
+    <string name="battery_style_dotted_circle">虚线圆圈</string>
+    <string name="battery_style_text">文本</string>
+    <string name="battery_style_hidden">隐藏</string>
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">显示电量百分比</string>
+    <string name="show_battery_percent_summary">在电池图标旁边显示电量</string>
+    <string name="battery_percent_hidden">隐藏</string>
+    <string name="battery_percent_outside">外部</string>
+    <string name="battery_percent_inside">内部</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">亮度图标</string>
+    <string name="brightness_icon_summary">在亮度条左侧显示一个亮度图标以开关自动亮度</string>
+    <!-- Status bar clock options -->
+    <string name="clock_category">时钟</string>
+    <string name="status_bar_clock">时钟和日期</string>
+    <string name="status_bar_clock_summary">配置状态栏时钟和日期外观</string>
+    <string name="clock_title_enable">对齐方式</string>
+    <string name="clock_enabled">启用</string>
+    <string name="clock_disabled">禁用</string>
+    <string name="status_bar_clock_style_reset">重置颜色</string>
+    <string name="status_bar_show_clock_title">显示时钟和日期</string>
+    <string name="status_bar_clock_seconds_title">显示秒数</string>
+    <string name="status_bar_am_pm_title">上午/下午</string>
+    <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
+    <string name="enable_clock_weekday">星期计数</string>
+    <string name="enable_clock_weekday_summary">在时间前显示简写的星期</string>
+    <string name="right_clock">时钟居右</string>
+    <string name="center_clock">时钟居中</string>
+    <string name="left_clock">时钟居左</string>
+    <string name="dont_show">不显示</string>
+    <string name="clock_date_display">日期</string>
+    <string name="clock_date_display_summary">在时钟前显示自定义日期</string>
+    <string name="clock_date_style">日期样式</string>
+    <string name="clock_date_format">日期格式</string>
+    <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">输入字符串</string>
+    <string name="am_pm_clock_normal">正常字体大小</string>
+    <string name="am_pm_clock_small">较小字体大小</string>
+    <string name="am_pm_clock_none">不显示</string>
+    <string name="clock_date_display_none">不显示</string>
+    <string name="clock_date_display_small">较小字体大小</string>
+    <string name="clock_date_display_normal">正常字体大小</string>
+    <string name="clock_date_style_normal">正常</string>
+    <string name="clock_date_style_lowercase">小写字母</string>
+    <string name="clock_date_style_uppercase">大写字母</string>
+    <string name="clock_date_format_custom">自定义 java 格式</string>
+    <string name="clock_warning_text">请注意，时钟居中功能是测试性的，并且可能不稳定导致产生一些问题</string>
+    <!-- Screen state service -->
+    <string name="screen_state_toggles_summary">\@null</string>
+    <string name="screen_state_toggles_title">暂停动作</string>
+    <string name="screen_state_toggles_enable_title">启用</string>
+    <string name="screen_state_toggles_enable_summary">操作将在屏幕关闭时执行。屏幕上的当前状态将会被还原。</string>
+    <string name="screen_state_toggles_mobile_title">移动网络</string>
+    <string name="screen_state_toggles_location_title">位置</string>
+    <string name="screen_state_toggles_twog">切换到 2G</string>
+    <string name="screen_state_toggles_twog_summary">网络将在屏幕关闭时切换至 2G</string>
+    <string name="screen_state_toggles_gps">禁用 GPS</string>
+    <string name="screen_state_toggles_gps_summary">GPS 定位服务将在屏幕关闭后禁用</string>
+    <string name="screen_state_toggles_mobile_data">禁用移动数据</string>
+    <string name="screen_state_toggles_mobile_data_summary">移动数据将在屏幕关闭后禁用</string>
+    <string name="screen_state_off_delay_title">屏幕关闭操作延迟</string>
+    <string name="screen_state_off_delay_summary">在屏幕关闭后执行操作前等待的时长</string>
+    <string name="screen_state_on_delay_title">屏幕点亮操作延迟</string>
+    <string name="screen_state_on_delay_summary">在屏幕开启后执行操作前等待的时长</string>
+    <!--show cpu overlay -->
+    <string name="show_cpu_title">显示 CPU 信息</string>
+    <string name="show_cpu_summary">屏幕叠加层显示当前 CPU 信息</string>
+    <!-- Ambient music -->
+    <string name="force_ambient_for_media_pref_title">环境音乐提示</string>
+    <string name="force_ambient_for_media_pref_summary">配置环境音乐通知提示</string>
+    <string name="ambient_ticker_footer">此功能允许在启用或未启用环境显示的情况下在锁屏显示当前音乐曲目信息。\n\n您有两个布局可供选择，分别是“正常”和“最小”。虽然此功能利用了环境显示，但它并不依赖于环境显示。它可以通过使用“强制”选项从而在未启用环境显示的情况下触发。\n\n正常视图包括锁屏时钟，日期和环境音乐通知。\n\n最小视图只包含屏幕中间的环境音乐通知。</string>
+    <string name="force_ambient_for_media_title">选择布局</string>
+    <string name="force_ambient_for_media_off">禁用</string>
+    <string name="force_ambient_for_media_on">正常</string>
+    <string name="force_ambient_for_media_on_forced">正常（强制）</string>
+    <string name="force_ambient_for_media_on_forced_clean">最小（强制）</string>
+    <!-- d2ts on lockscreen -->
+    <string name="double_tap_sleep_lockscreen">锁屏界面双击屏幕休眠</string>
+    <!-- Carrier Label -->
+    <!-- Volume Steps -->
+    <!-- Volume key controls media stream -->
+    <!-- Brightness control -->
 </resources>
